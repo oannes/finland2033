@@ -9,12 +9,20 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - summary: Send the scale-up bill to Parliament unchanged: full budget, binding savings targets, staffing cuts decided by managers. In plain terms, you promise the markets that automation will pay for the state's future, starting now. You do it because the framework is already spent: without these savings, you personally announce cuts worth 1.9% of GDP. The offices your own voters work in take the shock.
 - effects: PRO +1.0, LEG −0.7, POLL −6
 - data: pub_ai +2, books +8, bedside -3, share -3
+- said: I sent the bill to Parliament unchanged: full budget, binding savings, staffing decided by managers. Without that number the framework fails, and I was elected to keep the state solvent, not comfortable.
+- aftermath: The savings are booked before they exist. From this week, every ministry manages toward a number your own voters will feel first.
+- to COUNTY: I signed your counties up for savings targets with the force of law. The freed minutes belong to the Treasury now; plan your wards around it.
+- to SAK: The bill sets staffing by management decision, not negotiation. Your members' desks are in the schedule, and the schedule is public.
 
 ### P1-PM-B — "Protect the experience"
 - tag: B
 - summary: Rewrite the bill before sending it: the platform still comes, but slower, with service levels and jobs guaranteed during the transition. You do it because a government elected by public-sector workers cannot automate them by decree and expect to govern afterwards. The price is paid in credibility: the savings arrive late and smaller, and the bond desks see it.
 - effects: LEG +0.7, PRO −0.4, POLL +4
 - data: books -4, bedside +3, share +3
+- said: I rewrote the bill: the platform still comes, slower, with service levels and jobs guaranteed through the transition. A government elected by public workers cannot automate them by decree and expect to govern afterwards.
+- aftermath: The bond desks reprice your framework by Friday. The savings arrive late and smaller, and every later promise is measured against that.
+- to COUNTY: Your wards keep their staff through the transition; I bought you that time with the framework's credibility. Use it, because I cannot buy it twice.
+- to SAK: The guarantee your members wanted is in the bill, with my signature under it. I paid for it in market credibility, and I intend to collect in cooperation.
 
 ### P1-PM-H — "Rent the state"
 - tag: H
@@ -22,6 +30,11 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - effects: PRO +0.6, LEG −0.5, POLL −3
 - data: pub_ai +3, books +12, days -8, stay -6, share -4
 - hook: SILENT
+- said: I cancelled the state's own build and signed the turnkey contract. The vendor delivers, the savings are certain, and the delivery risk is off our books. That was the only honest version of the arithmetic.
+- aftermath: The state's plumbing now answers to a foreign board. What you gained in certainty, you owe in access.
+- to HVK: I know what the contract does to your fallback numbers. It was the price of certainty, and I decided certainty was worth more. File the objection; I will read it.
+- to STARTUP: There was no Finnish consortium capable of this at this price, so I stopped pretending there was. Your market is now what the vendor subcontracts.
+- to SAK: The vendor's service terms replace the negotiation you were preparing for. There is no table where that contract gets reopened.
 
 ## SAK (pivotal)
 
@@ -31,6 +44,10 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - effects: LEG −0.4, POLL +2
 - data: share +5, books +3, ladder +2
 - flags: STRIKE_CARD=unused
+- said: I took our consent to the table and sold it at the highest price it will ever fetch: gain-sharing, retraining rights, a seat on the program board. The automation comes either way; terms negotiated now beat terms dictated later.
+- aftermath: The members who leave pay for the ones who stay, and every one of them knows which side of that line they stand on.
+- to PM: You get labour peace and your savings schedule, signed. In exchange, the gain-sharing clause sits in the program's founding documents. Honour it, or the consent goes with it.
+- to AALTO: The retraining rights I signed need somewhere to point. Your university decides whether they lead to work or to a waiting list with a curriculum.
 
 ### P1-SAK-B — "Defend every desk"
 - tag: B
@@ -38,6 +55,10 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - effects: LEG +0.5
 - data: share +4, books -4, ladder -2
 - flags: contributes to GUARANTEE=yes (see combos); STRIKE_CARD=live
+- said: I refused. No dismissals for the decade, in law, and the strike ballot stays armed on the table. A union that trades away jobs stops being believed, and being believed is the only asset I hold.
+- aftermath: The program slows around your refusal, and the young outside the walls keep waiting where nobody counts them.
+- to PM: Your savings schedule assumes my members' consent. It does not have it. The ballot box on my desk is not a metaphor.
+- to AALTO: The desks I am defending are the ones your graduates were waiting to fill. I know that arithmetic. I chose my members; someone else must choose the young.
 
 ### P1-SAK-H — "The union becomes the platform"
 - tag: H
@@ -46,6 +67,10 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - data: share +8, ladder +3, trust -2, books +2
 - flags: STRIKE_CARD=unused
 - hook: SILENT
+- said: I registered the cooperative and bought the tools. If work is becoming software, the union should own some software. My members' machine-assisted work now rents to the state as a service, on our terms.
+- aftermath: Nobody at the table has a category for what you became. That is leverage in some rooms and a locked door in others.
+- to PM: You wanted the offices automated; they will be, by their own staff, through our cooperative, invoiced. Cheaper than the vendor, and your savings arithmetic still closes.
+- to AALTO: The cooperative hires for machine-assisted work at scale, juniors included. Your ladder problem just found a second buyer.
 
 ## COUNTY (pivotal)
 
@@ -54,12 +79,18 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - summary: Sign the commitment the ministry wants: as the machine takes over the paperwork, convert the freed hours into smaller staff lists and shorter queues. You do it because you are short 57,000 workers by 2033 and arithmetic is not optional. The visits get shorter, and the people at the bedside notice first.
 - effects: PRO +0.5
 - data: books +5, bedside -6, care_gap -1, trust -2
+- said: I signed the ministry's commitment: the machine takes the paperwork, and the freed hours become smaller staff lists and shorter queues. I am short 57,000 workers by 2033. Arithmetic is not optional.
+- aftermath: The visits get shorter, and the people at the bedside notice before the statistics do.
+- to PM: My counties signed for your savings targets, in full. When the complaints reach your desk, remember whose arithmetic asked for them.
 
 ### P1-COUNTY-B — "Minutes to the bedside"
 - tag: B
 - summary: Sign a different commitment: every hour the machine frees goes back to the patients: longer visits, fuller wards, and the paperwork simply dies. You do it because care is the one service where presence is the product, and a county that forgets that cannot be trusted with machines. The savings the state already booked from you do not come.
 - effects: LEG +0.4
 - data: bedside +7, books -3, trust +2
+- said: I signed the other commitment: every hour the machine frees goes back to the patients. Longer visits, fuller wards. Care is the one service where presence is the product, and a county that forgets that cannot be trusted with machines.
+- aftermath: The wards get warmer, and the savings the state already booked from you do not come.
+- to PM: The savings you booked from my counties are not coming. The hours went back to the patients they were taken from; book that instead.
 
 ### P1-COUNTY-H — "Let the lab run care"
 - tag: H
@@ -67,6 +98,11 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - effects: PRO +0.7, LEG −0.6, POLL −2
 - data: bedside +5, care_gap -3, days -8, share -5, trust -4, stay -4
 - hook: SILENT
+- said: I took the meeting the rest of you refused. The lab runs care end to end, better and cheaper, on its own systems, starting with the pilots. My patients are waiting now, and the lab's results are real.
+- aftermath: The data, the jobs and the right to say no later leave in the same contract. The queues shorten while it is being signed.
+- to HVK: Care now runs on systems no Finnish authority can inspect or restart. I know exactly what that does to your continuity math. My queues outvoted it.
+- to SAK: The lab brings its own staffing model. The care agreements your members hold end at the pilot's border; I chose the patients over the payroll.
+- to STARTUP: The care market you were building toward is now the lab's reference site. Whatever you sell to the counties, you sell through them.
 
 ## TI (modifier)
 
@@ -75,12 +111,20 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - summary: Publish industry's position: the state must buy the best deal on earth, no home-team sentiment. You do it because your members pay the taxes behind every romantic procurement, and credible neutrality is what keeps foreign capital treating Finland as a serious place. The Finnish bidders lose their decade.
 - effects: PRO +0.5, POLL −1
 - data: books +4, pull +2, stay -4
+- said: I published industry's position: the state buys the best deal on earth, no home-team sentiment. My members pay the taxes behind every romantic procurement, and credible neutrality is what keeps foreign capital treating Finland as serious.
+- aftermath: The Finnish bidders lose their decade, and they know exactly whose statement priced them out.
+- to PM: My statement gave you cover for the cheap tender; your savings math got easier the day it ran. You owe industry nothing for it except the same neutrality back.
+- to STARTUP: I priced your consortium out in public, and I will not apologize for it. Win somewhere harder than a protected home market, and my members will be your first customers.
 
 ### P1-TI-B — "A domestic premium"
 - tag: B
 - summary: Publish the opposite: pay more, this once, and buy Finnish, because the state's platform is the reference that builds an export industry. You do it because order books are what your members ultimately need, and a domestic AI sector would feed them for twenty years. Today's taxpayer covers the difference.
 - effects: PRO +0.2
 - data: stay +5, pull +1, books -3
+- said: I asked the state to pay more, this once, and buy Finnish. The platform is the reference that builds an export industry, and order books are what my members ultimately need. A domestic AI sector would feed them for twenty years.
+- aftermath: Today's taxpayer covers the difference, and every future tender cites the precedent.
+- to PM: The premium comes out of your framework, I know. Call it industrial policy with a receipt: the return address is twenty years of export tax base.
+- to STARTUP: Industry just asked the state to overpay for you. There will not be a second letter like it; be worth the first one.
 
 ### P1-TI-H — "The state as a product"
 - tag: H
@@ -88,6 +132,10 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - effects: PRO +0.8, LEG −0.4
 - data: pull +6, stay +4, books +2, trust -3, share -3
 - hook: SILENT
+- said: I proposed the joint venture: package the automated Finnish state and sell it to other countries. Finland's real export was always institutions, and this is the century's one chance to price them.
+- aftermath: The state stops being neutral the day it has shareholders, and everyone negotiating with it starts pricing that in.
+- to PM: I put a revenue line where your cost line was: the automated state, exported. You give up the state's neutrality; you gain a product with your flag on it.
+- to SAK: When the state becomes a product, its workers become the product's cost base. Your bargaining table just acquired shareholders; I would arm accordingly.
 
 ## AALTO (modifier)
 
@@ -97,6 +145,9 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - effects: PRO +0.4
 - data: ladder -3, pub_ai +1, stay +2
 - flags: TALENT_PIPE=strong
+- said: I poured the faculty budget into the top: doctoral schools and elite AI engineering, the few hundred who can build the state's machine. If Finns do not build it, Finland merely operates it.
+- aftermath: The ten thousand displaced clerks become someone else's syllabus, and they will notice that no one claimed them.
+- to STARTUP: The pipeline now produces the engineers you keep flying in from Zurich. Four years; hold on that long.
 
 ### P1-AALTO-B — "A floor for the many"
 - tag: B
@@ -104,6 +155,9 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - effects: LEG +0.4
 - data: ladder +6, share +2, books -2
 - flags: TALENT_PIPE=weak; RETRAIN=broad
+- said: I spread the budget wide: retraining for the displaced, AI literacy in every degree, nobody left unable to read the new state. The university's promise was never only to the brilliant, and a country of bystanders is ungovernable.
+- aftermath: The elite pipeline thins, and the state's machine gets built by people trained somewhere else.
+- to SAK: Your retraining clauses have a university behind them now: real courses, real capacity, this autumn. Send me the displaced before they stop believing in doors.
 
 ### P1-AALTO-H — "AI tutors take the lectures"
 - tag: H
@@ -112,6 +166,10 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - data: ladder +3, books +3, trust -2, stay -3
 - flags: TALENT_PIPE=weak
 - hook: SILENT
+- said: I signed the tutor contract: the machines teach the courses, and the university narrows to setting and examining the standard. It costs a tenth as much and, honestly, teaches the average course better than the average lecturer.
+- aftermath: What remains of a university afterwards is now your gamble, and every faculty meeting reminds you of it.
+- to PM: I just showed your budget office what a tenth of the cost looks like in education. You are welcome, and I am sorry.
+- to STARTUP: The graduates you interview from now on were taught by the vendor's tutors. Whatever the machines could not teach is what you will be hiring for.
 
 ## STARTUP (modifier)
 
@@ -120,12 +178,19 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - summary: Put your company's name at the front of the Finnish consortium bidding for the state platform. You do it because somebody local has to become big enough to matter, and the state's contract is the only ladder to that size. If the build fails, your name is on the failure, and everyone who backed a champion pays with you.
 - effects: PRO +0.4
 - data: stay +6, days +2, sov_share +2
+- said: I put our name at the front of the Finnish consortium. Somebody local has to become big enough to matter, and the state's contract is the only ladder to that size.
+- aftermath: If the build fails, your name is on the failure, and everyone who backed a champion pays with you.
+- to PM: You have a domestic bidder with its name on the line, which is worth more than a discount. If we deliver, the reference is yours to sell. If we fail, you will not need to fire me; the market will.
+- to HVK: A domestic prime contractor means systems your inspectors can walk into. That is cheaper insurance than any clause you will ever write.
 
 ### P1-STARTUP-B — "Fair market, no favours"
 - tag: B
 - summary: Stay out of the consortium, take subcontracts on merit, keep scaling your own product abroad. You do it because companies built on political favours die of them later, and your investors did not fund a national monument. The state's plumbing goes to whoever wins, and it will not be Finland.
 - effects: PRO +0.2
 - data: pull +4, stay -4
+- said: We stayed out of the consortium, took subcontracts on merit, and kept scaling our own product abroad. Companies built on political favours die of them later, and my investors did not fund a national monument.
+- aftermath: The state's plumbing goes to whoever wins, and it will not be Finland. Your growth chart stays clean of it.
+- to TI: Your members wanted suppliers priced by competition; that is what I stayed. The signal to foreign capital came free.
 
 ### P1-STARTUP-H — "The reverse acquihire"
 - tag: H
@@ -133,6 +198,10 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - effects: PRO +0.6, RES −0.3
 - data: stay +5, pub_ai +2, days -3, trust -3, ladder -2
 - hook: SILENT
+- said: I brokered the Turku deal: golden visas and a data-access agreement, a frontier team moved here wholesale. Talent is the only import that compounds, and homegrown scale takes a decade Finland does not have.
+- aftermath: The price is paid in data and in trust, on schedules nobody at this table controls.
+- to HVK: The team in Turku runs on data agreements your office never signed. I widened your attack surface, and I am betting it grows a defence industry around it.
+- to AALTO: I imported in one contract what your pipeline produces in five years. Your graduates now compete with the world's best over lunch. Some will call that unfair; the good ones will call it school.
 
 ## HVK (modifier)
 
@@ -142,6 +211,9 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - effects: RES +1.0, PRO −0.3
 - data: days +8, books -4
 - flags: SECURE_ARCH=yes
+- said: I used the statutory power over the tender: exit clauses, data on Finnish soil, tested fallbacks, in every contract, at fifteen percent extra. My office exists for the day the access stops.
+- aftermath: The fifteen percent comes out of services people can see, and you spend the year explaining an invisible purchase.
+- to PM: Your savings target just got fifteen percent heavier, by my signature. Cheap dependencies are how countries find out what they should have paid. Bill me at the next crisis.
 
 ### P1-HVK-B — "Capacity now"
 - tag: B
@@ -149,6 +221,9 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - effects: RES −0.3, PRO +0.3
 - data: books +4, days -2
 - flags: SECURE_ARCH=no
+- said: I waved the annex through: maximum capability for the money, single foreign supplier and all. Services failing visibly now is also a security risk, and insurance against a maybe is a hard sell in a tight budget. My objection is on file.
+- aftermath: The dependency is booked and running. Your leverage over it now lives in a filing cabinet.
+- to PM: I cleared your tender and saved your schedule. The objection on file is not decoration; when the access wobbles, that paper decides who resigns.
 
 ### P1-HVK-H — "The analog shadow state"
 - tag: H
@@ -157,3 +232,6 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - data: days +15, books -8, pub_ai -2
 - flags: SECURE_ARCH=no
 - hook: SILENT
+- said: I ordered the full fallback administration: paper, people, yearly drills, able to run the country with every machine dark. Everything digital is somebody else's eventually. My grandparents kept grain in silos for the same reason.
+- aftermath: It costs like an army and looks like paranoia until the day it does not, and you own that argument every budget round.
+- to PM: I took the cost of a small army out of your framework, for a state that works with the power off. You will hate me until the first outage, and then you will knight me.

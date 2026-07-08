@@ -41,7 +41,7 @@ import {
   EndstateScreen,
   FacilitatorBrief,
   PrimaryButton,
-  RevealScreen,
+  RevealFlow,
   SectionCard,
   WaitNote,
 } from './screens'
@@ -179,7 +179,7 @@ function SoloGame({
               <DecideScreen content={content} state={state} phase={phase} actor={state.playerActor} locked={{}} onLock={lock} />
             )}
             {state.stage === 'reveal' && state.results[state.phaseIdx] && (
-              <RevealScreen
+              <RevealFlow
                 content={content}
                 state={state}
                 phase={phase}
@@ -289,7 +289,7 @@ function WorkshopGame({
                 <WorkshopDecide content={content} server={server} session={session} game={game} phase={phase} act={act} />
               )}
               {server.stage === 'reveal' && game.results[server.phaseIdx] && (
-                <RevealScreen
+                <RevealFlow
                   content={content}
                   state={game}
                   phase={phase}

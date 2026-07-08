@@ -132,6 +132,11 @@ export function parseActions(md: string, phase: number): Record<ActorId, Action[
         flagSets: [],
       }
       for (const line of actSec.body.split('\n')) {
+        const toM = line.match(/^-\s*to\s+([A-Z]+):\s*(.*)$/)
+        if (toM && (ACTORS as readonly string[]).includes(toM[1])) {
+          ;(action.to ??= {})[toM[1] as ActorId] = toM[2].trim()
+          continue
+        }
         const f = line.match(/^-\s*(\w+):\s*(.*)$/)
         if (!f) continue
         const [, key, val] = f
@@ -159,6 +164,12 @@ export function parseActions(md: string, phase: number): Record<ActorId, Action[
             break
           case 'hook':
             action.hook = val.trim()
+            break
+          case 'said':
+            action.said = val.trim()
+            break
+          case 'aftermath':
+            action.aftermath = val.trim()
             break
           case 'requires':
             action.requiresRaw = val.trim()

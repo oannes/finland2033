@@ -584,6 +584,102 @@ export function RevealScreen({
   )
 }
 
+// ---------- Debrief dialogue (before the reveal) ----------
+
+/** The table debrief: you explain your call, then the actors whose moves
+ * touch your world answer. Beats reveal one by one; content comes from the
+ * `said:` / `aftermath:` / `to X:` lines in actions.md. */
+export function DebriefScreen({
+  phase,
+  result,
+  viewerActor,
+  onContinue,
+}: {
+  phase: PhaseContent
+  result: PhaseResult
+  viewerActor: ActorId
+  onContinue: () => void
+}) {
+  const era = eraForPhase(phase.idx)
+  const you = viewerActor
+  const yourAction = phase.actions[you].find((x) => x.id === result.choices[you])
+  const beats = useMemo(() => {
+    const list: { kind: 'you' | 'narr' | 'other'; actor?: ActorId; actTitle?: string; text: string }[] = []
+    if (yourAction?.said) list.push({ kind: 'you', actor: you, actTitle: yourAction.title, text: yourAction.said })
+    if (yourAction?.aftermath) list.push({ kind: 'narr', text: yourAction.aftermath })
+    for (const a of ACTORS) {
+      if (a === you) continue
+      const act = phase.actions[a].find((x) => x.id === result.choices[a])
+      const line = act?.to?.[you]
+      if (act && line) list.push({ kind: 'other', actor: a, actTitle: act.title, text: line })
+    }
+    return list
+  }, [phase, result, you, yourAction])
+  const [step, setStep] = useState(1)
+  const done = step >= beats.length
+  return (
+    <div className="space-y-6">
+      <SectionCard>
+        <p className="text-[11px] uppercase tracking-[0.2em] text-[#e8702a] mb-2">
+          {YEAR_BY_PHASE[phase.idx]} · Around the table
+        </p>
+        <h2 className="font-playfair italic text-3xl sm:text-4xl text-white mb-6">The decisions, face to face</h2>
+        <div className="space-y-6">
+          {beats.slice(0, step).map((b, i) =>
+            b.kind === 'narr' ? (
+              <p key={i} className="text-[14px] italic text-white/55 leading-relaxed pl-1 border-l-2 border-white/15 ml-1.5 pl-4">
+                {b.text}
+              </p>
+            ) : (
+              <div key={i} className="flex gap-4 items-start">
+                <Portrait slots={ACTOR_PORTRAITS[b.actor!]} era={era} name={SHORT_ROLE[b.actor!]} size="sm" />
+                <div className="flex-1">
+                  <div className="text-[11px] uppercase tracking-[0.15em] text-white/40 mb-1">
+                    {b.kind === 'you' ? `You — the ${SHORT_ROLE[b.actor!]}` : `The ${SHORT_ROLE[b.actor!]}`}
+                    {b.actTitle && <span className="normal-case tracking-normal text-white/30"> · “{b.actTitle}”</span>}
+                  </div>
+                  <p className="text-[14.5px] text-white/85 leading-relaxed">{b.text}</p>
+                </div>
+              </div>
+            ),
+          )}
+        </div>
+        <div className="flex justify-end mt-8">
+          {done ? (
+            <PrimaryButton onClick={onContinue}>What it adds up to →</PrimaryButton>
+          ) : (
+            <button
+              onClick={() => setStep(step + 1)}
+              className="text-sm text-white/60 hover:text-white border border-white/15 hover:border-white/40 rounded-full px-5 py-2 transition-colors"
+            >
+              Continue
+            </button>
+          )}
+        </div>
+      </SectionCard>
+    </div>
+  )
+}
+
+/** Reveal stage: the table debrief first (when a player seat is known and the
+ * content exists), then the collective reveal. */
+export function RevealFlow(props: Parameters<typeof RevealScreen>[0]) {
+  const { phase, result, viewerActor } = props
+  const [debriefedPhase, setDebriefedPhase] = useState<number | null>(null)
+  const yourAction = viewerActor ? phase.actions[viewerActor].find((x) => x.id === result.choices[viewerActor]) : null
+  if (viewerActor && yourAction?.said && debriefedPhase !== phase.idx) {
+    return (
+      <DebriefScreen
+        phase={phase}
+        result={result}
+        viewerActor={viewerActor}
+        onContinue={() => setDebriefedPhase(phase.idx)}
+      />
+    )
+  }
+  return <RevealScreen {...props} />
+}
+
 // ---------- Endstate ----------
 
 export function EndstateScreen({

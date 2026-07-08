@@ -61,6 +61,12 @@ export interface Action {
   hook?: string
   requires?: Requirement
   requiresRaw?: string
+  /** debrief dialogue: what the chooser says at the table, first person */
+  said?: string
+  /** debrief dialogue: narrator line on what the action sets in motion in the chooser's own corner */
+  aftermath?: string
+  /** debrief dialogue: lines addressed to specific other actors whose deal metrics this action moves */
+  to?: Partial<Record<ActorId, string>>
 }
 
 export interface ClashSide {
