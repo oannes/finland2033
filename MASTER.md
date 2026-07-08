@@ -801,7 +801,7 @@ The mandate passes, but not cleanly. One signature is missing, and it decides th
 
 Savings arrive at two-thirds of the booked target. The unresolved consent question does not go away. It compounds into 2029, when a workforce that was not asked will be told what its tools run on, and into 2031, when the bill is presented at the ballot box.
 
-In the go-live photograph, one chair at the table stands slightly pulled out, as if for someone who had not arrived yet.
+The go-live photograph shows eleven officials and twelve chairs. Nobody at Kela remembers ordering the twelfth.
 
 The year-end statistics carry the argument on both sides: {pub_ai}% of transactions automated, trust at {trust}%, approval at {poll}%. Everyone quotes the number that suits them; all of them are true.
 
@@ -911,7 +911,7 @@ The negotiated program passes: job-security law, retraining rights, gain-sharing
 
 Deployment is slower than the mandate promised and faster than anyone admits: staff who cannot lose their jobs migrate services with less friction, not more. The savings arrive late and smaller, the credit-watch letter arrives on schedule, and the base holds. What the guarantee is actually worth depends on next year's question: who it can be enforced against.
 
-The older negotiators had a private name for weeks like these: barn-raising weather.
+The older negotiators still call weeks like this barn-raising weather, from the years when neighbours owed each other roofs and everyone knew whose turn it was.
 
 The negotiated ledger, end of 2028: {pub_ai}% automated, slower than the mandate promised, trust holding at {trust}%, approval at {poll}%. The guarantee's price is visible; so is what it bought.
 
@@ -966,7 +966,7 @@ All three institutions sign: the job-security law, the gain-sharing clause, the 
 
 Deployment starts slow and compounds; by late 2028 the consent-gated migrations run at a pace the mandate's advocates said required coercion. The savings are honestly smaller and later. The government has traded fiscal credibility for social peace, and what that peace is worth will be decided by what it gets used for.
 
-In the signing photograph, if you look, there are eleven hands somewhere on the pen.
+In the signing photograph, eleven hands share the pen.
 
 The signing year closes at {pub_ai}% automation, trust at {trust}%, the highest at any Finnish fork this decade, and approval at {poll}%. Slow, argued, and standing.
 
@@ -1051,7 +1051,7 @@ The claim "the European tier is good enough for 80% of public tasks" is a slogan
 
 ## HVK
 
-Doctrine says critical functions belong on infrastructure Finland can inspect and, if needed, run alone. Your own services want the best models available, which are not European. Both statements are true, and you will be quoted either way. A colleague at the weather service claims she can read Washington in the pressure fronts. Lately she has stopped joking about it.
+Doctrine says critical functions belong on infrastructure Finland can inspect and, if needed, run alone. Your own services want the best models available, which are not European. Both statements are true, and you will be quoted either way. Your duty desk now logs Washington's policy signals in the same format it logs storm fronts: time received, likely landfall, expected damage. The format was borrowed from the weather service because it fit.
 
 **The decision.** The doctrine meets its price tag. Run-alone means the clock climbs while every service you protect resents the tools you cost them. Dependence-with-drills means engineering survivability into a lane you do not control. Or the offer from the alliance: Finland as everyone's civil-resilience laboratory, the clock funded by others, the word 'alone' quietly redefined.
 
@@ -1308,7 +1308,7 @@ Finland declares, migrates, and means it: public core on the European tier, an a
 
 The costs are honest too. Throughput dips while services migrate, the gap chart on every front page keeps growing, and the opposition's poster writes itself. What does not happen: no attestation queue, no annex, no foreign counsel reviewing the job-security law. By year's end two more countries copy the certification language.
 
-The week of the declaration, a cold front crossed in from the east, and for once the papers called it bracing.
+That quarter's border report allowed itself one editorial sentence: neighbours notice what cannot be switched off from abroad.
 
 The migration year's balance: sovereign share at {sov_share}%, public AI at {pub_ai}%, trust at {trust}%; while the capability gap grows to {cap_gap} months, exactly as the chart said it would.
 
@@ -1430,7 +1430,7 @@ No national line survives contact with the institutions. Ministries attest, coun
 
 Every individual choice is defensible. The combination cannot answer the one question Brussels and Washington both ask: what does Finland run on? The costs are quiet and everywhere, and a 30% overhead for running everything twice gets a parliamentary question and no owner.
 
-On the eastern lakes the ice formed early that winter, indifferent to procurement.
+That winter's national defence course ran its exercise on the assumption that a crisis would not wait for the procurement disputes to resolve. Nobody called the assumption unfair.
 
 The split state's ledger, 2029: sovereign share {sov_share}%, trust down to {trust}%, approval at {poll}%, and a 30% optionality tax nobody's budget names. The gap: {cap_gap} months and widening.
 
@@ -2057,7 +2057,7 @@ The settlement signs in February: the megaproject's realized savings flow to ret
 
 The election becomes a referendum on a settlement instead of a grievance. Turnout among the young rises for the first time since 2015, and the machine keeps grinding, its proceeds visibly someone's. The lesson: done at the right moment, negotiation was not the obstacle to productivity. It was the technology.
 
-The final session was moved to August. Nothing in this country has ever been signed in July, and nobody in the room questioned why.
+The final session was moved to August. Several negotiators said afterwards that the settlement held because of July: a month in which nobody is anybody’s counterparty.
 
 The settlement's first accounting: youth unemployment at {youth_u}% and falling, the care gap at {care_gap},000 and closing, trust at {trust}%, approval at {poll}%. Maria is {maria_mood}; Eetu is {eetu_mood}. The placard came down.
 
@@ -2285,7 +2285,7 @@ Full consolidation, cleanly executed, and the foreign press is impressed. The pr
 
 Except one. Trust falls to a series low, union density among the young follows, and the demonstrators stop asking where the money went because they stopped believing the answer was pending. The state was not renegotiated. It was refinanced, and everyone under forty noticed the difference.
 
-Cottage bookings ran longer that summer than in any year on record. Nobody connected it to anything.
+Cottage bookings ran longer that summer than in any recorded year. The dashboards filed it under leisure trends; the resignation letters from the care wards filed it under reasons.
 
 The profile's own numbers, printed without comment: public AI {pub_ai}%, care gap {care_gap},000; trust {trust}%, a series low; youth unemployment {youth_u}%. Maria is {maria_mood}; Eetu is {eetu_mood}. Every index green but one.
 

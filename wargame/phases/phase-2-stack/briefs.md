@@ -38,7 +38,7 @@ The claim "the European tier is good enough for 80% of public tasks" is a slogan
 
 ## HVK
 
-Doctrine says critical functions belong on infrastructure Finland can inspect and, if needed, run alone. Your own services want the best models available, which are not European. Both statements are true, and you will be quoted either way. A colleague at the weather service claims she can read Washington in the pressure fronts. Lately she has stopped joking about it.
+Doctrine says critical functions belong on infrastructure Finland can inspect and, if needed, run alone. Your own services want the best models available, which are not European. Both statements are true, and you will be quoted either way. Your duty desk now logs Washington's policy signals in the same format it logs storm fronts: time received, likely landfall, expected damage. The format was borrowed from the weather service because it fit.
 
 **The decision.** The doctrine meets its price tag. Run-alone means the clock climbs while every service you protect resents the tools you cost them. Dependence-with-drills means engineering survivability into a lane you do not control. Or the offer from the alliance: Finland as everyone's civil-resilience laboratory, the clock funded by others, the word 'alone' quietly redefined.
 
