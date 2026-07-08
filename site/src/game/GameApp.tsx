@@ -22,6 +22,10 @@ import Sidebar from './Sidebar'
 
 /** Seat labels and one-line intros for seat selection. Roles only — the
  * character's personal name is never shown to the player. */
+/** Workshop mode needs the game server (server.mjs) — hidden on static hosts
+ * like GitHub Pages, where the build runs under a /repo/ base path. */
+export const WORKSHOP_ENABLED = import.meta.env.BASE_URL === '/'
+
 const SEAT_INTROS: Record<ActorId, { role: string; line: string }> = {
   PM: { role: 'Prime Minister', line: 'Money and political capital. You can spend one to buy the other.' },
   SAK: { role: 'Union confederation chair', line: 'Consent or stalemate. Nobody automates a workforce that refuses.' },
@@ -47,9 +51,9 @@ export default function GameApp() {
   const [solo, setSolo] = useState<GameState | null>(null)
   const [session, setSession] = useState<Session | null>(() => loadSession())
   // #/play/solo and #/play/workshop preselect the mode (the landing page carries the choice)
-  const preselect = window.location.hash.includes('/workshop')
+  const preselect = WORKSHOP_ENABLED && window.location.hash.includes('/workshop')
     ? ('workshop' as const)
-    : window.location.hash.includes('/solo')
+    : window.location.hash.includes('/solo') || !WORKSHOP_ENABLED
       ? ('solo' as const)
       : null
 
@@ -531,12 +535,14 @@ function ModeSelect({
           >
             <div className="font-playfair italic text-2xl text-white">Play alone</div>
           </button>
-          <button
-            onClick={() => setMode('workshop')}
-            className="text-left rounded-2xl border p-6 transition-all border-white/15 hover:border-white/35"
-          >
-            <div className="font-playfair italic text-2xl text-white">Workshop</div>
-          </button>
+          {WORKSHOP_ENABLED && (
+            <button
+              onClick={() => setMode('workshop')}
+              className="text-left rounded-2xl border p-6 transition-all border-white/15 hover:border-white/35"
+            >
+              <div className="font-playfair italic text-2xl text-white">Workshop</div>
+            </button>
+          )}
         </div>
       )}
 
