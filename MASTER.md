@@ -365,7 +365,7 @@ The global capital cycle and the frontier's pace; your members ride both and ste
 
 ## Seat
 
-quote: Washington and Beijing discuss the top models the way an earlier generation discussed enriched uranium. Access is a valve, and the hand on it is not ours. How many days could Finland stand alone, and who is counting?
+quote: The best models are no longer sold, they are allocated, like oil in wartime, and someone else keeps the ledger. My job is stockpiles: grain, fuel, medicine. How do you stockpile intelligence?
 
 ## Who you are
 Director of HVK, 2028. Your agency stockpiles fuel, grain and medicine for a country that plans for the worst as a civic habit. Since 2026 you have co-authored (with Traficom) guidance on secure AI-agent deployment, and you have been arguing, to polite smiles, that inference capacity now belongs in the same category as diesel. The 2028 correction is your window: hardware is cheap, halls are empty, and TR-7 (11 cut cables) makes your case nightly.
