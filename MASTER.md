@@ -86,12 +86,6 @@ Finland has failed him. Can that failure still be repaired in an age when AI can
 ## another-chance
 headline: 2027. Another chance.
 
-In Tampere, a forest-industry CFO freezes the AI budget mid-quarter. The same memo is being written, in other languages, in a hundred thousand companies at once.
-
-The squeeze travels up the chain. Margins thin at the frontier labs just as their infrastructure bills peak. Inside the labs, programmers have begun handing their own work completely to the machines. Each model generation now helps design the next. The people closest to this shift no longer predict capability gains in years, but in quarters.
-
-The shape of the coming decade is visible at the edges. Ordinary work gets cheaper every quarter: what cost a salary in 2024 costs a subscription in 2026. The very best models move the other way. They stay scarce, priced, and politically allocated, more like refined fuel than software. In Washington and Beijing, officials have started discussing top models the way an earlier generation discussed enriched uranium. Throughout the globe, most new factories are designed without lighting for the production floor; they employ almost no one but machines. 
-
 A left-leaning government, carried to power by public-sector workers and older voters, takes office. In the April 2027 election, the leading party promised only little. It won because the country had grown tired of austerity without growth.
 
 But power brings responsibility, and not only for the government. Whether the state automates, whose machines it relies on, and who receives the gains are no longer technical questions alone. They are the terms of a new social contract that Finland must now create.
