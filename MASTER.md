@@ -453,7 +453,7 @@ Each brief: one situation paragraph, then the decision background.
 
 ## PM
 
-The previous government left you a machine already running. Two years ago it set up a high-level task force with a mandate to find every major life event where a citizen meets the state (a birth, a job loss, a diagnosis, a death) and rebuild those services around AI, fast. The build sits with a partly state-owned IT consultancy on a budget of one billion euros. The press calls it the megaproject. Machine cognition now costs a third of what it did two years ago, and the vendors need a flagship contract. Your own spending framework already books the megaproject's savings; without them, 2029–32 means cuts worth 1.9% of GDP, announced by you. Meanwhile 68% of public-sector workers expect their job to change, and most of them voted for you.
+The previous government left you a machine already running. Two years ago it set up a high-level task force with a mandate to find every major life event where a citizen meets the state (a birth, a job loss, a diagnosis, a death) and rebuild those services around AI, fast. The build sits with a partly state-owned IT consultancy on a budget of one billion euros. The press calls it the megaproject. Inside the task force its working name was Talkoot; the consultants translate it as 'joint effort' and bill accordingly. Machine cognition now costs a third of what it did two years ago, and the vendors need a flagship contract. Your own spending framework already books the megaproject's savings; without them, 2029–32 means cuts worth 1.9% of GDP, announced by you. Meanwhile 68% of public-sector workers expect their job to change, and most of them voted for you.
 
 **The decision.** The scale-up bill goes to Parliament in six weeks, with your name on it or not at all. Book the savings, and the framework breathes while the offices your voters work in absorb the shock. Protect the experience, and the people are spared while the bond desks reprice your credibility. And there is the door nobody serious opens in daylight: rent the whole state from the winning vendor, bank the difference, and let a foreign board hold the plumbing. You cannot have the savings, the peace, and the ownership.
 
@@ -746,6 +746,8 @@ Parliament passes the megaproject statute in November 2027 with the savings targ
 
 So is the anger. The government automated its own voters' desks on management's terms, and the base knows who signed. Union locals that campaigned for this coalition now organize against its flagship. The 2029 municipal elections are already being called a referendum on betrayal.
 
+The meeting where it truly passed kept no minutes. The important ones never do.
+
 By December 2028 the scoreboard reads: {pub_ai}% of public transactions with AI in the loop, trust in government at {trust}%, youth unemployment at {youth_u}%, and the government's approval at {poll}%. The statute delivered its numbers; the question is who pays for them in 2029.
 
 ## Flags
@@ -798,6 +800,8 @@ adjustments:
 The mandate passes, but not cleanly. One signature is missing, and it decides the flavour: consent gates slow the counties, or a strike ballot shadows every migration, or the statute arrives after the counties already moved. The platform runs; the program argues with itself in public.
 
 Savings arrive at two-thirds of the booked target. The unresolved consent question does not go away. It compounds into 2029, when a workforce that was not asked will be told what its tools run on, and into 2031, when the bill is presented at the ballot box.
+
+During the first go-live, a stray dog walked into the Kela lobby and refused, with great dignity, to leave. Staff fed it for a week.
 
 The year-end statistics carry the argument on both sides: {pub_ai}% of transactions automated, trust at {trust}%, approval at {poll}%. Everyone quotes the number that suits them; all of them are true.
 
@@ -854,6 +858,8 @@ The megaproject shrinks to a pilot: two agencies, two years, an evaluation claus
 
 The queues do not pilot. Care backlogs grow while the evaluation methodology is negotiated, and the reformers who came back for this read the signal and start answering recruiters again. The drift has no author. That is what it costs.
 
+On Kehä III that autumn, a lone elk stopped six lanes of traffic for eleven minutes. Nobody honked.
+
 The pilot state has its own arithmetic: public AI stalls at {pub_ai}%, the care gap grows to {care_gap},000 unfilled posts, and approval drifts to {poll}%. Nothing failed. Nothing moved.
 
 ## Flags
@@ -904,6 +910,8 @@ adjustments:
 The negotiated program passes: job-security law, retraining rights, gain-sharing, with one corner of the triangle missing. The guarantee is real but unevenly anchored, strongest where all three institutions signed.
 
 Deployment is slower than the mandate promised and faster than anyone admits: staff who cannot lose their jobs migrate services with less friction, not more. The savings arrive late and smaller, the credit-watch letter arrives on schedule, and the base holds. What the guarantee is actually worth depends on next year's question: who it can be enforced against.
+
+The older negotiators had a private name for weeks like these: barn-raising weather.
 
 The negotiated ledger, end of 2028: {pub_ai}% automated, slower than the mandate promised, trust holding at {trust}%, approval at {poll}%. The guarantee's price is visible; so is what it bought.
 
@@ -957,6 +965,8 @@ adjustments:
 All three institutions sign: the job-security law, the gain-sharing clause, the consent gates. The full negotiated program, done the way Finland used to do hard things. Two European ministries request the documents within a month.
 
 Deployment starts slow and compounds; by late 2028 the consent-gated migrations run at a pace the mandate's advocates said required coercion. The savings are honestly smaller and later. The government has traded fiscal credibility for social peace, and what that peace is worth will be decided by what it gets used for.
+
+In the signing photograph, if you look, there are eleven hands somewhere on the pen.
 
 The signing year closes at {pub_ai}% automation, trust at {trust}%, the highest at any Finnish fork this decade, and approval at {poll}%. Slow, argued, and standing.
 
@@ -1041,7 +1051,7 @@ The claim "the European tier is good enough for 80% of public tasks" is a slogan
 
 ## HVK
 
-Doctrine says critical functions belong on infrastructure Finland can inspect and, if needed, run alone. Your own services want the best models available, which are not European. Both statements are true, and you will be quoted either way.
+Doctrine says critical functions belong on infrastructure Finland can inspect and, if needed, run alone. Your own services want the best models available, which are not European. Both statements are true, and you will be quoted either way. Your duty officer's night log still opens, by a tradition nobody remembers starting, with the length of the eastern border in kilometres.
 
 **The decision.** The doctrine meets its price tag. Run-alone means the clock climbs while every service you protect resents the tools you cost them. Dependence-with-drills means engineering survivability into a lane you do not control. Or the offer from the alliance: Finland as everyone's civil-resilience laboratory, the clock funded by others, the word 'alone' quietly redefined.
 
@@ -1298,6 +1308,8 @@ Finland declares, migrates, and means it: public core on the European tier, an a
 
 The costs are honest too. Throughput dips while services migrate, the gap chart on every front page keeps growing, and the opposition's poster writes itself. What does not happen: no attestation queue, no annex, no foreign counsel reviewing the job-security law. By year's end two more countries copy the certification language.
 
+The week of the declaration, border guards in Kainuu logged a brown bear crossing into Finland and, against all habit, staying.
+
 The migration year's balance: sovereign share at {sov_share}%, public AI at {pub_ai}%, trust at {trust}%; while the capability gap grows to {cap_gap} months, exactly as the chart said it would.
 
 ## Flags
@@ -1356,6 +1368,8 @@ adjustments:
 The sovereign line holds, with an asterisk that varies by row: a flagship attesting the other way, wards buying frontier medicine, or a state that declared last and claims credit. The core migrates; something visible migrates in the other direction at the same time.
 
 Migration is real but two-speed. Casework moves; the most capability-hungry services lag or exempt themselves. Finland's position improves where migration finished and stays exposed exactly where the exceptions live. Someone in Washington keeps the same list.
+
+At the ministry's stakeholder seminar, an original Nokia ringtone went off in the third row. Half the room smiled before catching itself.
 
 Two-speed shows up in the numbers: sovereign share reaches {sov_share}% while the exceptions keep their lanes; trust sits at {trust}%, approval at {poll}%. The gap grows to {cap_gap} months, indifferent.
 
@@ -1416,6 +1430,8 @@ No national line survives contact with the institutions. Ministries attest, coun
 
 Every individual choice is defensible. The combination cannot answer the one question Brussels and Washington both ask: what does Finland run on? The costs are quiet and everywhere, and a 30% overhead for running everything twice gets a parliamentary question and no owner.
 
+On the eastern lakes the ice formed early that winter, indifferent to procurement.
+
 The split state's ledger, 2029: sovereign share {sov_share}%, trust down to {trust}%, approval at {poll}%, and a 30% optionality tax nobody's budget names. The gap: {cap_gap} months and widening.
 
 ## Flags
@@ -1473,6 +1489,8 @@ Finland signs the tiered-access agreement and most of the state moves onto the l
 
 The price is in the annex: attestations, audit rights, alignment commitments, reviewed on a schedule Finland does not set. The dissenting pocket becomes the political story, proof to one camp that sovereignty was viable and to the other that it was boutique. The next tightening will grade the trade.
 
+A translator working on the annex noted in the margin that lane and corridor are the same word in several of the languages nobody had consulted.
+
 The lane's first-year numbers make the case and the counter-case: public AI jumps to {pub_ai}%, sovereign share falls to {sov_share}%, trust reads {trust}%. The gap grows to {cap_gap} months; on Finland's side of the counter, for now.
 
 ## Flags
@@ -1529,6 +1547,8 @@ adjustments:
 State, services and sector align on the capability lane. Throughput jumps within two quarters, diagnostic accuracy improves, and the deployment-gap headlines flip tone. On every metric that fits in a chart, this is the year Finland caught the frontier.
 
 On the metric that does not: the public core now runs under attestation, with audit rights held by a counterparty whose elections Finland does not vote in. The classification arrives stamped "dependent, assured". Nobody hides it. The lane's terms can move, and that is not a Finnish decision.
+
+Outside the signing, a pensioner hummed the first bars of the anthem and left the line about poverty unsung.
 
 The capability year, measured: {pub_ai}% of transactions automated, care gap down to {care_gap},000, youth unemployment at {youth_u}%, and sovereign share at {sov_share}%, the lowest in the EU's classification. Every chart green but the one nobody frames.
 
@@ -2037,6 +2057,8 @@ The settlement signs in February: the megaproject's realized savings flow to ret
 
 The election becomes a referendum on a settlement instead of a grievance. Turnout among the young rises for the first time since 2015, and the machine keeps grinding, its proceeds visibly someone's. The lesson: done at the right moment, negotiation was not the obstacle to productivity. It was the technology.
 
+The final session was moved to August. Nothing in this country has ever been signed in July, and nobody in the room questioned why.
+
 The settlement's first accounting: youth unemployment at {youth_u}% and falling, the care gap at {care_gap},000 and closing, trust at {trust}%, approval at {poll}%. Maria is {maria_mood}; Eetu is {eetu_mood}. The placard came down.
 
 ## Flags
@@ -2091,6 +2113,8 @@ adjustments:
 The dividend passes with a corner missing: industry litigating the levy, labour's signature sectoral instead of national, or a settlement formed around a reluctant government. The money moves, but every stream is thinner than the press release and one is in court.
 
 What the thin version buys is precedent: the machine's proceeds are now negotiable by law. What it does not buy is compounding. The queues bend slower, and the cohort's manifesto stays in print.
+
+A photograph circulated from the budget talks: on the minister's desk, beside the folders, a small ceramic pig with a taped-over slot.
 
 The thin dividend still moves the numbers: youth unemployment {youth_u}%, care gap {care_gap},000, trust {trust}%, approval {poll}%. Enough to point at; not enough to campaign on twice.
 
@@ -2147,6 +2171,8 @@ No allocation passes before the vote. The savings sit in the general fund while 
 
 The campaign is the ugliest in memory. Automation becomes a culture war, the machine runs on unmanaged, and whatever government emerges inherits the dividend question unspent, plus interest. Gains without distribution get politically repossessed. The punt did not defer the decision; it changed what kind of question it was.
 
+At the demonstrations, someone always started the anthem and always stopped after the first line, as if checking whether it was still true.
+
 The punt's arithmetic arrives anyway: youth unemployment {youth_u}%, care gap {care_gap},000, trust down to {trust}%, approval at {poll}%. Maria is {maria_mood}; Eetu is {eetu_mood}. The money is still in the account.
 
 ## Flags
@@ -2202,6 +2228,8 @@ Consolidation passes against visible resistance: debt paydown, the defence path,
 
 What the balance sheet does not buy is a story for the people the machine displaced. Retraining stays a pilot, care reinvestment becomes a working group, and the placard gets its answer: the money went to the books. The books do not vote. Their casualties do.
 
+The Treasury's written defence ended the way such documents here always end: by recalling that Finland once paid its war reparations in full.
+
 Consolidation's ledger balances: public AI at {pub_ai}%, approval at {poll}%, and trust at {trust}%, youth unemployment at {youth_u}%. The books close; the argument doesn't.
 
 ## Flags
@@ -2256,6 +2284,8 @@ adjustments:
 Full consolidation, cleanly executed, and the foreign press is impressed. The profile runs in March: how Finland automated its state and balanced its books. Every chart in it points the right way.
 
 Except one. Trust falls to a series low, union density among the young follows, and the demonstrators stop asking where the money went because they stopped believing the answer was pending. The state was not renegotiated. It was refinanced, and everyone under forty noticed the difference.
+
+Cottage bookings ran longer that summer than in any year on record. Nobody connected it to anything.
 
 The profile's own numbers, printed without comment: public AI {pub_ai}%, care gap {care_gap},000; trust {trust}%, a series low; youth unemployment {youth_u}%. Maria is {maria_mood}; Eetu is {eetu_mood}. Every index green but one.
 
