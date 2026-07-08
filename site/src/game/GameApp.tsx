@@ -558,7 +558,7 @@ function ModeSelect({
                   actor === a ? 'border-[#e8702a] bg-[#e8702a]/10' : 'border-white/10 hover:border-white/30'
                 }`}
               >
-                <Portrait slots={ACTOR_PORTRAITS[a]} era="now" name={SEAT_INTROS[a].role} size="seat" />
+                <Portrait slots={ACTOR_PORTRAITS[a]} era="now" name={SEAT_INTROS[a].role} size="fullseat" />
                 <div>
                   {content.actors[a].seatQuote ? (
                     <>

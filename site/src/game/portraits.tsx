@@ -41,10 +41,16 @@ export type Era = 'now' | '2028' | '2033'
 /** Display names for the followed lives (internal ids stay MARJA/EETU in the content files). */
 export const PERSONA_NAMES: Record<PersonaId, string> = { MARJA: 'Maria', EETU: 'Eetu' }
 
-type Slots = Partial<Record<Era, string>> & { env?: string }
+type Slots = Partial<Record<Era, string>> & { env?: string; full?: string }
 
 function slotsFor(id: string): Slots {
-  return { now: asset(`${id}-now`), '2028': asset(`${id}-2028`), '2033': asset(`${id}-2033`), env: asset(`${id}-env`) }
+  return {
+    now: asset(`${id}-now`),
+    '2028': asset(`${id}-2028`),
+    '2033': asset(`${id}-2033`),
+    env: asset(`${id}-env`),
+    full: asset(`${id}-full`),
+  }
 }
 
 export const PERSONA_PORTRAITS: Record<PersonaId, Slots> = {
@@ -136,10 +142,10 @@ export function Portrait({
   slots: Slots
   era?: Era
   name: string
-  size?: 'xs' | 'sm' | 'seat' | 'md' | 'lg'
+  size?: 'xs' | 'sm' | 'seat' | 'fullseat' | 'md' | 'lg'
   className?: string
 }) {
-  const src = slots[era] ?? slots.now
+  const src = (size === 'fullseat' ? slots.full : undefined) ?? slots[era] ?? slots.now
   const dims =
     size === 'xs'
       ? 'w-7 h-7 rounded-full'
@@ -147,9 +153,11 @@ export function Portrait({
         ? 'w-12 h-12 rounded-xl'
         : size === 'seat'
           ? 'w-[68px] h-[90px] rounded-xl'
-          : size === 'md'
-            ? 'w-24 h-32 rounded-xl'
-            : 'w-full max-w-[240px] aspect-[2/3] rounded-2xl'
+          : size === 'fullseat'
+            ? 'w-[84px] h-[126px] rounded-xl'
+            : size === 'md'
+              ? 'w-24 h-32 rounded-xl'
+              : 'w-full max-w-[240px] aspect-[2/3] rounded-2xl'
   if (!src) {
     return (
       <div
