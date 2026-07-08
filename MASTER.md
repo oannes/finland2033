@@ -2598,7 +2598,7 @@ at rung 3 on the American stack.
 # Epilogue — the street and Mummotunneli
 
 Line grammar: `NAME: text` is a spoken voice line (names in CAPS: MARIA, EETU,
-RAJA, TALKOOT, NOKIA, VELKA, METSÄ, MUMMOTUNNELI, YOUR FINNISH GENES).
+RAJA, TALKOOT, NOKIA, VELKA, METSÄ, MUMMOTUNNELI).
 `> text` is narration. Lowercase `key: value` lines are settings the site reads.
 {tokens} interpolate from the playthrough: {role} {metric} {recap} {met} {missed}
 {trust} {sov_share}. Keep section slugs; edit all text freely.
@@ -2706,7 +2706,7 @@ button: Enter
 
 ## tunnel/intro
 > You emerge from the dark corridor into a narrow, open alley. Someone has strung a single light. Under a terrace umbrella, five animals sit around a table that is too small for them: a cow, a pig, an elk, a bear and a dog.
-YOUR FINNISH GENES: Instinctively, you know what these are. Spirits. The old keepers.
+> Instinctively, you know what these are. Spirits. The old keepers.
 > The dog is Talkoot, the ghost of consensus. The bear is Raja, the shiver of the east. The cow is Nokia, the ghost of the miracle past. The pig is Velka, the Lutheran soul. The elk is Metsä, the one who rarely speaks.
 METSÄ: Join us, space monkey.
 + Sit at their table

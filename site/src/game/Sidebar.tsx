@@ -3,7 +3,7 @@ import { ChevronDown, ChevronRight } from 'lucide-react'
 import type { ActorId, GameContent, GameState, GoalStatus, PersonaId } from './types'
 import { ACTORS, PERSONA_PINS, PERSONAS } from './types'
 import { evaluateGoals, latestPersonaRung, NODE_YEARS, outcomeBaseData } from './engine'
-import { eraForPhase, moodFor, MoodFace, PERSONA_NAMES, PERSONA_PORTRAITS, Portrait } from './portraits'
+import { eraForPhase, moodFor, MoodFace, PERSONA_NAMES } from './portraits'
 
 const YEARS = [2026, 2028, 2029, 2031, 2033]
 
@@ -110,14 +110,8 @@ function PersonaRows({ content, state }: { content: GameContent; state: GameStat
             tone={tone}
             summary={
               <span className="flex items-center gap-2.5">
-                <Portrait
-                  slots={PERSONA_PORTRAITS[pid]}
-                  era={state.endstate ? '2033' : eraForPhase(state.phaseIdx + 1)}
-                  name={displayName(pid)}
-                  size="xs"
-                />
+                <MoodFace pid={pid} mood={moodFor(rung, trendDelta)} size={40} era={state.endstate ? '2033' : eraForPhase(state.phaseIdx + 1)} />
                 <span className="flex flex-col leading-tight gap-0.5">
-                <MoodFace pid={pid} mood={moodFor(rung, trendDelta)} size={18} era={state.endstate ? '2033' : eraForPhase(state.phaseIdx + 1)} />
                 <span>
                 <span className="font-medium">{displayName(pid)}</span>
                 <span className="ml-1.5 text-white/45">

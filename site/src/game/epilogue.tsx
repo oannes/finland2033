@@ -21,7 +21,6 @@ const VOICE_COLOR: Record<string, string> = {
   MUMMOTUNNELI: '#e8702a',
   MARIA: '#e8a1c0',
   EETU: '#8fd0c8',
-  'YOUR FINNISH GENES': '#c9b8e8',
 }
 
 type Beat =
