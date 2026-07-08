@@ -175,7 +175,7 @@ export function Portrait({
           src={slots.env}
           alt={`${name}, at work`}
           loading="lazy"
-          className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+          className="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-500 group-hover:opacity-100"
         />
       </div>
     )
