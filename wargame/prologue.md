@@ -10,6 +10,8 @@ headline: Finland's fifteen lost years
 
 2010–2025. When the world moved on, Finland stood still.
 
+The general mood in Finland is one of shock. Things are not going well. Finland once had some of the world’s best schools; now the education system is failing its young people. The healthcare system is overburdened and still relies on IT systems designed in the last millennium. Public debt keeps rising despite austerity. Drug-related deaths are the highest in Europe. Falling birth rates are even forcing a debate about extending conscription to women.
+
 ## intro
 
 In this simulation, we follow the impact of your choices through data and through the lives of two Finns, Maria and Eetu.
@@ -40,8 +42,6 @@ In Tampere, a forest-industry CFO freezes the AI budget mid-quarter. The same me
 The squeeze travels up the chain. Margins thin at the frontier labs just as their infrastructure bills peak. Inside the labs, programmers have begun handing their own work completely to the machines. Each model generation now helps design the next. The people closest to this shift no longer predict capability gains in years, but in quarters.
 
 The shape of the coming decade is visible at the edges. Ordinary work gets cheaper every quarter: what cost a salary in 2024 costs a subscription in 2026. The very best models move the other way. They stay scarce, priced, and politically allocated, more like refined fuel than software. In Washington and Beijing, officials have started discussing top models the way an earlier generation discussed enriched uranium. Throughout the globe, most new factories are designed without lighting for the production floor; they employ almost no one but machines. 
-
-The general mood in Finland is one of shock. Things are not going well. Finland once had some of the world’s best schools; now the education system is failing its young people. The healthcare system is overburdened and still relies on IT systems designed in the last millennium. Public debt keeps rising despite austerity. Drug-related deaths are the highest in Europe. Falling birth rates are even forcing a debate about extending conscription to women.
 
 A left-leaning government, carried to power by public-sector workers and older voters, takes office. In the April 2027 election, the leading party promised only little. It won because the country had grown tired of austerity without growth.
 
