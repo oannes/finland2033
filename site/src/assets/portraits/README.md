@@ -15,8 +15,7 @@ png / webp / jpg all work.
 ## Still needed (2026-07-08)
 
 WIRED AND WAITING (drop the file, it goes live):
-- pm-env, sak-env, marja-env, eetu-env   (hover environment shots; the other
-  five seats' env images are in)
+- marja-env, eetu-env   (hover environment shots; all seven seats are in)
 
 PROPOSED, small wiring needed (ask before generating if unsure of framing):
 - aleksanterinkatu-2033: Stockmann corner at dusk, header for the street scene
