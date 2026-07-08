@@ -489,6 +489,7 @@ function ModeSelect({
   onSolo: (actor: ActorId) => void
   onWorkshop: (s: Session) => void
 }) {
+  const content = loadContent()
   const [mode, setMode] = useState<'solo' | 'workshop' | null>(preselect)
   const [actor, setActor] = useState<ActorId | null>(null)
   const [joinCode, setJoinCode] = useState('')
@@ -559,8 +560,20 @@ function ModeSelect({
               >
                 <Portrait slots={ACTOR_PORTRAITS[a]} era="now" name={SEAT_INTROS[a].role} size="seat" />
                 <div>
-                  <div className="text-sm font-semibold text-white">{SEAT_INTROS[a].role}</div>
-                  <div className="text-[12px] text-white/50 leading-snug mt-0.5">{SEAT_INTROS[a].line}</div>
+                  {content.actors[a].seatQuote ? (
+                    <>
+                      <div className="text-[13px] italic text-white/70 leading-snug">“{content.actors[a].seatQuote}”</div>
+                      <div className="text-[11px] text-white/40 mt-1.5">— {SEAT_INTROS[a].role}</div>
+                      <div className="text-sm font-semibold text-white mt-2">
+                        {content.actors[a].seatQuestion ?? SEAT_INTROS[a].line}
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <div className="text-sm font-semibold text-white">{SEAT_INTROS[a].role}</div>
+                      <div className="text-[12px] text-white/50 leading-snug mt-0.5">{SEAT_INTROS[a].line}</div>
+                    </>
+                  )}
                 </div>
               </button>
             ))}

@@ -222,6 +222,10 @@ export interface Archetype {
 export interface ActorBrief {
   title: string
   raw: string
+  /** seat-select: the character's worry about the future, in their voice */
+  seatQuote?: string
+  /** seat-select: their dilemma, as a question */
+  seatQuestion?: string
   who?: string
   levers?: string
   cannotControl?: string

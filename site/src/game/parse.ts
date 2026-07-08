@@ -596,7 +596,10 @@ export function parseActorBrief(md: string): import('./types').ActorBrief {
   const brief: import('./types').ActorBrief = { title: titleM?.[1] ?? 'Actor', raw: md }
   for (const sec of splitSections(md, 2)) {
     const h = sec.heading.toLowerCase()
-    if (h.startsWith('who you are')) brief.who = sec.body
+    if (h.startsWith('seat')) {
+      brief.seatQuote = (sec.body.match(/^quote:\s*(.+)$/m) || [])[1]?.trim()
+      brief.seatQuestion = (sec.body.match(/^question:\s*(.+)$/m) || [])[1]?.trim()
+    } else if (h.startsWith('who you are')) brief.who = sec.body
     else if (h.includes('levers')) brief.levers = sec.body
     else if (h.includes('cannot control')) brief.cannotControl = sec.body
     else if (h.startsWith('objectives')) brief.objectives = sec.body

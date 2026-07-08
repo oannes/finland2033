@@ -2,6 +2,11 @@
 
 **ID:** `AALTO` · **Pivotal in:** none (modifier all phases; deliberately: knowledge is influence, not command)
 
+## Seat
+
+quote: Each model generation now helps design the next. The people closest to it measure progress in quarters, not years.
+question: What should a university teach or research in the age of superhuman AI?
+
 ## Who you are
 Rector of Finland's flagship technical university, 2028. Your CS and AI programmes are oversubscribed; your graduates are simultaneously the most employable and, at entry level, the most automatable people in the country (TR-6). AMD bought Silo AI; your best doctoral students get frontier-lab offers at 5× Finnish salaries. You run FCAI (Finnish Center for AI) jointly with Helsinki and VTT, and your researchers built the open Poro/Viking model lineage that any sovereign stack would depend on.
 

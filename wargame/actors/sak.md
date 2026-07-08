@@ -2,6 +2,11 @@
 
 **ID:** `SAK` · **Pivotal in:** P3 (no compact without labour)
 
+## Seat
+
+quote: What cost a salary in 2024 costs a subscription today. My members now compete with a line item.
+question: What is work worth, when thinking is cheaper than coffee?
+
 ## Who you are
 Chair of SAK, 2028, speaking (for game purposes) for the whole employee side. SAK's blue-collar base plus, uneasily, Akava's white-collar professionals whose members are hit first by TR-6. Your December 2025 survey showed blue-collar AI use still minimal; by 2028 your members split three ways: protected insiders (care, trades; shortage sectors), exposed professionals (Akava's juniors), and the young who never got in (persona AINO). Their interests genuinely conflict, and you must aggregate them.
 

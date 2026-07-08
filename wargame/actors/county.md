@@ -2,6 +2,11 @@
 
 **ID:** `COUNTY` · **Pivotal in:** P2, P3 (services are where the tensions physically live)
 
+## Seat
+
+quote: The machines that took the entry-level desks are learning to lift patients. I am short 57,000 pairs of hands, and long one question.
+question: What happens to dignity when care becomes a throughput problem?
+
 ## Who you are
 You direct Finland's largest wellbeing county and chair the county directors' network; when you commit, the counties commit. Your county loses care workers every month while its queues grow; by 2033 the sector is short 57,000 people nationally. Every promise the state makes about services is a promise your floors have to keep, and every failure has a name, a ward and a relative with a phone.
 ## Endogenous levers
