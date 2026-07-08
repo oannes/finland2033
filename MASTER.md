@@ -801,7 +801,7 @@ The mandate passes, but not cleanly. One signature is missing, and it decides th
 
 Savings arrive at two-thirds of the booked target. The unresolved consent question does not go away. It compounds into 2029, when a workforce that was not asked will be told what its tools run on, and into 2031, when the bill is presented at the ballot box.
 
-During the first go-live, a stray dog walked into the Kela lobby and refused, with great dignity, to leave. Staff fed it for a week.
+In the go-live photograph, one chair at the table stands slightly pulled out, as if for someone who had not arrived yet.
 
 The year-end statistics carry the argument on both sides: {pub_ai}% of transactions automated, trust at {trust}%, approval at {poll}%. Everyone quotes the number that suits them; all of them are true.
 
@@ -1051,7 +1051,7 @@ The claim "the European tier is good enough for 80% of public tasks" is a slogan
 
 ## HVK
 
-Doctrine says critical functions belong on infrastructure Finland can inspect and, if needed, run alone. Your own services want the best models available, which are not European. Both statements are true, and you will be quoted either way. Your duty officer's night log still opens, by a tradition nobody remembers starting, with the length of the eastern border in kilometres.
+Doctrine says critical functions belong on infrastructure Finland can inspect and, if needed, run alone. Your own services want the best models available, which are not European. Both statements are true, and you will be quoted either way. A colleague at the weather service claims she can read Washington in the pressure fronts. Lately she has stopped joking about it.
 
 **The decision.** The doctrine meets its price tag. Run-alone means the clock climbs while every service you protect resents the tools you cost them. Dependence-with-drills means engineering survivability into a lane you do not control. Or the offer from the alliance: Finland as everyone's civil-resilience laboratory, the clock funded by others, the word 'alone' quietly redefined.
 
@@ -1308,7 +1308,7 @@ Finland declares, migrates, and means it: public core on the European tier, an a
 
 The costs are honest too. Throughput dips while services migrate, the gap chart on every front page keeps growing, and the opposition's poster writes itself. What does not happen: no attestation queue, no annex, no foreign counsel reviewing the job-security law. By year's end two more countries copy the certification language.
 
-The week of the declaration, border guards in Kainuu logged a brown bear crossing into Finland and, against all habit, staying.
+The week of the declaration, a cold front crossed in from the east, and for once the papers called it bracing.
 
 The migration year's balance: sovereign share at {sov_share}%, public AI at {pub_ai}%, trust at {trust}%; while the capability gap grows to {cap_gap} months, exactly as the chart said it would.
 
@@ -2171,7 +2171,7 @@ No allocation passes before the vote. The savings sit in the general fund while 
 
 The campaign is the ugliest in memory. Automation becomes a culture war, the machine runs on unmanaged, and whatever government emerges inherits the dividend question unspent, plus interest. Gains without distribution get politically repossessed. The punt did not defer the decision; it changed what kind of question it was.
 
-At the demonstrations, someone always started the anthem and always stopped after the first line, as if checking whether it was still true.
+At the demonstrations, a stall sold refurbished phones from 2007 as ironic merchandise. It sold out every week.
 
 The punt's arithmetic arrives anyway: youth unemployment {youth_u}%, care gap {care_gap},000, trust down to {trust}%, approval at {poll}%. Maria is {maria_mood}; Eetu is {eetu_mood}. The money is still in the account.
 
