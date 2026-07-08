@@ -19,12 +19,12 @@ wargame_pullonkaula*.zip
 zisJ42RZ
 *.tsbuildinfo
 
-# legacy pdf-generator experiment (predates the site)
-build.js
-lib.js
-content_a.js
-content_b.js
-content_c.js
-content_land.js
-package.json
-package-lock.json
+# legacy pdf-generator experiment (predates the site; root files only)
+/build.js
+/lib.js
+/content_a.js
+/content_b.js
+/content_c.js
+/content_land.js
+/package.json
+/package-lock.json

@@ -1,0 +1,29 @@
+{
+  "name": "finland2033-site",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n web,game \"vite\" \"PORT=8787 node server/server.mjs\"",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "start": "node server/server.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^0.454.0",
+    "marked": "^18.0.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^10.0.3",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "~5.6.2",
+    "vite": "^5.4.11"
+  }
+}
