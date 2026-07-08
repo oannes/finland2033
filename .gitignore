@@ -1,0 +1,30 @@
+node_modules/
+site/dist/
+.DS_Store
+*.tmp
+lu38ls90.tmp
+
+# working materials not needed to build or run the site — remove a line
+# here if you want them versioned and public
+character_portraits_named/
+wargame-multiplayer-main/
+check/
+AI_in_Finland_2033_Pullonkaula_master.pdf
+pg-*.jpg
+
+# local editor/agent settings and stray working files
+.claude/settings.local.json
+AI_in_Finland_2033_Pullonkaula_master.docx
+wargame_pullonkaula*.zip
+zisJ42RZ
+*.tsbuildinfo
+
+# legacy pdf-generator experiment (predates the site)
+build.js
+lib.js
+content_a.js
+content_b.js
+content_c.js
+content_land.js
+package.json
+package-lock.json
