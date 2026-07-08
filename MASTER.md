@@ -219,8 +219,7 @@ Measure grammar (one per goal):
 
 ## Seat
 
-quote: The best machines in the world are no longer sold. They are allocated, like fuel in wartime, and someone else keeps the ledger.
-question: How does a small country govern itself, when intelligence has a foreign policy?
+quote: Even the investments we win now build factories with no lights on the production floor, because there is no one inside. If growth returns but the jobs do not, what promise can a government still make to Finns?
 
 ## Who you are
 Head of a coalition government mid-term in 2028. You inherited the fiscal vice (debt ~91% of GDP, defence heading to 5%) and a spending framework that already books assumed AI productivity gains in public services. Your coalition is split two ways about AI. The growth wing wants Finland open to everything: American models, foreign data centres, whatever brings investment fastest. The sovereignty wing wants the state to run on machines Europe controls, whatever that costs in capability. Both wings can bring the government down, so every choice you make is also a coalition-management choice.
@@ -257,8 +256,7 @@ The pace of AI capability, set in San Francisco and Shanghai; it compounds wheth
 
 ## Seat
 
-quote: What cost a salary in 2024 costs a subscription today. My members now compete with a line item.
-question: What is work worth, when thinking is cheaper than coffee?
+quote: What cost a salary in 2024 costs a subscription today. My members now compete with a line item. What is work worth, when thinking is cheaper than coffee?
 
 ## Who you are
 Chair of SAK, 2028, speaking (for game purposes) for the whole employee side. SAK's blue-collar base plus, uneasily, Akava's white-collar professionals whose members are hit first by TR-6. Your December 2025 survey showed blue-collar AI use still minimal; by 2028 your members split three ways: protected insiders (care, trades; shortage sectors), exposed professionals (Akava's juniors), and the young who never got in (persona AINO). Their interests genuinely conflict, and you must aggregate them.
@@ -294,8 +292,7 @@ The technology itself: entry-level and routine work erodes first, whether or not
 
 ## Seat
 
-quote: The machines that took the entry-level desks are learning to lift patients. I am short 57,000 pairs of hands, and long one question.
-question: What happens to dignity when care becomes a throughput problem?
+quote: The machines that took the entry-level desks are learning to lift patients. I am short 57,000 pairs of hands, and long one question: what happens to dignity when care becomes a throughput problem?
 
 ## Who you are
 You direct Finland's largest wellbeing county and chair the county directors' network; when you commit, the counties commit. Your county loses care workers every month while its queues grow; by 2033 the sector is short 57,000 people nationally. Every promise the state makes about services is a promise your floors have to keep, and every failure has a name, a ward and a relative with a phone.
@@ -331,8 +328,7 @@ The demographic arithmetic: 57,000 fewer workers by 2033, on schedule, reform or
 
 ## Seat
 
-quote: Most new factories are built without lights on the production floor. They employ almost no one. Our members will build them, here or somewhere else.
-question: What does industry owe a country, when it no longer needs its people?
+quote: Our member companies now buy their thinking the way they buy electricity: from abroad, at a price set abroad. How does Finnish industry compete when its most important input belongs to someone else?
 
 ## Who you are
 CEO of Finland's largest business lobby, 2028: Nokia, Kone, Wärtsilä, Metso down to 4,000 SMEs; plus, by courtesy and friction, the hyperscalers' Finnish country organizations. Your members split exactly like the country: exporters who want frictionless US frontier access, energy-and-infrastructure members who smell a domestic compute boom, and SMEs who mostly want someone to make the compliance table one page. You also carry the employer side of the eventual levy fight.
@@ -369,8 +365,7 @@ The global capital cycle and the frontier's pace; your members ride both and ste
 
 ## Seat
 
-quote: Washington and Beijing discuss the top models the way an earlier generation discussed enriched uranium. Access is a valve, and the hand on it is not ours.
-question: How many days can Finland stand alone, and who is counting?
+quote: Washington and Beijing discuss the top models the way an earlier generation discussed enriched uranium. Access is a valve, and the hand on it is not ours. How many days could Finland stand alone, and who is counting?
 
 ## Who you are
 Director of HVK, 2028. Your agency stockpiles fuel, grain and medicine for a country that plans for the worst as a civic habit. Since 2026 you have co-authored (with Traficom) guidance on secure AI-agent deployment, and you have been arguing, to polite smiles, that inference capacity now belongs in the same category as diesel. The 2028 correction is your window: hardware is cheap, halls are empty, and TR-7 (11 cut cables) makes your case nightly.
@@ -407,8 +402,7 @@ Whether the gate ever comes, and when; access politics is made in Washington, no
 
 ## Seat
 
-quote: Each model generation now helps design the next. The people closest to it measure progress in quarters, not years.
-question: What should a university teach or research in the age of superhuman AI?
+quote: Each model generation now helps design the next. The people closest to it measure progress in quarters, not years. What should a university teach, or research, in the age of superhuman AI?
 
 ## Who you are
 Rector of Finland's flagship technical university, 2028. Your CS and AI programmes are oversubscribed; your graduates are simultaneously the most employable and, at entry level, the most automatable people in the country (TR-6). AMD bought Silo AI; your best doctoral students get frontier-lab offers at 5× Finnish salaries. You run FCAI (Finnish Center for AI) jointly with Helsinki and VTT, and your researchers built the open Poro/Viking model lineage that any sovereign stack would depend on.
@@ -444,8 +438,7 @@ The talent gradient: the best tools and the best salaries are abroad, and every 
 
 ## Seat
 
-quote: The price of machine cognition collapses every quarter, everywhere, for everyone. Whatever we build, the ground under it gets cheaper by the month.
-question: How do you build a lasting company on intelligence that halves in price every year?
+quote: The price of machine cognition collapses every quarter, everywhere, for everyone. Whatever we build, the ground under it gets cheaper by the month. How do you build a lasting company on intelligence that halves in price every year?
 
 ## Who you are
 Founder-CEO of a Turku-based biotech-AI company (drug-response prediction for Nordic biobank data; 85 staff, Series B, ~40% US investors). You stand in for the whole emerging-tech sector: what you choose, a thousand Finnish deep-tech firms choose with you. Your models fine-tune on frontier APIs; your data is the most GDPR- and sovereignty-sensitive kind that exists (Finnish genomes, Findata-licensed).

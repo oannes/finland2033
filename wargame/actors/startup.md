@@ -4,8 +4,7 @@
 
 ## Seat
 
-quote: The price of machine cognition collapses every quarter, everywhere, for everyone. Whatever we build, the ground under it gets cheaper by the month.
-question: How do you build a lasting company on intelligence that halves in price every year?
+quote: The price of machine cognition collapses every quarter, everywhere, for everyone. Whatever we build, the ground under it gets cheaper by the month. How do you build a lasting company on intelligence that halves in price every year?
 
 ## Who you are
 Founder-CEO of a Turku-based biotech-AI company (drug-response prediction for Nordic biobank data; 85 staff, Series B, ~40% US investors). You stand in for the whole emerging-tech sector: what you choose, a thousand Finnish deep-tech firms choose with you. Your models fine-tune on frontier APIs; your data is the most GDPR- and sovereignty-sensitive kind that exists (Finnish genomes, Findata-licensed).

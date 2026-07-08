@@ -4,8 +4,7 @@
 
 ## Seat
 
-quote: Most new factories are built without lights on the production floor. They employ almost no one. Our members will build them, here or somewhere else.
-question: What does industry owe a country, when it no longer needs its people?
+quote: Our member companies now buy their thinking the way they buy electricity: from abroad, at a price set abroad. How does Finnish industry compete when its most important input belongs to someone else?
 
 ## Who you are
 CEO of Finland's largest business lobby, 2028: Nokia, Kone, Wärtsilä, Metso down to 4,000 SMEs; plus, by courtesy and friction, the hyperscalers' Finnish country organizations. Your members split exactly like the country: exporters who want frictionless US frontier access, energy-and-infrastructure members who smell a domestic compute boom, and SMEs who mostly want someone to make the compliance table one page. You also carry the employer side of the eventual levy fight.

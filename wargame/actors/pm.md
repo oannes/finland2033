@@ -4,8 +4,7 @@
 
 ## Seat
 
-quote: The best machines in the world are no longer sold. They are allocated, like fuel in wartime, and someone else keeps the ledger.
-question: How does a small country govern itself, when intelligence has a foreign policy?
+quote: Even the investments we win now build factories with no lights on the production floor, because there is no one inside. If growth returns but the jobs do not, what promise can a government still make to Finns?
 
 ## Who you are
 Head of a coalition government mid-term in 2028. You inherited the fiscal vice (debt ~91% of GDP, defence heading to 5%) and a spending framework that already books assumed AI productivity gains in public services. Your coalition is split two ways about AI. The growth wing wants Finland open to everything: American models, foreign data centres, whatever brings investment fastest. The sovereignty wing wants the state to run on machines Europe controls, whatever that costs in capability. Both wings can bring the government down, so every choice you make is also a coalition-management choice.
