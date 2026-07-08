@@ -261,6 +261,8 @@ export interface KeyMetric {
 export interface EpiLine {
   v?: string
   t: string
+  /** `+ label` lines: an action button the player clicks to continue */
+  action?: boolean
 }
 
 /** A section of epilogue.md: script lines plus `key: value` settings. */

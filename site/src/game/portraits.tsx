@@ -163,23 +163,6 @@ export function Portrait({
       </div>
     )
   }
-  if (slots.env && size !== 'xs') {
-    return (
-      <div className={`${dims} ${className} relative shrink-0 overflow-hidden border border-white/10 bg-black group`}>
-        <img
-          src={src}
-          alt={`${name}, ${era === 'now' ? 'today' : era}`}
-          className="absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-500 group-hover:opacity-0"
-        />
-        <img
-          src={slots.env}
-          alt={`${name}, at work`}
-          loading="lazy"
-          className="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-        />
-      </div>
-    )
-  }
   return (
     <img
       src={src}

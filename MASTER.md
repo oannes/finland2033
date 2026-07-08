@@ -2709,7 +2709,7 @@ button: Enter
 YOUR FINNISH GENES: Instinctively, you know what these are. Spirits. The old keepers.
 > The dog is Talkoot, the ghost of consensus. The bear is Raja, the shiver of the east. The cow is Nokia, the ghost of the miracle past. The pig is Velka, the Lutheran soul. The elk is Metsä, the one who rarely speaks.
 METSÄ: Join us, space monkey.
-> You sit at their table.
++ Sit at their table
 
 ## tunnel/hub
 first: The table waits. Whom do you turn to first?

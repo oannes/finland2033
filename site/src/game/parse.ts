@@ -723,13 +723,17 @@ export function parseEpilogue(md: string): EpilogueDoc {
   const out: EpilogueDoc = {}
   for (const sec of splitSections(md, 2)) {
     const slug = sec.heading.trim()
-    const lines: { v?: string; t: string }[] = []
+    const lines: import('./types').EpiLine[] = []
     const meta: Record<string, string> = {}
     for (const raw of sec.body.split('\n')) {
       const line = raw.trim()
       if (!line) continue
       if (line.startsWith('>')) {
         lines.push({ t: line.replace(/^>\s*/, '') })
+        continue
+      }
+      if (line.startsWith('+ ')) {
+        lines.push({ t: line.slice(2).trim(), action: true })
         continue
       }
       const m = line.match(/^([A-ZÄÖÅ][A-ZÄÖÅ' ]*):\s*(.+)$/)

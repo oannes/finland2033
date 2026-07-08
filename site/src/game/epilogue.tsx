@@ -29,6 +29,7 @@ type Beat =
   | { choice: { label: string; replies: { v?: string; t: string }[] }[] }
   | { hub: true } // pause: the player picks which spirit to talk to next
   | { img: string; alt: string; env?: string } // a portrait revealed mid-scene (env = hover layer)
+  | { action: string } // a button the player clicks to continue
 
 function VoiceLine({ v, t }: { v?: string; t: string }) {
   if (!v)
@@ -64,7 +65,9 @@ const interp = (t: string, ctx: EpilogueCtx): string =>
     .replace(/\{met\}/g, String(ctx.met))
 
 function beatsOf(doc: EpilogueDoc, slug: string, ctx: EpilogueCtx): Beat[] {
-  return (doc[slug]?.lines ?? []).map((l) => ({ v: l.v, t: interp(l.t, ctx) }))
+  return (doc[slug]?.lines ?? []).map((l) =>
+    l.action ? { action: interp(l.t, ctx) } : { v: l.v, t: interp(l.t, ctx) },
+  )
 }
 
 function rajaTalk(doc: EpilogueDoc, ctx: EpilogueCtx): Beat[] {
@@ -143,8 +146,8 @@ function talkFor(doc: EpilogueDoc, key: string, ctx: EpilogueCtx): Beat[] {
 
 function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
   const [script, setScript] = useState<Beat[]>(() => [...beatsOf(doc, 'tunnel/intro', ctx), { hub: true }])
-  const [idx, setIdx] = useState(1) // beats revealed so far
   const [picked, setPicked] = useState<Record<number, number>>({}) // choice beat index → option index
+  const [acted, setActed] = useState<Record<number, boolean>>({}) // action beat index → clicked
   const [talked, setTalked] = useState<string[]>([])
 
   const spirits = SPIRIT_ORDER.map((key) => ({ key, label: doc['tunnel/spirits']?.meta[key] ?? key }))
@@ -154,16 +157,15 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
     const next: Beat[] = done.length < spirits.length ? [{ hub: true }] : finaleBeats(doc, ctx)
     setTalked(done)
     setScript((s) => [...s, ...talkFor(doc, key, ctx), ...next])
-    setIdx((n) => n + 1)
   }
 
+  // Text flows in full chunks; the pauses are the player's moves:
+  // an action button, a dialogue choice, or the hub.
   const shown: React.ReactNode[] = []
-  let waiting: 'continue' | 'choice' | 'done' = 'done'
-  for (let i = 0; i < script.length && i < idx; i++) {
+  for (let i = 0; i < script.length; i++) {
     const b = script[i]
     if ('hub' in b) {
       if (i === script.length - 1) {
-        waiting = 'choice'
         shown.push(
           <p key={`${i}-hubq`} className="text-white/60 text-[15px] leading-relaxed italic">
             {talked.length === 0
@@ -188,6 +190,21 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
                 </button>
               ))}
           </div>,
+        )
+        break
+      }
+      continue
+    }
+    if ('action' in b) {
+      if (!acted[i]) {
+        shown.push(
+          <button
+            key={i}
+            onClick={() => setActed((a) => ({ ...a, [i]: true }))}
+            className="bg-[#e8702a] hover:bg-[#d2611f] text-white text-sm font-medium px-7 py-3 rounded-full transition-all hover:scale-[1.03] active:scale-95"
+          >
+            {b.action}
+          </button>,
         )
         break
       }
@@ -218,7 +235,6 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
     if ('choice' in b) {
       const pick = picked[i]
       if (pick === undefined) {
-        waiting = 'choice'
         shown.push(
           <div key={i} className="space-y-2 pt-1">
             {b.choice.map((c, ci) => (
@@ -242,25 +258,14 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
         </p>,
       )
       b.choice[pick].replies.forEach((r, ri) => shown.push(<VoiceLine key={`${i}-r${ri}`} v={r.v} t={r.t} />))
-    } else {
-      shown.push(<VoiceLine key={i} v={b.v} t={b.t} />)
+      continue
     }
+    shown.push(<VoiceLine key={i} v={b.v} t={b.t} />)
   }
-  if (waiting !== 'choice') waiting = idx < script.length ? 'continue' : 'done'
 
   return (
     <div className="rounded-2xl border border-white/10 overflow-hidden">
-      <div className="p-6 sm:p-8 space-y-4 bg-black/40">
-        {shown}
-        {waiting === 'continue' && (
-          <button
-            onClick={() => setIdx((n) => n + 1)}
-            className="text-sm text-white/50 hover:text-white underline underline-offset-4"
-          >
-            …
-          </button>
-        )}
-      </div>
+      <div className="p-6 sm:p-8 space-y-4 bg-black/40">{shown}</div>
     </div>
   )
 }
@@ -397,27 +402,21 @@ export function StreetScene({ content, state }: { content: GameContent; state: G
         <p className="text-white/80 text-[15px] leading-relaxed">{opening}</p>
 
         {narr('street/maria-intro') && <VoiceLine t={narr('street/maria-intro')!.t} />}
-        <div className="flex items-start gap-5">
-          <div className="flex-1 space-y-3">
-            {spoken('marja', marjaRung).map((l, i) => (
-              <VoiceLine key={`m${i}`} v={l.v ?? 'MARIA'} t={l.t} />
-            ))}
-            {reaction('marja', 'MARJA').map((l, i) => (
-              <VoiceLine key={`mr${i}`} v={l.v ?? 'MARIA'} t={l.t} />
-            ))}
-            {narr('street/eetu-intro') && <VoiceLine t={narr('street/eetu-intro')!.t} />}
-            {spoken('eetu', eetuRung).map((l, i) => (
-              <VoiceLine key={`e${i}`} v={l.v ?? 'EETU'} t={l.t} />
-            ))}
-            {reaction('eetu', 'EETU').map((l, i) => (
-              <VoiceLine key={`er${i}`} v={l.v ?? 'EETU'} t={l.t} />
-            ))}
-          </div>
-          <div className="flex flex-col gap-3 shrink-0 pt-1">
-            <SideFace pid="MARJA" rung={marjaRung} tilt="rotate-2" />
-            <SideFace pid="EETU" rung={eetuRung} tilt="-rotate-2" />
-          </div>
-        </div>
+        <SideFace pid="MARJA" rung={marjaRung} tilt="rotate-1" />
+        {spoken('marja', marjaRung).map((l, i) => (
+          <VoiceLine key={`m${i}`} v={l.v ?? 'MARIA'} t={l.t} />
+        ))}
+        {reaction('marja', 'MARJA').map((l, i) => (
+          <VoiceLine key={`mr${i}`} v={l.v ?? 'MARIA'} t={l.t} />
+        ))}
+        {narr('street/eetu-intro') && <VoiceLine t={narr('street/eetu-intro')!.t} />}
+        <SideFace pid="EETU" rung={eetuRung} tilt="-rotate-1" />
+        {spoken('eetu', eetuRung).map((l, i) => (
+          <VoiceLine key={`e${i}`} v={l.v ?? 'EETU'} t={l.t} />
+        ))}
+        {reaction('eetu', 'EETU').map((l, i) => (
+          <VoiceLine key={`er${i}`} v={l.v ?? 'EETU'} t={l.t} />
+        ))}
 
         {(doc['street/shivers']?.lines ?? []).map((l, i) => (
           <VoiceLine key={`s${i}`} v={l.v} t={l.t} />
