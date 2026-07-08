@@ -170,7 +170,7 @@ function SoloGame({
         <Timeline state={state} />
       </TopNav>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
-        <div className="flex flex-col lg:flex-row gap-6">
+        <div className="flex flex-col lg:flex-row gap-6 pb-16 lg:pb-0">
           <main className="flex-1 min-w-0">
             {state.stage === 'briefing' && (
               <BriefingScreen content={content} state={state} onStart={() => setState({ ...state, stage: 'decide' })} />
@@ -275,7 +275,7 @@ function WorkshopGame({
         {server.stage === 'lobby' ? (
           <LobbyScreen server={server} session={session} push={push} onLeave={onLeave} act={act} />
         ) : (
-          <div className="flex flex-col lg:flex-row gap-6">
+          <div className="flex flex-col lg:flex-row gap-6 pb-16 lg:pb-0">
             <main className="flex-1 min-w-0">
               {server.stage === 'briefing' && (
                 <BriefingScreen

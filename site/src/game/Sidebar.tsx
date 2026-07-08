@@ -305,20 +305,48 @@ function Section({ title, children, defaultOpen = true }: { title: string; child
   )
 }
 
-export default function Sidebar({
-  content,
-  state,
-  viewerActor,
-}: {
+interface SidebarProps {
   content: GameContent
   state: GameState
   viewerActor?: ActorId | null
-}) {
+}
+
+/** Desktop: sticky right column. Mobile: a pull-up drawer fixed to the
+ * bottom edge, so goals, lives and charts stay one thumb away. */
+export default function Sidebar(props: SidebarProps) {
+  const [open, setOpen] = useState(false)
+  return (
+    <>
+      <aside className="hidden lg:block w-full lg:w-[300px] shrink-0 lg:sticky lg:top-16 self-start lg:max-h-[calc(100vh-5rem)] lg:overflow-y-auto rounded-2xl border border-white/10 bg-white/[0.03] p-4 backdrop-blur-sm">
+        <SidebarBody {...props} />
+      </aside>
+      <div className="lg:hidden fixed inset-x-0 bottom-0 z-40 flex flex-col">
+        <div
+          className={`bg-[#0b1018]/95 backdrop-blur border-t border-white/10 overflow-y-auto transition-[max-height] duration-300 ease-out ${
+            open ? 'max-h-[70vh]' : 'max-h-0'
+          }`}
+        >
+          <div className="p-4 pb-2">
+            <SidebarBody {...props} />
+          </div>
+        </div>
+        <button
+          onClick={() => setOpen(!open)}
+          className="w-full flex items-center justify-center gap-2 bg-[#0b1018]/95 backdrop-blur border-t border-white/15 py-3 text-[11px] uppercase tracking-[0.25em] text-white/70 active:text-white"
+        >
+          {open ? '▾ Hide the numbers' : '▴ Goals · lives · numbers'}
+        </button>
+      </div>
+    </>
+  )
+}
+
+function SidebarBody({ content, state, viewerActor }: SidebarProps) {
   const ghosts = computeGhosts(content, state)
   const lastResult = state.results[state.results.length - 1]
 
   return (
-    <aside className="w-full lg:w-[300px] shrink-0 lg:sticky lg:top-16 self-start lg:max-h-[calc(100vh-5rem)] lg:overflow-y-auto rounded-2xl border border-white/10 bg-white/[0.03] p-4 backdrop-blur-sm">
+    <div>
       {viewerActor ? (
         <Section title="Your goals">
           <GoalRows statuses={evaluateGoals(content, state, viewerActor)} />
@@ -388,6 +416,6 @@ export default function Sidebar({
         </div>
       </Section>
 
-    </aside>
+    </div>
   )
 }

@@ -12,22 +12,21 @@ ids: pm sak aalto county hvk ti startup marja eetu
 moods: happy sad angry frustrated contempt
 png / webp / jpg all work.
 
-## Still needed (2026-07-07)
+## Still needed (2026-07-08)
 
-Mood faces: COMPLETE for both characters.
-(Maria: 5 moods x 3 ages. Eetu: 5 young + 5 aged-2033; young serves 2028.)
+WIRED AND WAITING (drop the file, it goes live):
+- pm-env, sak-env, county-env, hvk-env, ti-env, aalto-env, startup-env,
+  marja-env, eetu-env   (hover environment shots, 2:3 or wider)
 
-Scene backdrops (placeholder gradient until then):
-- mummotunneli-dark   (narrow alley terrace in darkness)
-- mummotunneli-lit    (same view, five animals at the table: cow, pig, elk, bear, dog; shown on hover)
-
-Environment shots (hover crossfade; effect dormant until the file exists), 2:3 or wider:
-- pm-env       (cabinet negotiation room, late evening)
-- sak-env      (union hall / congress floor)
-- county-env   (hospital corridor or benefits office floor)
-- hvk-env      (emergency-supply warehouse / situation room)
-- ti-env       (export factory floor or trade delegation)
-- aalto-env    (ML lab, students, whiteboards)
-- startup-env  (Turku office, screens of genome pipelines)
-- marja-env    (Kela strategy office, documents and coffee)
-- eetu-env     (small apartment desk, laptop, job listings)
+PROPOSED, small wiring needed (ask before generating if unsure of framing):
+- spirit-talkoot (dog), spirit-raja (bear), spirit-nokia (cow),
+  spirit-velka (pig), spirit-metsa (elk)
+  · bust portraits, lamp-lit, matching the mummotunneli images; shown beside
+    their voice lines in the epilogue like Maria/Eetu on the street
+- aleksanterinkatu-2033: Stockmann corner at dusk, header for the street scene
+- phase-megaproject (2027 ministry corridor / server hall),
+  phase-stack (2029 datacenter + border weather),
+  phase-dividend (2031 demonstration, one placard) · decision-screen headers
+- endstate-e1 … endstate-e9: one image per 2033 archetype card
+- favicon (the diamond logo; site still ships the Vite default)
+- og-image 1200x630: dark Finland map + title, for link previews
