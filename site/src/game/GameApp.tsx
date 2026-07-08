@@ -109,7 +109,7 @@ function TopNav({ children }: { children?: React.ReactNode }) {
 function Timeline({ state }: { state: GameState }) {
   return (
     <div className="flex items-center gap-1 text-[11px] text-white/50">
-      {['2026', '2027–28', '2029', '2031', '2033'].map((y, i) => {
+      {['now', '2028', '2029', '2031', '2033'].map((y, i) => {
         const active =
           (state.stage === 'briefing' && i === 0) ||
           (state.stage !== 'briefing' && state.stage !== 'endstate' && i === state.phaseIdx + 1) ||
