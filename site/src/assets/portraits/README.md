@@ -19,10 +19,6 @@ WIRED AND WAITING (drop the file, it goes live):
   marja-env, eetu-env   (hover environment shots, 2:3 or wider)
 
 PROPOSED, small wiring needed (ask before generating if unsure of framing):
-- spirit-talkoot (dog), spirit-raja (bear), spirit-nokia (cow),
-  spirit-velka (pig), spirit-metsa (elk)
-  · bust portraits, lamp-lit, matching the mummotunneli images; shown beside
-    their voice lines in the epilogue like Maria/Eetu on the street
 - aleksanterinkatu-2033: Stockmann corner at dusk, header for the street scene
 - phase-megaproject (2027 ministry corridor / server hall),
   phase-stack (2029 datacenter + border weather),

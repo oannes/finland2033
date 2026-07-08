@@ -28,6 +28,7 @@ type Beat =
   | { v?: string; t: string } // voice line (v) or plain narration (no v)
   | { choice: { label: string; replies: { v?: string; t: string }[] }[] }
   | { hub: true } // pause: the player picks which spirit to talk to next
+  | { img: string; alt: string } // a portrait revealed mid-scene
 
 function VoiceLine({ v, t }: { v?: string; t: string }) {
   if (!v)
@@ -111,16 +112,29 @@ function finaleBeats(doc: EpilogueDoc, ctx: EpilogueCtx): Beat[] {
   return [...beatsOf(doc, 'finale/open', ctx), { choice: options }, ...beatsOf(doc, 'finale/end', ctx)]
 }
 
+const SPIRIT_FILES = import.meta.glob('../assets/portraits/spirit-*.{png,webp,jpg,jpeg}', {
+  eager: true,
+  import: 'default',
+}) as Record<string, string>
+const spiritImage = (key: string): string | undefined => {
+  const slug = key === 'METSÄ' ? 'metsa' : key.toLowerCase()
+  return Object.entries(SPIRIT_FILES).find(([p]) => p.includes(`spirit-${slug}`))?.[1]
+}
+
 const SPIRIT_ORDER = ['RAJA', 'TALKOOT', 'NOKIA', 'VELKA', 'METSÄ']
 
 function talkFor(doc: EpilogueDoc, key: string, ctx: EpilogueCtx): Beat[] {
-  switch (key) {
-    case 'RAJA': return rajaTalk(doc, ctx)
-    case 'TALKOOT': return talkootTalk(doc, ctx)
-    case 'NOKIA': return nokiaTalk(doc, ctx)
-    case 'VELKA': return velkaTalk(doc, ctx)
-    default: return metsaTalk(doc, ctx)
-  }
+  const beats = (() => {
+    switch (key) {
+      case 'RAJA': return rajaTalk(doc, ctx)
+      case 'TALKOOT': return talkootTalk(doc, ctx)
+      case 'NOKIA': return nokiaTalk(doc, ctx)
+      case 'VELKA': return velkaTalk(doc, ctx)
+      default: return metsaTalk(doc, ctx)
+    }
+  })()
+  const img = spiritImage(key)
+  return img ? [{ img, alt: key }, ...beats] : beats
 }
 
 // ---------- the tunnel scene ----------
@@ -163,8 +177,11 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
                 <button
                   key={s.key}
                   onClick={() => pickSpirit(s.key)}
-                  className="block w-full text-left rounded-xl border border-white/20 hover:border-[#e8702a]/60 hover:bg-[#e8702a]/5 px-4 py-3 text-[15px] text-white/90 transition-colors"
+                  className="flex w-full items-center gap-3 text-left rounded-xl border border-white/20 hover:border-[#e8702a]/60 hover:bg-[#e8702a]/5 px-4 py-2.5 text-[15px] text-white/90 transition-colors"
                 >
+                  {spiritImage(s.key) && (
+                    <img src={spiritImage(s.key)} alt="" className="w-9 h-9 rounded-full object-cover object-top border border-white/15" />
+                  )}
                   {s.label}
                 </button>
               ))}
@@ -172,6 +189,17 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
         )
         break
       }
+      continue
+    }
+    if ('img' in b) {
+      shown.push(
+        <img
+          key={i}
+          src={b.img}
+          alt={b.alt}
+          className={`w-24 h-28 rounded-2xl object-cover object-top border border-white/15 shadow-lg shadow-black/50 ${i % 2 ? '-rotate-1' : 'rotate-1'}`}
+        />,
+      )
       continue
     }
     if ('choice' in b) {
