@@ -16,8 +16,17 @@ Values for 2028–2033 are scenario constructions anchored to the sourced 2026 b
 | `compute_mw` | AI-grade datacenter capacity operating in Finland | MW | 350 | Google Hamina + Microsoft Espoo region (from 2027) + LUMI/LUMI-AI |
 | `cap_gap` | EU frontier capability gap (exogenous) | months | 6 | Public benchmark spread: best EU models vs. best US/Chinese internal models |
 | `intel_cost` | Cost of machine cognition (exogenous) | index, 2026=100 | 100 | Price of a fixed bundle of knowledge work bought from a machine; blended API price benchmarks |
+| `books` | Budget headroom | index | 40 | Redesign v2 deal metric — fiscal room left in the framework before forced cuts |
+| `share` | Workers' share | index | 50 | Redesign v2 deal metric — how much of automation's gains reach ordinary people |
+| `bedside` | Time at the bedside | min/day | 40 | Redesign v2 deal metric — minutes of human care per patient day |
+| `pull` | Investment pull | index | 55 | Redesign v2 deal metric — whether capital still lands in Finland |
+| `days` | Days Finland runs alone | days | 7 | Redesign v2 deal metric — how long public systems survive an access cut-off |
+| `ladder` | A first rung | % | 58 | Redesign v2 deal metric — graduates in matching work within two years |
+| `stay` | Winners that stay | index | 50 | Redesign v2 deal metric — whether exceptional companies remain Finnish |
 
 ## Reading guide for the chart
+
+chart: pub_ai, trust, youth_u, care_gap, sov_share, compute_mw, cap_gap, intel_cost, days, bedside, share, ladder
 
 - `youth_u` and `care_gap` moving **together upward** = the T3 scissors (split labour market) is unmanaged.
 - `pub_ai` up while `trust` down = deployment outrunning legitimacy (T2 loading); the October 2030 inject punishes exactly this gap.
@@ -37,6 +46,13 @@ trust: 58
 compute_mw: 350
 cap_gap: 6
 intel_cost: 100
+books: 40
+share: 50
+bedside: 40
+pull: 55
+days: 7
+ladder: 58
+stay: 50
 ```
 
 ## Exogenous schedule (the world's line — grows regardless of play)
@@ -67,6 +83,13 @@ trust: [64, 71, 65, 60, 58]
 compute_mw: [120, 180, 240, 300, 350]
 cap_gap: [0, 0, 1, 3, 6]
 intel_cost: [12000, 8000, 2500, 400, 100]
+books: [70, 58, 50, 44, 40]
+share: [58, 55, 53, 51, 50]
+bedside: [52, 48, 45, 42, 40]
+pull: [60, 58, 57, 56, 55]
+days: [4, 5, 5, 6, 7]
+ladder: [70, 66, 63, 60, 58]
+stay: [62, 58, 55, 52, 50]
 ```
 
 ## Plain-language definitions (shown to players in the sidebar)
@@ -79,6 +102,13 @@ intel_cost: [12000, 8000, 2500, 400, 100]
 - compute_mw: AI-grade datacenter capacity operating in Finland, in megawatts. The physical floor under every other number.
 - cap_gap: How many months the best European models trail the best American and Chinese ones. This line grows no matter what Finland decides. Your choices change Finland's position relative to the gap, never the gap itself.
 - intel_cost: What a fixed bundle of knowledge work costs to buy from a machine (2026 = 100). It collapses every year, everywhere, whatever Finland does. Cheap cognition is the tide under every decision at this table. The question is never the price, it is who is standing where when it falls.
+- books: How much room the government's budget framework has left before forced cuts. Every promise spends it; only real savings refill it.
+- share: How much of the machine's money reaches ordinary people, as wages, retraining and security. The employment side of the deal.
+- bedside: How many minutes of human care a patient gets in a day. Automation can free these minutes for people, or harvest them as savings.
+- pull: Whether capital still wants to land in Finland. Falls on unpredictability; rises on credible rules.
+- days: How many days Finland's public systems keep running if foreign AI access is cut. The self-sufficiency clock; it decides how hard the next crisis hits.
+- ladder: The share of graduates who find work matching their education within two years. The promise made to the young, measured.
+- stay: Whether the exceptional companies stay Finnish — headquarters, hires, taxes. Falls with every exit.
 
 ## Visualization notes
 

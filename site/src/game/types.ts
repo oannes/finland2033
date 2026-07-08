@@ -27,9 +27,20 @@ export interface FlagAssign {
 }
 
 export interface Requirement {
-  flag: string
-  values: string[]
+  flag?: string
+  values?: string[]
+  /** measure-grammar gate, e.g. `indicator days >= 30` (redesign v2) */
+  measure?: GoalMeasure
   raw: string
+}
+
+/** Snapshot the gates evaluate against (current flags + latest numbers). */
+export interface MetricEnv {
+  flags: Record<string, string>
+  data: Record<string, number>
+  indices: Indices
+  poll: number
+  drift: number
 }
 
 export interface Action {
@@ -275,6 +286,8 @@ export interface GameContent {
   relevance: Record<number, Record<number, ActorId[] | null>>
   /** pre-2026 historical run-up for the indicator charts */
   history: HistorySeries | null
+  /** which indicators the sidebar charts (data-indicators.md `chart:` line) */
+  chartIds: string[]
   /** standing confrontations (clashes.md); empty if the file is absent */
   clashes: ClashEdge[]
   /** per-seat headline metrics (keymetrics.md); PM's comes from the election */

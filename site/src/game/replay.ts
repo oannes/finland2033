@@ -1,5 +1,5 @@
 import type { ActorId, GameContent, GameState } from './types'
-import { composeEndstate, initialState, resolvePhase } from './engine'
+import { composeEndstate, initialState, metricEnv, resolvePhase } from './engine'
 import { fillUnclaimed } from './ai'
 import type { ServerState } from './net'
 
@@ -13,7 +13,7 @@ export function replayServerGame(content: GameContent, s: ServerState): GameStat
   const resolvedPhases = s.phaseIdx + (s.stage === 'reveal' || s.stage === 'endstate' ? 1 : 0)
   for (let i = 0; i < resolvedPhases; i++) {
     const phase = content.phases[i]
-    const choices = fillUnclaimed(phase, s.submissions[i + 1] ?? {}, state.flags, s.seed) as Record<ActorId, string>
+    const choices = fillUnclaimed(phase, s.submissions[i + 1] ?? {}, state.flags, s.seed, metricEnv(content, state)) as Record<ActorId, string>
     const result = resolvePhase(content, state, phase, choices)
     state = {
       ...state,

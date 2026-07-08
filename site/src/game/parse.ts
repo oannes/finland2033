@@ -100,9 +100,13 @@ function parseFlagAssigns(s: string, opts: { skipContributes?: boolean } = {}): 
 }
 
 function parseRequirement(s: string): Requirement | undefined {
-  const m = s.match(/\b([A-Z][A-Z_0-9]{2,})=([a-zA-Z]+(?:\s+or\s+[a-zA-Z]+)*)/)
-  if (!m) return undefined
-  return { flag: m[1], values: m[2].split(/\s+or\s+/).map((v) => v.toLowerCase()), raw: s.trim() }
+  const raw = s.trim()
+  const bare = raw.replace(/\s*\([^)]*\)\s*$/, '').trim()
+  const fm = bare.match(/([A-Z][A-Z_0-9]{2,})\s*=\s*([a-zA-Z][a-zA-Z/|,-]*)/)
+  if (fm) return { flag: fm[1], values: fm[2].toLowerCase().split(/[/|,]/), raw }
+  const measure = parseMeasure(bare)
+  if (measure) return { measure, raw }
+  return undefined
 }
 
 // ---------- actions.md ----------
@@ -396,6 +400,7 @@ export function parseIndicators(md: string): {
   baseline: Record<string, number>
   history: import('./types').HistorySeries | null
   exogenous: Record<string, Record<number, number>>
+  chartIds: string[]
 } {
   const indicators: Indicator[] = []
   const re = /^\|\s*`(\w+)`\s*\|\s*([^|]+)\|\s*([^|]+)\|\s*([\d.]+)\s*\|/gm
@@ -462,7 +467,11 @@ export function parseIndicators(md: string): {
     }
   }
 
-  return { indicators, baseline, history, exogenous }
+  const chartM = md.match(/^chart:\s*(.+)$/m)
+  const chartIds = chartM
+    ? chartM[1].split(/[,\s]+/).map((x) => x.trim()).filter((x) => indicators.some((i) => i.id === x))
+    : indicators.map((i) => i.id)
+  return { indicators, baseline, history, exogenous, chartIds }
 }
 
 // ---------- personas ----------

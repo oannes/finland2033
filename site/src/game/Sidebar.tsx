@@ -373,7 +373,7 @@ export default function Sidebar({
 
       <Section title="The numbers, 2018 → 2033">
         <div className="grid grid-cols-1 gap-2">
-          {content.indicators.map((ind) => (
+          {content.indicators.filter((ind) => content.chartIds.includes(ind.id)).map((ind) => (
             <Sparkline
               key={ind.id}
               content={content}

@@ -1,4 +1,4 @@
-import type { Action, ActorId, PhaseContent, Tag } from './types'
+import type { Action, ActorId, MetricEnv, PhaseContent, Tag } from './types'
 import { ACTORS } from './types'
 import { actorMenu } from './engine'
 
@@ -61,8 +61,9 @@ export function simulateChoice(
   flags: Record<string, string>,
   random: () => number,
   opts: { biasTag?: Tag; biasStrength?: number; dampenH?: boolean } = {},
+  env?: MetricEnv,
 ): Action {
-  const { available } = actorMenu(phase, actor, flags)
+  const { available } = actorMenu(phase, actor, flags, env)
   if (available.length === 0) return phase.actions[actor][phase.actions[actor].length - 1]
   const w = tilt(actor, phase.idx, flags)
   // Emergent alignment: the table read the player's previous move and drifts
@@ -99,11 +100,12 @@ export function fillUnclaimed(
   claimed: Partial<Record<ActorId, string>>,
   flags: Record<string, string>,
   seed: number,
+  env?: MetricEnv,
 ): Record<ActorId, string> {
   const random = rng(seed * 7919 + phase.idx * 104729)
   const choices = {} as Record<ActorId, string>
   for (const a of ACTORS) {
-    const sim = simulateChoice(phase, a, flags, random)
+    const sim = simulateChoice(phase, a, flags, random, {}, env)
     choices[a] = claimed[a] ?? sim.id
   }
   return choices
@@ -116,6 +118,7 @@ export function simulateAll(
   flags: Record<string, string>,
   seed: number,
   prevPlayerTag?: Tag,
+  env?: MetricEnv,
 ): Record<ActorId, string> {
   const random = rng(seed * 7919 + phase.idx * 104729)
   // Alignment grows over the game: by the third decision the table has watched
@@ -128,7 +131,7 @@ export function simulateAll(
       choices[a] =
         a === playerActor
           ? playerActionId
-          : simulateChoice(phase, a, flags, random, { biasTag: prevPlayerTag, biasStrength, dampenH }).id
+          : simulateChoice(phase, a, flags, random, { biasTag: prevPlayerTag, biasStrength, dampenH }, env).id
     }
     return choices
   }

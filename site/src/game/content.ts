@@ -67,7 +67,7 @@ export function loadContent(): GameContent {
     }
   })
 
-  const { indicators, baseline, history, exogenous } = parseIndicators(file('data-indicators.md'))
+  const { indicators, baseline, history, exogenous, chartIds } = parseIndicators(file('data-indicators.md'))
 
   const personas = {} as Record<PersonaId, ReturnType<typeof parsePersona>>
   for (const p of PERSONAS) personas[p] = parsePersona(file(`personas/${p.toLowerCase()}.md`), p)
@@ -109,6 +109,7 @@ export function loadContent(): GameContent {
     goals: goalsMd ? parseGoals(goalsMd) : [],
     relevance: relevanceMd ? parseRelevance(relevanceMd) : {},
     history,
+    chartIds,
     clashes: clashesMd ? parseClashes(clashesMd) : [],
     keymetrics: keymetricsMd ? parseKeyMetrics(keymetricsMd) : [],
     epilogue: epilogueMd ? parseEpilogue(epilogueMd) : {},

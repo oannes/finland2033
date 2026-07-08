@@ -9,7 +9,7 @@ import type {
   PhaseResult,
 } from './types'
 import { ACTORS } from './types'
-import { actorMenu, evaluateGoals, interpolateNumbers, matchingVariants, narrativeNote, decisionImpacts, keyMetricFor } from './engine'
+import { actorMenu, evaluateGoals, interpolateNumbers, matchingVariants, narrativeNote, decisionImpacts, keyMetricFor, gateReason, metricEnv } from './engine'
 import Markdown from './Markdown'
 import { ACTOR_PORTRAITS, eraForPhase, moodFor, MoodFace, PERSONA_NAMES, PERSONA_PORTRAITS, Portrait } from './portraits'
 import { StreetScene } from './epilogue'
@@ -242,7 +242,8 @@ export function DecideScreen({
   onLock: (actionId: string) => void
 }) {
   const [selected, setSelected] = useState<string | null>(null)
-  const { available, gated } = actorMenu(phase, actor, state.flags)
+  const env = metricEnv(content, state)
+  const { available, gated } = actorMenu(phase, actor, state.flags, env)
   const variants = matchingVariants(phase, state.flags)
   const deskBrief = phase.briefs[actor]
   const othersWaiting = Object.keys(locked).length > 0
@@ -312,7 +313,7 @@ export function DecideScreen({
           {gated.map((a) => (
             <div key={a.id} className="rounded-xl border border-white/5 p-4 opacity-40 cursor-not-allowed">
               <div className="text-[11px] uppercase tracking-wide text-white/40 mb-1 flex items-center gap-1">
-                <Lock size={11} /> not available: {(a.requiresRaw?.match(/\(([^)]+)\)/) || [])[1] ?? 'earlier choices closed this door'}
+                <Lock size={11} /> not possible: {gateReason(content, a, env) || 'earlier choices closed this door'}
               </div>
               <div className="font-playfair italic text-lg text-white/70 mb-1">{a.title}</div>
               <p className="text-[13px] text-white/50 leading-relaxed">{a.summary}</p>

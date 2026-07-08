@@ -3,7 +3,7 @@ import { Check, Copy, Users } from 'lucide-react'
 import type { ActorId, GameContent, GameState } from './types'
 import { ACTORS } from './types'
 import { loadContent } from './content'
-import { composeEndstate, initialState, resolvePhase } from './engine'
+import { composeEndstate, initialState, resolvePhase , metricEnv } from './engine'
 import { simulateAll } from './ai'
 import {
   advanceGame,
@@ -146,7 +146,7 @@ function SoloGame({
     const prevChoiceId = prevResult?.choices[state.playerActor]
     const prevPhase = prevResult ? content.phases[prevResult.phase - 1] : null
     const prevTag = prevPhase?.actions[state.playerActor].find((a) => a.id === prevChoiceId)?.tag
-    const choices = simulateAll(phase, state.playerActor, actionId, state.flags, state.seed, prevTag)
+    const choices = simulateAll(phase, state.playerActor, actionId, state.flags, state.seed, prevTag, metricEnv(content, state))
     const result = resolvePhase(content, state, phase, choices)
     setState({
       ...state,

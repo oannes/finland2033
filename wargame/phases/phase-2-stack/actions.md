@@ -1,158 +1,154 @@
 # Phase 2 — Action menus
 
-Pivotal: PM, COUNTY, STARTUP. Modifiers: SAK, TI, AALTO, HVK. A = sovereignty (European tier), B = capability (assured US access), H = no national line.
-
----
+Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: effects + hooks apply to whichever outcome fires. Redesign v2: pole A (sovereignty / enforceability) vs pole B (capability now) vs radical (tag H). Deal metrics: books, share, bedside, pull, days, ladder, stay.
 
 ## PM (pivotal)
 
-### P2-PM-A — "Declare the core sovereign"
+### P2-PM-A — "An enforceable deal"
 - tag: A
-- summary: Declare the public core sovereign: European tier, joint procurement, the gap accepted aloud. Finland runs on machines it can inspect; the twenty-month gap goes on your record, in every headline.
-- effects: RES +0.8, PRO −0.5, LEG +0.3, POLL −2
+- summary: Sovereignty first. Declare the public core European: machines Finland can inspect, guarantees its courts can enforce, and a capability gap accepted out loud. Today's performance pays for tomorrow's jurisdiction.
+- effects: RES +0.8, PRO −0.4, POLL −4
+- data: sov_share +8, days +8, books -4
 
-### P2-PM-B — "Fly to Washington"
+### P2-PM-B — "The best machines"
 - tag: B
-- summary: Sign the Washington agreement: the best models under attestation, audit rights, a guaranteed lane. The savings math gets its engine; the terms are written, and rewritten, elsewhere.
-- effects: PRO +0.8, RES −0.7, POLL +1
+- summary: Capability first. Sign the Washington lane: the frontier models under attestation and audit. Every service improves this year, on terms written and rewritten elsewhere. Jurisdiction pays.
+- effects: PRO +0.8, RES −0.5, POLL +3
+- data: pub_ai +3, books +4, days -6, sov_share -4
 
-### P2-PM-H — "Let the agencies choose"
+### P2-PM-H — "Auction every workload"
 - tag: H
-- summary: Issue guidance and let each agency choose. No fight today; three incompatible systems by next year, and no one to blame but the org chart.
-- effects: RES −0.3, LEG −0.3, POLL −4
-
----
+- summary: The radical: no national line — run both stacks in open competition, service by service, winner takes each workload. Market discipline for engines; three systems, two legal regimes, and the org chart becomes the architecture. Coherence pays.
+- effects: PRO +0.3, RES −0.4, LEG −0.4, POLL −3
+- data: books +3, days -4, pull +2, trust -2
+- hook: SILENT
 
 ## COUNTY (pivotal)
 
-### P2-COUNTY-A — "Migrate the services"
+### P2-COUNTY-A — "Care that can't be cut off"
 - tag: A
-- summary: Move county services to the European tier. Weaker tools this year; data, law and continuity under Finnish control for a decade.
+- summary: Continuity first. Move county services to the European tier: weaker tools, but records, eligibility and care that no foreign decision can switch off. This year's medicine pays.
 - effects: RES +0.5, PRO −0.3
-- data: sov_share +5
+- data: sov_share +5, days +5, bedside -1
 
-### P2-COUNTY-B — "Best medicine available"
+### P2-COUNTY-B — "Best medicine now"
 - tag: B
-- summary: Buy the frontier lane for diagnostics and triage. Measurably better medicine now, on machines that answer to another jurisdiction.
-- effects: PRO +0.5
-- data: pub_ai +3, sov_share −4
+- summary: Patients first. Buy the frontier lane for diagnostics and triage: measurably better outcomes this year, on machines that answer to another jurisdiction. The continuity guarantee pays.
+- effects: PRO +0.5, RES −0.3
+- data: bedside +4, care_gap -2, days -5
 
-### P2-COUNTY-H — "Run both, decide later"
+### P2-COUNTY-H — "The data dowry"
 - tag: H
-- summary: Frontier for medicine, European for casework. Both benefits in half measure, and one IT staff maintaining two worlds.
-- effects: PRO −0.2
-- data: pub_ai +1
-
----
+- summary: The radical: trade anonymized care data to the frontier lab for a free top-tier care service. The wards get the best machines for nothing; the country's most sensitive dataset becomes someone's training asset. Data rights pay.
+- effects: PRO +0.6, LEG −0.5
+- data: bedside +6, care_gap -2, days -6, share -4, trust -4
+- hook: SILENT
 
 ## STARTUP (pivotal)
 
-### P2-STARTUP-A — "Build on the European tier"
+### P2-STARTUP-A — "Anchor tenant at home"
 - tag: A
-- summary: Move the platform to the European tier and say so publicly. The genome moat stays under EU law and the migration team is hired in Espoo; your models trail the frontier.
-- effects: RES +0.3, PRO −0.2
-- data: sov_share +4, youth_u −0.3
+- summary: The sector signs first: move the platform to the European tier and say so publicly. The sovereign build gets its business case; your models trail the frontier, and your investors notice.
+- effects: RES +0.4, PRO −0.2
+- data: sov_share +4, days +3, stay +5, pull -2
 
-### P2-STARTUP-B — "Take the lane"
+### P2-STARTUP-B — "Frontier abroad, HQ here"
 - tag: B
-- summary: Attest and take the lane. Full competitive strength abroad; the country's most sensitive dataset now runs under terms of service you did not write.
-- effects: PRO +0.7
-- data: sov_share −3
+- summary: Competitiveness first: attest, take the lane, keep headquarters in Finland. Full strength on the world market; the domestic stack loses its flagship, and the sector follows your example.
+- effects: PRO +0.5
+- data: pull +4, stay -2, days -3
 
-### P2-STARTUP-H — "Split the company"
+### P2-STARTUP-H — "Leave loudly"
 - tag: H
-- summary: Split the company: frontier abroad, European at home. Honest, and you pay for two of everything with one funding round.
-- effects: PRO −0.2
-
----
+- summary: The radical: relocate now, license the technology back, and say exactly why on the way out. A cautionary tale that reprices the whole country. Everyone who stays pays.
+- effects: PRO −0.5, LEG −0.4, POLL −3
+- data: stay -12, pull -4, ladder -2, books -2
+- hook: SILENT
 
 ## SAK (modifier)
 
-### P2-SAK-A — "A counterparty we can grieve"
+### P2-SAK-A — "Counterparties we can sue"
 - tag: A
-- summary: State it publicly: every guarantee must be enforceable in a European court. Labour's weight lands on the sovereignty side; the capability camp calls you a brake.
+- summary: Enforceability first: labour's public line is that every job guarantee must be grievable in a European court. A smaller pie whose division is guaranteed; the capability camp pays.
 - effects: LEG +0.4
-- hook: SAK-A
+- data: share +4, days +2
 
-### P2-SAK-B — "Jobs where the work is"
+### P2-SAK-B — "A bigger pie to share"
 - tag: B
-- summary: Accept the lane if deployment and jobs keep growing. Work continues; your members' contracts now reference machines their law cannot reach.
-- effects: LEG +0.1
-- hook: SAK-B
+- summary: Capability first: accept the lane if deployment and jobs keep growing. More to share, nominally; the contracts now reference machines your law cannot reach.
+- effects: PRO +0.3
+- data: share +2, books +2, days -2
 
-### P2-SAK-H — "No position"
+### P2-SAK-H — "A treaty with the lab"
 - tag: H
-- summary: Take no position; save the powder for the money fight in 2031. The stack gets decided without labour at the table.
-- effects: LEG −0.1
-- hook: SAK-H
-
----
+- summary: The radical: negotiate directly with the frontier lab — a union contract with an AI company, bypassing the state. Members get terms nobody else has; the national bargaining table pays.
+- effects: LEG −0.5, PRO +0.2
+- data: share +7, trust -3, days -2
+- hook: SILENT
 
 ## TI (modifier)
 
-### P2-TI-A — "The sovereign build's order book"
+### P2-TI-A — "Anchor the domestic build"
 - tag: A
-- summary: Underwrite the sovereign build: power agreements, construction, capital. The European tier gets its bank; your exporters' access question stays open.
-- effects: PRO +0.4
-- data: compute_mw +40
-- hook: TI-A
+- summary: Autonomy as contribution: members commit compute demand and capital to the European build. Dearer inputs today; an industrial leg under the sovereign stack tomorrow.
+- effects: RES +0.4, PRO −0.2
+- data: days +4, compute_mw +40, pull -2
 
-### P2-TI-B — "Keep the lane open"
+### P2-TI-B — "Competitiveness first"
 - tag: B
-- summary: Lobby for the lane with member-signed letters. The exporters keep their access; the sovereign build loses its industrial leg.
-- effects: PRO +0.5
-- data: compute_mw +10
-- hook: TI-B
+- summary: Exporters buy the best tools on earth and contribute the old way: taxes, jobs, market access. The sovereign build loses its industrial customers; the order books stay full.
+- effects: PRO +0.4
+- data: pull +4, days -2
 
-### P2-TI-H — "Split the difference in public"
+### P2-TI-H — "The compute embassy"
 - tag: H
-- summary: Let both camps publish their own statements. The association keeps its members and loses its voice.
-- effects: PRO −0.3, POLL −1
-- hook: TI-H
-
----
+- summary: The radical: industry builds its own hall inside US jurisdiction — a guaranteed lane outside Finnish and EU rules entirely. The exporters are safe; the country's leverage pays.
+- effects: PRO +0.5, RES −0.5
+- data: pull +6, days -6, stay -4, compute_mw -20
+- hook: SILENT
 
 ## AALTO (modifier)
 
-### P2-AALTO-A — "Certify 'good enough'"
+### P2-AALTO-A — "Train for what we run"
 - tag: A
-- summary: Put the faculty's hours on testing the European tier against the 80% claim, results published either way. Migration becomes an engineering fact; the frontier labs go on without you.
-- effects: LEG +0.4
+- summary: Relevance first: point the faculty and the students at the European stack Finland actually operates. The graduates are needed here; the frontier's shine, and some of them, pay.
+- effects: RES +0.3
+- data: ladder +4, sov_share +2, stay +2
 - flags: TALENT_PIPE=strong
-- data: sov_share +3
-- hook: AALTO-A
 
-### P2-AALTO-B — "Follow the capability"
+### P2-AALTO-B — "Train at the frontier"
 - tag: B
-- summary: Joint labs on the frontier lane; students on the best tools available. The graduates work at the edge, and the edge is elsewhere.
+- summary: Excellence first: joint labs on the lane, students on the best machines on earth. They become world-class, and world-class is portable. The promise of being needed *here* pays.
 - effects: PRO +0.4
+- data: ladder +2, stay -3, pull +2
 - flags: TALENT_PIPE=weak
-- data: sov_share −2
-- hook: AALTO-B
 
-### P2-AALTO-H — "Measure, don't choose"
+### P2-AALTO-H — "Sell the pipeline"
 - tag: H
-- summary: Benchmark both tiers, endorse neither. Rigorous, useful, and quoted by both camps against each other.
-- hook: AALTO-H
-
----
+- summary: The radical: degree programs contractually feed the frontier lab, tuition paid by the customer, with return clauses nobody believes. The university becomes a supplier; its independence pays.
+- effects: PRO +0.4, LEG −0.4
+- data: books +3, ladder +2, stay -4, trust -2
+- flags: TALENT_PIPE=weak
+- hook: SILENT
 
 ## HVK (modifier)
 
-### P2-HVK-A — "Doctrine says sovereign"
+### P2-HVK-A — "Run-alone doctrine"
 - tag: A
-- summary: Apply the doctrine: critical functions on infrastructure Finland can inspect and run alone. Resilience wins; your own services lose the best tools.
-- effects: RES +0.8
-- hook: HVK-A
+- summary: Resilience first: critical functions only on infrastructure Finland can inspect and run unassisted. The clock runs up; your own services lose the best tools, and everyone resents you until the day they don't.
+- effects: RES +0.8, PRO −0.3
+- data: days +8, books -3
 
-### P2-HVK-B — "Conditional access, eyes open"
+### P2-HVK-B — "Dependence with drills"
 - tag: B
-- summary: Argue for conditional access: the lane, plus exit drills, escrowed weights, a tested fallback. Dependence made survivable instead of denied. Both camps distrust you for a week and quote you for years.
+- summary: The engineered middle: take the lane, but with exit drills, escrowed weights and a tested fallback tier. Dependence made survivable instead of denied; both camps distrust you for a week and quote you for years.
 - effects: RES +0.4, PRO +0.2
-- hook: HVK-B
+- data: days +4
+- flags: contributes to CRISIS_LEG=managed (see mechanics)
 
-### P2-HVK-H — "Map the dependencies"
+### P2-HVK-H — "Rent out our resilience"
 - tag: H
-- summary: Deliver a classified dependency map with no recommendation. It will be excellent, and late.
-- effects: RES −0.2
-- hook: HVK-H
+- summary: The radical: offer Finland as the alliance's civil-resilience laboratory — sovereignty pooled, drills funded by others, obligations flowing both ways. The clock is paid for; the meaning of "alone" pays.
+- effects: RES +0.6, LEG −0.3
+- data: days +8, books +3, trust -2, sov_share -3
+- hook: SILENT

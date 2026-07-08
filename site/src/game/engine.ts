@@ -13,6 +13,7 @@ import type {
   GoalStatus,
   IndexDelta,
   Indices,
+  MetricEnv,
   Outcome,
   PersonaId,
   PhaseContent,
@@ -50,17 +51,79 @@ export function actionById(phase: PhaseContent, id: string): Action | undefined 
 }
 
 /** requires: gates are hard (WEBSITE_AGENT rule 2) */
-export function requirementMet(action: Action, flags: Record<string, string>): boolean {
-  if (!action.requires) return true
-  const v = flags[action.requires.flag]
-  return v !== undefined && action.requires.values.includes(v)
+export function requirementMet(action: Action, flags: Record<string, string>, env?: MetricEnv): boolean {
+  const req = action.requires
+  if (!req) return true
+  if (req.flag && req.values) {
+    const v = flags[req.flag]
+    return v !== undefined && req.values.includes(v)
+  }
+  if (req.measure) {
+    if (!env) return true // no snapshot to judge by: fail open (facilitator views)
+    return measureMetEnv(req.measure, env)
+  }
+  return true
+}
+
+/** Evaluate a goal-grammar measure against a metric snapshot (used by gates). */
+export function measureMetEnv(m: GoalMeasure, env: MetricEnv): boolean {
+  const cmp = (v: number, op: '>=' | '<=', n: number) => (op === '>=' ? v >= n : v <= n)
+  switch (m.kind) {
+    case 'indicator':
+      return cmp(env.data[m.id] ?? 0, m.op, m.n)
+    case 'index':
+      return cmp(env.indices[m.index], m.op, m.n)
+    case 'poll':
+      return cmp(env.poll, m.op, m.n)
+    case 'flag': {
+      const v = env.flags[m.flag]
+      return v !== undefined && m.values.includes(v)
+    }
+    case 'drift':
+      return env.drift <= m.max
+    default:
+      return true
+  }
+}
+
+/** Snapshot of the current numbers, for gates ("DECISION NOT POSSIBLE BECAUSE…"). */
+export function metricEnv(content: GameContent, state: GameState): MetricEnv {
+  return {
+    flags: state.flags,
+    data:
+      state.endstate?.dataNode ??
+      state.results[state.results.length - 1]?.dataNode ??
+      content.baseline,
+    indices: state.indices,
+    poll: state.poll,
+    drift: state.results.filter((r) => r.outcome.cls === 'O3').length,
+  }
+}
+
+/** Player-readable reason why a gated card is locked. */
+export function gateReason(content: GameContent, action: Action, env?: MetricEnv): string {
+  const req = action.requires
+  if (!req) return ''
+  const paren = (action.requiresRaw?.match(/\(([^)]+)\)/) || [])[1]
+  if (req.flag) return paren ?? `needs ${req.flag}=${(req.values ?? []).join(' or ')}`
+  if (req.measure && req.measure.kind === 'indicator') {
+    const m = req.measure
+    const label = content.indicators.find((i) => i.id === m.id)?.label ?? m.id
+    const v = env?.data[m.id]
+    return `${label} is ${v !== undefined ? v : '…'} (needs ${m.op === '>=' ? 'at least' : 'at most'} ${m.n})${paren ? `: ${paren}` : ''}`
+  }
+  if (req.measure && req.measure.kind === 'poll')
+    return `approval is ${env?.poll ?? '…'} (needs ${req.measure.op === '>=' ? 'at least' : 'at most'} ${req.measure.n})${paren ? `: ${paren}` : ''}`
+  if (req.measure && req.measure.kind === 'index')
+    return `${req.measure.index} is ${env ? env.indices[req.measure.index].toFixed(1) : '…'} (needs ${req.measure.op === '>=' ? 'at least' : 'at most'} ${req.measure.n})${paren ? `: ${paren}` : ''}`
+  return paren ?? action.requiresRaw ?? ''
 }
 
 /** The action menu for an actor in a phase: available + gated (shown greyed). */
-export function actorMenu(phase: PhaseContent, actor: ActorId, flags: Record<string, string>) {
+export function actorMenu(phase: PhaseContent, actor: ActorId, flags: Record<string, string>, env?: MetricEnv) {
   const all = phase.actions[actor]
-  const available = all.filter((a) => requirementMet(a, flags))
-  const gated = all.filter((a) => !requirementMet(a, flags))
+  const available = all.filter((a) => requirementMet(a, flags, env))
+  const gated = all.filter((a) => !requirementMet(a, flags, env))
   return { available, gated }
 }
 
@@ -222,6 +285,14 @@ export function resolvePhase(
   }
   applyExogenous(content, dataNode, NODE_YEARS[phase.idx])
   for (const k of Object.keys(dataNode)) dataNode[k] = Math.round(dataNode[k] * 10) / 10
+
+  // Redesign v2: the next crisis's shape follows the self-sufficiency clock.
+  // Days Finland runs alone decides how the Second Gate lands, alongside the
+  // legacy SECURE_ARCH rule.
+  if (phase.idx === 2 && dataNode.days !== undefined) {
+    if (dataNode.days >= 25 && outcome.cls !== 'O3') flags.CRISIS_LEG = 'managed'
+    else if (dataNode.days < 10) flags.CRISIS_LEG = 'damaged'
+  }
 
   // 5. Modifier hooks: render exactly the 4 matching (WEBSITE_AGENT rule 5)
   const hooks = modifierActors
@@ -514,10 +585,11 @@ export function replayWithChoice(
       if (i === phaseI) choices[by] = altId
       if (i > phaseI) {
         // a changed past can close a gate a recorded action walked through
+        const env = metricEnv(content, sim)
         for (const a of ACTORS) {
           const act = phase.actions[a]?.find((x) => x.id === choices[a])
-          if (act && !requirementMet(act, sim.flags)) {
-            const fallback = phase.actions[a].find((x) => requirementMet(x, sim.flags))
+          if (act && !requirementMet(act, sim.flags, env)) {
+            const fallback = phase.actions[a].find((x) => requirementMet(x, sim.flags, env))
             if (fallback) choices[a] = fallback.id
           }
         }
