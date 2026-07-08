@@ -77,7 +77,7 @@ caption: Eetu, 25 · Espoo
 
 Eetu graduated in 2024 into a promise Finland could not keep: study, serve, work, and there will be a place for you. After completing his military service, he began searching.
 
-Two years of applications, internships and short gigs later, Eetu is losing faith. His generation was told it was needed, then left waiting outside the labour market.
+After two years of applications, internships and short-term jobs, Eetu is losing hope. When he began his studies, his generation was told they were needed. Then the pandemic pushed much of their education online, weakened their connection to teachers and peers, and reduced opportunities to gain practical experience. Five years later, they are entering a labour market with too few opportunities for recent graduates.
 
 Finland has failed him. Can that failure still be repaired in an age when AI can already do much of what Eetu was taught to do?
 
@@ -86,15 +86,17 @@ headline: 2027. Another chance.
 
 In Tampere, a forest-industry CFO freezes the AI budget mid-quarter. The same memo is being written, in other languages, in a hundred thousand companies at once.
 
-The squeeze travels up the chain. Margins thin at the frontier labs just as their infrastructure bills peak, so their sales teams stop courting companies and start courting states: whole public sectors, priced as a single customer. Inside the same buildings, researchers have begun handing their own work to the machines. Each model generation now helps design the next. The people closest to this have stopped predicting in years and started predicting in quarters.
+The squeeze travels up the chain. Margins thin at the frontier labs just as their infrastructure bills peak. Inside the labs, programmers have begun handing their own work completely to the machines. Each model generation now helps design the next. The people closest to this shift no longer predict capability gains in years, but in quarters.
 
-The shape of the coming decade is visible at the edges. Ordinary machine work gets cheaper every quarter: what cost a salary in 2024 costs a subscription in 2026. The very best models move the other way. They stay scarce, priced, and politically allocated, more like refined fuel than software. Most new factories are designed without lighting for the production floor; they employ almost no one. In Washington and Beijing, officials have started discussing accelerators the way an earlier generation discussed enriched uranium.
+The shape of the coming decade is visible at the edges. Ordinary work gets cheaper every quarter: what cost a salary in 2024 costs a subscription in 2026. The very best models move the other way. They stay scarce, priced, and politically allocated, more like refined fuel than software. In Washington and Beijing, officials have started discussing top models the way an earlier generation discussed enriched uranium. Throughout the globe, most new factories are designed without lighting for the production floor; they employ almost no one but machines. 
 
-In Finland, a left-leaning government, carried to power by public-sector workers and older voters, takes office. In the April 2027 election, the leading party promised only little. It won because the country had grown tired of austerity without growth, even as military spending continued to rise.
+The general mood in Finland is one of shock. Things are not going well. Finland once had some of the world’s best schools; now the education system is failing its young people. The healthcare system is overburdened and still relies on IT systems designed in the last millennium. Public debt keeps rising despite austerity. Drug-related deaths are the highest in Europe. Falling birth rates are even forcing a debate about extending conscription to women.
 
-Power means responsibility, and not only the government's. Whether the state automates, whose machines it runs on, who receives the gains: each of these is a clause in a social contract written for a world that no longer exists.
+A left-leaning government, carried to power by public-sector workers and older voters, takes office. In the April 2027 election, the leading party promised only little. It won because the country had grown tired of austerity without growth.
 
-Few people in Finland are in a position to write a new one. *Take a seat in the room where the next decade is decided.*
+But power brings responsibility, and not only for the government. Whether the state automates, whose machines it relies on, and who receives the gains are no longer technical questions alone. They are the terms of a new social contract that Finland must now create.
+
+Few people in Finland are in a position to participate writing this contract. *Take a seat in the room where the next decade is decided.*
 
 ## cta
 solo: Take your seat
@@ -121,23 +123,23 @@ Measure grammar (one per goal):
 
 - goal: Re-elected in 2031
   measure: poll >= 48
-  why: Approval moves with every decision. The 2031 election is scored from it.
+  why: You want to be re-elected because the country needs continuity in the midst of change. Your approval rating moves with every decision. The 2031 election is scored from it.
 
-- goal: A country that chose
+- goal: Choosing a direction
   measure: drift <= 1
-  why: Every deadlock wastes a year. Two, and Finland drifted through its one good decade.
-
+  why: You need to get everyone involved, because every deadlock wastes a year. 
+  
 - goal: Automation delivers
   measure: indicator pub_ai >= 30
-  why: The budget already assumes AI carries 30% of public transactions. If it does not, the cuts are yours to announce.
+  why: The new budget already assumes AI carries 30% of public transactions. If it does not, the cuts are yours to announce.
 
 ## SAK
 
 - goal: Rights in law
   measure: flag GUARANTEE in yes
-  why: A job-security law signed in 2028 protects your members for the decade. A promise does not.
+  why: You have to get a job-security law signed to protect your members for the next decade. 
 
-- goal: The gains are shared
+- goal: The AI gains are shared
   measure: flag LEVY in yes
   why: A levy on automation savings funds retraining. Without it, the machine's profits leave the room.
 
@@ -149,11 +151,11 @@ Measure grammar (one per goal):
 
 - goal: Queues under control
   measure: indicator care_gap <= 14
-  why: You lose 57,000 workers by 2033. Only automation done right closes the gap they leave.
+  why: By 2033, Finland will have 101,000 more people aged 75 or over while the healthcare sector will have 57,000 fewer workers. 
 
-- goal: Trust holds
+- goal: Social contract on care
   measure: indicator trust >= 55
-  why: One botched rollout in one ward can break national trust. Careful deployment keeps it.
+  why: Care is not high tech, it's hi-touch. Can you define where the AI can be deployed?
 
 - goal: Services actually automate
   measure: indicator pub_ai >= 30
@@ -161,39 +163,39 @@ Measure grammar (one per goal):
 
 ## TI
 
-- goal: Investment keeps coming
+- goal: Foreign investment keeps coming
   measure: index PRO >= 7
   why: Your members build where returns are predictable. Political drift scares capital away.
 
 - goal: The infrastructure grows
   measure: indicator compute_mw >= 550
-  why: Datacenters and grid connections take years to build and months to lose.
+  why: Datacenters and grid connections take years to build.
 
-- goal: No open-ended levy
+- goal: No free lunches
   measure: flag LEVY in no
-  why: A capped levy is a price. An uncapped one is a precedent your members pay forever.
+  why: Your member corporations cannot feed the crowds if they themselves don't participate in creating value
 
 ## HVK
 
 - goal: Security built in early
   measure: flag SECURE_ARCH in yes
-  why: Exit clauses and fallbacks cost 15% at the 2028 tender, or ten times that later.
+  why: Move your organisation from maintaining security to creating resilience culture.
 
 - goal: Preparedness holds
   measure: index RES >= 6.5
-  why: Finland must run core services through an access cut without improvising.
+  why: Uninterrupted core services through the decade.
 
 - goal: The crisis is a drill
   measure: flag CRISIS_LEG in managed
-  why: When access breaks in 2031, the country either exercises a plan or improvises a trauma.
+  why: Country learns from crises.
 
 ## AALTO
 
-- goal: Eetu stays
+- goal: Best students stay in Finland
   measure: persona EETU >= 4
-  why: If graduates like Eetu find real work here, your pipeline worked. If they leave, it fed someone else's.
+  why: If graduates find real work here, your pipeline worked. If they leave, it fed someone else's.
 
-- goal: The pipeline feeds the platform
+- goal: High-tech hub
   measure: flag TALENT_PIPE in strong
   why: A public platform nobody local can build or audit is a rented machine.
 

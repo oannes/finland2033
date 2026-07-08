@@ -17,23 +17,23 @@ Measure grammar (one per goal):
 
 - goal: Re-elected in 2031
   measure: poll >= 48
-  why: You want to be re-elected because the country needs continuity in the midst of change. Your approval rating moves with every decision. The 2031 election is scored from it.
+  why: Approval moves with every decision. The 2031 election is scored from it.
 
-- goal: Choosing a direction
+- goal: A country that chose
   measure: drift <= 1
-  why: You need to get everyone involved, because every deadlock wastes a year. 
-  
+  why: Every deadlock wastes a year. Two, and Finland drifted through its one good decade.
+
 - goal: Automation delivers
   measure: indicator pub_ai >= 30
-  why: The new budget already assumes AI carries 30% of public transactions. If it does not, the cuts are yours to announce.
+  why: The budget already assumes AI carries 30% of public transactions. If it does not, the cuts are yours to announce.
 
 ## SAK
 
 - goal: Rights in law
   measure: flag GUARANTEE in yes
-  why: You have to get a job-security law signed to protect your members for the next decade. 
+  why: A job-security law signed in 2028 protects your members for the decade. A promise does not.
 
-- goal: The AI gains are shared
+- goal: The gains are shared
   measure: flag LEVY in yes
   why: A levy on automation savings funds retraining. Without it, the machine's profits leave the room.
 
@@ -45,11 +45,11 @@ Measure grammar (one per goal):
 
 - goal: Queues under control
   measure: indicator care_gap <= 14
-  why: By 2033, Finland will have 101,000 more people aged 75 or over while the healthcare sector will have 57,000 fewer workers. 
+  why: You lose 57,000 workers by 2033. Only automation done right closes the gap they leave.
 
-- goal: Social contract on care
+- goal: Trust holds
   measure: indicator trust >= 55
-  why: Care is not high tech, it's hi-touch. Can you define where the AI can be deployed?
+  why: One botched rollout in one ward can break national trust. Careful deployment keeps it.
 
 - goal: Services actually automate
   measure: indicator pub_ai >= 30
@@ -57,39 +57,39 @@ Measure grammar (one per goal):
 
 ## TI
 
-- goal: Foreign investment keeps coming
+- goal: Investment keeps coming
   measure: index PRO >= 7
   why: Your members build where returns are predictable. Political drift scares capital away.
 
 - goal: The infrastructure grows
   measure: indicator compute_mw >= 550
-  why: Datacenters and grid connections take years to build.
+  why: Datacenters and grid connections take years to build and months to lose.
 
-- goal: No free lunches
+- goal: No open-ended levy
   measure: flag LEVY in no
-  why: Your member corporations cannot feed the crowds if they themselves don't participate in creating value
+  why: A capped levy is a price. An uncapped one is a precedent your members pay forever.
 
 ## HVK
 
 - goal: Security built in early
   measure: flag SECURE_ARCH in yes
-  why: Move your organisation from maintaining security to creating resilience culture.
+  why: Exit clauses and fallbacks cost 15% at the 2028 tender, or ten times that later.
 
 - goal: Preparedness holds
   measure: index RES >= 6.5
-  why: Uninterrupted core services through the decade.
+  why: Finland must run core services through an access cut without improvising.
 
 - goal: The crisis is a drill
   measure: flag CRISIS_LEG in managed
-  why: Country learns from crises.
+  why: When access breaks in 2031, the country either exercises a plan or improvises a trauma.
 
 ## AALTO
 
-- goal: Best students stay in Finland
+- goal: Eetu stays
   measure: persona EETU >= 4
-  why: If graduates find real work here, your pipeline worked. If they leave, it fed someone else's.
+  why: If graduates like Eetu find real work here, your pipeline worked. If they leave, it fed someone else's.
 
-- goal: High-tech hub
+- goal: The pipeline feeds the platform
   measure: flag TALENT_PIPE in strong
   why: A public platform nobody local can build or audit is a rented machine.
 
