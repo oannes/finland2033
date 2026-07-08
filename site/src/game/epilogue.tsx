@@ -28,7 +28,7 @@ type Beat =
   | { v?: string; t: string } // voice line (v) or plain narration (no v)
   | { choice: { label: string; replies: { v?: string; t: string }[] }[] }
   | { hub: true } // pause: the player picks which spirit to talk to next
-  | { img: string; alt: string } // a portrait revealed mid-scene
+  | { img: string; alt: string; env?: string } // a portrait revealed mid-scene (env = hover layer)
 
 function VoiceLine({ v, t }: { v?: string; t: string }) {
   if (!v)
@@ -116,10 +116,12 @@ const SPIRIT_FILES = import.meta.glob('../assets/portraits/spirit-*.{png,webp,jp
   eager: true,
   import: 'default',
 }) as Record<string, string>
-const spiritImage = (key: string): string | undefined => {
-  const slug = key === 'METSÄ' ? 'metsa' : key.toLowerCase()
-  return Object.entries(SPIRIT_FILES).find(([p]) => p.includes(`spirit-${slug}`))?.[1]
-}
+const spiritSlug = (key: string) => (key === 'METSÄ' ? 'metsa' : key.toLowerCase())
+const spiritImage = (key: string): string | undefined =>
+  Object.entries(SPIRIT_FILES).find(([p]) => p.includes(`spirit-${spiritSlug(key)}.`))?.[1]
+/** conceptual inner-life version, revealed on hover */
+const spiritEnvImage = (key: string): string | undefined =>
+  Object.entries(SPIRIT_FILES).find(([p]) => p.includes(`spirit-${spiritSlug(key)}-env`))?.[1]
 
 const SPIRIT_ORDER = ['RAJA', 'TALKOOT', 'NOKIA', 'VELKA', 'METSÄ']
 
@@ -134,7 +136,7 @@ function talkFor(doc: EpilogueDoc, key: string, ctx: EpilogueCtx): Beat[] {
     }
   })()
   const img = spiritImage(key)
-  return img ? [{ img, alt: key }, ...beats] : beats
+  return img ? [{ img, alt: key, env: spiritEnvImage(key) }, ...beats] : beats
 }
 
 // ---------- the tunnel scene ----------
@@ -192,13 +194,24 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
       continue
     }
     if ('img' in b) {
+      const tilt = i % 2 ? '-rotate-1' : 'rotate-1'
       shown.push(
-        <img
-          key={i}
-          src={b.img}
-          alt={b.alt}
-          className={`w-24 h-28 rounded-2xl object-cover object-top border border-white/15 shadow-lg shadow-black/50 ${i % 2 ? '-rotate-1' : 'rotate-1'}`}
-        />,
+        b.env ? (
+          <div
+            key={i}
+            className={`relative w-24 h-28 rounded-2xl overflow-hidden border border-white/15 shadow-lg shadow-black/50 group ${tilt}`}
+          >
+            <img src={b.img} alt={b.alt} className="absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-700 group-hover:opacity-0" />
+            <img src={b.env} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-700 group-hover:opacity-100" />
+          </div>
+        ) : (
+          <img
+            key={i}
+            src={b.img}
+            alt={b.alt}
+            className={`w-24 h-28 rounded-2xl object-cover object-top border border-white/15 shadow-lg shadow-black/50 ${tilt}`}
+          />
+        ),
       )
       continue
     }
