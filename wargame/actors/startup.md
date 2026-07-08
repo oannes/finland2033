@@ -15,7 +15,10 @@ Founder-CEO of a Turku-based biotech-AI company (drug-response prediction for No
 - **Proof:** one working product legitimizes a whole stack. The state can declare; only you can demonstrate.
 
 ## What you cannot control
-Model capability and API pricing, set by companies a thousand times your size. The state's stack choice and procurement law. Investor sentiment about 'policy exposure', which moves faster than policy. And the genome data's legal status; one regulation away from being your moat or your liability.
+- Model capability and API pricing, set by companies a thousand times your size.
+- The state's stack choice and procurement law.
+- Investor sentiment about 'policy exposure', which moves faster than policy.
+- The genome data's legal status; one regulation away from being your moat or your liability.
 
 ## Objectives
 1. Survive Series C in whichever stack regime wins (PRO-linked).

@@ -230,7 +230,11 @@ Head of a coalition government mid-term in 2028. You inherited the fiscal vice (
 - **Immediacy:** alone at this table, your choices move the headlines the same week. Nobody else's signature is news by itself.
 
 ## What you cannot control
-The pace of AI capability, set in San Francisco and Shanghai; it compounds whether Finland deploys or waits. US access policy and EU rules, which can reprice your whole program in a week. The workforce, which shrinks on schedule regardless of any reform. The bond markets' patience with your framework. And your own side: the unions and the counties can act against you.
+- The pace of AI capability, set in San Francisco and Shanghai; it compounds whether Finland deploys or waits.
+- US access policy and EU rules, which can reprice your whole program in a week.
+- The workforce, which shrinks on schedule regardless of any reform.
+- The bond markets' patience with your framework.
+- Your own side: the unions and the counties can act against you.
 
 ## Objectives (win conditions)
 1. Survive: no government crisis triggered by an unmanaged legitimacy shock (LEG never below 3.0 on your watch).
@@ -267,7 +271,10 @@ Chair of SAK, 2028, speaking (for game purposes) for the whole employee side. SA
 - **The ballot:** one credible strike mandate per parliament. Spending it is irreversible; letting it expire is too.
 
 ## What you cannot control
-The technology itself: entry-level and routine work erodes first, whether or not you consent. The employers' balance sheets and the state's framework arithmetic. Which models the state buys, and from whom; jurisdiction is decided above your table. And your future members' patience: Eetu's cohort organizes with you or against you, and you do not pick which.
+- The technology itself: entry-level and routine work erodes first, whether or not you consent.
+- The employers' balance sheets and the state's framework arithmetic.
+- Which models the state buys, and from whom; jurisdiction is decided above your table.
+- Your future members' patience: Eetu's cohort organizes with you or against you, and you do not pick which.
 
 ## Objectives
 1. Transition rights in writing: retraining entitlements, human-override guarantees, gain-sharing; a signed COMPACT=strong.
@@ -302,7 +309,10 @@ You direct Finland's largest wellbeing county and chair the county directors' ne
 - **The anchor order:** county demand is the largest purchase in the country. What you commit to gets built; what you withhold from stalls.
 
 ## What you cannot control
-The demographic arithmetic: 57,000 fewer workers by 2033, on schedule, reform or no reform. The capability of the tools you are offered, decided abroad. The state's budgets and statutes. And public trust, which one viral clip from one benefits office can move further than a year of good service.
+- The demographic arithmetic: 57,000 fewer workers by 2033, on schedule, reform or no reform.
+- The capability of the tools you are offered, decided abroad.
+- The state's budgets and statutes.
+- Public trust, which one viral clip from one benefits office can move further than a year of good service.
 
 ## Objectives
 1. Service promise: care queues within statutory limits through 2033 despite −57k workforce (care_gap falling).
@@ -339,7 +349,10 @@ CEO of Finland's largest business lobby, 2028: Nokia, Kone, Wärtsilä, Metso do
 - **Geopolitical weight:** your exporters live on access lanes. Where you lean, Washington or Brussels, that argument gains a constituency, and the securitisers gain an opponent.
 
 ## What you cannot control
-The global capital cycle and the frontier's pace; your members ride both and steer neither. Washington's access rules and Brussels' assurance levels. The state's choices, which reprice every member's Finland thesis quarterly. And labour's answer, which is not yours to give.
+- The global capital cycle and the frontier's pace; your members ride both and steer neither.
+- Washington's access rules and Brussels' assurance levels.
+- The state's choices, which reprice every member's Finland thesis quarterly.
+- Labour's answer, which is not yours to give.
 
 ## Objectives
 1. PRO ≥ 7 by 2033: Finland gains, not loses, private AI investment across the cycle.
@@ -376,7 +389,10 @@ Director of HVK, 2028. Your agency stockpiles fuel, grain and medicine for a cou
 - **Doctrine:** your exercises decide whether the next crisis is a drill or a trauma. Resilience built with society's consent outlasts resilience imposed on it.
 
 ## What you cannot control
-Whether the gate ever comes, and when; access politics is made in Washington, not Helsinki. The budget: preparedness competes with visible spending and usually loses. What other institutions buy in the meantime; every procurement you failed to harden is a dependency you now own. And the frontier's pace, which makes every fallback tier feel obsolete on delivery.
+- Whether the gate ever comes, and when; access politics is made in Washington, not Helsinki.
+- The budget: preparedness competes with visible spending and usually loses.
+- What other institutions buy in the meantime; every procurement you failed to harden is a dependency you now own.
+- The frontier's pace, which makes every fallback tier feel obsolete on delivery.
 
 ## Objectives
 1. RESERVE=full by end of P1; tested for real in P2 (a paper reserve will be found out).
@@ -413,7 +429,9 @@ Rector of Finland's flagship technical university, 2028. Your CS and AI programm
 - **Prestige:** where the university goes, students and funding follow, with a four-year lag either way.
 
 ## What you cannot control
-The talent gradient: the best tools and the best salaries are abroad, and every graduating class knows it. The frontier's pace, which turns every four-year curriculum into a bet on an unknowable target. State funding decisions, and the stack the country finally lands on; you train people for it either way.
+- The talent gradient: the best tools and the best salaries are abroad, and every graduating class knows it.
+- The frontier's pace, which turns every four-year curriculum into a bet on an unknowable target.
+- State funding decisions, and the stack the country finally lands on; you train people for it either way.
 
 ## Objectives
 1. Talent balance: TUOMAS persona (talent meter) ends 2033 in Finland; metaphorically: net brain drain ≤ zero.
@@ -449,7 +467,10 @@ Founder-CEO of a Turku-based biotech-AI company (drug-response prediction for No
 - **Proof:** one working product legitimizes a whole stack. The state can declare; only you can demonstrate.
 
 ## What you cannot control
-Model capability and API pricing, set by companies a thousand times your size. The state's stack choice and procurement law. Investor sentiment about 'policy exposure', which moves faster than policy. And the genome data's legal status; one regulation away from being your moat or your liability.
+- Model capability and API pricing, set by companies a thousand times your size.
+- The state's stack choice and procurement law.
+- Investor sentiment about 'policy exposure', which moves faster than policy.
+- The genome data's legal status; one regulation away from being your moat or your liability.
 
 ## Objectives
 1. Survive Series C in whichever stack regime wins (PRO-linked).

@@ -15,7 +15,11 @@ Head of a coalition government mid-term in 2028. You inherited the fiscal vice (
 - **Immediacy:** alone at this table, your choices move the headlines the same week. Nobody else's signature is news by itself.
 
 ## What you cannot control
-The pace of AI capability, set in San Francisco and Shanghai; it compounds whether Finland deploys or waits. US access policy and EU rules, which can reprice your whole program in a week. The workforce, which shrinks on schedule regardless of any reform. The bond markets' patience with your framework. And your own side: the unions and the counties can act against you.
+- The pace of AI capability, set in San Francisco and Shanghai; it compounds whether Finland deploys or waits.
+- US access policy and EU rules, which can reprice your whole program in a week.
+- The workforce, which shrinks on schedule regardless of any reform.
+- The bond markets' patience with your framework.
+- Your own side: the unions and the counties can act against you.
 
 ## Objectives (win conditions)
 1. Survive: no government crisis triggered by an unmanaged legitimacy shock (LEG never below 3.0 on your watch).

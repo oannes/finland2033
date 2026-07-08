@@ -15,7 +15,9 @@ Rector of Finland's flagship technical university, 2028. Your CS and AI programm
 - **Prestige:** where the university goes, students and funding follow, with a four-year lag either way.
 
 ## What you cannot control
-The talent gradient: the best tools and the best salaries are abroad, and every graduating class knows it. The frontier's pace, which turns every four-year curriculum into a bet on an unknowable target. State funding decisions, and the stack the country finally lands on; you train people for it either way.
+- The talent gradient: the best tools and the best salaries are abroad, and every graduating class knows it.
+- The frontier's pace, which turns every four-year curriculum into a bet on an unknowable target.
+- State funding decisions, and the stack the country finally lands on; you train people for it either way.
 
 ## Objectives
 1. Talent balance: TUOMAS persona (talent meter) ends 2033 in Finland; metaphorically: net brain drain ≤ zero.

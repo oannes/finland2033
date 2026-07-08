@@ -14,7 +14,10 @@ You direct Finland's largest wellbeing county and chair the county directors' ne
 - **The anchor order:** county demand is the largest purchase in the country. What you commit to gets built; what you withhold from stalls.
 
 ## What you cannot control
-The demographic arithmetic: 57,000 fewer workers by 2033, on schedule, reform or no reform. The capability of the tools you are offered, decided abroad. The state's budgets and statutes. And public trust, which one viral clip from one benefits office can move further than a year of good service.
+- The demographic arithmetic: 57,000 fewer workers by 2033, on schedule, reform or no reform.
+- The capability of the tools you are offered, decided abroad.
+- The state's budgets and statutes.
+- Public trust, which one viral clip from one benefits office can move further than a year of good service.
 
 ## Objectives
 1. Service promise: care queues within statutory limits through 2033 despite −57k workforce (care_gap falling).

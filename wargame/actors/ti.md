@@ -15,7 +15,10 @@ CEO of Finland's largest business lobby, 2028: Nokia, Kone, Wärtsilä, Metso do
 - **Geopolitical weight:** your exporters live on access lanes. Where you lean, Washington or Brussels, that argument gains a constituency, and the securitisers gain an opponent.
 
 ## What you cannot control
-The global capital cycle and the frontier's pace; your members ride both and steer neither. Washington's access rules and Brussels' assurance levels. The state's choices, which reprice every member's Finland thesis quarterly. And labour's answer, which is not yours to give.
+- The global capital cycle and the frontier's pace; your members ride both and steer neither.
+- Washington's access rules and Brussels' assurance levels.
+- The state's choices, which reprice every member's Finland thesis quarterly.
+- Labour's answer, which is not yours to give.
 
 ## Objectives
 1. PRO ≥ 7 by 2033: Finland gains, not loses, private AI investment across the cycle.

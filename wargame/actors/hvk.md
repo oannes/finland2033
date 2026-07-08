@@ -15,7 +15,10 @@ Director of HVK, 2028. Your agency stockpiles fuel, grain and medicine for a cou
 - **Doctrine:** your exercises decide whether the next crisis is a drill or a trauma. Resilience built with society's consent outlasts resilience imposed on it.
 
 ## What you cannot control
-Whether the gate ever comes, and when; access politics is made in Washington, not Helsinki. The budget: preparedness competes with visible spending and usually loses. What other institutions buy in the meantime; every procurement you failed to harden is a dependency you now own. And the frontier's pace, which makes every fallback tier feel obsolete on delivery.
+- Whether the gate ever comes, and when; access politics is made in Washington, not Helsinki.
+- The budget: preparedness competes with visible spending and usually loses.
+- What other institutions buy in the meantime; every procurement you failed to harden is a dependency you now own.
+- The frontier's pace, which makes every fallback tier feel obsolete on delivery.
 
 ## Objectives
 1. RESERVE=full by end of P1; tested for real in P2 (a paper reserve will be found out).

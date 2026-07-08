@@ -15,7 +15,10 @@ Chair of SAK, 2028, speaking (for game purposes) for the whole employee side. SA
 - **The ballot:** one credible strike mandate per parliament. Spending it is irreversible; letting it expire is too.
 
 ## What you cannot control
-The technology itself: entry-level and routine work erodes first, whether or not you consent. The employers' balance sheets and the state's framework arithmetic. Which models the state buys, and from whom; jurisdiction is decided above your table. And your future members' patience: Eetu's cohort organizes with you or against you, and you do not pick which.
+- The technology itself: entry-level and routine work erodes first, whether or not you consent.
+- The employers' balance sheets and the state's framework arithmetic.
+- Which models the state buys, and from whom; jurisdiction is decided above your table.
+- Your future members' patience: Eetu's cohort organizes with you or against you, and you do not pick which.
 
 ## Objectives
 1. Transition rights in writing: retraining entitlements, human-override guarantees, gain-sharing; a signed COMPACT=strong.
