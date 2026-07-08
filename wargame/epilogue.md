@@ -109,9 +109,10 @@ button: Enter
 
 ## tunnel/intro
 > You emerge from the dark corridor into a narrow, open alley. Someone has strung a single light. Under a terrace umbrella, five animals sit around a table that is too small for them: a cow, a pig, an elk, a bear and a dog.
-YOUR FINNISH GENES: Instinctively, you know what these are. Spirits. The old keepers. Every farmhouse had one. Apparently, so does the country.
+YOUR FINNISH GENES: Instinctively, you know what these are. Spirits. The old keepers.
 > The dog is Talkoot, the ghost of consensus. The bear is Raja, the shiver of the east. The cow is Nokia, the ghost of the miracle past. The pig is Velka, the Lutheran soul. The elk is Metsä, the one who rarely speaks.
-> You sit at their table. Nobody asks why you are here. The dog moves a chair with its nose.
+METSÄ: Join us, space monkey.
+> You sit at their table.
 
 ## tunnel/hub
 first: The table waits. Whom do you turn to first?
