@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Check, Copy, Users } from 'lucide-react'
 import type { ActorId, GameContent, GameState } from './types'
 import { ACTORS } from './types'
@@ -17,6 +17,7 @@ import {
   type Session,
 } from './net'
 import { replayServerGame } from './replay'
+import { replayRun, serializeRun } from './run'
 import { ACTOR_PORTRAITS, Portrait } from './portraits'
 import Sidebar from './Sidebar'
 
@@ -50,7 +51,10 @@ import {
 
 export default function GameApp() {
   const content = useMemo(() => loadContent(), [])
-  const [solo, setSolo] = useState<GameState | null>(null)
+  const [solo, setSolo] = useState<GameState | null>(() => {
+    const m = window.location.hash.match(/[?&]run=([^&]+)/)
+    return m ? replayRun(content, decodeURIComponent(m[1])) : null
+  })
   const [session, setSession] = useState<Session | null>(() => loadSession())
   // #/play/solo and #/play/workshop preselect the mode (the landing page carries the choice)
   const preselect = WORKSHOP_ENABLED && window.location.hash.includes('/workshop')
@@ -141,6 +145,12 @@ function SoloGame({
 }) {
   const phase = content.phases[state.phaseIdx]
 
+  // the URL carries the whole run (seat.seed.choices) — shareable, reloadable
+  useEffect(() => {
+    const run = serializeRun(state)
+    history.replaceState(null, '', run ? `#/play/solo?run=${run}` : '#/play/solo')
+  }, [state])
+
   const lock = (actionId: string) => {
     if (!state.playerActor) return
     // the table remembers: simulated actors lean toward the player's previous move
@@ -216,7 +226,7 @@ function SoloGame({
               />
             )}
             {state.stage === 'endstate' && state.endstate && (
-              <EndstateScreen content={content} state={state} onRestart={() => setState(null)} />
+              <EndstateScreen content={content} state={state} onRestart={() => { history.replaceState(null, '', '#/play/solo'); setState(null) }} />
             )}
           </main>
           {state.stage !== 'briefing' && <Sidebar content={content} state={state} viewerActor={state.playerActor} />}

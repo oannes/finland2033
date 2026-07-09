@@ -269,9 +269,10 @@ years idle." / NOKIA: "No one calls a treadmill idle either."
 AI Futures Project's July 2026 follow-up to AI 2027. Its core inversion: a
 *recommendation*, not a prediction ("scenario scrutiny": a policy proposal you
 cannot write a plausible detailed scenario for is a proposal that fails).
+Decision 2026-07-10: implement only item 1; the rest are explicitly parked.
 Techniques worth taking, roughly ordered by value-for-us:
 
-1. **URL-persistent playthroughs.** Their branch choice lives in the URL
+1. **URL-persistent playthroughs — IMPLEMENTED.** Their branch choice lives in the URL
    (`?choices=plan-a-root`), so any path is deep-linkable. Ours: encode seat +
    seed + decisions in the endstate URL so a finished decade is shareable and
    replayable ("this is the Finland I made"). The engine is already
