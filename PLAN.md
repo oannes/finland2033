@@ -98,7 +98,24 @@ in P2/P3 (briefs, actions, outcomes, HVK content): working candidate
 attestations"). Pure edit pass across wargame/, no code. The term should
 appear at least once per phase so it accumulates dread by familiarity.
 
-## 7. Hover-dwell dialogue reveal (epilogue + SMS)
+## 7. HVK's dilemmas: always the drill or the budget
+
+The HVK chief's "small decisions" (the 2030/2032 dilemmas) are always one of
+two recurring shapes, so the seat's routine becomes familiar:
+- **"What do we run the main drill on this year?"** — pick the scenario the
+  national exercise rehearses (and therefore what the country is ready for).
+- **"Which domain gets the extra budget?"** — the year's unspent margin goes
+  to one preparedness domain at the cost of the others.
+
+Current state: D2030-HVK ("Whose drill is it") already fits the drill shape.
+D2032-HVK ("The scarcity list") does not — rewrite it into one of the two
+shapes (the scarcity-list material can live inside a budget option, e.g.
+funding the rationing plan vs. funding stockpiles). If more HVK dilemmas are
+ever added, they alternate: drill, budget, drill, budget.
+
+- Files: `wargame/dilemmas.md` only. No code.
+
+## 8. Hover-dwell dialogue reveal (epilogue + SMS)
 
 Requested mechanism: hovering the right spot for 0.5s opens the next sentence
 of a dialogue.
@@ -130,8 +147,9 @@ Design that keeps the requested feel and fixes the caveats:
 1. Seam line (#1) — minutes, ship immediately.
 2. about.md + sources.md (#2, #3) — one writing session, one small route.
 3. Interlude view (#4) — the big one: content + parser + screen + flow.
-4. RevealLine hover mechanism (#7) — build with #4, retrofit epilogue after.
-5. Capability notes (#5) and coercion term (#6) — content edit passes, any time.
+4. RevealLine hover mechanism (#8) — build with #4, retrofit epilogue after.
+5. Capability notes (#5), coercion term (#6) and HVK dilemma shapes (#7) —
+   content edit passes, any time.
 
 Open decisions for Johannes:
 - Master metric in the drumbeat box: compute-vs-world, or days-alone clock?
