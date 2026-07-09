@@ -7,6 +7,18 @@ import { eraForPhase, moodFor, MoodFace, PERSONA_NAMES } from './portraits'
 
 const YEARS = [2026, 2028, 2029, 2031, 2033]
 
+/** Each seat's own deal metric — the number that seat answers for. Kept in
+ * sync with the metrics the actors' actions move in actions.md. */
+export const OWN_METRIC: Record<ActorId, string> = {
+  PM: 'books',
+  SAK: 'share',
+  COUNTY: 'bedside',
+  TI: 'pull',
+  HVK: 'days',
+  AALTO: 'ladder',
+  STARTUP: 'stay',
+}
+
 interface GhostSet {
   [phaseIdx: number]: Record<string, Record<string, number>>
 }
@@ -191,6 +203,7 @@ function Sparkline({
   label,
   unit,
   plain,
+  own,
 }: {
   content: GameContent
   state: GameState
@@ -199,6 +212,7 @@ function Sparkline({
   label: string
   unit: string
   plain?: string
+  own?: boolean
 }) {
   const W = 260
   const H = 84
@@ -242,7 +256,14 @@ function Sparkline({
   return (
     <div className="mb-1">
       <div className="flex items-baseline justify-between">
-        <span className="text-[11px] uppercase tracking-wide text-white/50">{label}</span>
+        <span className="text-[11px] uppercase tracking-wide text-white/50">
+          {label}
+          {own && (
+            <span className="ml-1.5 px-1.5 py-0.5 rounded-full bg-[#e8702a]/15 text-[#e8702a] normal-case tracking-normal">
+              your number
+            </span>
+          )}
+        </span>
         <span className="text-[11px] text-white/40">
           {PERSONAS.filter((p) => PERSONA_PINS[p].includes(indicatorId)).map((p) => (
             <span key={p} title={`${displayName(p)} watches this number`} className="ml-1 inline-block w-4 h-4 rounded-full bg-white/10 text-center text-[9px] leading-4 text-white/70">
@@ -395,18 +416,25 @@ function SidebarBody({ content, state, viewerActor }: SidebarProps) {
 
       <Section title="The numbers, 2018 → 2033">
         <div className="grid grid-cols-1 gap-2">
-          {content.indicators.filter((ind) => content.chartIds.includes(ind.id)).map((ind) => (
-            <Sparkline
-              key={ind.id}
-              content={content}
-              state={state}
-              ghosts={ghosts}
-              indicatorId={ind.id}
-              label={ind.id.replace('_', ' ')}
-              unit={ind.unit}
-              plain={ind.plain}
-            />
-          ))}
+          {content.indicators
+            .filter((ind) => content.chartIds.includes(ind.id))
+            .sort((a, b) => {
+              const mine = viewerActor ? OWN_METRIC[viewerActor] : null
+              return (b.id === mine ? 1 : 0) - (a.id === mine ? 1 : 0)
+            })
+            .map((ind) => (
+              <Sparkline
+                key={ind.id}
+                content={content}
+                state={state}
+                ghosts={ghosts}
+                indicatorId={ind.id}
+                label={ind.id.replace('_', ' ')}
+                unit={ind.unit}
+                plain={ind.plain}
+                own={viewerActor ? OWN_METRIC[viewerActor] === ind.id : false}
+              />
+            ))}
         </div>
       </Section>
 

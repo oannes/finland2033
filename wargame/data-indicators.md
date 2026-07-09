@@ -26,7 +26,7 @@ Values for 2028–2033 are scenario constructions anchored to the sourced 2026 b
 
 ## Reading guide for the chart
 
-chart: pub_ai, trust, youth_u, care_gap, sov_share, compute_mw, cap_gap, intel_cost, days, bedside, share, ladder
+chart: pub_ai, trust, youth_u, care_gap, sov_share, compute_mw, cap_gap, intel_cost, books, share, bedside, pull, days, ladder, stay
 
 - `youth_u` and `care_gap` moving **together upward** = the T3 scissors (split labour market) is unmanaged.
 - `pub_ai` up while `trust` down = deployment outrunning legitimacy (T2 loading); the October 2030 inject punishes exactly this gap.
