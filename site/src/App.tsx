@@ -510,14 +510,6 @@ function Landing() {
             >
               I'm in for the decade
             </a>
-            {WORKSHOP_ENABLED && (
-              <a
-                href="#/prologue/workshop"
-                className="border border-white/40 hover:border-white text-white text-sm font-medium px-7 py-3 rounded-full transition-all hover:scale-[1.03] active:scale-95 hover:bg-white/10"
-              >
-                Workshop
-              </a>
-            )}
           </div>
         </div>
       </section>
