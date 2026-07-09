@@ -850,11 +850,7 @@ export function DebriefScreen({
           )}
         />
         <div className="flex justify-end mt-8">
-          {done ? (
-            <PrimaryButton onClick={onContinue}>What it adds up to →</PrimaryButton>
-          ) : (
-            <span className="text-[12px] text-white/35 py-2">the table answers as you read…</span>
-          )}
+          {done && <PrimaryButton onClick={onContinue}>What it adds up to →</PrimaryButton>}
         </div>
       </SectionCard>
     </div>
