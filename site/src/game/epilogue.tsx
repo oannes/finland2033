@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import type { EpilogueDoc, GameContent, GameState } from './types'
 import { evaluateGoals, keyMetricFor, personaLeverage } from './engine'
 import { moodFor, moodImage, PERSONA_PORTRAITS, Portrait } from './portraits'
+import { RevealSequence } from './reveal'
 
 /**
  * The 2033 epilogue: a street scene on Aleksanterinkatu, then Mummotunneli,
@@ -342,6 +343,7 @@ function SideFace({ pid, rung, tilt }: { pid: 'MARJA' | 'EETU'; rung: number | n
 
 export function StreetScene({ content, state }: { content: GameContent; state: GameState }) {
   const [walkedIn, setWalkedIn] = useState(false)
+  const [streetRead, setStreetRead] = useState(false)
   const actor = state.playerActor
   const es = state.endstate
   if (!actor || !es) return null
@@ -400,28 +402,23 @@ export function StreetScene({ content, state }: { content: GameContent; state: G
         <p className="text-[11px] uppercase tracking-[0.2em] text-[#e8702a]">Helsinki, 2033</p>
         <p className="text-white/80 text-[15px] leading-relaxed">{opening}</p>
 
-        {narr('street/maria-intro') && <VoiceLine t={narr('street/maria-intro')!.t} />}
-        <SideFace pid="MARJA" rung={marjaRung} tilt="rotate-1" />
-        {spoken('marja', marjaRung).map((l, i) => (
-          <VoiceLine key={`m${i}`} v={l.v ?? 'MARIA'} t={l.t} />
-        ))}
-        {reaction('marja', 'MARJA').map((l, i) => (
-          <VoiceLine key={`mr${i}`} v={l.v ?? 'MARIA'} t={l.t} />
-        ))}
-        {narr('street/eetu-intro') && <VoiceLine t={narr('street/eetu-intro')!.t} />}
-        <SideFace pid="EETU" rung={eetuRung} tilt="-rotate-1" />
-        {spoken('eetu', eetuRung).map((l, i) => (
-          <VoiceLine key={`e${i}`} v={l.v ?? 'EETU'} t={l.t} />
-        ))}
-        {reaction('eetu', 'EETU').map((l, i) => (
-          <VoiceLine key={`er${i}`} v={l.v ?? 'EETU'} t={l.t} />
-        ))}
-
-        {(doc['street/shivers']?.lines ?? []).map((l, i) => (
-          <VoiceLine key={`s${i}`} v={l.v} t={l.t} />
-        ))}
+        {/* the conversation reveals line by line: rest the cursor on the next line (or tap it) */}
+        <RevealSequence
+          onDone={() => setStreetRead(true)}
+          items={[
+            ...(narr('street/maria-intro') ? [<VoiceLine key="mi" t={narr('street/maria-intro')!.t} />] : []),
+            <SideFace key="mf" pid="MARJA" rung={marjaRung} tilt="rotate-1" />,
+            ...spoken('marja', marjaRung).map((l, i) => <VoiceLine key={`m${i}`} v={l.v ?? 'MARIA'} t={l.t} />),
+            ...reaction('marja', 'MARJA').map((l, i) => <VoiceLine key={`mr${i}`} v={l.v ?? 'MARIA'} t={l.t} />),
+            ...(narr('street/eetu-intro') ? [<VoiceLine key="ei" t={narr('street/eetu-intro')!.t} />] : []),
+            <SideFace key="ef" pid="EETU" rung={eetuRung} tilt="-rotate-1" />,
+            ...spoken('eetu', eetuRung).map((l, i) => <VoiceLine key={`e${i}`} v={l.v ?? 'EETU'} t={l.t} />),
+            ...reaction('eetu', 'EETU').map((l, i) => <VoiceLine key={`er${i}`} v={l.v ?? 'EETU'} t={l.t} />),
+            ...(doc['street/shivers']?.lines ?? []).map((l, i) => <VoiceLine key={`s${i}`} v={l.v} t={l.t} />),
+          ]}
+        />
         <TunnelBackdrop />
-        {!walkedIn && (
+        {!walkedIn && streetRead && (
           <div className="flex justify-end">
             <button
               onClick={() => setWalkedIn(true)}

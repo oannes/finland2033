@@ -2,6 +2,12 @@
 
 **Tension reaching inflection:** the capability gap goes public, and the public-sector AI program, whatever version exists, must choose its engine mid-flight.
 
+## What the machines can now do
+
+- Agents run week-long projects unattended and check their own work. One professional with agents does what a 2026 team did.
+- The best diagnostic models outperform specialist physicians on records, imaging and triage, in every language spoken in Finland.
+- The frontier models design their successors' training runs. The gap between the best and the rest is now measured in years, not months.
+
 ## Fixed injects (all variants, control team delivers on schedule)
 
 - **Inject 1 (the gap goes public):** A benchmark consortium publishes the number everyone suspected: the best US and Chinese internal models lead the best European tier by roughly 20 months, and the spread is widening; because the leading labs now use their models to improve their models, and that loop compounds. The chart is on every front page. It will grow no matter what Finland decides.
@@ -34,4 +40,4 @@ No national declaration: each agency and county picks its own engine. The option
 The PM can declare any stack he likes; if the counties can't run services on it, the declaration is a press release, and if the flagship startups publicly attest the other way, it is a press release with a counter-example. Two of three aligned make a direction; three make it stick.
 
 ## Pivotal trio
-`PM`, `COUNTY`, `STARTUP`; modifiers: `SAK`, `TI`, `AALTO`, `HVK` (see `actions.md`).
+`PM`, `COUNTY`, `STARTUP`; modifiers: `AKAVA`, `TI`, `AALTO`, `HVK` (see `actions.md`).

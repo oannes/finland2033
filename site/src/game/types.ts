@@ -1,5 +1,5 @@
 export type Tag = 'A' | 'B' | 'H'
-export type ActorId = 'PM' | 'AALTO' | 'STARTUP' | 'SAK' | 'HVK' | 'COUNTY' | 'TI'
+export type ActorId = 'PM' | 'AALTO' | 'STARTUP' | 'AKAVA' | 'HVK' | 'COUNTY' | 'TI'
 export type IndexId = 'RES' | 'LEG' | 'PRO'
 export type OutcomeClass = 'O1' | 'O2' | 'O3' | 'O4' | 'O5'
 /** The followed cast — two lives the game narrates after every decision.
@@ -7,7 +7,7 @@ export type OutcomeClass = 'O1' | 'O2' | 'O3' | 'O4' | 'O5'
  * outcome file, update this list + PERSONA_PINS + personas.ts movement rules. */
 export type PersonaId = 'MARJA' | 'EETU'
 
-export const ACTORS: ActorId[] = ['PM', 'AALTO', 'STARTUP', 'SAK', 'HVK', 'COUNTY', 'TI']
+export const ACTORS: ActorId[] = ['PM', 'AALTO', 'STARTUP', 'AKAVA', 'HVK', 'COUNTY', 'TI']
 export const PERSONAS: PersonaId[] = ['MARJA', 'EETU']
 
 export interface IndexDelta {
@@ -71,6 +71,16 @@ export interface Action {
   to?: Partial<Record<ActorId, string>>
   /** debrief dialogue: what the affected actor says back to the chooser (mirror of `to`) */
   react?: Partial<Record<ActorId, string>>
+}
+
+/** An interlude between decisions: time passed, the world moved, and the
+ * Eetu/Maria text thread (interludes.md). */
+export interface Interlude {
+  idx: number
+  fromYear: number
+  toYear: number
+  passes: string
+  messages: { v: 'EETU' | 'MARJA'; t: string }[]
 }
 
 /** A between-years social-contract dilemma (dilemmas.md): two options, small
@@ -188,6 +198,8 @@ export interface GrandProject {
 
 export interface Tension {
   title: string
+  /** 'What the machines can now do' bullets, shown atop the decision screen */
+  capability?: string[]
   year: string
   intro: string
   injects: Inject[]
@@ -331,6 +343,9 @@ export interface GameContent {
   /** per-seat headline metrics (keymetrics.md); PM's comes from the election */
   keymetrics: KeyMetric[]
   dilemmas: Dilemma[]
+  interludes: Interlude[]
+  about?: string
+  sources?: string
   /** the 2033 epilogue script (epilogue.md) */
   epilogue: EpilogueDoc
   /** Maria/Eetu 2033 ending lines by rung (personas/endings.md) */
@@ -379,6 +394,7 @@ export type Stage =
   | 'briefing'
   | 'tension'
   | 'dilemma'
+  | 'interlude'
   | 'decide'
   | 'reveal'
   | 'endstate'
@@ -401,9 +417,9 @@ export interface GameState {
 }
 
 export const PIVOTAL_BY_PHASE: Record<number, [ActorId, ActorId, ActorId]> = {
-  1: ['PM', 'SAK', 'COUNTY'], // Sampo: consent and execution
+  1: ['PM', 'AKAVA', 'COUNTY'], // Sampo: consent and execution
   2: ['PM', 'COUNTY', 'STARTUP'], // the stack: declaration, services, sector signal
-  3: ['PM', 'SAK', 'TI'], // the dividend: the distribution triangle
+  3: ['PM', 'AKAVA', 'TI'], // the dividend: the distribution triangle
 }
 
 export const PERSONA_PINS: Record<PersonaId, string[]> = {

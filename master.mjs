@@ -23,7 +23,7 @@ const FILES = [
   'prologue.md',
   'goals.md',
   'actors/pm.md',
-  'actors/sak.md',
+  'actors/akava.md',
   'actors/county.md',
   'actors/ti.md',
   'actors/hvk.md',
@@ -57,6 +57,7 @@ const FILES = [
   'phases/phase-3-dividend/outcomes/O4.md',
   'phases/phase-3-dividend/outcomes/O5.md',
   'dilemmas.md',
+  'interludes.md',
   'clashes.md',
   'keymetrics.md',
   'endstates.md',
@@ -69,6 +70,8 @@ const FILES = [
   'relevance.md',
   'mechanics.md',
   'causal-model.md',
+  'about.md',
+  'sources.md',
   'afterword.md',
 ]
 

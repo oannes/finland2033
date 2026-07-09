@@ -24,11 +24,11 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 - effects: POLL +3
 - data: share +1, books -1, trust -1
 
-### D2030-SAK — "Where the hands come from"
+### D2030-AKAVA — "Where the hands come from"
 - context: The care shortage is now arithmetic nobody disputes, and the union's weight can tip one of two national answers. The congress demands you pick before autumn.
 #### A — "Build the machines"
 - lever: Consent
-- summary: Back the energy-and-compute megaproject: datacenters, grid, ward robots, machines standing in for the nurses Finland does not have. Construction members get a decade of work, and care becomes something machines are allowed to do.
+- summary: Back the energy-and-compute megaproject: datacenters, grid, ward robots, machines standing in for the nurses Finland does not have. Your engineer members design and run the build for a decade, and care becomes something machines are allowed to do.
 - effects: PRO +0.3
 - data: compute_mw +30, care_gap -1, share +1, trust -1
 #### B — "Open the doors"
@@ -117,7 +117,7 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 - effects: PRO +0.3
 - data: books +2, pub_ai +2, trust -2
 
-### D2032-SAK — "Members without workplaces"
+### D2032-AKAVA — "Members without workplaces"
 - context: A third of the people your movement should speak for now work through platforms, contracts and machine-supervised gigs. The congress votes on what a union is for.
 #### A — "The card follows the person"
 - lever: Consent
@@ -156,18 +156,18 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 - effects: PRO +0.2
 - data: pull +2, share -1, trust -1
 
-### D2032-HVK — "The scarcity list"
-- context: The next access crisis will ration intelligence the way wars ration fuel. Somewhere in your office is the draft priority list of who gets compute when there is not enough. The question is whether the country sees it now.
-#### A — "Publish the list"
+### D2032-HVK — "The year's extra budget"
+- context: For once, the framework year ends with unspent margin in the preparedness envelope, and it does not carry over. The office can fund exactly one domain properly before December. Both files on your desk are marked urgent, and both are right.
+#### A — "Fund the rationing doctrine"
 - lever: Doctrine
-- summary: Put the rationing order in the public doctrine: hospitals first, then power, then payments, then everything else, by name. Uncomfortable, debated, and legitimate before it is needed.
+- summary: Spend it on the plan for scarcity: finish the intelligence-rationing order that decides who gets compute when there is not enough, publish it, and exercise it. Hospitals first, then power, then payments, by name. Uncomfortable, debated, and legitimate before it is needed.
 - effects: LEG +0.3
 - data: trust +2, days +1
-#### B — "Sealed until needed"
-- lever: The securitisation lever
-- summary: Keep the list classified: no panic, no lobbying, no debate, until the day it decides everything and nobody voted on it.
-- effects: RES +0.2
-- data: days +2, trust -2
+#### B — "Fund the stockpiles"
+- lever: Requirements power
+- summary: Spend it on physical readiness instead: fallback compute, spare parts, escrowed model weights, fuel for the generators under the halls. Nothing to debate and nothing to show, until the day it is the only thing that matters.
+- effects: RES +0.3
+- data: days +3, trust -1
 
 ### D2032-AALTO — "Rooms without machines"
 - context: The first AI-native cohort graduates this spring: fluent with the tools, untested without them. The faculty asks whether thinking unassisted is still a skill the university certifies.

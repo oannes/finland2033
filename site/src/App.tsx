@@ -75,6 +75,7 @@ export default function App() {
   if (route.startsWith('#/prologue'))
     return <Prologue mode={WORKSHOP_ENABLED && route.includes('workshop') ? 'workshop' : 'solo'} />
   if (route.startsWith('#/afterword')) return <AfterwordPage />
+  if (route.startsWith('#/about')) return <AboutPage />
   return <Landing />
 }
 
@@ -116,6 +117,48 @@ function GdpChart() {
       <p className="text-[10px] text-white/30 mt-2">
         Finland's 2008 peak was not passed again for seventeen years. Source: World Bank, OECD national accounts.
       </p>
+    </div>
+  )
+}
+
+function AboutPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  const content = loadContent()
+  return (
+    <div className="min-h-screen bg-[#04070c] text-white tracking-[-0.02em]" style={{ fontFamily: "'Inter', sans-serif" }}>
+      <nav className="fixed top-0 left-0 right-0 z-[100] bg-gradient-to-b from-[#04070c]/90 via-[#04070c]/40 to-transparent pb-4">
+        <div className="mx-auto w-full max-w-[920px] flex items-center justify-between p-4 sm:p-5">
+          <a href="#/" className="flex items-center gap-2.5">
+            <svg width="22" height="22" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#ffffff" d="M 256 256 L 128 256 L 0 128 L 128 128 Z M 256 128 L 128 128 L 0 0 L 128 0 Z" />
+            </svg>
+            <span className="text-white text-xl font-playfair italic">Finland 2033</span>
+          </a>
+          <span className="text-[11px] uppercase tracking-[0.2em] text-white/40">About</span>
+        </div>
+      </nav>
+      <div className="mx-auto w-full max-w-[920px] border-x border-white/5">
+        <section className="px-6 sm:px-10 md:px-14 pt-28 pb-20 sm:pb-28">
+          <div className="max-w-[560px] mx-auto space-y-12">
+            {content.about && <Markdown text={content.about} />}
+            {content.sources && (
+              <div id="sources" className="border-t border-white/10 pt-10">
+                <Markdown text={content.sources} />
+              </div>
+            )}
+            <div className="border-t border-white/10 pt-8">
+              <a
+                href="#/prologue/solo"
+                className="inline-block bg-[#e8702a] hover:bg-[#d2611f] text-white text-sm font-medium px-8 py-3.5 rounded-full transition-all hover:scale-[1.03] active:scale-95"
+              >
+                Play the decade
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }
@@ -329,6 +372,12 @@ function Landing() {
             className="text-white/80 px-4 py-1.5 rounded-full text-sm font-medium hover:bg-white/20 hover:text-white transition-colors"
           >
             Afterword
+          </a>
+          <a
+            href="#/about"
+            className="text-white/80 px-4 py-1.5 rounded-full text-sm font-medium hover:bg-white/20 hover:text-white transition-colors"
+          >
+            About
           </a>
         </div>
         </div>

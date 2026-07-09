@@ -3,6 +3,7 @@ import { ChevronDown, ChevronRight, Lock, Users } from 'lucide-react'
 import type {
   Action,
   Dilemma,
+  Interlude,
   ActorId,
   GameContent,
   GameState,
@@ -10,17 +11,18 @@ import type {
   PhaseResult,
 } from './types'
 import { ACTORS } from './types'
-import { actorMenu, evaluateGoals, interpolateNumbers, matchingVariants, narrativeNote, decisionImpacts, keyMetricFor, gateReason, metricEnv } from './engine'
+import { actorMenu, evaluateGoals, injectRelevant, interpolateNumbers, matchingVariants, narrativeNote, decisionImpacts, keyMetricFor, gateReason, metricEnv } from './engine'
 import Markdown from './Markdown'
 import { ACTOR_PORTRAITS, eraForPhase, moodFor, MoodFace, PERSONA_NAMES, PERSONA_PORTRAITS, Portrait } from './portraits'
 import { StreetScene } from './epilogue'
+import { RevealSequence } from './reveal'
 
 const YEAR_BY_PHASE: Record<number, string> = { 1: '2027–28', 2: '2029', 3: '2031' }
 
 /** short seat names for the endstate attribution lines */
 const SHORT_ROLE: Record<ActorId, string> = {
   PM: 'Prime Minister',
-  SAK: 'union chair',
+  AKAVA: 'union chair',
   COUNTY: 'county director',
   TI: 'industry federation',
   AALTO: 'rector',
@@ -147,6 +149,12 @@ export function BriefingScreen({
               </SectionCard>
             )}
           </div>
+
+          <p className="text-[12px] text-white/35">
+            The numbers in this brief are anchored to public sources.{' '}
+            <a href="#/about#sources" className="underline hover:text-white/60">Where they come from</a> ·{' '}
+            <a href="#/about" className="underline hover:text-white/60">About this scenario</a>
+          </p>
         </>
       )}
 
@@ -275,6 +283,20 @@ export function DecideScreen({
         </div>
       </SectionCard>
 
+      {phase.tension.capability && phase.tension.capability.length > 0 && (
+        <SectionCard>
+          <p className="text-[11px] uppercase tracking-[0.2em] text-white/40 mb-3">What the machines can now do</p>
+          <ul className="space-y-1.5">
+            {phase.tension.capability.map((c, i) => (
+              <li key={i} className="text-[13.5px] text-white/70 leading-relaxed flex gap-2">
+                <span className="text-[#e8702a]/70 shrink-0">▸</span>
+                <span>{c}</span>
+              </li>
+            ))}
+          </ul>
+        </SectionCard>
+      )}
+
       {variants.length > 0 && (
         <SectionCard className="border-[#e8702a]/30">
           <p className="text-[11px] uppercase tracking-[0.2em] text-[#e8702a] mb-3">What you carry in</p>
@@ -293,6 +315,22 @@ export function DecideScreen({
         <SectionCard>
           <p className="text-[11px] uppercase tracking-[0.2em] text-white/40 mb-3">Your brief</p>
           <Markdown text={deskBrief} />
+        </SectionCard>
+      )}
+
+      {phase.tension.injects.some((_, i) => injectRelevant(content, phase.idx, i, actor)) && (
+        <SectionCard>
+          <p className="text-[11px] uppercase tracking-[0.2em] text-white/40 mb-3">What lands on your desk</p>
+          <div className="space-y-3">
+            {phase.tension.injects.map((inj, i) =>
+              injectRelevant(content, phase.idx, i, actor) ? (
+                <div key={i} className="border-l-2 border-white/15 pl-4 py-0.5">
+                  <span className="text-xs font-semibold text-white/50">{inj.label}</span>
+                  <Markdown text={inj.text} className="text-sm" />
+                </div>
+              ) : null,
+            )}
+          </div>
         </SectionCard>
       )}
 
@@ -584,6 +622,97 @@ export function RevealScreen({
           </PrimaryButton>
         ) : (
           <WaitNote />
+        )}
+      </div>
+    </div>
+  )
+}
+
+// ---------- Interlude (time passes, the world moves, the cousins text) ----------
+
+export function InterludeScreen({
+  content,
+  state,
+  interlude,
+  onContinue,
+}: {
+  content: GameContent
+  state: GameState
+  interlude: Interlude
+  onContinue: () => void
+}) {
+  const { fromYear, toYear } = interlude
+  const exoAt = (id: string, year: number) =>
+    year <= 2026 ? content.baseline[id] : content.exogenous[id]?.[year] ?? content.baseline[id]
+  const costFrom = exoAt('intel_cost', fromYear)
+  const costTo = exoAt('intel_cost', toYear)
+  const costFall = Math.round((1 - costTo / costFrom) * 100)
+  const gapFrom = exoAt('cap_gap', fromYear)
+  const gapTo = exoAt('cap_gap', toYear)
+  const latest = state.results[state.results.length - 1]?.dataNode ?? content.baseline
+  const [allRead, setAllRead] = useState(false)
+  const era = eraForPhase(state.phaseIdx + 1)
+  const lastResult = state.results[state.results.length - 1]
+  const moodOf = (pid: 'MARJA' | 'EETU') =>
+    lastResult ? moodFor(personaRungNum(lastResult, pid), 0) : 'frustrated'
+  return (
+    <div className="space-y-6">
+      <SectionCard>
+        <p className="text-[11px] uppercase tracking-[0.2em] text-[#e8702a] mb-2">
+          {fromYear} → {toYear}
+        </p>
+        <h2 className="font-playfair italic text-3xl sm:text-4xl text-white mb-5">{interlude.passes}</h2>
+        {/* the drumbeat: same box every time, worsening */}
+        <div className="rounded-xl border border-white/15 bg-white/[0.03] p-5 space-y-2.5">
+          <p className="text-[11px] uppercase tracking-[0.2em] text-white/40">The world, while Finland decided</p>
+          <p className="text-[15px] text-white/85">
+            The price of machine cognition fell <span className="text-[#e8702a] font-semibold">{costFall}%</span>.
+          </p>
+          <p className="text-[15px] text-white/85">
+            The capability gap grew to{' '}
+            <span className="text-[#e8702a] font-semibold">{gapTo} months</span>
+            <span className="text-white/45"> (+{Math.round((gapTo - gapFrom) * 10) / 10})</span>. No Finnish decision moves this line.
+          </p>
+          {latest.days !== undefined && (
+            <p className="text-[15px] text-white/85">
+              If the access stopped tomorrow, Finland would run alone for{' '}
+              <span className="text-[#e8702a] font-semibold">{latest.days} days</span>.
+            </p>
+          )}
+        </div>
+      </SectionCard>
+
+      {interlude.messages.length > 0 && (
+        <SectionCard>
+          <p className="text-[11px] uppercase tracking-[0.2em] text-white/40 mb-4">Meanwhile, in the family group chat</p>
+          <RevealSequence
+            onDone={() => setAllRead(true)}
+            items={interlude.messages.map((m, i) => (
+              <div key={i} className={`flex items-end gap-2.5 ${m.v === 'MARJA' ? 'flex-row-reverse' : ''}`}>
+                <MoodFace pid={m.v} mood={moodOf(m.v)} size={26} era={era} />
+                <div
+                  className={`max-w-[75%] rounded-2xl px-4 py-2.5 text-[14px] leading-snug ${
+                    m.v === 'MARJA'
+                      ? 'bg-[#e8702a]/15 text-white/90 rounded-br-sm'
+                      : 'bg-white/[0.07] text-white/85 rounded-bl-sm'
+                  }`}
+                >
+                  <span className="block text-[10px] uppercase tracking-wide text-white/35 mb-0.5">
+                    {PERSONA_NAMES[m.v]}
+                  </span>
+                  {m.t}
+                </div>
+              </div>
+            ))}
+          />
+        </SectionCard>
+      )}
+
+      <div className="flex justify-end">
+        {(allRead || interlude.messages.length === 0) ? (
+          <PrimaryButton onClick={onContinue}>On to {toYear} →</PrimaryButton>
+        ) : (
+          <span className="text-[12px] text-white/35 py-2">rest your cursor on the next message…</span>
         )}
       </div>
     </div>

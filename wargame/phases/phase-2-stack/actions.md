@@ -18,10 +18,10 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 ### P2-PM-B — "The best machines"
 - tag: B
 - lever: Financial leverage
-- summary: Sign the allied access agreement: the best models in the world, under audit rights, end-use attestations, and a lane that someone else can close. You do it because every service works better this year and the savings math finally closes. What you sign away is quieter: the terms are written, and rewritten, in another capital.
+- summary: Sign the allied access agreement: the best models in the world, under audit rights and end-use attestation tiers (Finland qualifies for Tier 2), on a lane that someone else can close. You do it because every service works better this year and the savings math finally closes. What you sign away is quieter: the terms are written, and rewritten, in another capital.
 - effects: PRO +0.8, RES −0.5, POLL +3
 - data: pub_ai +3, books +4, days -6, sov_share -4
-- said: I signed the allied access agreement: the best models in the world, under audit rights and end-use attestations. Every service works better this year, and the savings math finally closes.
+- said: I signed the allied access agreement: the best models in the world, under audit rights and end-use attestation tiers. Every service works better this year, and the savings math finally closes.
 - aftermath: The terms are written, and rewritten, in another capital. Your leverage over them is a diplomatic note.
 - to HVK: I signed away the thing your doctrine measures. The attestation annex is your only handle now; make it a good one, because it is the part we can enforce.
 - react HVK: You signed away the thing my office measures. I will build what can be built inside your annex: drills, escrow, a fallback tier. When the lane narrows, and lanes narrow, that annex is the country's entire legal position.
@@ -74,9 +74,9 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 - said: I accepted the lab's trade: our anonymized care data for its best care tier, free. No budget I will ever hold can buy what that trade got for nothing.
 - aftermath: The country's most sensitive dataset is now someone's training asset, and there is no clause for taking it back.
 - to HVK: The care stack now depends on a counterparty no treaty covers. I know. Free was the price the budget could afford.
-- to SAK: The lab's tier comes with the lab's workflows. Your care agreements cover jobs the new system does not have; the data bought medicine, not payrolls.
+- to AKAVA: The lab's tier comes with the lab's workflows. Your care agreements cover jobs the new system does not have; the data bought medicine, not payrolls.
 - react HVK: The care stack now depends on a counterparty no treaty covers, and 'free' is what bought it. Nothing in my mandate knows how to price a gift. I have opened a file that will outlive us both.
-- react SAK: Your trade bought medicine, not payrolls, and my care members were the payroll. Their new workflows arrived from the lab with a software update. Nobody bargained anything.
+- react AKAVA: Your trade bought medicine, not payrolls, and my care members were the payroll. Their new workflows arrived from the lab with a software update. Nobody bargained anything.
 
 ## STARTUP (pivotal)
 
@@ -96,10 +96,10 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 ### P2-STARTUP-B — "Frontier abroad, HQ here"
 - tag: B
 - lever: Mobility
-- summary: Sign the attestations, take the lane, keep the frontier under your product, and keep the headquarters in Turku. You do it because your competitors run on the best machines on earth and second-best is a going-out-of-business strategy. The sovereign build loses its flagship, and every founder watching does what you did.
+- summary: Sign the Tier-2 attestations, take the lane, keep the frontier under your product, and keep the headquarters in Turku. You do it because your competitors run on the best machines on earth and second-best is a going-out-of-business strategy. The sovereign build loses its flagship, and every founder watching does what you did.
 - effects: PRO +0.5
 - data: pull +4, stay -2, days -3
-- said: We signed the attestations, took the lane, kept the frontier under the product and the headquarters in Turku. My competitors run on the best machines on earth, and second-best is a going-out-of-business strategy.
+- said: We signed the Tier-2 attestations, took the lane, kept the frontier under the product and the headquarters in Turku. My competitors run on the best machines on earth, and second-best is a going-out-of-business strategy.
 - aftermath: The sovereign build loses its flagship, and every founder watching does what you did.
 - to HVK: My company's weights now live where your writ does not run. It was that or compete one-handed; your fallback tier was not an offer a CFO could sign.
 - to TI: There is your reference case: you can take the lane and keep the HQ. The playbook is public, and the frontier is priced in euros now.
@@ -122,9 +122,9 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 - react TI: Your letter says in public what my members whisper. I will spend the leverage, and I will also note that your exit just made the whisper more expensive to fix.
 - react AALTO: You left the terms, not the talent, and took my graduates as the evidence. I will quote your letter in every funding negotiation. It is the best argument my budget ever received, at the worst price.
 
-## SAK (modifier)
+## AKAVA (modifier)
 
-### P2-SAK-A — "Counterparties we can sue"
+### P2-AKAVA-A — "Counterparties we can sue"
 - tag: A
 - lever: Consent
 - summary: Take labour's position public: no job guarantee counts unless a European court can enforce it, so the state must run on machines within reach of European law. You do it because every right your members hold is paper if the counterparty is beyond the law that wrote it. The capability camp calls you the brake; you have been called worse.
@@ -135,7 +135,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 - to PM: My support for your stack choice has one price: enforceability. Put the core on machines our courts can reach, and I will sell the capability gap to my members myself.
 - react PM: Enforceability as the price of labour peace is a term I can actually deliver. You sell the gap to your members, I wear it in the polls, and the courts keep us both honest.
 
-### P2-SAK-B — "A bigger pie to share"
+### P2-AKAVA-B — "A bigger pie to share"
 - tag: B
 - lever: Consent
 - summary: Accept the lane, on one condition: deployment and jobs keep growing. You do it because your members' wages are paid out of productivity, not principles, and a richer machine leaves more on the table to bargain over. What cannot be sued can still be struck against. You hope.
@@ -146,7 +146,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 - to PM: Labour will not block the lane. Growth is the condition, and it is measurable; miss it, and the condition becomes a ballot.
 - react PM: Growth as the measurable condition: accepted. I will hold the number in front of every quarterly. If it slips, you convert the condition into a ballot, and we both signed that sentence knowingly.
 
-### P2-SAK-H — "A treaty with the lab"
+### P2-AKAVA-H — "A treaty with the lab"
 - tag: H
 - lever: Stalemate power
 - summary: Open your own channel and negotiate labour's terms directly with the frontier lab: training funds, deployment rules, member protections. A union agreement with an AI company, state not invited. You do it because the state is slow and the lab is where the power actually moved. The national bargaining table learns about it from the press.

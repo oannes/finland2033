@@ -1,7 +1,9 @@
 # Plan — credibility layer & the interludes
 
-Agreed 2026-07-09, from the ai-2027.com / europe2031.ai comparison. Nothing here
-is implemented yet. Items are ordered so each can ship alone.
+Agreed 2026-07-09, from the ai-2027.com / europe2031.ai comparison.
+Status 2026-07-09 evening: items 1-8 are IMPLEMENTED (drumbeat metric decided:
+exogenous cognition price + capability gap + the days-alone clock). Item 9
+below is next up. The interlude SMS thread shipped static (v1).
 
 ## 1. Fact/fiction seam in the prologue
 
@@ -141,6 +143,28 @@ Design that keeps the requested feel and fixes the caveats:
   explicit clicks).
 - Files: a `RevealLine` component used by epilogue.tsx and InterludeScreen;
   no content changes required.
+
+## 9. Weird decisions hit other players directly
+
+The radical (H-tag) options should, where possible, land on a named other
+seat, not just on the indices — the way the debrief dialogue already makes
+consequences personal.
+
+The anchor case: the wellbeing county director's weird decision is to take a
+real risk and **buy a whole preventive care system from the quantum-biotech
+company** (Veriseq's drug-assisted preventive care, per the P1 brief). For the
+startup this means they "make it" very easily: a large stay/pull boost, their
+Series C goal effectively secured, and debrief/react lines that say so. This
+replaces or reshapes the county's current lab-flavoured weird option in P2
+(the data dowry) or becomes the P3 weird option.
+
+Generalize deliberately, one pair at a time: each weird option names who it
+lifts or drops (e.g. AKAVA's cooperative lifting AALTO's ladder is already
+close; TI's compute embassy dropping HVK is already close). Requirement: the
+affected seat's deal metric moves enough that the debrief filter picks it up,
+and the to/react lines carry the relationship.
+
+- Files: dilemmas.md / phase actions.md + debrief lines. No engine change.
 
 ## Sequencing
 

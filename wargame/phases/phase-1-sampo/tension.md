@@ -1,6 +1,11 @@
 # Phase 1 — The Public-Sector AI Megaproject (2027–28)
 
-**Tension reaching inflection:** the fiscal vice (TR-5) meets the workforce that votes for the government it threatens.
+
+## What the machines can now do
+
+- An agent handles a routine benefits case end to end: reads the application, checks the registers, drafts the decision. A human signs it.
+- Machine cognition costs a third of what it did two years ago. A helpdesk seat that cost a salary now costs a subscription.
+- Coding agents build working software from a ticket queue under supervision. The backlog of undigitized public services is suddenly cheap to clear.
 
 ## Situation (facilitator reads; control team injects on schedule)
 
@@ -26,7 +31,7 @@ The same platform, bought with a guarantee: a job-security law (no dismissals; r
 Defer, pilot, study; evaluation in the 2029 budget. Both sides briefly relieved. The price: the returning reformers resign again, and the decade restarts.
 
 ## Why no one owns this
-The PM holds the statute and the framework, but not the workforce's consent and not the service floor. SAK holds consent but cannot write a budget. The counties execute, or don't, whatever is signed. Any two aligned carry a version of the program; all three aligned make it decisive. See `combos.md`.
+The PM holds the statute and the framework, but not the workforce's consent and not the service floor. AKAVA holds consent but cannot write a budget. The counties execute, or don't, whatever is signed. Any two aligned carry a version of the program; all three aligned make it decisive. See `combos.md`.
 
 ## Pivotal trio
-`PM`, `SAK`, `COUNTY`; modifiers: `TI`, `AALTO`, `STARTUP`, `HVK` (see `actions.md`).
+`PM`, `AKAVA`, `COUNTY`; modifiers: `TI`, `AALTO`, `STARTUP`, `HVK` (see `actions.md`).

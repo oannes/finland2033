@@ -1,6 +1,12 @@
 # Phase 3 — The Dividend (2031)
 
-**Tension reaching inflection:** the machine works well enough to argue about the money; in the shadow of the Second Gate, months before the parliamentary election.
+**Tension reaching inflection:** the machine works well enough to argue about the money; in the shadow of the Second Gate (the attestation tiers tightening without warning), months before the parliamentary election.
+
+## What the machines can now do
+
+- Most office work is done faster, cheaper and more accurately by machines than by anyone you can hire.
+- Robots learn manual tasks from video demonstration in days. The first care-lifting units are in Dutch and Japanese pilot wards.
+- The frontier labs' agents do most of their own research. What arrives next year is no longer planned by people.
 
 ## Fixed injects
 
@@ -23,7 +29,7 @@
 ## The fork
 
 ### Grand Project A — The transition dividend
-The megaproject's realized savings flow to the bridge: osaamistakuu for the displaced and the never-hired, care reinvestment, the reform unit made permanent, and the automation levy formalized to keep the flow statutory rather than budgetary. Owners: PMO, SAK, the counties. The claim: the machine's proceeds buy the machine's legitimacy.
+The megaproject's realized savings flow to the bridge: osaamistakuu for the displaced and the never-hired, care reinvestment, the reform unit made permanent, and the automation levy formalized to keep the flow statutory rather than budgetary. Owners: PMO, AKAVA, the counties. The claim: the machine's proceeds buy the machine's legitimacy.
 
 ### Grand Project B — The balance sheet first
 Consolidation: debt paydown, the 5% defence path, growth-side tax relief. Defensible arithmetic in a hard decade; the savings return to the general fund that booked them. The claim: solvency is the welfare state's first service. Eetu's generation reads the message precisely.
@@ -32,7 +38,7 @@ Consolidation: debt paydown, the 5% defence path, growth-side tax relief. Defens
 No allocation before the vote: convert a fiscal question into a campaign, and the campaign into a polarization engine. The most democratic option and the most flammable.
 
 ## Why no one owns this
-The PM allocates but cannot deliver labour peace; SAK can bless or strike but writes no budget; TI's members pay the levy or fund the campaign against it. The classic distribution triangle: any two make a majority position, three make a settlement.
+The PM allocates but cannot deliver labour peace; AKAVA can bless or strike but writes no budget; TI's members pay the levy or fund the campaign against it. The classic distribution triangle: any two make a majority position, three make a settlement.
 
 ## Pivotal trio
-`PM`, `SAK`, `TI`; modifiers: `COUNTY` (executor of whatever is funded), `AALTO`, `STARTUP`, `HVK` (see `actions.md`).
+`PM`, `AKAVA`, `TI`; modifiers: `COUNTY` (executor of whatever is funded), `AALTO`, `STARTUP`, `HVK` (see `actions.md`).

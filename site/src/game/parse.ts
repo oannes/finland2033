@@ -1,5 +1,6 @@
 import type {
   Dilemma,
+  Interlude,
   DilemmaOption,
   ClashEdge,
   EpilogueDoc,
@@ -185,6 +186,24 @@ export function parseActions(md: string, phase: number): Record<ActorId, Action[
       }
       out[actor].push(action)
     }
+  }
+  return out
+}
+
+// ---------- interludes.md ----------
+
+export function parseInterludes(md: string): Interlude[] {
+  const out: Interlude[] = []
+  for (const sec of splitSections(md, 2)) {
+    const h = sec.heading.match(/^Interlude\s+(\d+)\s*[—-]\s*(\d{4})\s*(?:to|→)\s*(\d{4})/)
+    if (!h) continue
+    const passes = (sec.body.match(/^passes:\s*(.+)$/m) || [])[1]?.trim() ?? ''
+    const messages: Interlude['messages'] = []
+    for (const line of sec.body.split('\n')) {
+      const m = line.match(/^(EETU|MARJA):\s*(.+)$/)
+      if (m) messages.push({ v: m[1] as 'EETU' | 'MARJA', t: m[2].trim() })
+    }
+    out.push({ idx: parseInt(h[1]), fromYear: parseInt(h[2]), toYear: parseInt(h[3]), passes, messages })
   }
   return out
 }
@@ -408,7 +427,12 @@ export function parseTension(md: string): Tension {
 
   for (const sec of splitSections(md, 2)) {
     const h = sec.heading.toLowerCase()
-    if (h.includes('situation') || h.includes('fixed injects')) {
+    if (h.includes('machines can now do')) {
+      t.capability = sec.body
+        .split('\n')
+        .filter((l) => l.trim().startsWith('- '))
+        .map((l) => l.replace(/^\s*-\s*/, '').trim())
+    } else if (h.includes('situation') || h.includes('fixed injects')) {
       t.injects.push(...parseInjects(sec.body))
       const beforeList = sec.body.split(/^-\s*\*\*/m)[0].trim()
       if (beforeList && !t.intro.includes(beforeList)) t.intro += (t.intro ? '\n\n' : '') + beforeList
@@ -587,7 +611,7 @@ function parseMeasure(s: string): import('./types').GoalMeasure | undefined {
 export function parseGoals(md: string): import('./types').Goal[] {
   const goals: import('./types').Goal[] = []
   for (const sec of splitSections(md, 2)) {
-    const actor = ACTORS.find((a) => sec.heading.trim() === a || sec.heading.startsWith(a + ' '))
+    const actor = ACTORS.find((a) => new RegExp(`(^|[^A-Z])${a}([^A-Z]|$)`).test(sec.heading.trim()))
     if (!actor) continue
     // blocks start with "- goal:" followed by indented fields
     const blocks = sec.body.split(/^-\s*goal:\s*/m).slice(1)
@@ -636,7 +660,7 @@ export function parseRelevance(md: string): Record<number, Record<number, ActorI
 export function parseBriefs(md: string): Partial<Record<ActorId, string>> {
   const out: Partial<Record<ActorId, string>> = {}
   for (const sec of splitSections(md, 2)) {
-    const actor = ACTORS.find((a) => sec.heading.trim() === a || sec.heading.startsWith(a + ' '))
+    const actor = ACTORS.find((a) => new RegExp(`(^|[^A-Z])${a}([^A-Z]|$)`).test(sec.heading.trim()))
     if (actor) out[actor] = sec.body
   }
   return out
