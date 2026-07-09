@@ -12,7 +12,7 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 ## 2030
 
 ### D2030-PM — "The time dividend"
-- context: The productivity numbers are finally real, and the coalition wants to promise some of the machine's time back to the people before the 2031 election. Two drafts sit on your desk, and the framework can carry exactly one.
+- context: The productivity numbers are finally real, and the coalition wants to promise some of the freed working time back to the people before the 2031 election. Two drafts sit on your desk, and the framework can carry exactly one.
 #### A — "The four-day week"
 - lever: Financial leverage
 - summary: Pilot a four-day week across the public sector, paid out of automation gains. Structural, irreversible in practice, and the whole labour market recalibrates around the state's example.
@@ -20,7 +20,7 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 - data: share +2, books -2
 #### B — "The sixth week"
 - lever: Political capital
-- summary: Legislate a sixth week of annual holiday instead. Everyone gets the same visible gift, nothing about the shape of work changes, and the machine keeps the week it freed.
+- summary: Legislate a sixth week of annual holiday instead. Everyone gets the same visible gift, nothing about the shape of work changes, and the freed week stays a gift, not a structure.
 - effects: POLL +3
 - data: share +1, books -1, trust -1
 
@@ -80,7 +80,7 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 - context: Half the skills the market wants are now learned outside any institution. The senate asks whether the university certifies knowledge, or enrollment.
 #### A — "Certify anyone"
 - lever: Certification authority
-- summary: Open the degree examinations to all comers: whoever can pass, passes, machine-taught or self-taught. The credential becomes a measure instead of a membership.
+- summary: Open the degree examinations to all comers: whoever can pass, passes, AI-taught or self-taught. The credential becomes a measure instead of a membership.
 - effects: LEG +0.3
 - data: ladder +2, trust +1, books -1
 #### B — "The gate stays"
@@ -118,7 +118,7 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 - data: books +2, pub_ai +2, trust -2
 
 ### D2032-AKAVA — "Members without workplaces"
-- context: A third of the people your movement should speak for now work through platforms, contracts and machine-supervised gigs. The congress votes on what a union is for.
+- context: A third of the people your movement should speak for now work through platforms, contracts and algorithm-managed gigs. The congress votes on what a union is for.
 #### A — "The card follows the person"
 - lever: Consent
 - summary: Open membership to anyone who works, however they work: portable benefits, dues scaled to income, representation without a workplace. The movement grows stranger and younger.
@@ -134,7 +134,7 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 - context: Home care now runs on sensors, video and one overworked circuit nurse. The service design question left is brutally simple: does every person still get a human at the door?
 #### A — "A face every day"
 - lever: The dignity dial
-- summary: Guarantee a daily human visit in every home-care plan, whatever the machine already measured. Expensive, inefficient, and the reason the whole system exists.
+- summary: Guarantee a daily human visit in every home-care plan, whatever the sensors already measured. Expensive, inefficient, and the reason the whole system exists.
 - effects: LEG +0.3
 - data: bedside +3, books -2
 #### B — "Presence by exception"
@@ -144,7 +144,7 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 - data: books +2, care_gap -1, bedside -2, trust -1
 
 ### D2032-TI — "Who owns the work-double"
-- context: Every employee in your member firms now trains a machine double simply by doing their job. The contracts are silent about whose asset that is, and the silence is ending in court.
+- context: Every employee in your member firms now trains an AI double simply by doing their job. The contracts are silent about whose asset that is, and the silence is ending in court.
 #### A — "The worker's shadow"
 - lever: The public verdict
 - summary: Publish a model contract: the employee owns their work-double's data and licenses it to the employer. Radical on paper, cheap in practice, and the lawsuits die before they multiply.
@@ -178,7 +178,7 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 - data: ladder +2, trust +1
 #### B — "Fluent in the tools"
 - lever: The pipeline
-- summary: Certify what the market hires: mastery with the machine, no nostalgia. What atrophies, atrophies; the transcripts stop pretending otherwise.
+- summary: Certify what the market hires: mastery with the tools, no nostalgia. What atrophies, atrophies; the transcripts stop pretending otherwise.
 - effects: PRO +0.2
 - data: ladder +1, stay +1, trust -1
 

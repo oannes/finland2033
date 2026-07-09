@@ -40,7 +40,7 @@ Third, the wellbeing area can refuse to sign the Ministry’s implementation pla
 
 The previous, pro-corporation government made a massive billion euro investment to supplement most public sector work with AI capabilities. New government is unsure how they should scale it up.
 
-You are asked on live television how industry feels about this massive public investment. Your answer becomes the association's position by morning. Your members have spent a year putting machine work on a budget line; they know what it is worth, what delay costs, and who benefits if Finland hesitates.
+You are asked on live television how industry feels about this massive public investment. Your answer becomes the association's position by morning. Your members have spent a year putting AI-done work on a budget line; they know what it is worth, what delay costs, and who benefits if Finland hesitates.
 
 **The decision.** Procurement will open within the quarter. You have three possible positions.
 

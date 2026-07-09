@@ -97,13 +97,13 @@ stay: [62, 58, 55, 52, 50]
 - youth_u: Of Finns under 30 who trained for office and knowledge work, the share without a job. Rises when AI absorbs entry-level tasks faster than new work appears.
 - care_gap: How many thousand care and early-education jobs stand unfilled. Rises as workers retire and too few replace them.
 - pub_ai: The share of public-service transactions (benefits, permits, referrals) where AI does part of the work. Rises with deployment, with or without consent.
-- sov_share: The share of public-sector AI computing that runs on Finnish or European machines. When it is low, daily services depend on foreign permission.
+- sov_share: The share of public-sector AI computing that runs on Finnish or European infrastructure. When it is low, daily services depend on foreign permission.
 - trust: The share of Finns who say they trust the national government. Falls when services fail, or when change feels imposed.
 - compute_mw: AI-grade datacenter capacity operating in Finland, in megawatts. The physical floor under every other number.
 - cap_gap: How many months the best European models trail the best American and Chinese ones. This line grows no matter what Finland decides. Your choices change Finland's position relative to the gap, never the gap itself.
-- intel_cost: What a fixed bundle of knowledge work costs to buy from a machine (2026 = 100). It collapses every year, everywhere, whatever Finland does. Cheap cognition is the tide under every decision at this table. The question is never the price, it is who is standing where when it falls.
+- intel_cost: What a fixed bundle of knowledge work costs to buy (2026 = 100). It collapses every year, everywhere, whatever Finland does. Cheap cognition is the tide under every decision at this table. The question is never the price, it is who is standing where when it falls.
 - books: How much room the government's budget framework has left before forced cuts. Every promise spends it; only real savings refill it.
-- share: How much of the machine's money reaches ordinary people, as wages, retraining and security. The employment side of the deal.
+- share: How much of automation's gains reach ordinary people, as wages, retraining and security. The employment side of the deal.
 - bedside: How many minutes of human care a patient gets in a day. Automation can free these minutes for people, or harvest them as savings.
 - pull: Whether capital still wants to land in Finland. Falls on unpredictability; rises on credible rules.
 - days: How many days Finland's public systems keep running if foreign AI access is cut. The self-sufficiency clock; it decides how hard the next crisis hits.

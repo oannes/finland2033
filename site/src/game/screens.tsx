@@ -285,7 +285,7 @@ export function DecideScreen({
 
       {phase.tension.capability && phase.tension.capability.length > 0 && (
         <SectionCard>
-          <p className="text-[11px] uppercase tracking-[0.2em] text-white/40 mb-3">What the machines can now do</p>
+          <p className="text-[11px] uppercase tracking-[0.2em] text-white/40 mb-3">What AI can now do</p>
           <ul className="space-y-1.5">
             {phase.tension.capability.map((c, i) => (
               <li key={i} className="text-[13.5px] text-white/70 leading-relaxed flex gap-2">

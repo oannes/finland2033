@@ -1,7 +1,7 @@
 # Phase 1 — The Public-Sector AI Megaproject (2027–28)
 
 
-## What the machines can now do
+## What AI can now do
 
 - An agent handles a routine benefits case end to end: reads the application, checks the registers, drafts the decision. A human signs it.
 - Machine cognition costs a third of what it did two years ago. A helpdesk seat that cost a salary now costs a subscription.

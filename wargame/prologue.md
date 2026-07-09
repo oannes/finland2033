@@ -49,7 +49,7 @@ headline: 2027. Another chance.
 
 In the April 2027 election, a left-leaning government, carried to power by public-sector workers and older voters, takes office. The leading party promised only little. It won because the country had grown tired of austerity without growth.
 
-But power brings responsibility, and not only for the government. Whether the state automates, whose machines it relies on, and who receives the gains are no longer technical questions alone. They are the terms of a new social contract that Finland must now create.
+But power brings responsibility, and not only for the government. Whether the state automates, whose systems it relies on, and who receives the gains are no longer technical questions alone. They are the terms of a new social contract that Finland must now create.
 
 Few people in Finland are in a position to participate writing this contract. *But you can be one of them.*
 

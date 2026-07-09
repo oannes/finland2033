@@ -4,7 +4,7 @@
 
 The benchmark is public: American and Chinese models lead the European tier by twenty months, and the lead grows, because the leading labs now use their models to improve their models. Ordinary machine work has become cheap for everyone; only the frontier stays scarce and priced. The megaproject must choose its engine this procurement cycle, and retrofitting later costs triple.
 
-**The decision.** The engine must be chosen mid-flight. Declare the core European and the state runs on machines your courts can reach, twenty months behind, on your record. Sign the lane and everything works better this year under terms written elsewhere. Or refuse to choose in the most defensible way possible: auction every workload, both stacks competing, and let the org chart become the architecture.
+**The decision.** The engine must be chosen mid-flight. Declare the core European and the state runs on systems your courts can reach, twenty months behind, on your record. Sign the lane and everything works better this year under terms written elsewhere. Or refuse to choose in the most defensible way possible: auction every workload, both stacks competing, and let the org chart become the architecture.
 
 ## COUNTY
 
@@ -34,7 +34,7 @@ Your exporters need the attested lane to serve their customers. Your energy and 
 
 The claim "the European tier is good enough for 80% of public tasks" is a slogan until somebody tests it. You are the only actor who can run that test. The same faculty hours can instead go to joint labs on the frontier lane, where the best tools and the best students already point.
 
-**The decision.** Point the intake at the stack Finland runs, and your graduates are needed here, on a machine that is behind. Point them at the frontier and they become world-class and portable. Or sign the lab's pipeline contract — tuition paid by the customer, return clauses nobody believes — and find out what a university is for.
+**The decision.** Point the intake at the stack Finland runs, and your graduates are needed here, on a stack that is behind. Point them at the frontier and they become world-class and portable. Or sign the lab's pipeline contract — tuition paid by the customer, return clauses nobody believes — and find out what a university is for.
 
 ## HVK
 

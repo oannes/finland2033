@@ -32,5 +32,5 @@ You direct Finland's largest wellbeing county and chair the county directors' ne
 
 ## Phase roles
 - **P1 (pivotal):** the freed minutes are yours to assign, to savings or to the bedside; the program's legitimacy follows your wards.
-- **P2 (pivotal):** care's machines are chosen now: continuity, the frontier, or the lab's trade. An interruption in your systems is measured in lives.
+- **P2 (pivotal):** care's systems are chosen now: continuity, the frontier, or the lab's trade. An interruption in your systems is measured in lives.
 - **P3 (modifier):** the dividend is delivered, banked, or clawed to care through your service centres.

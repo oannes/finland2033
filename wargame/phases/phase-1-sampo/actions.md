@@ -14,7 +14,7 @@ Pivotal actors (PM, AKAVA, COUNTY): tags feed `combos.md`. Modifier actors: effe
 - aftermath: The savings are booked before they exist. From this week, every ministry manages toward a number your own voters will feel first.
 - to COUNTY: I signed your counties up for savings targets with the force of law. The freed minutes belong to the Treasury now; plan your wards around it.
 - to AKAVA: The bill sets staffing by management decision, not negotiation. Your members' desks are in the schedule, and the schedule is public.
-- react COUNTY: Your bill converts every hour the machine frees in my wards into a Treasury number. I will deliver it, because I have no choice, and I will publish what it does to the visits.
+- react COUNTY: Your bill converts every hour automation frees in my wards into a Treasury number. I will deliver it, because I have no choice, and I will publish what it does to the visits.
 - react AKAVA: You put my members' desks in a schedule decided by managers. You will get your savings, and you will meet the ballot that pays for them.
 
 ### P1-PM-B — "Protect the experience"
@@ -79,27 +79,27 @@ Pivotal actors (PM, AKAVA, COUNTY): tags feed `combos.md`. Modifier actors: effe
 ### P1-AKAVA-H — "The union becomes the platform"
 - tag: H
 - lever: Consent
-- summary: Do the unheard-of: register a cooperative, buy the tools, and rent your members' machine-assisted work back to the state as a service. You do it because if work is becoming software, then the union should own some software. Nobody else at the table has a category for what you become.
+- summary: Do the unheard-of: register a cooperative, buy the tools, and rent your members' AI-assisted work back to the state as a service. You do it because if work is becoming software, then the union should own some software. Nobody else at the table has a category for what you become.
 - effects: LEG −0.2, PRO +0.3, POLL −2
 - data: share +8, ladder +3, trust -2, books +2
 - flags: STRIKE_CARD=unused
 - hook: SILENT
-- said: I registered the cooperative and bought the tools. If work is becoming software, the union should own some software. My members' machine-assisted work now rents to the state as a service, on our terms.
+- said: I registered the cooperative and bought the tools. If work is becoming software, the union should own some software. My members' AI-assisted work now rents to the state as a service, on our terms.
 - aftermath: Nobody at the table has a category for what you became. That is leverage in some rooms and a locked door in others.
 - to PM: You wanted the offices automated; they will be, by their own staff, through our cooperative, invoiced. Cheaper than the vendor, and your savings arithmetic still closes.
-- to AALTO: The cooperative hires for machine-assisted work at scale, juniors included. Your ladder problem just found a second buyer.
+- to AALTO: The cooperative hires for AI-assisted work at scale, juniors included. Your ladder problem just found a second buyer.
 - react PM: A union that invoices the state is a counterparty my lawyers have no template for. We will write one, because your cooperative undercuts the vendor and I cannot explain refusing it.
-- react AALTO: Your cooperative is hiring for machine-assisted work at scale. Send me the skills list and I will point the retraining at it. That is more than the ministry ever gave me.
+- react AALTO: Your cooperative is hiring for AI-assisted work at scale. Send me the skills list and I will point the retraining at it. That is more than the ministry ever gave me.
 
 ## COUNTY (pivotal)
 
 ### P1-COUNTY-A — "Minutes to savings"
 - tag: A
 - lever: Execution
-- summary: Sign the KAISA commitment the ministry wants: as the machine takes over the paperwork, convert the freed hours into smaller staff lists and shorter queues. You do it because you are short 57,000 workers by 2033 and arithmetic is not optional. The visits get shorter, and the people at the bedside notice first.
+- summary: Sign the KAISA commitment the ministry wants: as KAISA takes over the paperwork, convert the freed hours into smaller staff lists and shorter queues. You do it because you are short 57,000 workers by 2033 and arithmetic is not optional. The visits get shorter, and the people at the bedside notice first.
 - effects: PRO +0.5
 - data: books +5, bedside -6, care_gap -1, trust -2
-- said: I signed the ministry's commitment: the machine takes the paperwork, and the freed hours become smaller staff lists and shorter queues. I am short 57,000 workers by 2033. Arithmetic is not optional.
+- said: I signed the ministry's commitment: KAISA takes the paperwork, and the freed hours become smaller staff lists and shorter queues. I am short 57,000 workers by 2033. Arithmetic is not optional.
 - aftermath: The visits get shorter, and the people at the bedside notice before the statistics do.
 - to PM: My counties signed for your savings targets, in full. When the complaints reach your desk, remember whose arithmetic asked for them.
 - react PM: Your counties signed in full, and the framework noticed. When the complaints come, and they will come, the ministry will remember who carried the arithmetic.
@@ -107,10 +107,10 @@ Pivotal actors (PM, AKAVA, COUNTY): tags feed `combos.md`. Modifier actors: effe
 ### P1-COUNTY-B — "Minutes to the bedside"
 - tag: B
 - lever: The dignity dial
-- summary: Sign a different commitment: every hour the machine frees goes back to the patients: longer visits, fuller wards, and the paperwork simply dies. You do it because care is the one service where presence is the product, and a county that forgets that cannot be trusted with machines. The savings the state already booked from you do not come.
+- summary: Sign a different commitment: every freed hour goes back to the patients: longer visits, fuller wards, and the paperwork simply dies. You do it because care is the one service where presence is the product, and a county that forgets that cannot be trusted with machines. The savings the state already booked from you do not come.
 - effects: LEG +0.4
 - data: bedside +7, books -3, trust +2
-- said: I signed the other commitment: every hour the machine frees goes back to the patients. Longer visits, fuller wards. Care is the one service where presence is the product, and a county that forgets that cannot be trusted with machines.
+- said: I signed the other commitment: every freed hour goes back to the patients. Longer visits, fuller wards. Care is the one service where presence is the product, and a county that forgets that cannot be trusted with machines.
 - aftermath: The wards get warmer, and the savings the state already booked from you do not come.
 - to PM: The savings you booked from my counties are not coming. The hours went back to the patients they were taken from; book that instead.
 - react PM: The savings I booked from your counties are not coming, and I have read your reasoning. You made care the program's conscience and my framework's problem, in the same signature.
@@ -178,11 +178,11 @@ Pivotal actors (PM, AKAVA, COUNTY): tags feed `combos.md`. Modifier actors: effe
 ### P1-AALTO-A — "Spearhead the few"
 - tag: A
 - lever: The pipeline
-- summary: Pour the faculty budget into the top: doctoral schools and elite AI engineering, the few hundred who can build the state's machine. You do it because if Finns do not build it, Finland merely operates it, and a university's deepest duty is capability. The ten thousand displaced clerks become someone else's syllabus.
+- summary: Pour the faculty budget into the top: doctoral schools and elite AI engineering, the few hundred who can build the state's systems. You do it because if Finns do not build it, Finland merely operates it, and a university's deepest duty is capability. The ten thousand displaced clerks become someone else's syllabus.
 - effects: PRO +0.4
 - data: ladder -3, pub_ai +1, stay +2
 - flags: TALENT_PIPE=strong
-- said: I poured the faculty budget into the top: doctoral schools and elite AI engineering, the few hundred who can build the state's machine. If Finns do not build it, Finland merely operates it.
+- said: I poured the faculty budget into the top: doctoral schools and elite AI engineering, the few hundred who can build the state's systems. If Finns do not build it, Finland merely operates it.
 - aftermath: The ten thousand displaced clerks become someone else's syllabus, and they will notice that no one claimed them.
 - to STARTUP: The pipeline now produces the engineers you keep flying in from Zurich. Four years; hold on that long.
 - react STARTUP: Your elite pipeline is the hiring plan my roadmap was waiting for. Four years is survivable. I will hold, and I will pay your doctoral students more than Zurich does.
@@ -195,24 +195,24 @@ Pivotal actors (PM, AKAVA, COUNTY): tags feed `combos.md`. Modifier actors: effe
 - data: ladder +6, share +2, books -2
 - flags: TALENT_PIPE=weak; RETRAIN=broad
 - said: I spread the budget wide: retraining for the displaced, AI literacy in every degree, nobody left unable to read the new state. The university's promise was never only to the brilliant, and a country of bystanders is ungovernable.
-- aftermath: The elite pipeline thins, and the state's machine gets built by people trained somewhere else.
+- aftermath: The elite pipeline thins, and the state's platform gets built by people trained somewhere else.
 - to AKAVA: Your retraining clauses have a university behind them now: real courses, real capacity, this autumn. Send me the displaced before they stop believing in doors.
 - react AKAVA: You put a university behind my retraining clauses before I had to ask. The displaced will come. Make the courses land in real work, because my credibility signed alongside yours.
 
 ### P1-AALTO-H — "AI tutors take the lectures"
 - tag: H
 - lever: Prestige
-- summary: Accept the vendor's standing proposal: machine tutors teach the courses, and the university narrows to setting and examining the standard. You do it because it costs a tenth as much, scales to everyone at once, and, if you are honest, teaches the average course better than the average lecturer. What remains of a university afterwards is your gamble.
+- summary: Accept the vendor's standing proposal: AI tutors teach the courses, and the university narrows to setting and examining the standard. You do it because it costs a tenth as much, scales to everyone at once, and, if you are honest, teaches the average course better than the average lecturer. What remains of a university afterwards is your gamble.
 - effects: PRO +0.3, LEG −0.3
 - data: ladder +3, books +3, trust -2, stay -3
 - flags: TALENT_PIPE=weak
 - hook: SILENT
-- said: I signed the tutor contract: the machines teach the courses, and the university narrows to setting and examining the standard. It costs a tenth as much and, honestly, teaches the average course better than the average lecturer.
+- said: I signed the tutor contract: the tutors teach the courses, and the university narrows to setting and examining the standard. It costs a tenth as much and, honestly, teaches the average course better than the average lecturer.
 - aftermath: What remains of a university afterwards is now your gamble, and every faculty meeting reminds you of it.
 - to PM: I just showed your budget office what a tenth of the cost looks like in education. You are welcome, and I am sorry.
-- to STARTUP: The graduates you interview from now on were taught by the vendor's tutors. Whatever the machines could not teach is what you will be hiring for.
+- to STARTUP: The graduates you interview from now on were taught by the vendor's tutors. Whatever the tutors could not teach is what you will be hiring for.
 - react PM: Your tutor contract showed my budget office a number it cannot unsee. Every ministry now asks why its services cost ten times the machine. You handed me leverage and a headache in the same signature.
-- react STARTUP: The graduates I interview from now on were taught by the vendor's tutors, so what I am really hiring for is whatever the machines could not teach. Tell me what that is, and we will both know what your university still sells.
+- react STARTUP: The graduates I interview from now on were taught by the vendor's tutors, so what I am really hiring for is whatever the tutors could not teach. Tell me what that is, and we will both know what your university still sells.
 
 ## STARTUP (modifier)
 

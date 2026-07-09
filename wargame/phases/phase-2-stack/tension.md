@@ -2,7 +2,7 @@
 
 **Tension reaching inflection:** the capability gap goes public, and the public-sector AI program, whatever version exists, must choose its engine mid-flight.
 
-## What the machines can now do
+## What AI can now do
 
 - Agents run week-long projects unattended and check their own work. One professional with agents does what a 2026 team did.
 - The best diagnostic models outperform specialist physicians on records, imaging and triage, in every language spoken in Finland.
@@ -18,9 +18,9 @@
 
 ## Entry variants (facilitator reads all that match)
 
-- **MEGAPROJECT=full — The machine is hungry:** Your chief of staff opens the meeting with the dashboard: the platform you mandated is deployed and consuming models faster than anyone budgeted. Its booked savings depend on throughput, and throughput today favours the frontier lane. The spreadsheet argues for capability, and it is your spreadsheet.
+- **MEGAPROJECT=full — KAISA is hungry:** Your chief of staff opens the meeting with the dashboard: the platform you mandated is deployed and consuming models faster than anyone budgeted. Its booked savings depend on throughput, and throughput today favours the frontier lane. The spreadsheet argues for capability, and it is your spreadsheet.
 - **MEGAPROJECT=negotiated — A promise with a jurisdiction:** Two years ago the country signed job-security guarantees into law. The lawyers now point out what everyone skipped past at the signing ceremony: a guarantee is enforceable only against a counterparty European courts can reach. An American annex cannot be grieved.
-- **MEGAPROJECT=pilot — The unbuilt machine:** The pilot evaluation you ordered in 2027 lands on the table in the middle of the gap panic. The country that chose to wait must now choose an engine; for a machine it never built.
+- **MEGAPROJECT=pilot — The unbuilt platform:** The pilot evaluation you ordered in 2027 lands on the table in the middle of the gap panic. The country that chose to wait must now choose an engine; for a machine it never built.
 - **SECURE_ARCH=yes — The clauses pay off:** The exit clauses and fallback modes written into the 2028 tender, the ones that cost 15% extra and a month of argument, mean switching costs are survivable. Finland walks into this negotiation with options, and the First Gate is remembered as a drill.
 - **SECURE_ARCH=no — The uninsured tender:** The 2028 procurement declined to pay for exit clauses. The First Gate is remembered as a bruise, and every option on this table now carries retrofit costs the original tender was warned about.
 - **STRIKE_CARD=live — The unspent ballot:** Labour arrives with its 2027 strike mandate intact, and one sharp question for the room: who guarantees the guarantees on a foreign stack?

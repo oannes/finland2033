@@ -88,7 +88,7 @@ Measure grammar (one per goal):
 
 - goal: A role for research
   measure: flag TALENT_PIPE in strong
-  why: When machines answer most questions, the university must find the ones only research can still own. A country that stops researching can only rent its understanding.
+  why: When AI answers most questions, the university must find the ones only research can still own. A country that stops researching can only rent its understanding.
 
 - goal: Universities behind competitiveness
   measure: index PRO >= 6.5

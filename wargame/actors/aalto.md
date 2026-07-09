@@ -22,7 +22,7 @@ Rector of Finland's flagship technical university. Your CS and AI programmes are
 
 ## Objectives
 1. The best graduates stay: Finland's education investment pays back here, not abroad.
-2. Research keeps a role: the university still owns questions the machines cannot close.
+2. Research keeps a role: the university still owns questions AI cannot close.
 3. Your measurements matter: whatever compact or attestation regime wins, its evaluations are built on your methods.
 
 ## Standing tensions

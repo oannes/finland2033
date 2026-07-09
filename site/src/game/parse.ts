@@ -427,7 +427,7 @@ export function parseTension(md: string): Tension {
 
   for (const sec of splitSections(md, 2)) {
     const h = sec.heading.toLowerCase()
-    if (h.includes('machines can now do')) {
+    if (h.includes('can now do')) {
       t.capability = sec.body
         .split('\n')
         .filter((l) => l.trim().startsWith('- '))

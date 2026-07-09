@@ -1,10 +1,10 @@
 # Phase 3 — The Dividend (2031)
 
-**Tension reaching inflection:** the machine works well enough to argue about the money; in the shadow of the Second Gate (the attestation tiers tightening without warning), months before the parliamentary election.
+**Tension reaching inflection:** the automation works well enough to argue about the money; in the shadow of the Second Gate (the attestation tiers tightening without warning), months before the parliamentary election.
 
-## What the machines can now do
+## What AI can now do
 
-- Most office work is done faster, cheaper and more accurately by machines than by anyone you can hire.
+- Most office work is now done faster, cheaper and more accurately than any person you could hire can do it.
 - Robots learn manual tasks from video demonstration in days. The first care-lifting units are in Dutch and Japanese pilot wards.
 - The frontier labs' agents do most of their own research. What arrives next year is no longer planned by people.
 

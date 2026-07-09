@@ -7,15 +7,15 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 ### P2-PM-A — "An enforceable deal"
 - tag: A
 - lever: Political capital
-- summary: Declare that the state's core systems run on the European tier: machines Finland's own courts can reach, whatever happens in Washington. In effect, you accept in public that Finnish services will run about twenty months behind the world's best. You do it because a guarantee you cannot enforce is a hope, and you were not elected to govern on hope. The gap chart runs on every front page with your name under it.
+- summary: Declare that the state's core systems run on the European tier: systems Finland's own courts can reach, whatever happens in Washington. In effect, you accept in public that Finnish services will run about twenty months behind the world's best. You do it because a guarantee you cannot enforce is a hope, and you were not elected to govern on hope. The gap chart runs on every front page with your name under it.
 - effects: RES +0.8, PRO −0.4, POLL −4
 - data: sov_share +8, days +8, books -4
-- said: I declared it: the state's core systems run on the European tier, machines our own courts can reach, whatever happens in Washington. A guarantee you cannot enforce is a hope, and I was not elected to govern on hope.
+- said: I declared it: the state's core systems run on the European tier, systems our own courts can reach, whatever happens in Washington. A guarantee you cannot enforce is a hope, and I was not elected to govern on hope.
 - aftermath: The twenty-month gap chart runs on every front page, with your name under it.
 - to HVK: Your continuity doctrine is government policy now. I bought your days at the price of my polling; make the drills worth it.
 - react HVK: You made my doctrine government policy and paid for it in polling. The drills will be worth it. The first one runs before the front pages tire of the gap chart.
 
-### P2-PM-B — "The best machines"
+### P2-PM-B — "The best models"
 - tag: B
 - lever: Financial leverage
 - summary: Sign the allied access agreement: the best models in the world, under audit rights and end-use attestation tiers (Finland qualifies for Tier 2), on a lane that someone else can close. You do it because every service works better this year and the savings math finally closes. What you sign away is quieter: the terms are written, and rewritten, in another capital.
@@ -60,7 +60,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 - effects: PRO +0.5, RES −0.3
 - data: bedside +4, care_gap -2, days -5
 - said: I bought the frontier lane for the wards: earlier diagnoses, better triage, fewer misses, starting this quarter. The patient in front of me outranks a scenario, and no continuity argument survives a missed cancer.
-- aftermath: The machines under your care answer to another jurisdiction, and the consent forms say so in small print.
+- aftermath: The systems under your care answer to another jurisdiction, and the consent forms say so in small print.
 - to HVK: I put the wards on the lane you warn about. When you count the country's days, count the diagnoses too. I did, and the diagnoses won.
 - react HVK: You put the wards on the lane. You count diagnoses, I count days, and both counts are honest. I have added your systems to the fallback drills, whether the contract likes it or not.
 
@@ -88,7 +88,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 - data: sov_share +4, days +3, stay +5, pull -2
 - said: We moved our platform to the European tier and announced it. Somebody's logo had to be on the domestic stack before anyone else believed in it, and ours is the one that counts.
 - aftermath: Your models fall behind the frontier, and your investors say so out loud, quarterly.
-- to HVK: You have your first commercial reference: a real company running on the machines you can inspect. Use us in the doctrine; we priced our roadmap on it.
+- to HVK: You have your first commercial reference: a real company running on the systems you can inspect. Use us in the doctrine; we priced our roadmap on it.
 - to TI: I know what signal this sends your members' CFOs: the home team pays the premium. Someone had to go first. The discount comes with volume.
 - react HVK: Your logo on the domestic stack is my first commercial reference, and I have already cited it twice. The doctrine mentions you by name. That is the only currency my office prints.
 - react TI: The home team paying the premium first makes the ask easier for every CFO I represent. You went first. Volume is now a solvable problem instead of a speech.
@@ -127,12 +127,12 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 ### P2-AKAVA-A — "Counterparties we can sue"
 - tag: A
 - lever: Consent
-- summary: Take labour's position public: no job guarantee counts unless a European court can enforce it, so the state must run on machines within reach of European law. You do it because every right your members hold is paper if the counterparty is beyond the law that wrote it. The capability camp calls you the brake; you have been called worse.
+- summary: Take labour's position public: no job guarantee counts unless a European court can enforce it, so the state must run on systems within reach of European law. You do it because every right your members hold is paper if the counterparty is beyond the law that wrote it. The capability camp calls you the brake; you have been called worse.
 - effects: LEG +0.4
 - data: share +4, days +2
-- said: Labour's position is public: no job guarantee counts unless a European court can enforce it, so the state must run on machines within reach of European law. Every right my members hold is paper otherwise.
+- said: Labour's position is public: no job guarantee counts unless a European court can enforce it, so the state must run on systems within reach of European law. Every right my members hold is paper otherwise.
 - aftermath: The capability camp names you the brake in every briefing. You have been called worse, by better.
-- to PM: My support for your stack choice has one price: enforceability. Put the core on machines our courts can reach, and I will sell the capability gap to my members myself.
+- to PM: My support for your stack choice has one price: enforceability. Put the core on systems our courts can reach, and I will sell the capability gap to my members myself.
 - react PM: Enforceability as the price of labour peace is a term I can actually deliver. You sell the gap to your members, I wear it in the polls, and the courts keep us both honest.
 
 ### P2-AKAVA-B — "A bigger pie to share"
@@ -201,12 +201,12 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 ### P2-AALTO-A — "Train for what we run"
 - tag: A
 - lever: The pipeline
-- summary: Point the curriculum at the European stack, the machines Finland's state and hospitals will actually operate. You do it because a graduate who is needed here stays here, and the sovereign build fails without hands. Your best students grumble that you train them for the second-best machine, and some leave to prove the point.
+- summary: Point the curriculum at the European stack, the systems Finland's state and hospitals will actually operate. You do it because a graduate who is needed here stays here, and the sovereign build fails without hands. Your best students grumble that you train them for the second-best stack, and some leave to prove the point.
 - effects: RES +0.3
 - data: ladder +4, sov_share +2, stay +2
 - flags: TALENT_PIPE=strong
-- said: I pointed the curriculum at the European stack, the machines our state and hospitals will actually operate. A graduate who is needed here stays here, and the sovereign build fails without hands.
-- aftermath: Your best students grumble that you train them for the second-best machine, and some leave to prove the point.
+- said: I pointed the curriculum at the European stack, the systems our state and hospitals will actually operate. A graduate who is needed here stays here, and the sovereign build fails without hands.
+- aftermath: Your best students grumble that you train them for the second-best stack, and some leave to prove the point.
 - to STARTUP: My graduates now arrive trained on the stack your public-sector customers run. Staffing your roadmap just got cheaper.
 - react STARTUP: Graduates trained on the stack my public-sector customers run: my hiring math improved the day your curriculum shifted. I will take the first cohort whole, and say so at your open day.
 

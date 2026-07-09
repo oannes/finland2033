@@ -24,8 +24,8 @@ PM is handled in code: its metric is the 2031 election verdict.
 - else: When the Second Gate hit, the fallback was a binder. Eleven days of improvisation bought what architecture would have bought cheaper, and the inquiry has the warnings on record.
 
 ## AALTO — The pipeline
-- if indicator sov_share >= 35: {sov_share}% of public AI runs on machines Finns can inspect, staffed by people who graduated from your programs. The pipeline found its object.
-- else: Sovereign share reads {sov_share}% in 2033. The graduates are excellent, and they are elsewhere, certifying other countries' machines.
+- if indicator sov_share >= 35: {sov_share}% of public AI runs on systems Finns can inspect, staffed by people who graduated from your programs. The pipeline found its object.
+- else: Sovereign share reads {sov_share}% in 2033. The graduates are excellent, and they leave Finland as soon as they find work elsewhere.
 
 ## STARTUP — The company
 - if flag STACK in euro,us: The country picked one stack and the company scaled on it. The next funding round closed in Helsinki, and the next hundred hires argue about office space, not jurisdiction.
