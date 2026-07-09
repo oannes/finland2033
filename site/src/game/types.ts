@@ -61,6 +61,8 @@ export interface Action {
   hook?: string
   requires?: Requirement
   requiresRaw?: string
+  /** which of the actor's named levers this action spends (shown on the card) */
+  lever?: string
   /** debrief dialogue: what the chooser says at the table, first person */
   said?: string
   /** debrief dialogue: narrator line on what the action sets in motion in the chooser's own corner */
@@ -77,6 +79,8 @@ export interface DilemmaOption {
   key: 'A' | 'B'
   title: string
   summary: string
+  /** which of the actor's named levers this option exercises */
+  lever?: string
   effects: IndexDelta[]
   pollDelta?: number
   data: Record<string, number>

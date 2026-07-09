@@ -10,6 +10,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-PM-A — "Pay the bridge"
 - tag: A
+- lever: Financial leverage
 - summary: Stand at the podium with the Treasury's published savings and assign them: retraining people can sue for, care reinvestment, a permanent reform unit. You do it because the people who paid for that number can read it too, and the election is months away. The balance sheet waits another parliament.
 - effects: LEG +0.6, POLL +2
 - data: share +6, ladder +4, bedside +2, books -8
@@ -25,6 +26,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-PM-A2 — "The half-bridge"
 - tag: A
+- lever: Financial leverage
 - summary: Fund the retraining guarantee now; defer the care reinvestment to 'when conditions allow'. You do it because a half answer you can afford beats a full answer you cannot, and the placard asked about jobs first. Everyone sees which half was left out.
 - effects: LEG +0.3, POLL +1
 - data: share +3, ladder +2, books -4
@@ -38,6 +40,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-PM-B — "The books first"
 - tag: B
+- lever: Financial leverage
 - summary: Assign the savings where the framework always said they would go: debt, defence, growth relief. You do it because you promised arithmetic, and a state that keeps its word to the markets keeps its freedom of action. A generation reads exactly what it was worth to you.
 - effects: PRO +0.6, POLL −3
 - data: books +8, share -4, trust -2
@@ -48,6 +51,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-PM-B2 — "Emergency consolidation"
 - tag: B
+- lever: Financial leverage
 - summary: Declare the framework broken and cut across the board, with the savings as anaesthetic. You do it because out of room is out of room, and the alternative is drifting into a debt spiral with your signature on it. Everyone pays except the deficit.
 - effects: PRO +0.8, LEG −0.7, POLL −5
 - data: books +12, bedside -4, ladder -4, share -4, trust -4
@@ -64,6 +68,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-PM-H — "Run on the question"
 - tag: H
+- lever: Immediacy
 - summary: Refuse to allocate anything; make the election the referendum on the money. You do it because a mandate this size deserves a vote, and because, privately, every concrete allocation loses more votes than the open question does. The question campaigns harder than any answer would.
 - effects: LEG −0.3, POLL −2
 - data: trust -2
@@ -72,6 +77,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-PM-H2 — "The citizens' assembly"
 - tag: H
+- lever: Political capital
 - summary: Hand the allocation to a citizens' assembly: randomly drawn, professionally staffed, binding mandate. You do it because this money will poison whichever institution touches it, and ordinary people deciding is the one outcome nobody can call rigged. Every institution at the table loses its seat at that one.
 - effects: LEG +0.5, POLL −1
 - data: trust +4, books -2
@@ -84,6 +90,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-SAK-A — "Sign, with teeth"
 - tag: A
+- lever: Consent
 - summary: Sign the settlement and retire the strike threat: retraining rights and gain-sharing written into law, enforceable and funded. You do it because this moment is what the weapon was for, and a weapon unspent at the right moment rusts into a posture. The threat that won it is gone the day you sign.
 - effects: LEG +0.5
 - data: share +6, ladder +3
@@ -95,6 +102,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-SAK-A2 — "Backdate the rights"
 - tag: A
+- lever: Consent
 - summary: Sign, and demand it retroactive: compensation for the cohort that was automated before the rules existed. You do it because the people already displaced are your members too, and justice with a start date is an insult. The employers and the framework pay twice.
 - effects: LEG +0.3, PRO −0.3
 - data: share +8, books -5, pull -2
@@ -109,6 +117,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-SAK-B — "The general strike"
 - tag: B
+- lever: The ballot
 - summary: Call the 72-hour public-sector stoppage, weeks before the vote. You do it because the ballot mandate expires with this parliament, and a threat never used is never believed again. The whole economy holds its breath, and someone loses an election over it.
 - effects: LEG −0.6, PRO −0.6, POLL −4
 - data: share +7, books -6, pull -4, trust -2
@@ -122,6 +131,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-SAK-B2 — "Work-to-rule winter"
 - tag: B
+- lever: Stalemate power
 - summary: Order the quiet version: every rule followed to the letter, every flexibility withdrawn, until the dividend moves. You do it because it costs your members nothing visible and grinds the machine louder every week. The services, and the people queuing in them, carry it.
 - effects: LEG −0.3, PRO −0.3
 - data: share +4, books -3, trust -1
@@ -134,6 +144,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-SAK-H — "Sector by sector"
 - tag: H
+- lever: Consent
 - summary: Set no national line; let each union cut its own deal. You do it because your members' situations genuinely differ, and a confederation that forces one answer onto all of them breaks. The weakest sectors take the leftovers, and the moment for a national template passes.
 - effects: LEG −0.2
 - data: share +2, trust -1
@@ -142,6 +153,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-SAK-H2 — "Save our own"
 - tag: H
+- lever: Consent
 - summary: Negotiate hard for those inside the walls, and go silent about everyone outside them. You do it because dues-payers come first, and that is not cynicism. It is the contract. The young and the unorganized learn what they are to the movement.
 - effects: LEG −0.4
 - data: share +5, ladder -4, trust -3
@@ -155,6 +167,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-TI-A — "A number we can live with"
 - tag: A
+- lever: The public verdict
 - summary: Negotiate the levy instead of fighting it: capped, sunset-claused, earmarked, in exchange for signed labour peace. You do it because a price with a ceiling is just a cost, and costs can be planned; open conflict cannot. Your hardliners call it appeasement with an invoice.
 - effects: PRO +0.3, LEG +0.3
 - data: share +3, pull +2, books +2
@@ -167,6 +180,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-TI-A2 — "Buy the peace privately"
 - tag: A
+- lever: The order book
 - summary: Pre-empt the state: industry funds the retraining guarantee itself, brands it, and claims the credit. You do it because whoever pays writes the rules, and a voluntary payment kills the precedent a levy would set. The public's grip on the machine's gains slips quietly.
 - effects: PRO +0.4
 - data: share +3, ladder +3, stay +2, books +1
@@ -181,6 +195,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-TI-B — "Fight the levy"
 - tag: B
+- lever: The public verdict
 - summary: Campaign against any levy, full-page and by name. You do it because the principle is the entire fight: this year automation, next year whatever else works. Win, and labour is angrier; lose, and the levy returns without a cap.
 - effects: PRO +0.3, LEG −0.3, POLL −2
 - data: pull +3, share -4, trust -2
@@ -191,6 +206,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-TI-B2 — "The capital strike"
 - tag: B
+- lever: The order book
 - summary: Coordinate the freeze: investment postponed across the sector until the levy dies. You do it because when persuasion fails, capital has exactly one sentence, and sometimes it must be said aloud. Everything that needs investment stalls with you, and the country remembers who said it.
 - effects: PRO −0.4, LEG −0.5, POLL −3
 - data: pull -6, books -4, share -3, stay -2
@@ -205,6 +221,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-TI-H — "No position"
 - tag: H
+- lever: The public verdict
 - summary: Keep the association out of it; let politics allocate. You do it because your members disagree among themselves, and a split federation speaks for nobody. Optionality kept, relevance spent.
 - effects: PRO +0.1
 - data: pull +1
@@ -213,6 +230,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-TI-H2 — "Split the bill to SMEs"
 - tag: H
+- lever: The public verdict
 - summary: Accept the levy in public, and lobby the thresholds in private so it lands on firms too small to lobby back. You do it because your members are the big ones, and thresholds are the quietest weapon in tax politics. The ecosystem underneath them pays.
 - effects: PRO +0.2, LEG −0.3
 - data: pull +3, stay -3, share -2, trust -2
@@ -226,6 +244,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-COUNTY-A — "The execution partner"
 - tag: A
+- lever: Execution
 - summary: Co-sign the dividend and take charge of delivering it: retraining desks and care reinvestment through every service centre you run. You do it because whoever operates the bridge decides what it is in practice, and operating things is what counties are for.
 - effects: LEG +0.4
 - data: bedside +4, share +2, books -2
@@ -238,6 +257,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-COUNTY-A2 — "Claw the dividend to care"
 - tag: A
+- lever: Execution
 - summary: File the counties' claim first and take your share off the top, straight into the wards. You do it because these savings were carved out of care's hide, and a director who watches that money become tax relief should resign. The national bridge is shorter for it.
 - effects: LEG +0.2, PRO −0.2, POLL −1
 - data: bedside +7, books -6
@@ -250,6 +270,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-COUNTY-B — "Savings first"
 - tag: B
+- lever: The anchor order
 - summary: Bank the counties' share against next winter. You do it because you have seen enough winters to know another is always coming, and banked money is the only promise that keeps itself.
 - effects: PRO +0.3
 - data: books +4, bedside -2
@@ -260,6 +281,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-COUNTY-B2 — "Close wards to save the rest"
 - tag: B
+- lever: The dignity dial
 - summary: Order the triage nobody campaigns on: close the thinnest wards and concentrate staff where care still works. You do it because spreading too little everywhere is how everything fails at once, and somebody has to choose. The closed towns remember longer than the saved ones.
 - effects: PRO +0.4, LEG −0.5, POLL −2
 - data: care_gap -3, bedside +2, trust -4
@@ -270,6 +292,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-COUNTY-H — "No structural allocation"
 - tag: H
+- lever: Execution
 - summary: Make no structural claim; let the money seep into the deficits. You do it because every earmark is a fight, and the deficits are real. The queues absorb the difference, as always.
 - effects: LEG −0.2
 - data: bedside -1
@@ -278,6 +301,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-COUNTY-H2 — "Sell the care model abroad"
 - tag: H
+- lever: Execution
 - summary: License the county's automation playbook to the Dutch and Japanese hospital systems now piloting ward robots. You do it because the counties finally built something the world wants, and the fees fund care no budget would. The buyers' recruiters arrive attached to the contract.
 - effects: PRO +0.4
 - data: pull +3, books +2, stay +2, bedside -2
@@ -292,6 +316,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-HVK-A — "Normalize the exercises"
 - tag: A
+- lever: Doctrine
 - summary: Move the Gate's drills into the base budget: annual, boring, permanent. You do it because preparedness dies of excitement and survives as routine nobody debates. The line item is small; defending it every single year is the actual work.
 - effects: RES +0.4
 - data: days +5, books -2
@@ -302,6 +327,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-HVK-A2 — "Raid care for stockpiles"
 - tag: A
+- lever: The securitisation lever
 - summary: Reallocate quietly: reserves, fallback capacity and drills, funded out of the counties' envelope. You do it because the clock is naked, and nobody will vote you the money until the day it is too late to spend. The bedside pays, and is never told.
 - effects: RES +0.6, LEG −0.3
 - data: days +8, bedside -3, books -2, trust -1
@@ -314,6 +340,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-HVK-B — "Securitize the audits"
 - tag: B
+- lever: The securitisation lever
 - summary: Keep the emergency framework running: continued powers, classified audits, speed. You do it because the window is open now, and the next crisis will not wait for a committee. The trust bill arrives after you have left the room.
 - effects: RES +0.6, LEG −0.4
 - data: days +4, trust -3
@@ -324,6 +351,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-HVK-B2 — "Declare victory, stand down"
 - tag: B
+- lever: Doctrine
 - summary: Report the Gate as passed, hand back the emergency money, stand the units down. You do it because an agency that keeps its wolf-cries honest is an agency that gets believed next time, and being believed is your entire capital. The next gate reopens the file at retail prices.
 - effects: PRO +0.3, RES −0.4
 - data: books +3, days -4
@@ -335,6 +363,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-HVK-H — "Close the file"
 - tag: H
+- lever: Doctrine
 - summary: Close the file; the Gate passed. You do it because even preparedness has to end somewhere, and the office has other risks. The next one reopens it.
 - effects: RES −0.2
 - data: days -2
@@ -343,6 +372,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-HVK-H2 — "Publish the doctrine"
 - tag: H
+- lever: Doctrine
 - summary: Publish the resilience doctrine whole, gaps included. You do it because a public that understands the plan is the plan, and the secrecy was protecting the gaps more than the country. The adversary's reading list grows by one.
 - effects: RES +0.2, LEG +0.3
 - data: days +3, trust +2
@@ -355,6 +385,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-AALTO-A — "Certify the guarantee"
 - tag: A
+- lever: Certification authority
 - summary: Build the public evaluation regime for the retraining guarantee: what it teaches, whether it lands people in real work, published yearly. You do it because promises to the displaced have been made before, and the university's real power is making promises measurable.
 - effects: LEG +0.4
 - data: ladder +4, share +2
@@ -365,6 +396,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-AALTO-A2 — "Repair the cohort"
 - tag: A
+- lever: The pipeline
 - summary: Aim the dividend at Eetu's generation by name: bridge programs and first-job guarantees, seven years late. You do it because the manifesto is right, the promise broke on your watch too, and repair is still possible while they are under forty. The next intake waits its turn.
 - effects: LEG +0.5
 - data: ladder +6, youth_u -0.8, books -4
@@ -377,6 +409,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-AALTO-B — "Efficiency analytics"
 - tag: B
+- lever: Certification authority
 - summary: Sell the state what your researchers are genuinely best at: analytics showing where the machine can still cut. You do it because the work is rigorous, the funding is real, and if the cuts are coming anyway they should at least be competent. Your name goes on them.
 - effects: PRO +0.4
 - data: books +4, ladder -2, trust -2
@@ -387,6 +420,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-AALTO-B2 — "Import the talent instead"
 - tag: B
+- lever: The pipeline
 - summary: Stop trying to repair the domestic pipeline; recruit the missing skills from abroad at market price. You do it because the platform needs staff this year, not in a curriculum cycle, and the world is full of trained people. The promise to the local young lapses without a press release.
 - effects: PRO +0.3, LEG −0.3
 - data: stay +2, pub_ai +1, ladder -4, trust -1
@@ -399,6 +433,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-AALTO-H — "A working paper on both"
 - tag: H
+- lever: Prestige
 - summary: Publish a careful analysis of both paths and endorse neither. You do it because the university's authority rests on not being a lobby, and this fight will burn whoever touches it. Useful, quoted by everyone, and beside the point.
 - effects: LEG +0.1
 - data: ladder +1
@@ -407,6 +442,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-AALTO-H2 — "Free continuous learning for all"
 - tag: H
+- lever: The pipeline
 - summary: Propose the radical universal: free, machine-tutored continuous learning for every adult, funded off the top of the dividend, forever. You do it because this century will retrain everyone five times, and only a universal system survives that arithmetic, and because someone at this table should still think in generations.
 - effects: LEG +0.5, PRO −0.3
 - data: ladder +7, share +3, books -7
@@ -423,6 +459,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-STARTUP-A — "Bid the bridge platform"
 - tag: A
+- lever: Proof
 - summary: Bid to build the retraining platform and the reform tooling, and hire juniors to build it. You do it because the state just became a customer with knowable rules and real money, and building the bridge is better business than crossing it alone.
 - effects: PRO +0.3
 - data: stay +3, ladder +2, share +2
@@ -435,6 +472,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-STARTUP-A2 — "The pledge"
 - tag: A
+- lever: Jobs
 - summary: Offer the bargain in public: one hundred local hires and the retraining tools at cost, in exchange for exemption from the levy. You do it because you would rather buy your standing with jobs than with taxes, and the optics are unbeatable. What you spent is the levy's fairness.
 - effects: PRO +0.3, LEG +0.2
 - data: stay +5, ladder +3, share +2, pull -1
@@ -449,6 +487,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-STARTUP-B — "Take the exit"
 - tag: B
+- lever: Mobility
 - summary: Accept the acquisition at the top of the market. You do it because this number may never print again, and your first duty, the one that is in writing, is to the shareholders who believed first. The next hundred hires happen in someone else's city.
 - effects: PRO +0.2
 - data: stay -10, pull +2, books +1
@@ -462,6 +501,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-STARTUP-B2 — "Move the HQ quietly"
 - tag: B
+- lever: Mobility
 - summary: Re-domicile without a press release: a Dublin address, a skeleton office in Turku. You do it because the taxes are real, the levy is coming, and quiet exits keep the customers that loud ones lose. Everyone who cited you as proof the country works finds out eventually.
 - effects: PRO −0.2, LEG −0.2
 - data: stay -6, pull -2, trust -1
@@ -474,6 +514,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-STARTUP-H — "Ship product, skip politics"
 - tag: H
+- lever: Proof
 - summary: Decline every panel and just ship. You do it because the company is the argument, and every hour at a table is an hour off the roadmap. The defensible default, again.
 - effects: PRO +0.1
 - data: stay +1
@@ -482,6 +523,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-STARTUP-H2 — "Open-source the stack"
 - tag: H
+- lever: Proof
 - summary: Open the company's platform layer to the public sector: free, forever, source and weights included. You do it because infrastructure this important should not have a single owner, including you, and because the gift buys a standing that money cannot. Your investors get a lecture on externalities.
 - effects: RES +0.3, PRO −0.2
 - data: sov_share +3, days +2, stay +2, pull -2

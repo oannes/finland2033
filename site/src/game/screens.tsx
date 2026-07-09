@@ -383,6 +383,11 @@ function ActionCard({ action, selected, onSelect }: { action: Action; selected: 
       }`}
     >
       <div className="font-playfair italic text-lg text-white mb-1">{action.title}</div>
+      {action.lever && (
+        <div className="text-[10.5px] uppercase tracking-[0.15em] text-[#e8702a]/80 mb-1.5">
+          your lever · {action.lever}
+        </div>
+      )}
       <p className="text-[13px] text-white/65 leading-relaxed">{action.summary}</p>
     </button>
   )
@@ -609,7 +614,12 @@ export function DilemmaScreen({ dilemma, onChoose }: { dilemma: Dilemma; onChoos
               picked === o.key ? 'border-[#e8702a] bg-[#e8702a]/10' : 'border-white/10 hover:border-white/30'
             }`}
           >
-            <div className="font-playfair italic text-xl text-white mb-1.5">{o.title}</div>
+            <div className="font-playfair italic text-xl text-white mb-1">{o.title}</div>
+            {o.lever && (
+              <div className="text-[10.5px] uppercase tracking-[0.15em] text-[#e8702a]/80 mb-1.5">
+                your lever · {o.lever}
+              </div>
+            )}
             <p className="text-[13px] text-white/60 leading-relaxed">{o.summary}</p>
           </button>
         ))}

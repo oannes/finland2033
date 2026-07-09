@@ -168,6 +168,9 @@ export function parseActions(md: string, phase: number): Record<ActorId, Action[
           case 'hook':
             action.hook = val.trim()
             break
+          case 'lever':
+            action.lever = val.trim()
+            break
           case 'said':
             action.said = val.trim()
             break
@@ -208,6 +211,7 @@ export function parseDilemmas(md: string): Dilemma[] {
           const f = line.match(/^-\s*(\w+):\s*(.*)$/)
           if (!f) continue
           if (f[1] === 'summary') opt.summary = f[2].trim()
+          else if (f[1] === 'lever') opt.lever = f[2].trim()
           else if (f[1] === 'effects') {
             opt.effects = parseIndexDeltas(f[2])
             opt.pollDelta = parsePollDelta(f[2])
