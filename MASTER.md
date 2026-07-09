@@ -94,8 +94,6 @@ Eetu did what was asked of him, but Finland has failed him. Can that failure sti
 ## another-chance
 headline: 2027. Another chance.
 
-*Up to this point, everything you have read has happened. Maria and Eetu are inventions; from here on, so is everything else.*
-
 In the April 2027 election, a left-leaning government, carried to power by public-sector workers and older voters, takes office. The leading party promised only little. It won because the country had grown tired of austerity without growth.
 
 But power brings responsibility, and not only for the government. Whether the state automates, whose systems it relies on, and who receives the gains are no longer technical questions alone. They are the terms of a new social contract that Finland must now create.
