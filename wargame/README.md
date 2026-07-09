@@ -43,7 +43,7 @@ wargame/
 
 ## ID conventions
 
-- Actors: `PM, AALTO, STARTUP, SAK, HVK, COUNTY, TI`
+- Actors: `PM, AALTO, STARTUP, AKAVA, HVK, COUNTY, TI`
 - Actions: `P{phase}-{ACTOR}-{A|B|H}` (A/B = the phase's rival grand projects, H = hedge)
 - Outcomes: `P{phase}-O{1..5}`
 - Flags: UPPER_SNAKE, set in outcome files, tested in later phases (`requires:` fields)

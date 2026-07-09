@@ -28,7 +28,7 @@ const BASE_WEIGHTS: Record<ActorId, Record<Tag, number>> = {
   TI: { A: 0.3, B: 0.55, H: 0.15 },
   AALTO: { A: 0.45, B: 0.42, H: 0.13 },
   STARTUP: { A: 0.35, B: 0.5, H: 0.15 },
-  SAK: { A: 0.5, B: 0.28, H: 0.22 },
+  AKAVA: { A: 0.5, B: 0.28, H: 0.22 },
   COUNTY: { A: 0.42, B: 0.42, H: 0.16 },
 }
 
@@ -38,17 +38,17 @@ function tilt(actor: ActorId, phase: number, flags: Record<string, string>): Rec
   if (phase === 2) {
     // sovereignty (A) vs capability (B), colored by how Sampo went
     if (flags.SECURE_ARCH === 'yes') w.A *= 1.5
-    if (flags.GUARANTEE === 'yes' && (actor === 'SAK' || actor === 'COUNTY')) w.A *= 1.5 // guarantees need an enforceable counterparty
+    if (flags.GUARANTEE === 'yes' && (actor === 'AKAVA' || actor === 'COUNTY')) w.A *= 1.5 // guarantees need an enforceable counterparty
     if (flags.MEGAPROJECT === 'full' && actor === 'PM') w.B *= 1.4 // booked savings demand capability now
     if (flags.MEGAPROJECT === 'pilot') w.H *= 1.3
     if (actor === 'HVK') w.B *= 1.2 // the paradox actor: security services want the best models
   }
   if (phase === 3) {
     if (flags.CRISIS_LEG === 'damaged') {
-      if (actor === 'SAK' || actor === 'COUNTY') w.A *= 1.8 // the dividend becomes urgent
+      if (actor === 'AKAVA' || actor === 'COUNTY') w.A *= 1.8 // the dividend becomes urgent
       if (actor === 'PM') w.B *= 1.3 // and consolidation tempting for the framework
     }
-    if (flags.STRIKE_CARD === 'live' && actor === 'SAK') w.A *= 1.4
+    if (flags.STRIKE_CARD === 'live' && actor === 'AKAVA') w.A *= 1.4
     if (flags.GUARANTEE === 'yes') w.A *= 1.3 // a promise made is a promise invoiced
     if (flags.STACK === 'us' && actor === 'TI') w.B *= 1.3
   }

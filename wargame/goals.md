@@ -24,7 +24,7 @@ Measure grammar (one per goal):
   measure: indicator pub_ai >= 30
   why: The new budget already assumes AI carries 30% of public transactions. If it does not, the additional cuts are yours to announce.
 
-## SAK
+## AKAVA
 
 - goal: Rights in law
   measure: flag GUARANTEE in yes

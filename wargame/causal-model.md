@@ -20,7 +20,7 @@ node; **delayed** effects are carried as flags and land one or two phases later
 | Seat | Pivotal in | Influence channel | Signature trade-off | Lands |
 |---|---|---|---|---|
 | **PM** | D1, D2, D3 (never decisive alone) | Financial leverage (budget, statute) + political capital (POLL) | Can spend approval to force speed — or protect it and slow down. Re-election is scored in 2031. | Immediate |
-| **SAK** | D1, D3 | Consent — or stalemate. A refusal from labour can deadlock the country (the O3 rows). | The strike ballot is credible exactly once per parliament; spending it is irreversible. | Immediate + carried (STRIKE_CARD, GUARANTEE) |
+| **AKAVA** | D1, D3 | Consent — or stalemate. A refusal from labour can deadlock the country (the O3 rows). | The strike ballot is credible exactly once per parliament; spending it is irreversible. | Immediate + carried (STRIKE_CARD, GUARANTEE) |
 | **COUNTY** | D1, D2 | Execution: what is signed becomes real — or doesn't — on the service floor. County demand is the anchor order. | Dignity vs. efficiency: every rollout can be run for throughput (pub_ai up, trust down) or for the person in the queue (trust up, slower). Sharpest in D1. | Immediate (trust/pub_ai/care_gap) |
 | **TI** | D3 | The order book (members' capital) + the public verdict (one press conference = industry's position). | Export access vs. securitisation: exporters need the lane; where TI leans geopolitically, the capability argument gains a constituency. In structural conflict with HVK in D2. | Immediate |
 | **AALTO** | — (modifier all three) | Education and certification. Nothing the rector decides lands before ~2030; nothing lands harder by 2033. | Spearhead (staffs the stack, lifts Eetu) vs. broad retraining (bridges the displaced, lifts youth employment) — one budget, never both. | **Delayed**: TALENT_PIPE / RETRAIN flags pay out in D2, D3 and the endstate, not in D1's data. |
@@ -29,7 +29,7 @@ node; **delayed** effects are carried as flags and land one or two phases later
 
 ## What the engine does with this (implementation map)
 
-- **Outcome selection**: pivotal trio only (`mechanics.md` §3). SAK's stalemate
+- **Outcome selection**: pivotal trio only (`mechanics.md` §3). AKAVA's stalemate
   power and PM's never-decisive rule are structural here.
 - **POLL**: every actor's action can carry `POLL ±n`; the PM's options carry the
   largest swings (spending approval for speed is the PM's core trade).

@@ -28,7 +28,7 @@ Six years ago you vowed to answer for three things. None of them held. The decad
 
 ## street/roles
 PM: previous Prime Minister | weathered Prime Minister | re-elected Prime Minister
-SAK: pensioned union chief | union chair with one fight left | union chair who signed the decade
+AKAVA: pensioned union chief | union chair with one fight left | union chair who signed the decade
 COUNTY: retired county director | county director with tired shoes | county director whose queues bent
 TI: former industry lobbyist | industry federation head, still invited | industry federation head with full order books
 HVK: reassigned preparedness chief | security-of-supply chief nobody films | security-of-supply chief whose drill worked

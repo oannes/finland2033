@@ -1,9 +1,9 @@
 # Phase 3 — Resolution: all 27 pivotal combinations
 
-Pivotal order: **PM / SAK / TI**. Resolution rule: mechanics.md §3.
+Pivotal order: **PM / AKAVA / TI**. Resolution rule: mechanics.md §3.
 O1/O2 = the dividend (decisive/thin) · O3 = the punt · O4/O5 = the balance sheet (contested/decisive).
 
-| # | PM | SAK | TI | Outcome | Note (rendered inside outcome) |
+| # | PM | AKAVA | TI | Outcome | Note (rendered inside outcome) |
 |---|----|-----|----|---------|--------------------------------|
 | 1 | A | A | A | **O1** | The full settlement: dividend, signature, capped levy. The distribution triangle closes. LEVY=yes. |
 | 2 | A | A | B | **O2** | Dividend signed against industry's campaign; the levy passes thin and gets challenged in court. LEVY=yes, contested. |
@@ -36,4 +36,4 @@ O1/O2 = the dividend (decisive/thin) · O3 = the punt · O4/O5 = the balance she
 ## Flag defaults (unless a row overrides)
 - COMPACT: strong on O1, thin on O2, none otherwise (the software keys the endstate's dividend column on this).
 - LEVY: yes only where noted (needs TI-A or a dividend majority); no otherwise.
-- STRIKE_CARD: spent by SAK-A/B; unused on H.
+- STRIKE_CARD: spent by AKAVA-A/B; unused on H.

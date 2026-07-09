@@ -16,12 +16,12 @@ not on which seat they drew.)
 Authoring format: `- if ACTOR loses: EFFECTS | narrative line`. Effects use the
 same grammar as action lines: `POLL -3`, `RES -0.3`, `data trust -1.5`.
 
-## PM vs SAK — The mandate and the ballot
+## PM vs AKAVA — The mandate and the ballot
 - if PM loses: POLL -3 | Labour's counter lands in the polls. The government eats a week of headlines it did not budget for.
-- if SAK loses: data youth_u +0.5 | The state moves over the union's objection. The entry door narrows for the youngest members first.
+- if AKAVA loses: data youth_u +0.5 | The state moves over the union's objection. The entry door narrows for the youngest members first.
 
-## SAK vs TI — The bargaining table
-- if SAK loses: data youth_u +0.5 | The employers set this round's terms. The gains move faster than the rights.
+## AKAVA vs TI — The bargaining table
+- if AKAVA loses: data youth_u +0.5 | The employers set this round's terms. The gains move faster than the rights.
 - if TI loses: PRO -0.2 | Labour's line holds and is priced in. Investors read Finland as expensive this quarter.
 
 ## TI vs HVK — Open doors and locked doors

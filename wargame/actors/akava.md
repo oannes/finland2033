@@ -1,13 +1,13 @@
-# SAK — Chair, Central Organisation of Finnish Trade Unions
+# AKAVA — Chair, Akava, the Confederation of Unions for Professional and Managerial Staff
 
-**ID:** `SAK` · **Pivotal in:** P3 (no compact without labour)
+**ID:** `AKAVA` · **Pivotal in:** P3 (no compact without labour)
 
 ## Seat
 
 quote: What cost a salary in 2024 costs a subscription today. My members now compete with a line item. What is work worth, when thinking is cheaper than coffee?
 
 ## Who you are
-Chair of SAK, the biggest trade union. Your December 2025 survey showed blue-collar AI use still minimal; but it also revealed union members' view on AI is split three ways: protected insiders (care, trades; shortage sectors), exposed professionals (Akava), and the young who never got in. Their interests genuinely conflict, and you must aggregate them.
+Chair of Akava, the confederation of Finland's university-educated professionals: engineers, doctors, teachers, lawyers, economists. Your members use AI daily more than any other workforce, and your December 2025 member survey revealed their views split three ways: protected professions behind licences (medicine, law), exposed knowledge workers whose tasks the models already do, and the young graduates who never got in. Their interests genuinely conflict, and you must aggregate them.
 
 ## Endogenous levers
 - **Consent:** labour peace is yours alone to sell. Nobody automates a workforce that refuses it.

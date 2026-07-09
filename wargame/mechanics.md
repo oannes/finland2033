@@ -6,9 +6,9 @@ Seven actors play every phase. Each phase designates **three pivotal actors** wh
 
 | Phase | Pivotal trio | Modifier actors |
 |---|---|---|
-| P1 (2027–28, the megaproject) | PM, SAK, COUNTY | TI, AALTO, STARTUP, HVK |
-| P2 (2029, sovereignty or capability) | PM, COUNTY, STARTUP | SAK, TI, AALTO, HVK |
-| P3 (2031, the dividend) | PM, SAK, TI | COUNTY, AALTO, STARTUP, HVK |
+| P1 (2027–28, the megaproject) | PM, AKAVA, COUNTY | TI, AALTO, STARTUP, HVK |
+| P2 (2029, sovereignty or capability) | PM, COUNTY, STARTUP | AKAVA, TI, AALTO, HVK |
+| P3 (2031, the dividend) | PM, AKAVA, TI | COUNTY, AALTO, STARTUP, HVK |
 
 PM is pivotal in all three phases (government sits at every table) but **never decisive alone** — see resolution rule.
 
@@ -47,7 +47,7 @@ Count the tags of the three pivotal actors:
 1. Resolve outcome from pivotal trio.
 2. Apply each modifier actor's **index effects** from `actions.md`. **Data deltas** (`data:`) apply from every actor, pivotal included — the outcome sets the big picture, the individual choices leave fingerprints (see `causal-model.md`).
 3. Attach each modifier actor's **modifier hook** — a short paragraph inside the outcome file keyed to that action ID.
-4. Apply **flag effects**; where a modifier flag contradicts the outcome (e.g., SAK strikes against a project that just won), the flag stands — it becomes ammunition for the next phase's entry variant.
+4. Apply **flag effects**; where a modifier flag contradicts the outcome (e.g., AKAVA strikes against a project that just won), the flag stands — it becomes ammunition for the next phase's entry variant.
 
 ## 5. Indices (0–10, start at 5.0)
 
@@ -67,7 +67,7 @@ Set by outcomes and some actions; tested by `requires:` fields on later actions 
 | GUARANTEE | yes / no | P1 | P2 variants (enforceability), P3, endstate |
 | SECURE_ARCH | yes / no | P1 (HVK action) | P2 variants, CRISIS_LEG rule, endstate |
 | TALENT_PIPE | strong / weak | P1/P2 (AALTO action) | endstate |
-| STRIKE_CARD | live / spent / unused | P1 (SAK), spent in P3 | P3 SAK menu (`requires:`), variants |
+| STRIKE_CARD | live / spent / unused | P1 (AKAVA), spent in P3 | P3 AKAVA menu (`requires:`), variants |
 | STACK | euro / us / split | P2 | P3 variants, endstate matrix |
 | CRISIS_LEG | managed / damaged | P2 (rule: SECURE_ARCH=yes AND outcome ≠ O3) | P3 variants, endstate |
 | COMPACT | strong / thin / none | P3 (dividend class) | endstate matrix |
@@ -91,6 +91,6 @@ Seven standing confrontations, two per seat, fire every phase after decisions
 lock. Rule: each action's tag is its posture; A (force) beats B (negotiate),
 B beats H (wait), H beats A. Same posture = stand-off. The loser pays the
 price listed in clashes.md, denominated in that seat's own goal currency
-(PM poll, SAK youth_u, COUNTY trust, HVK RES, TI/STARTUP PRO, AALTO sov_share).
+(PM poll, AKAVA youth_u, COUNTY trust, HVK RES, TI/STARTUP PRO, AALTO sov_share).
 Balanced by construction: every seat has exactly two edges and one loss
 currency. Edit clashes.md to retune; delete it to switch the mechanism off.

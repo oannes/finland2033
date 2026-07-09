@@ -11,7 +11,7 @@ const YEARS = [2026, 2028, 2029, 2031, 2033]
  * sync with the metrics the actors' actions move in actions.md. */
 export const OWN_METRIC: Record<ActorId, string> = {
   PM: 'books',
-  SAK: 'share',
+  AKAVA: 'share',
   COUNTY: 'bedside',
   TI: 'pull',
   HVK: 'days',

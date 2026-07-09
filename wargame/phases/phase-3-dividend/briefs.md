@@ -6,7 +6,7 @@ The Second Gate tested everything built since 2027; the country lived whatever y
 
 **The decision.** Round three is reactionary: the savings are published, the claimants are in the corridor, and half your options exist only because of the numbers the table made in 2027–29. Pay the bridge if the framework can still carry one. Consolidate if you can bear the message it sends. The locked cards on your desk are locked by arithmetic, not by law.
 
-## SAK
+## AKAVA
 
 This is the table everything since 2027 pointed at. Your signature is the only legitimacy the dividend can have. The first care robots abroad mean the machine is coming for your members' hands next, not just their desks; whatever rights you win now are the template for that negotiation too.
 

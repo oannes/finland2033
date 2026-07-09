@@ -8,7 +8,7 @@ briefed to everyone. The facilitator always sees everything.
 ## Phase 1 (The megaproject)
 
 - Inject 1: PM, TI, COUNTY
-- Inject 2: PM, SAK, COUNTY
+- Inject 2: PM, AKAVA, COUNTY
 - Inject 3: PM, TI, STARTUP
 - Inject 4: STARTUP, HVK, TI
 - Inject 5: HVK, PM, STARTUP
@@ -18,12 +18,12 @@ briefed to everyone. The facilitator always sees everything.
 - Inject 1: (all)
 - Inject 2: PM, TI, STARTUP, HVK
 - Inject 3: PM, AALTO, COUNTY
-- Inject 4: HVK, PM, SAK
+- Inject 4: HVK, PM, AKAVA
 - Inject 5: PM, COUNTY, STARTUP, AALTO
 
 ## Phase 3 (The Dividend)
 
 - Inject 1: (all)
-- Inject 2: PM, TI, SAK, COUNTY
-- Inject 3: SAK, AALTO, COUNTY
+- Inject 2: PM, TI, AKAVA, COUNTY
+- Inject 3: AKAVA, AALTO, COUNTY
 - Inject 4: (all)

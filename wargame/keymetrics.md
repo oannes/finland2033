@@ -6,7 +6,7 @@ inside "What happened to the others" for the rest of the table. Grammar:
 First matching line wins. {tokens} interpolate from the endstate numbers.
 PM is handled in code: its metric is the 2031 election verdict.
 
-## SAK — The entry door
+## AKAVA — The entry door
 - if indicator youth_u <= 10: Youth unemployment closes the decade at {youth_u}%. The door into working life reopened, and the union hall is younger than it has been since the nineties.
 - else: Youth unemployment reads {youth_u}% in 2033. A generation learned that the economy renews itself without asking them, and stopped paying dues to anyone.
 

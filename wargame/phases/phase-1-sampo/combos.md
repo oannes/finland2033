@@ -1,9 +1,9 @@
 # Phase 1 — Resolution: all 27 pivotal combinations
 
-Pivotal order: **PM / SAK / COUNTY**. Tags per action: see `actions.md`. Resolution rule: mechanics.md §3.
+Pivotal order: **PM / AKAVA / COUNTY**. Tags per action: see `actions.md`. Resolution rule: mechanics.md §3.
 O1/O2 = full mandate (decisive/contested) · O3 = pilot state · O4/O5 = negotiated (contested/decisive).
 
-| # | PM | SAK | COUNTY | Outcome | Note (rendered inside outcome) |
+| # | PM | AKAVA | COUNTY | Outcome | Note (rendered inside outcome) |
 |---|----|-----|--------|---------|--------------------------------|
 | 1 | A | A | A | **O1** | The arithmetic wins outright: statute, board seat, county throughput. The base watches its own union sign. |
 | 2 | A | A | B | **O2** | Mandate with consent gates in the counties; slower on the wards, quieter in the streets. |
@@ -20,10 +20,10 @@ O1/O2 = full mandate (decisive/contested) · O3 = pilot state · O4/O5 = negotia
 | 13 | B | B | A | **O4** | The guarantee, in law, with counties at mandate speed under it; the strongest negotiated variant. GUARANTEE=yes. |
 | 14 | B | B | B | **O5** | Full negotiated program: guarantee, gain-sharing, consent gates, staff sign-off. GUARANTEE=yes. |
 | 15 | B | B | H | **O4** | Thin variant: guarantee signed, rollout only in showcase agencies. GUARANTEE=yes. |
-| 16 | B | H | A | **O3** | Pair-conflict PM/SAK: an offered guarantee met with a ballot reads as distrust; counties execute into the gap. |
-| 17 | B | H | B | **O4** | Guarantee without SAK's signature; imposed generosity; members ballot anyway. GUARANTEE=yes; STRIKE_CARD=live. |
+| 16 | B | H | A | **O3** | Pair-conflict PM/AKAVA: an offered guarantee met with a ballot reads as distrust; counties execute into the gap. |
+| 17 | B | H | B | **O4** | Guarantee without AKAVA's signature; imposed generosity; members ballot anyway. GUARANTEE=yes; STRIKE_CARD=live. |
 | 18 | B | H | H | **O3** | Lean B: the offer stands unclaimed; the framework books savings against a program in committee. |
-| 19 | H | A | A | **O2** | SAK and the counties force the pace on a hesitant PM; the statute follows the fact. Credit disputed. |
+| 19 | H | A | A | **O2** | AKAVA and the counties force the pace on a hesitant PM; the statute follows the fact. Credit disputed. |
 | 20 | H | A | B | **O3** | Lean A: consent exists, money doesn't; the program runs on goodwill and pilot budgets. |
 | 21 | H | A | H | **O3** | Lean A: a board seat at a table that doesn't convene. |
 | 22 | H | B | A | **O3** | Lean B: a guarantee bill with no government sponsor; counties execute without cover. |
@@ -37,5 +37,5 @@ O1/O2 = full mandate (decisive/contested) · O3 = pilot state · O4/O5 = negotia
 - MEGAPROJECT: full on O1/O2, negotiated on O4/O5, pilot on O3.
 - GUARANTEE: yes only on negotiated outcomes (rows noted); no otherwise.
 - SECURE_ARCH: per HVK action (A → yes; else no).
-- STRIKE_CARD: per SAK action (H → live; A → unused); rows 7, 17 note the live ballot.
+- STRIKE_CARD: per AKAVA action (H → live; A → unused); rows 7, 17 note the live ballot.
 - TALENT_PIPE: from AALTO modifier action, independent of row.

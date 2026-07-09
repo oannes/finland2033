@@ -18,7 +18,7 @@ You need frontier capability to compete abroad, and you hold the most sensitive 
 
 **The decision.** The sector will read your filing as the signal. Anchor the sovereign build and the domestic stack gets its flagship while your investors reprice you. Attest and take the lane and you stay world-class on engines that answer elsewhere. Or leave loudly now and become the cautionary tale that reprices the whole country.
 
-## SAK
+## AKAVA
 
 Every guarantee written into the megaproject is enforceable only against a counterparty European courts can reach. An American annex cannot be grieved. You are pro-sovereignty for the least ideological reason at the table: jurisdiction.
 

@@ -27,7 +27,7 @@ Head of a left-leaning coalition government mid-term in 2028, voted in power by 
 3. History's judgment: by 2033, Finland is cited as a country that *chose a direction*.
 
 ## Standing tensions with other actors
-- **SAK:** You are selling freedom from work; they see it as the end of work, and by extension, their importance.
+- **AKAVA:** You are selling freedom from work; they see it as the end of work, and by extension, their importance.
 - **HVK:** They are telling you their budget is the insurance premium, but the cost seems to be rising.
 - **TI:** For some reason, these people keep on thinking sovereignty is bad for business.
 - **COUNTY:** delivers your promised savings, or delivers your legitimacy crisis.

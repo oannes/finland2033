@@ -16,7 +16,7 @@ import type { ActorId, PersonaId } from './types'
  *
  * Actor face mapping (from the provided character sheets):
  *   PM      ← Prime_Minister.png
- *   SAK     ← Ritva_Aalto.png            (confederation chair)
+ *   AKAVA     ← Ritva_Aalto.png            (confederation chair)
  *   AALTO   ← Professor_Katri_Nyman.png  (the professor)
  *   COUNTY  ← Dr_Sari_Koski.png          (county services director)
  *   HVK     ← Ilkka_Kettunen.png         (security-of-supply chief)
@@ -60,7 +60,7 @@ export const PERSONA_PORTRAITS: Record<PersonaId, Slots> = {
 
 export const ACTOR_PORTRAITS: Record<ActorId, Slots> = {
   PM: slotsFor('pm'),
-  SAK: slotsFor('sak'),
+  AKAVA: slotsFor('akava'),
   AALTO: slotsFor('aalto'),
   COUNTY: slotsFor('county'),
   HVK: slotsFor('hvk'),
