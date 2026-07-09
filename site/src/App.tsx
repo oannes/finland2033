@@ -5,8 +5,8 @@ import { parsePrologue } from './game/parse'
 import mapPlain from './assets/map-plain.webp'
 import mapNetwork from './assets/map-network.webp'
 import GameApp, { WORKSHOP_ENABLED } from './game/GameApp'
-import { spiritImage, VOICE_COLOR } from './game/epilogue'
-import { RevealSequence } from './game/reveal'
+import { VOICE_COLOR } from './game/epilogue'
+import { QuickReveal, RevealSequence } from './game/reveal'
 import { PERSONA_PORTRAITS, Portrait } from './game/portraits'
 import { loadContent } from './game/content'
 import Markdown from './game/Markdown'
@@ -220,23 +220,19 @@ const SPIRIT_LINE = /^(NOKIA|VELKA|RAJA|TALKOOT|METSÄ)(?:\s*\(([^)]*)\))?:\s*(.
  * voice. The attribution ("the ghost of the miracle past") appears only here;
  * by the time the tunnel comes, the names stand alone. */
 function SpiritAside({ name, tag, text }: { name: string; tag?: string; text: string }) {
-  const img = spiritImage(name)
   return (
-    <div className="flex items-start gap-3 my-1">
-      {img && <img src={img} alt={name} className="w-9 h-9 rounded-full object-cover border border-white/15 shrink-0 mt-0.5" />}
-      <p className="text-white/85 text-[15px] leading-relaxed">
-        <span className="font-semibold tracking-[0.08em]" style={{ color: VOICE_COLOR[name] ?? '#fff' }}>
-          {name}
-        </span>
-        {tag && <span className="text-white/40 italic">, {tag}</span>}
-        <span className="text-white/40"> — </span>
-        {text}
-      </p>
-    </div>
+    <p className="text-white/85 text-[15px] leading-relaxed my-1">
+      <span className="font-semibold tracking-[0.08em]" style={{ color: VOICE_COLOR[name] ?? '#fff' }}>
+        {name}
+      </span>
+      {tag && <span className="text-white/40 italic">, {tag}</span>}
+      <span className="text-white/40"> — </span>
+      {text}
+    </p>
   )
 }
 
-function PrologueParas({ slug, last = 'mb-4' }: { slug: string; last?: string }) {
+function PrologueParas({ slug, last = 'mb-4', onAllDone }: { slug: string; last?: string; onAllDone?: () => void }) {
   const sec = PROLOGUE[slug]
   if (!sec) return null
   // group consecutive spirit lines into one hover-revealed exchange
@@ -253,13 +249,22 @@ function PrologueParas({ slug, last = 'mb-4' }: { slug: string; last?: string })
   let pi = -1
   const lastP = blocks.filter((b) => b.kind === 'p').length - 1
   const [doneExchanges, setDoneExchanges] = useState<Record<number, boolean>>({})
+  const spiritIdxs = blocks.map((b, i) => (b.kind === 'spirits' ? i : -1)).filter((i) => i >= 0)
+  const allDone = spiritIdxs.every((i) => doneExchanges[i])
+  const onAllDoneRef = useRef(onAllDone)
+  onAllDoneRef.current = onAllDone
+  useEffect(() => {
+    if (allDone) onAllDoneRef.current?.()
+  }, [allDone])
   let gated = false
+  let afterSpirits = false
   return (
     <>
       {blocks.map((b, i) => {
         if (gated) return null
         if (b.kind === 'spirits') {
           if (!doneExchanges[i]) gated = true // what follows waits for the exchange
+          afterSpirits = true
           return (
             <div key={i} className="my-6 pl-1 border-l-2 border-white/10 ml-1 space-y-1">
               <RevealSequence
@@ -272,17 +277,19 @@ function PrologueParas({ slug, last = 'mb-4' }: { slug: string; last?: string })
           )
         }
         pi++
-        return (
-          <p key={i} className={`text-white/70 text-[15px] leading-relaxed ${pi === lastP ? last : 'mb-4'}`}>
+        const para = (
+          <p className={`text-white/70 text-[15px] leading-relaxed ${pi === lastP ? last : 'mb-4'}`}>
             <Em text={b.text} />
           </p>
         )
+        return afterSpirits ? <QuickReveal key={i}>{para}</QuickReveal> : <span key={i}>{para}</span>
       })}
     </>
   )
 }
 
 function Prologue({ mode }: { mode: 'solo' | 'workshop' }) {
+  const [restRevealed, setRestRevealed] = useState(false)
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -310,10 +317,16 @@ function Prologue({ mode }: { mode: 'solo' | 'workshop' }) {
               <h2 className="font-playfair italic text-3xl sm:text-4xl leading-tight mb-5">
                 {PROLOGUE['lost-years']?.meta.headline}
               </h2>
-              <PrologueParas slug="lost-years" last="" />
-              <GdpChart />
+              <PrologueParas slug="lost-years" last="" onAllDone={() => setRestRevealed(true)} />
+              {restRevealed && (
+                <QuickReveal>
+                  <GdpChart />
+                </QuickReveal>
+              )}
             </div>
 
+            {restRevealed && (
+            <QuickReveal className="space-y-16">
             <div>
               <PrologueParas slug="intro" last="" />
             </div>
@@ -354,6 +367,8 @@ function Prologue({ mode }: { mode: 'solo' | 'workshop' }) {
                 {PROLOGUE.cta?.meta[mode] ?? (mode === 'workshop' ? 'Set up the workshop' : 'Take your seat')}
               </a>
             </div>
+            </QuickReveal>
+            )}
           </div>
         </section>
       </div>

@@ -107,3 +107,25 @@ export function RevealSequence({ items, onDone }: { items: RevealItem[]; onDone?
     </div>
   )
 }
+
+/** Mount-time quick blur-in for content that follows a finished dialogue:
+ * everything arrives at once, easing from blur to clear. */
+export function QuickReveal({ children, className = '' }: { children: React.ReactNode; className?: string }) {
+  const [clear, setClear] = useState(false)
+  useEffect(() => {
+    const r = requestAnimationFrame(() => requestAnimationFrame(() => setClear(true)))
+    return () => cancelAnimationFrame(r)
+  }, [])
+  return (
+    <div
+      className={className}
+      style={{
+        filter: clear ? 'blur(0px)' : 'blur(8px)',
+        opacity: clear ? 1 : 0.2,
+        transition: 'filter 700ms ease-out, opacity 700ms ease-out',
+      }}
+    >
+      {children}
+    </div>
+  )
+}
