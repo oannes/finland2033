@@ -59,6 +59,12 @@ headline: Finland's fifteen lost years
 
 2010–2025. When the world moved on, Finland stood still.
 
+NOKIA (the ghost of the miracle past): 2007 was sick though!
+
+VELKA (the country's Lutheran soul): And we kept working. No one can call those fifteen years idle.
+
+NOKIA: No one calls a treadmill idle either.
+
 In 2026, the general mood in Finland is one of shock. Things are not going well. Finland once had some of the world’s best schools; now the education system is failing its young people. The healthcare system is overburdened and still relies on IT systems designed in the last millennium. Public debt keeps rising despite austerity. Drug-related deaths are the highest in Europe. Falling birth rates and volatile security situation are forcing a debate about extending conscription to women. Companies are not innovating. 
 
 This is the status of the happiest country in the world. 
@@ -97,7 +103,7 @@ But power brings responsibility, and not only for the government. Whether the st
 Few people in Finland are in a position to participate writing this contract. *But you can be one of them.*
 
 ## cta
-solo: Take your seat
+solo: Become a changemaker
 workshop: Set up the workshop
 
 <!-- ═══════════ FILE: goals.md ═══════════ -->

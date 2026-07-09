@@ -231,6 +231,32 @@ sourced (sources.md), and fixed; the scenario number is the play result.
   for youth_u, care_gap, trust, compute_mw, books/share/etc. (history block
   exists); check each chart id.
 
+## 13. Landing polish: seam, teal, promise CTAs — IMPLEMENTED
+
+- The landing map image has a dark-blue background while the page was
+  near-black; the boundary was visible. Fixed by sampling the image's own
+  corner color (#020914) and using it as the page background (landing,
+  prologue, about, afterword, theme-color).
+- Accent color moved from orange (#e8702a) to a teal drawn from the landing
+  map's palette (#2f9db4, hover #23849a), everywhere: buttons, chips, charts,
+  goal badges, lever tags.
+- CTAs reframed: the landing button is a commitment, not a mode ("I'm in for
+  the decade" instead of "Play alone"); the prologue-end button is "Become a
+  changemaker" (was "Take your seat"; label lives in prologue.md cta meta).
+  "Playing alone" removed from the prologue top bar; mode-select card renamed
+  "Play the decade".
+
+## 14. Spirits tease the prologue — IMPLEMENTED
+
+A three-line unprompted exchange interrupts the lost-years section, hover-
+revealed with the spirit faces (the first taste of the hidden layer):
+NOKIA, the ghost of the miracle past: "2007 was sick though!" / VELKA, the
+country's Lutheran soul: "And we kept working. No one can call those fifteen
+years idle." / NOKIA: "No one calls a treadmill idle either."
+- Content in prologue.md (NAME (attribution): line grammar); any consecutive
+  spirit lines in any prologue section render this way, so more asides can be
+  added by editing MASTER alone.
+
 ## Sequencing
 
 1. Seam line (#1) — minutes, ship immediately.

@@ -24,7 +24,7 @@
 .prose-game p { margin: 0.6em 0; }
 .prose-game strong { color: rgba(255,255,255,0.92); font-weight: 600; }
 .prose-game em { color: rgba(255,255,255,0.6); }
-.prose-game a { color: #e8702a; text-decoration: underline; text-underline-offset: 3px; }
+.prose-game a { color: #2f9db4; text-decoration: underline; text-underline-offset: 3px; }
 .prose-game ul, .prose-game ol { margin: 0.6em 0; padding-left: 1.3em; }
 .prose-game ul { list-style: disc; } .prose-game ol { list-style: decimal; }
 .prose-game li { margin: 0.3em 0; }

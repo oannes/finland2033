@@ -49,7 +49,7 @@ export function PrimaryButton({
     <button
       onClick={onClick}
       disabled={disabled}
-      className="bg-[#e8702a] hover:bg-[#d2611f] disabled:opacity-40 disabled:cursor-not-allowed text-white text-sm font-medium px-7 py-3 rounded-full transition-all hover:scale-[1.03] active:scale-95"
+      className="bg-[#2f9db4] hover:bg-[#23849a] disabled:opacity-40 disabled:cursor-not-allowed text-white text-sm font-medium px-7 py-3 rounded-full transition-all hover:scale-[1.03] active:scale-95"
     >
       {children}
     </button>
@@ -59,7 +59,7 @@ export function PrimaryButton({
 export function WaitNote({ text = 'Waiting for the facilitator to advance…' }: { text?: string }) {
   return (
     <span className="text-sm text-white/40 italic inline-flex items-center gap-2">
-      <span className="w-2 h-2 rounded-full bg-[#e8702a] animate-pulse" />
+      <span className="w-2 h-2 rounded-full bg-[#2f9db4] animate-pulse" />
       {text}
     </span>
   )
@@ -101,7 +101,7 @@ export function BriefingScreen({
   return (
     <div className="space-y-6">
       <SectionCard>
-        <p className="text-[11px] uppercase tracking-[0.2em] text-[#e8702a] mb-2">Briefing · spring 2027</p>
+        <p className="text-[11px] uppercase tracking-[0.2em] text-[#2f9db4] mb-2">Briefing · spring 2027</p>
         <h2 className="font-playfair italic text-3xl text-white">
           {brief ? brief.title.replace(/^[A-Z]+\s*[—-]\s*/, '') : 'Seven seats at the table'}
         </h2>
@@ -123,7 +123,7 @@ export function BriefingScreen({
 
           {goals.length > 0 && (
             <SectionCard>
-              <p className="text-[11px] uppercase tracking-[0.2em] text-[#e8702a] mb-3">Your goals</p>
+              <p className="text-[11px] uppercase tracking-[0.2em] text-[#2f9db4] mb-3">Your goals</p>
               <div className="grid md:grid-cols-3 gap-3">
                 {goals.map((g, i) => (
                   <div key={i} className="rounded-xl border border-white/15 p-4">
@@ -205,7 +205,7 @@ export function FacilitatorBrief({
           {variants.length > 0 && (
             <div className="space-y-2">
               {variants.map((v, i) => (
-                <div key={i} className="border-l-2 border-[#e8702a]/50 pl-3">
+                <div key={i} className="border-l-2 border-[#2f9db4]/50 pl-3">
                   <span className="text-xs font-semibold text-white/70">{v.condRaw}</span>
                   <Markdown text={v.text} className="text-sm" />
                 </div>
@@ -260,7 +260,7 @@ export function DecideScreen({
   return (
     <div className="space-y-6">
       <SectionCard>
-        <p className="text-[11px] uppercase tracking-[0.2em] text-[#e8702a] mb-2">
+        <p className="text-[11px] uppercase tracking-[0.2em] text-[#2f9db4] mb-2">
           Decision {phase.idx} · {phase.tension.year || YEAR_BY_PHASE[phase.idx]}
         </p>
         <h2 className="font-playfair italic text-3xl sm:text-4xl text-white mb-2">{phase.tension.title}</h2>
@@ -289,7 +289,7 @@ export function DecideScreen({
           <ul className="space-y-1.5">
             {phase.tension.capability.map((c, i) => (
               <li key={i} className="text-[13.5px] text-white/70 leading-relaxed flex gap-2">
-                <span className="text-[#e8702a]/70 shrink-0">▸</span>
+                <span className="text-[#2f9db4]/70 shrink-0">▸</span>
                 <span>{c}</span>
               </li>
             ))}
@@ -298,12 +298,12 @@ export function DecideScreen({
       )}
 
       {variants.length > 0 && (
-        <SectionCard className="border-[#e8702a]/30">
-          <p className="text-[11px] uppercase tracking-[0.2em] text-[#e8702a] mb-3">What you carry in</p>
+        <SectionCard className="border-[#2f9db4]/30">
+          <p className="text-[11px] uppercase tracking-[0.2em] text-[#2f9db4] mb-3">What you carry in</p>
           <div className="space-y-3">
             {variants.map((v, i) => (
               <div key={i}>
-                {v.label && <span className="text-xs font-semibold text-[#e8702a]/90">{v.label}</span>}
+                {v.label && <span className="text-xs font-semibold text-[#2f9db4]/90">{v.label}</span>}
                 <Markdown text={v.text} className="text-sm" />
               </div>
             ))}
@@ -388,7 +388,7 @@ function InquiryRecord({ content, state }: { content: GameContent; state: GameSt
         const phase = content.phases[i]
         return (
           <div key={i}>
-            <div className="text-xs font-semibold text-[#e8702a] mb-1">
+            <div className="text-xs font-semibold text-[#2f9db4] mb-1">
               {PHASE_YEAR_LABEL[r.phase]} → {r.outcome.name}
             </div>
             <div className="grid sm:grid-cols-2 gap-x-6 gap-y-0.5">
@@ -417,12 +417,12 @@ function ActionCard({ action, selected, onSelect }: { action: Action; selected: 
     <button
       onClick={onSelect}
       className={`text-left rounded-xl border p-4 transition-all ${
-        selected ? 'border-[#e8702a] bg-[#e8702a]/10 scale-[1.01]' : 'border-white/15 hover:border-white/35 bg-white/[0.02]'
+        selected ? 'border-[#2f9db4] bg-[#2f9db4]/10 scale-[1.01]' : 'border-white/15 hover:border-white/35 bg-white/[0.02]'
       }`}
     >
       <div className="font-playfair italic text-lg text-white mb-1">{action.title}</div>
       {action.lever && (
-        <div className="text-[10.5px] uppercase tracking-[0.15em] text-[#e8702a]/80 mb-1.5">
+        <div className="text-[10.5px] uppercase tracking-[0.15em] text-[#2f9db4]/80 mb-1.5">
           your lever · {action.lever}
         </div>
       )}
@@ -496,13 +496,13 @@ export function RevealScreen({
   return (
     <div className="space-y-6">
       <SectionCard>
-        <p className="text-[11px] uppercase tracking-[0.2em] text-[#e8702a] mb-2">
+        <p className="text-[11px] uppercase tracking-[0.2em] text-[#2f9db4] mb-2">
           {YEAR_BY_PHASE[phase.idx]} · What your decisions did
         </p>
         <h2 className="font-playfair italic text-3xl sm:text-4xl text-white mb-1">{result.outcome.name}</h2>
         {result.outcome.epigraph && <p className="text-white/50 italic mb-4">“{result.outcome.epigraph}”</p>}
         {narrativeNote(result.comboRow.note) && (
-          <div className="text-sm border-l-2 border-[#e8702a]/60 pl-3 mb-4">
+          <div className="text-sm border-l-2 border-[#2f9db4]/60 pl-3 mb-4">
             <Markdown text={interpolateNumbers(narrativeNote(result.comboRow.note), numCtx)} className="text-sm" />
           </div>
         )}
@@ -554,7 +554,7 @@ export function RevealScreen({
           const persona = content.personas[imp.persona]
           const ladder = persona.ladder.find((l) => imp.rung.startsWith(l.rung))
           return (
-            <SectionCard key={imp.persona} className="border-[#e8702a]/20 !p-5">
+            <SectionCard key={imp.persona} className="border-[#2f9db4]/20 !p-5">
               <div className="flex gap-4">
                 <Portrait slots={PERSONA_PORTRAITS[imp.persona]} era={era} name={imp.persona} size="md" />
                 <div>
@@ -575,7 +575,7 @@ export function RevealScreen({
           <p className="text-[11px] uppercase tracking-[0.2em] text-white/40 mb-3">The collisions</p>
           <div className="space-y-3">
             {result.clashes.map((c, i) => (
-              <div key={i} className="border-l-2 border-[#e8702a]/40 pl-3">
+              <div key={i} className="border-l-2 border-[#2f9db4]/40 pl-3">
                 <div className="text-sm text-white/85 font-playfair italic">{c.edge.title}</div>
                 <p className="text-[13px] text-white/60 leading-relaxed mt-0.5">
                   {c.line} <span className="text-white/35">(the {SHORT_ROLE[c.loser]} pays)</span>
@@ -658,7 +658,7 @@ export function InterludeScreen({
   return (
     <div className="space-y-6">
       <SectionCard>
-        <p className="text-[11px] uppercase tracking-[0.2em] text-[#e8702a] mb-2">
+        <p className="text-[11px] uppercase tracking-[0.2em] text-[#2f9db4] mb-2">
           {fromYear} → {toYear}
         </p>
         <h2 className="font-playfair italic text-3xl sm:text-4xl text-white mb-5">{interlude.passes}</h2>
@@ -666,17 +666,17 @@ export function InterludeScreen({
         <div className="rounded-xl border border-white/15 bg-white/[0.03] p-5 space-y-2.5">
           <p className="text-[11px] uppercase tracking-[0.2em] text-white/40">The world, while Finland decided</p>
           <p className="text-[15px] text-white/85">
-            The price of machine cognition fell <span className="text-[#e8702a] font-semibold">{costFall}%</span>.
+            The price of machine cognition fell <span className="text-[#2f9db4] font-semibold">{costFall}%</span>.
           </p>
           <p className="text-[15px] text-white/85">
             The capability gap grew to{' '}
-            <span className="text-[#e8702a] font-semibold">{gapTo} months</span>
+            <span className="text-[#2f9db4] font-semibold">{gapTo} months</span>
             <span className="text-white/45"> (+{Math.round((gapTo - gapFrom) * 10) / 10})</span>. No Finnish decision moves this line.
           </p>
           {latest.days !== undefined && (
             <p className="text-[15px] text-white/85">
               If the access stopped tomorrow, Finland would run alone for{' '}
-              <span className="text-[#e8702a] font-semibold">{latest.days} days</span>.
+              <span className="text-[#2f9db4] font-semibold">{latest.days} days</span>.
             </p>
           )}
         </div>
@@ -693,7 +693,7 @@ export function InterludeScreen({
                 <div
                   className={`max-w-[75%] rounded-2xl px-4 py-2.5 text-[14px] leading-snug ${
                     m.v === 'MARJA'
-                      ? 'bg-[#e8702a]/15 text-white/90 rounded-br-sm'
+                      ? 'bg-[#2f9db4]/15 text-white/90 rounded-br-sm'
                       : 'bg-white/[0.07] text-white/85 rounded-bl-sm'
                   }`}
                 >
@@ -728,7 +728,7 @@ export function DilemmaScreen({ dilemma, onChoose }: { dilemma: Dilemma; onChoos
   return (
     <div className="space-y-6">
       <SectionCard>
-        <p className="text-[11px] uppercase tracking-[0.2em] text-[#e8702a] mb-2">
+        <p className="text-[11px] uppercase tracking-[0.2em] text-[#2f9db4] mb-2">
           {dilemma.year} · Between the decisions
         </p>
         <h2 className="font-playfair italic text-3xl sm:text-4xl text-white mb-3">{dilemma.title}</h2>
@@ -740,12 +740,12 @@ export function DilemmaScreen({ dilemma, onChoose }: { dilemma: Dilemma; onChoos
             key={o.key}
             onClick={() => setPicked(o.key)}
             className={`text-left rounded-2xl border p-5 transition-all ${
-              picked === o.key ? 'border-[#e8702a] bg-[#e8702a]/10' : 'border-white/10 hover:border-white/30'
+              picked === o.key ? 'border-[#2f9db4] bg-[#2f9db4]/10' : 'border-white/10 hover:border-white/30'
             }`}
           >
             <div className="font-playfair italic text-xl text-white mb-1">{o.title}</div>
             {o.lever && (
-              <div className="text-[10.5px] uppercase tracking-[0.15em] text-[#e8702a]/80 mb-1.5">
+              <div className="text-[10.5px] uppercase tracking-[0.15em] text-[#2f9db4]/80 mb-1.5">
                 your lever · {o.lever}
               </div>
             )}
@@ -805,7 +805,7 @@ export function DebriefScreen({
   return (
     <div className="space-y-6">
       <SectionCard>
-        <p className="text-[11px] uppercase tracking-[0.2em] text-[#e8702a] mb-2">
+        <p className="text-[11px] uppercase tracking-[0.2em] text-[#2f9db4] mb-2">
           {YEAR_BY_PHASE[phase.idx]} · Around the table
         </p>
         <h2 className="font-playfair italic text-3xl sm:text-4xl text-white mb-6">The decisions, face to face</h2>
@@ -884,8 +884,8 @@ export function EndstateScreen({
 
   return (
     <div className="space-y-6">
-      <SectionCard className="border-[#e8702a]/40">
-        <p className="text-[11px] uppercase tracking-[0.2em] text-[#e8702a] mb-2">Finland, 2033 · endstate {es.archetype.id}</p>
+      <SectionCard className="border-[#2f9db4]/40">
+        <p className="text-[11px] uppercase tracking-[0.2em] text-[#2f9db4] mb-2">Finland, 2033 · endstate {es.archetype.id}</p>
         <h2 className="font-playfair italic text-4xl text-white mb-4">{es.archetype.name}</h2>
         <Markdown text={body} />
       </SectionCard>
@@ -919,14 +919,14 @@ export function EndstateScreen({
               <div
                 key={a}
                 className={`rounded-xl border p-3 flex items-center gap-4 ${
-                  isViewer ? 'border-[#e8702a]/40 bg-[#e8702a]/5' : 'border-white/10'
+                  isViewer ? 'border-[#2f9db4]/40 bg-[#2f9db4]/5' : 'border-white/10'
                 }`}
               >
                 <Portrait slots={ACTOR_PORTRAITS[a]} era="2033" name={role} size="seat" />
                 <div className="min-w-0 flex-1">
                   <div className="flex items-baseline gap-2 flex-wrap">
                     <span className="font-playfair italic text-white">{role}</span>
-                    {isViewer && <span className="text-[10px] uppercase tracking-wider text-[#e8702a]">you</span>}
+                    {isViewer && <span className="text-[10px] uppercase tracking-wider text-[#2f9db4]">you</span>}
                     <span className="text-xs text-white/40">
                       {met} of {statuses.length} held
                     </span>

@@ -48,7 +48,7 @@ function Disclosure({
 }) {
   const [open, setOpen] = useState(false)
   const dot =
-    tone === 'met' ? 'bg-emerald-400' : tone === 'miss' ? 'bg-red-400' : tone === 'open' ? 'bg-white/25' : 'bg-[#e8702a]'
+    tone === 'met' ? 'bg-emerald-400' : tone === 'miss' ? 'bg-red-400' : tone === 'open' ? 'bg-white/25' : 'bg-[#2f9db4]'
   return (
     <div className="border-b border-white/5 last:border-0">
       <button
@@ -259,7 +259,7 @@ function Sparkline({
         <span className="text-[11px] uppercase tracking-wide text-white/50">
           {label}
           {own && (
-            <span className="ml-1.5 px-1.5 py-0.5 rounded-full bg-[#e8702a]/15 text-[#e8702a] normal-case tracking-normal">
+            <span className="ml-1.5 px-1.5 py-0.5 rounded-full bg-[#2f9db4]/15 text-[#2f9db4] normal-case tracking-normal">
               your number
             </span>
           )}
@@ -287,9 +287,9 @@ function Sparkline({
         {ghostPts.map((g, i) => (
           <circle key={i} cx={x(g.year)} cy={y(g.v)} r={2.5} fill="rgba(255,255,255,0.18)" />
         ))}
-        <path d={toPath(played)} fill="none" stroke="#e8702a" strokeWidth={2} />
+        <path d={toPath(played)} fill="none" stroke="#2f9db4" strokeWidth={2} />
         {played.map((p, i) => (
-          <circle key={i} cx={x(p.year)} cy={y(p.v)} r={3} fill="#e8702a" />
+          <circle key={i} cx={x(p.year)} cy={y(p.v)} r={3} fill="#2f9db4" />
         ))}
         {last && (
           <text x={x(last.year) + 5} y={y(last.v) + 3.5} fontSize={11} fill="#fff">
@@ -397,7 +397,7 @@ function SidebarBody({ content, state, viewerActor }: SidebarProps) {
             <span className="w-9 text-[11px] font-semibold text-white/60" title="Government approval">POLL</span>
             <div className="flex-1 h-2 rounded-full bg-white/10 overflow-hidden">
               <div
-                className={`h-full rounded-full transition-all duration-700 ${state.poll >= 48 ? 'bg-emerald-500/80' : state.poll >= 42 ? 'bg-[#e8702a]' : 'bg-red-500/80'}`}
+                className={`h-full rounded-full transition-all duration-700 ${state.poll >= 48 ? 'bg-emerald-500/80' : state.poll >= 42 ? 'bg-[#2f9db4]' : 'bg-red-500/80'}`}
                 style={{ width: `${state.poll}%` }}
               />
             </div>

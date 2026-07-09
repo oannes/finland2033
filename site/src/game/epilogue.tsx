@@ -19,7 +19,7 @@ const VOICE_COLOR: Record<string, string> = {
   NOKIA: '#e87ad0',
   VELKA: '#b8b8b8',
   METSÄ: '#7dbf8e',
-  MUMMOTUNNELI: '#e8702a',
+  MUMMOTUNNELI: '#2f9db4',
   MARIA: '#e8a1c0',
   EETU: '#8fd0c8',
 }
@@ -120,7 +120,7 @@ const SPIRIT_FILES = import.meta.glob('../assets/portraits/spirit-*.{png,webp,jp
   import: 'default',
 }) as Record<string, string>
 const spiritSlug = (key: string) => (key === 'METSÄ' ? 'metsa' : key.toLowerCase())
-const spiritImage = (key: string): string | undefined =>
+export const spiritImage = (key: string): string | undefined =>
   Object.entries(SPIRIT_FILES).find(([p]) => p.includes(`spirit-${spiritSlug(key)}.`))?.[1]
 /** conceptual inner-life version, revealed on hover */
 const spiritEnvImage = (key: string): string | undefined =>
@@ -181,7 +181,7 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
                 <button
                   key={s.key}
                   onClick={() => pickSpirit(s.key)}
-                  className="flex w-full items-center gap-3 text-left rounded-xl border border-white/20 hover:border-[#e8702a]/60 hover:bg-[#e8702a]/5 px-4 py-2.5 text-[15px] text-white/90 transition-colors"
+                  className="flex w-full items-center gap-3 text-left rounded-xl border border-white/20 hover:border-[#2f9db4]/60 hover:bg-[#2f9db4]/5 px-4 py-2.5 text-[15px] text-white/90 transition-colors"
                 >
                   {spiritImage(s.key) && (
                     <img src={spiritImage(s.key)} alt="" className="w-9 h-9 rounded-full object-cover object-top border border-white/15" />
@@ -201,7 +201,7 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
           <button
             key={i}
             onClick={() => setActed((a) => ({ ...a, [i]: true }))}
-            className="bg-[#e8702a] hover:bg-[#d2611f] text-white text-sm font-medium px-7 py-3 rounded-full transition-all hover:scale-[1.03] active:scale-95"
+            className="bg-[#2f9db4] hover:bg-[#23849a] text-white text-sm font-medium px-7 py-3 rounded-full transition-all hover:scale-[1.03] active:scale-95"
           >
             {b.action}
           </button>,
@@ -241,7 +241,7 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
               <button
                 key={ci}
                 onClick={() => setPicked((p) => ({ ...p, [i]: ci }))}
-                className="block w-full text-left rounded-xl border border-white/20 hover:border-[#e8702a]/60 hover:bg-[#e8702a]/5 px-4 py-3 text-[15px] text-white/90 transition-colors"
+                className="block w-full text-left rounded-xl border border-white/20 hover:border-[#2f9db4]/60 hover:bg-[#2f9db4]/5 px-4 py-3 text-[15px] text-white/90 transition-colors"
               >
                 {c.label}
               </button>
@@ -399,7 +399,7 @@ export function StreetScene({ content, state }: { content: GameContent; state: G
   return (
     <div className="space-y-6">
       <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8 space-y-5">
-        <p className="text-[11px] uppercase tracking-[0.2em] text-[#e8702a]">Helsinki, 2033</p>
+        <p className="text-[11px] uppercase tracking-[0.2em] text-[#2f9db4]">Helsinki, 2033</p>
         <p className="text-white/80 text-[15px] leading-relaxed">{opening}</p>
 
         {/* the conversation reveals line by line: rest the cursor on the next line (or tap it) */}
@@ -422,7 +422,7 @@ export function StreetScene({ content, state }: { content: GameContent; state: G
           <div className="flex justify-end">
             <button
               onClick={() => setWalkedIn(true)}
-              className="bg-[#e8702a] hover:bg-[#d2611f] text-white text-sm font-medium px-8 py-3 rounded-full transition-all hover:scale-[1.03] active:scale-95"
+              className="bg-[#2f9db4] hover:bg-[#23849a] text-white text-sm font-medium px-8 py-3 rounded-full transition-all hover:scale-[1.03] active:scale-95"
             >
               {doc['street/enter']?.meta.button ?? 'Enter'}
             </button>

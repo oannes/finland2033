@@ -5,6 +5,8 @@ import { parsePrologue } from './game/parse'
 import mapPlain from './assets/map-plain.webp'
 import mapNetwork from './assets/map-network.webp'
 import GameApp, { WORKSHOP_ENABLED } from './game/GameApp'
+import { spiritImage } from './game/epilogue'
+import { RevealSequence } from './game/reveal'
 import { PERSONA_PORTRAITS, Portrait } from './game/portraits'
 import { loadContent } from './game/content'
 import Markdown from './game/Markdown'
@@ -93,7 +95,7 @@ function GdpChart() {
   const line = (vals: number[]) => vals.map((v, i) => `${i === 0 ? 'M' : 'L'}${x(years[i]).toFixed(1)},${y(v).toFixed(1)}`).join(' ')
   return (
     <div className="mt-8 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-      <p className="text-[11px] uppercase tracking-[0.2em] text-[#e8702a] mb-1">The scoreboard</p>
+      <p className="text-[11px] uppercase tracking-[0.2em] text-[#2f9db4] mb-1">The scoreboard</p>
       <p className="text-[12px] text-white/50 mb-3 leading-snug">
         GDP per capita, constant 2015 US$ (thousands): Finland and Sweden, 1997–2025.
       </p>
@@ -107,9 +109,9 @@ function GdpChart() {
         <line x1={x(2008)} y1={PAD.t} x2={x(2008)} y2={H - PAD.b} stroke="rgba(255,255,255,0.12)" strokeDasharray="3 3" />
         <text x={x(2008)} y={PAD.t + 8} fontSize={8.5} fill="rgba(255,255,255,0.35)" textAnchor="middle">2008</text>
         <path d={line(sweden)} fill="none" stroke="rgba(255,255,255,0.5)" strokeWidth={1.8} />
-        <path d={line(finland)} fill="none" stroke="#e8702a" strokeWidth={2} />
+        <path d={line(finland)} fill="none" stroke="#2f9db4" strokeWidth={2} />
         <text x={x(2025) + 5} y={y(55.0) + 3} fontSize={10} fill="rgba(255,255,255,0.6)">Sweden</text>
-        <text x={x(2025) + 5} y={y(44.9) + 3} fontSize={10} fill="#e8702a">Finland</text>
+        <text x={x(2025) + 5} y={y(44.9) + 3} fontSize={10} fill="#2f9db4">Finland</text>
         {[2000, 2005, 2010, 2015, 2020, 2025].map((yr) => (
           <text key={yr} x={x(yr)} y={H - 6} fontSize={9} fill="rgba(255,255,255,0.35)" textAnchor="middle">{yr}</text>
         ))}
@@ -127,8 +129,8 @@ function AboutPage() {
   }, [])
   const content = loadContent()
   return (
-    <div className="min-h-screen bg-[#04070c] text-white tracking-[-0.02em]" style={{ fontFamily: "'Inter', sans-serif" }}>
-      <nav className="fixed top-0 left-0 right-0 z-[100] bg-gradient-to-b from-[#04070c]/90 via-[#04070c]/40 to-transparent pb-4">
+    <div className="min-h-screen bg-[#020914] text-white tracking-[-0.02em]" style={{ fontFamily: "'Inter', sans-serif" }}>
+      <nav className="fixed top-0 left-0 right-0 z-[100] bg-gradient-to-b from-[#020914]/90 via-[#020914]/40 to-transparent pb-4">
         <div className="mx-auto w-full max-w-[920px] flex items-center justify-between p-4 sm:p-5">
           <a href="#/" className="flex items-center gap-2.5">
             <svg width="22" height="22" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
@@ -151,7 +153,7 @@ function AboutPage() {
             <div className="border-t border-white/10 pt-8">
               <a
                 href="#/prologue/solo"
-                className="inline-block bg-[#e8702a] hover:bg-[#d2611f] text-white text-sm font-medium px-8 py-3.5 rounded-full transition-all hover:scale-[1.03] active:scale-95"
+                className="inline-block bg-[#2f9db4] hover:bg-[#23849a] text-white text-sm font-medium px-8 py-3.5 rounded-full transition-all hover:scale-[1.03] active:scale-95"
               >
                 Play the decade
               </a>
@@ -169,8 +171,8 @@ function AfterwordPage() {
   }, [])
   const content = loadContent()
   return (
-    <div className="min-h-screen bg-[#04070c] text-white tracking-[-0.02em]" style={{ fontFamily: "'Inter', sans-serif" }}>
-      <nav className="fixed top-0 left-0 right-0 z-[100] bg-gradient-to-b from-[#04070c]/90 via-[#04070c]/40 to-transparent pb-4">
+    <div className="min-h-screen bg-[#020914] text-white tracking-[-0.02em]" style={{ fontFamily: "'Inter', sans-serif" }}>
+      <nav className="fixed top-0 left-0 right-0 z-[100] bg-gradient-to-b from-[#020914]/90 via-[#020914]/40 to-transparent pb-4">
         <div className="mx-auto w-full max-w-[920px] flex items-center justify-between p-4 sm:p-5">
           <a href="#/" className="flex items-center gap-2.5">
             <svg width="22" height="22" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
@@ -188,7 +190,7 @@ function AfterwordPage() {
             <div className="mt-12 border-t border-white/10 pt-8">
               <a
                 href="#/prologue/solo"
-                className="inline-block bg-[#e8702a] hover:bg-[#d2611f] text-white text-sm font-medium px-8 py-3.5 rounded-full transition-all hover:scale-[1.03] active:scale-95"
+                className="inline-block bg-[#2f9db4] hover:bg-[#23849a] text-white text-sm font-medium px-8 py-3.5 rounded-full transition-all hover:scale-[1.03] active:scale-95"
               >
                 Play the decade
               </a>
@@ -212,19 +214,62 @@ function Em({ text }: { text: string }) {
   )
 }
 
+const SPIRIT_LINE = /^(NOKIA|VELKA|RAJA|TALKOOT|METSÄ)(?:\s*\(([^)]*)\))?:\s*(.+)$/
+
+/** A spirit interjecting in the prologue: round face, name, whispered attribution. */
+function SpiritAside({ name, tag, text }: { name: string; tag?: string; text: string }) {
+  const img = spiritImage(name)
+  return (
+    <div className="flex items-start gap-3 my-1">
+      {img && <img src={img} alt={name} className="w-9 h-9 rounded-full object-cover border border-white/15 shrink-0 mt-0.5" />}
+      <div>
+        <span className="text-[10.5px] uppercase tracking-[0.15em] text-white/40">
+          {name}
+          {tag && <span className="normal-case tracking-normal text-white/30">, {tag}</span>}
+        </span>
+        <p className="text-white/85 text-[15px] leading-relaxed font-playfair italic">{text}</p>
+      </div>
+    </div>
+  )
+}
+
 function PrologueParas({ slug, last = 'mb-4' }: { slug: string; last?: string }) {
   const sec = PROLOGUE[slug]
   if (!sec) return null
+  // group consecutive spirit lines into one hover-revealed exchange
+  const blocks: ({ kind: 'p'; text: string } | { kind: 'spirits'; lines: { name: string; tag?: string; text: string }[] })[] = []
+  for (const para of sec.paragraphs) {
+    const m = para.match(SPIRIT_LINE)
+    if (m) {
+      const lastBlock = blocks[blocks.length - 1]
+      const line = { name: m[1], tag: m[2], text: m[3] }
+      if (lastBlock && lastBlock.kind === 'spirits') lastBlock.lines.push(line)
+      else blocks.push({ kind: 'spirits', lines: [line] })
+    } else blocks.push({ kind: 'p', text: para })
+  }
+  let pi = -1
+  const lastP = blocks.filter((b) => b.kind === 'p').length - 1
   return (
     <>
-      {sec.paragraphs.map((para, i) => (
-        <p
-          key={i}
-          className={`text-white/70 text-[15px] leading-relaxed ${i === sec.paragraphs.length - 1 ? last : 'mb-4'}`}
-        >
-          <Em text={para} />
-        </p>
-      ))}
+      {blocks.map((b, i) => {
+        if (b.kind === 'spirits') {
+          return (
+            <div key={i} className="my-6 pl-1 border-l-2 border-white/10 ml-1 space-y-1">
+              <RevealSequence
+                items={b.lines.map((l, j) => (
+                  <SpiritAside key={j} name={l.name} tag={l.tag} text={l.text} />
+                ))}
+              />
+            </div>
+          )
+        }
+        pi++
+        return (
+          <p key={i} className={`text-white/70 text-[15px] leading-relaxed ${pi === lastP ? last : 'mb-4'}`}>
+            <Em text={b.text} />
+          </p>
+        )
+      })}
     </>
   )
 }
@@ -234,8 +279,8 @@ function Prologue({ mode }: { mode: 'solo' | 'workshop' }) {
     window.scrollTo(0, 0)
   }, [])
   return (
-    <div className="min-h-screen bg-[#04070c] text-white tracking-[-0.02em]" style={{ fontFamily: "'Inter', sans-serif" }}>
-      <nav className="fixed top-0 left-0 right-0 z-[100] bg-gradient-to-b from-[#04070c]/90 via-[#04070c]/40 to-transparent pb-4">
+    <div className="min-h-screen bg-[#020914] text-white tracking-[-0.02em]" style={{ fontFamily: "'Inter', sans-serif" }}>
+      <nav className="fixed top-0 left-0 right-0 z-[100] bg-gradient-to-b from-[#020914]/90 via-[#020914]/40 to-transparent pb-4">
         <div className="mx-auto w-full max-w-[920px] flex items-center justify-between p-4 sm:p-5">
           <a href="#/" className="flex items-center gap-2.5">
             <svg width="22" height="22" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
@@ -243,9 +288,9 @@ function Prologue({ mode }: { mode: 'solo' | 'workshop' }) {
             </svg>
             <span className="text-white text-xl font-playfair italic">Finland 2033</span>
           </a>
-          <span className="text-[11px] uppercase tracking-[0.2em] text-white/40">
-            {mode === 'workshop' ? 'Workshop' : 'Playing alone'}
-          </span>
+          {mode === 'workshop' && (
+            <span className="text-[11px] uppercase tracking-[0.2em] text-white/40">Workshop</span>
+          )}
         </div>
       </nav>
 
@@ -253,7 +298,7 @@ function Prologue({ mode }: { mode: 'solo' | 'workshop' }) {
         <section className="px-6 sm:px-10 md:px-14 pt-28 pb-20 sm:pb-28">
           <div className="max-w-[560px] mx-auto space-y-16">
             <div>
-              <p className="text-[11px] uppercase tracking-[0.3em] text-[#e8702a] mb-4">{PROLOGUE['lost-years']?.meta.kicker}</p>
+              <p className="text-[11px] uppercase tracking-[0.3em] text-[#2f9db4] mb-4">{PROLOGUE['lost-years']?.meta.kicker}</p>
               <h2 className="font-playfair italic text-3xl sm:text-4xl leading-tight mb-5">
                 {PROLOGUE['lost-years']?.meta.headline}
               </h2>
@@ -296,7 +341,7 @@ function Prologue({ mode }: { mode: 'solo' | 'workshop' }) {
               <PrologueParas slug="another-chance" last="mb-8" />
               <a
                 href={`#/play/${mode}`}
-                className="inline-block bg-[#e8702a] hover:bg-[#d2611f] text-white text-sm font-medium px-8 py-3.5 rounded-full transition-all hover:scale-[1.03] active:scale-95 hover:shadow-lg hover:shadow-[#e8702a]/30"
+                className="inline-block bg-[#2f9db4] hover:bg-[#23849a] text-white text-sm font-medium px-8 py-3.5 rounded-full transition-all hover:scale-[1.03] active:scale-95 hover:shadow-lg hover:shadow-[#2f9db4]/30"
               >
                 {PROLOGUE.cta?.meta[mode] ?? (mode === 'workshop' ? 'Set up the workshop' : 'Take your seat')}
               </a>
@@ -335,10 +380,10 @@ function Landing() {
 
   return (
     <div
-      className="min-h-screen bg-[#04070c] tracking-[-0.02em]"
+      className="min-h-screen bg-[#020914] tracking-[-0.02em]"
       style={{ fontFamily: "'Inter', sans-serif" }}
     >
-      <nav className="fixed top-0 left-0 right-0 z-[100] bg-gradient-to-b from-[#04070c]/90 via-[#04070c]/40 to-transparent pb-4">
+      <nav className="fixed top-0 left-0 right-0 z-[100] bg-gradient-to-b from-[#020914]/90 via-[#020914]/40 to-transparent pb-4">
         <div className="mx-auto w-full max-w-[920px] flex items-center justify-between p-4 sm:p-5">
         <div className="flex items-center gap-2.5">
           <svg
@@ -438,9 +483,9 @@ function Landing() {
           <div className="flex flex-wrap gap-3">
             <a
               href="#/prologue/solo"
-              className="bg-[#e8702a] hover:bg-[#d2611f] text-white text-sm font-medium px-7 py-3 rounded-full transition-all hover:scale-[1.03] active:scale-95 hover:shadow-lg hover:shadow-[#e8702a]/30"
+              className="bg-[#2f9db4] hover:bg-[#23849a] text-white text-sm font-medium px-7 py-3 rounded-full transition-all hover:scale-[1.03] active:scale-95 hover:shadow-lg hover:shadow-[#2f9db4]/30"
             >
-              Play alone
+              I'm in for the decade
             </a>
             {WORKSHOP_ENABLED && (
               <a

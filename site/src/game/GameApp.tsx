@@ -120,7 +120,7 @@ function Timeline({ state }: { state: GameState }) {
         return (
           <span key={y} className="flex items-center gap-1">
             {i > 0 && <span className="text-white/20">→</span>}
-            <span className={active ? 'text-[#e8702a] font-semibold' : done ? 'text-white/70' : ''}>{y}</span>
+            <span className={active ? 'text-[#2f9db4] font-semibold' : done ? 'text-white/70' : ''}>{y}</span>
           </span>
         )
       })}
@@ -255,7 +255,7 @@ function WorkshopGame({
                   onClick={onLeave}
                   className="border border-white/30 hover:border-white text-white text-sm font-medium px-7 py-3 rounded-full transition-all"
                 >
-                  Play alone instead
+                  Play solo instead
                 </a>
               </div>
             </>
@@ -289,7 +289,7 @@ function WorkshopGame({
             {server.you && (
               <>
                 {' · you are '}
-                <span className="font-semibold text-[#e8702a]">{server.you}</span>
+                <span className="font-semibold text-[#2f9db4]">{server.you}</span>
               </>
             )}
             {server.isHost && ' · facilitator'}
@@ -373,7 +373,7 @@ function WorkshopDecide({
     {!you && server.isHost && <FacilitatorBrief phase={phase} state={game} />}
     <SectionCard>
       <div className="flex flex-col items-center py-12 text-center">
-        <Users className="text-[#e8702a] mb-4" size={28} />
+        <Users className="text-[#2f9db4] mb-4" size={28} />
         <h2 className="font-playfair italic text-2xl text-white mb-2">
           {you ? 'Move submitted' : 'Decisions in progress'}
         </h2>
@@ -440,7 +440,7 @@ function LobbyScreen({
   return (
     <div className="max-w-3xl mx-auto space-y-6 py-8">
       <div className="text-center">
-        <p className="text-[11px] uppercase tracking-[0.3em] text-[#e8702a] mb-3">Workshop lobby</p>
+        <p className="text-[11px] uppercase tracking-[0.3em] text-[#2f9db4] mb-3">Workshop lobby</p>
         <h1 className="font-playfair italic text-4xl text-white mb-3">Game {server.code}</h1>
         <p className="text-sm text-white/60 max-w-lg mx-auto leading-relaxed mb-4">
           Every team opens this site on their own device, clicks <em>Join a game</em>, enters the code, and claims a
@@ -469,7 +469,7 @@ function LobbyScreen({
               disabled={taken && !yours}
               className={`text-left rounded-xl border px-4 py-3 transition-all flex items-center gap-4 ${
                 yours
-                  ? 'border-[#e8702a] bg-[#e8702a]/10'
+                  ? 'border-[#2f9db4] bg-[#2f9db4]/10'
                   : taken
                     ? 'border-white/5 opacity-40 cursor-not-allowed'
                     : 'border-white/10 hover:border-white/30'
@@ -548,7 +548,7 @@ function ModeSelect({
   return (
     <div className="max-w-3xl mx-auto space-y-6 py-8">
       <div className="text-center mb-6">
-        <p className="text-[11px] uppercase tracking-[0.3em] text-[#e8702a] mb-3">AI in Finland 2033</p>
+        <p className="text-[11px] uppercase tracking-[0.3em] text-[#2f9db4] mb-3">AI in Finland 2033</p>
         <h1 className="font-playfair italic text-4xl sm:text-5xl text-white">
           {mode === 'solo' ? 'Choose your seat' : mode === 'workshop' ? 'Workshop' : 'How will you play it?'}
         </h1>
@@ -560,7 +560,7 @@ function ModeSelect({
             onClick={() => setMode('solo')}
             className="text-left rounded-2xl border p-6 transition-all border-white/15 hover:border-white/35"
           >
-            <div className="font-playfair italic text-2xl text-white">Play alone</div>
+            <div className="font-playfair italic text-2xl text-white">Play the decade</div>
           </button>
           {WORKSHOP_ENABLED && (
             <button
@@ -581,7 +581,7 @@ function ModeSelect({
                 key={a}
                 onClick={() => setActor(a)}
                 className={`text-left rounded-xl border px-4 py-3 transition-all flex items-center gap-4 ${
-                  actor === a ? 'border-[#e8702a] bg-[#e8702a]/10' : 'border-white/10 hover:border-white/30'
+                  actor === a ? 'border-[#2f9db4] bg-[#2f9db4]/10' : 'border-white/10 hover:border-white/30'
                 }`}
               >
                 <Portrait slots={ACTOR_PORTRAITS[a]} era="now" name={SEAT_INTROS[a].role} size="fullseat" />
@@ -620,7 +620,7 @@ function ModeSelect({
                 onKeyDown={(e) => e.key === 'Enter' && join()}
                 placeholder="Or enter a 5-character code"
                 maxLength={5}
-                className="flex-1 rounded-full bg-white/5 border border-white/15 px-5 py-3 text-sm text-white placeholder-white/30 tracking-[0.3em] uppercase focus:outline-none focus:border-[#e8702a]"
+                className="flex-1 rounded-full bg-white/5 border border-white/15 px-5 py-3 text-sm text-white placeholder-white/30 tracking-[0.3em] uppercase focus:outline-none focus:border-[#2f9db4]"
               />
               <button
                 onClick={join}
