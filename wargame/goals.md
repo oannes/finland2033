@@ -1,9 +1,6 @@
 # Goals — what each actor is trying to hold together
 
-Machine-checkable goals per actor, scored after every reveal. A seat has done
-its work when at least two of its three goals hold at the endstate; the
-software says so there, quietly. Every actor's choice moves these readings
-every round.
+Each actor has three goals they try to reach. 
 
 Measure grammar (one per goal):
 - `index RES|LEG|PRO >= n` — game index threshold
@@ -19,13 +16,13 @@ Measure grammar (one per goal):
   measure: poll >= 48
   why: You want to be re-elected because the country needs continuity in the midst of change. Your approval rating moves with every decision. The 2031 election is scored from it.
 
-- goal: Choosing a direction
+- goal: Choosing a shared direction
   measure: drift <= 1
-  why: You need to get everyone involved, because every deadlock wastes a year. 
+  why: You need to get everyone to move in unison. 
   
 - goal: Automation delivers
   measure: indicator pub_ai >= 30
-  why: The new budget already assumes AI carries 30% of public transactions. If it does not, the cuts are yours to announce.
+  why: The new budget already assumes AI carries 30% of public transactions. If it does not, the additional cuts are yours to announce.
 
 ## SAK
 
@@ -35,7 +32,7 @@ Measure grammar (one per goal):
 
 - goal: The AI gains are shared
   measure: flag LEVY in yes
-  why: A levy on automation savings funds retraining. Without it, the machine's profits leave the room.
+  why: A levy on automation savings funds retraining. Without it, common people get nothing from the AI profits.
 
 - goal: The young get in
   measure: indicator youth_u <= 10
@@ -45,11 +42,11 @@ Measure grammar (one per goal):
 
 - goal: Queues under control
   measure: indicator care_gap <= 14
-  why: By 2033, Finland will have 101,000 more people aged 75 or over while the healthcare sector will have 57,000 fewer workers. 
+  why: By 2033, Finland will have 100,000 more people aged 75 or over while the healthcare sector will have 60,000 fewer workers. 
 
 - goal: Social contract on care
   measure: indicator trust >= 55
-  why: Care is not high tech, it's hi-touch. Can you define where the AI can be deployed?
+  why: Care is not high tech, it's hi-touch. Can you identify correctly where the AI can be deployed?
 
 - goal: Services actually automate
   measure: indicator pub_ai >= 30
@@ -87,25 +84,25 @@ Measure grammar (one per goal):
 
 - goal: Best students stay in Finland
   measure: persona EETU >= 4
-  why: If graduates find real work here, your pipeline worked. If they leave, it fed someone else's.
+  why: If graduates don't find real work here, the country does not get the benefits from education investments.
 
-- goal: High-tech hub
+- goal: A role for research
   measure: flag TALENT_PIPE in strong
-  why: A public platform nobody local can build or audit is a rented machine.
+  why: When machines answer most questions, the university must find the ones only research can still own. A country that stops researching can only rent its understanding.
 
-- goal: A stack worth staffing
-  measure: indicator sov_share >= 35
-  why: Below a third of public AI on European machines, your certification work has no object.
+- goal: Universities behind competitiveness
+  measure: index PRO >= 6.5
+  why: Skills are the one input to competitiveness the country makes itself. If prosperity stalls, education gets the bill; if it grows, your pipeline is part of the reason.
 
 ## STARTUP
 
 - goal: The round closes
   measure: index PRO >= 6
-  why: Series C happens in whatever policy climate the table creates. Investors price drift first.
+  why: Your aim is to grow your business sustainably. Series C should happen before the end of 2033.
 
-- goal: A clear stack
+- goal: Euro stack gives competitive advantage
   measure: flag STACK in euro,us
-  why: A country that half-decides makes every company run two stacks and pay for both.
+  why: You want to use the AI local stack, but can you?
 
 - goal: Never the hostage
   measure: drift <= 1

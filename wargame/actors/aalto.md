@@ -30,6 +30,6 @@ Rector of Finland's flagship technical university, 2028. Your CS and AI programm
 - **SAK:** suspicious that "lifelong learning" means outsourcing their members' adjustment costs to your MOOCs.
 
 ## Phase roles
-- **P1 (modifier):** your talent-pipeline choice sets flag TALENT_PIPE (strong/weak); quietly decisive for what Finland can actually staff in P2–P3.
-- **P2 (modifier):** your evaluation capacity determines whether the European fallback tier is *certified* good-enough or just asserted.
-- **P3 (modifier):** osaamistakuu is delivered through your infrastructure, or fails in it.
+- **P1 (modifier):** the faculty budget picks who the decade trains: the few who build, the many displaced, or the machine tutors. TALENT_PIPE is set here.
+- **P2 (modifier):** your curriculum points at one stack and the graduates follow; whether the domestic build can be staffed is decided in your lecture halls.
+- **P3 (modifier):** the retraining guarantee runs through your programs, gets certified by them, or lapses inside them.

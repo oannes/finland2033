@@ -32,6 +32,6 @@ CEO of Finland's largest business lobby, 2028: Nokia, Kone, Wärtsilä, Metso do
 - **STARTUP:** you speak for them until Nokia-scale interests diverge from theirs; in P2 they will notice.
 
 ## Phase roles
-- **P1 (PIVOTAL):** Kajaani Compact needs your PPAs and contractors; Hamina Model needs your hyperscaler channel. You can feed either, or starve both and demand the state decide first.
-- **P2 (modifier):** your lobbying sets whether re-attestation terms land soft or hard on exporters (PRO effects), and whether industry publicly backs the PM's line.
-- **P3 (modifier):** the levy number. Your tag decides whether the compact is funded, cosmetic, or fought.
+- **P1 (modifier):** industry's position prices the tender: neutrality, a domestic premium, or the export venture.
+- **P2 (modifier):** your members' compute demand decides whether the domestic build has customers or the lane has a lobby.
+- **P3 (pivotal):** the levy lands on your members: negotiate the number, fight the principle, or freeze the capital. Your tag decides the settlement.

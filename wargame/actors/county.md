@@ -31,6 +31,6 @@ You direct Finland's largest wellbeing county and chair the county directors' ne
 - **STARTUP:** you are the customer that could anchor domestic vendors; if procurement law and your risk appetite allow.
 
 ## Phase roles
-- **P1 (modifier):** you aggregate county demand; your commitment (or refusal) gives either grand project its first anchor customer.
-- **P2 (PIVOTAL):** the 19 days hit your hospitals first. Emergency-migrate, hold the line on re-attested frontier, or triage manually and let the country watch.
-- **P3 (PIVOTAL):** the compact's terms are executed, or the efficiency state is attempted, on your payroll.
+- **P1 (pivotal):** the freed minutes are yours to assign, to savings or to the bedside; the program's legitimacy follows your wards.
+- **P2 (pivotal):** care's machines are chosen now: continuity, the frontier, or the lab's trade. An interruption in your systems is measured in lives.
+- **P3 (modifier):** the dividend is delivered, banked, or clawed to care through your service centres.

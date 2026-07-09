@@ -32,6 +32,6 @@ Director of HVK, 2028. Your agency stockpiles fuel, grain and medicine for a cou
 - **COUNTY:** will demand reserve priority for health systems that you may have to ration in a real event.
 
 ## Phase roles
-- **P1 (PIVOTAL):** the reserve is bought now at forty cents on the dollar, or never.
-- **P2 (modifier):** if RESERVE exists you activate it. If not, you get to say so, publicly.
-- **P3 (modifier):** exercises normalize AI resilience into civic routine (LEG+), or you overreach into securitizing everything (LEG−).
+- **P1 (modifier):** your clauses decide what the platform costs in resilience: the premium, the annex, or the shadow state.
+- **P2 (modifier):** the stack decision becomes survivable, or not, through your engineering: the run-alone doctrine, the drills, or the alliance laboratory.
+- **P3 (modifier):** the Gate's lessons become routine, become powers, or become a closed file.

@@ -32,6 +32,6 @@ Founder-CEO of a Turku-based biotech-AI company (drug-response prediction for No
 - **HVK:** their security vetting is a cost to you in P1 and possibly your business model by P3.
 
 ## Phase roles
-- **P1 (modifier):** where you build (LUMI-AI vs. US cloud credits) shifts sov_share and colours both grand projects.
-- **P2 (PIVOTAL):** mid-suspension, you choose: emergency-migrate to the European tier, double down on re-attested US frontier, or split the company. The private economy watches you.
-- **P3 (modifier):** whether you join sovereignty procurement (à la persona Sanna's fork) decides if the compact has an industrial leg.
+- **P1 (modifier):** where you bid colours the platform: the champion consortium, merit subcontracts, or the Turku deal.
+- **P2 (pivotal):** your logo is the argument: anchor the domestic tier, take the lane, or leave loudly. Every founder watching does what you do.
+- **P3 (modifier):** your company is the closing case study: build the bridge, take the exit, or open the stack.

@@ -59,11 +59,13 @@ headline: Finland's fifteen lost years
 
 2010–2025. When the world moved on, Finland stood still.
 
-The general mood in Finland is one of shock. Things are not going well. Finland once had some of the world’s best schools; now the education system is failing its young people. The healthcare system is overburdened and still relies on IT systems designed in the last millennium. Public debt keeps rising despite austerity. Drug-related deaths are the highest in Europe. Falling birth rates are even forcing a debate about extending conscription to women.
+In 2026, the general mood in Finland is one of shock. Things are not going well. Finland once had some of the world’s best schools; now the education system is failing its young people. The healthcare system is overburdened and still relies on IT systems designed in the last millennium. Public debt keeps rising despite austerity. Drug-related deaths are the highest in Europe. Falling birth rates and volatile security situation are forcing a debate about extending conscription to women. Companies are not innovating. 
+
+This is the status of the happiest country in the world. 
 
 ## intro
 
-In this simulation, you participate in making the choices to fix Finland.  we follow the impact of your choices through data and through the lives of two Finns, Maria and Eetu.
+In this simulation, *you* participate in fixing Finland for the age of AI. We follow the impact of your choices through data and through the lives of two Finns, Maria and Eetu.
 
 ## maria
 headline: Maria
@@ -71,7 +73,7 @@ caption: Maria, 40 · Helsinki
 
 In 2021, after studying service design alongside her work at Kela, Maria left for a private consultancy. She knew how to improve clients' lives, but had grown frustrated by her inability to change how the agency itself operated.
 
-Five years later, she returned to Kela's strategy department for a second attempt. She likes red wine, good Netflix series and institutions that can still learn. As AI transforms how private organisations work, Kela must learn to reorganise itself or fall further behind. Whether it can is now up to *you*.
+Five years later, she returned to Kela's strategy department for a second attempt. She told in her job application that she likes red wine, good Netflix series and institutions that can still learn. As AI transforms how private organisations work, Kela must learn to reorganise itself or fall further behind. 
 
 ## eetu
 headline: Eetu
@@ -81,16 +83,16 @@ Eetu graduated in 2024 into a promise Finland could not keep: study, serve, work
 
 After two years of applications, internships and short-term jobs, Eetu is losing hope. When he began his studies, his generation was told they were needed. Then the pandemic pushed much of their education online, weakened their connection to teachers and peers, and reduced opportunities to gain practical experience. Five years later, they are entering a labour market with too few opportunities for recent graduates.
 
-Finland has failed him. Can that failure still be repaired in an age when AI can already do much of what Eetu was taught to do?
+Eetu did what was asked of him, but Finland has failed him. Can that failure still be repaired in an age when AI can already do much of what Eetu was taught to do?
 
 ## another-chance
 headline: 2027. Another chance.
 
-A left-leaning government, carried to power by public-sector workers and older voters, takes office. In the April 2027 election, the leading party promised only little. It won because the country had grown tired of austerity without growth.
+In the April 2027 election, a left-leaning government, carried to power by public-sector workers and older voters, takes office. The leading party promised only little. It won because the country had grown tired of austerity without growth.
 
 But power brings responsibility, and not only for the government. Whether the state automates, whose machines it relies on, and who receives the gains are no longer technical questions alone. They are the terms of a new social contract that Finland must now create.
 
-Few people in Finland are in a position to participate writing this contract. *Take a seat in the room where the next decade is decided.*
+Few people in Finland are in a position to participate writing this contract. *But you can be one of them.*
 
 ## cta
 solo: Take your seat
@@ -100,10 +102,7 @@ workshop: Set up the workshop
 
 # Goals — what each actor is trying to hold together
 
-Machine-checkable goals per actor, scored after every reveal. A seat has done
-its work when at least two of its three goals hold at the endstate; the
-software says so there, quietly. Every actor's choice moves these readings
-every round.
+Each actor has three goals they try to reach. 
 
 Measure grammar (one per goal):
 - `index RES|LEG|PRO >= n` — game index threshold
@@ -119,13 +118,13 @@ Measure grammar (one per goal):
   measure: poll >= 48
   why: You want to be re-elected because the country needs continuity in the midst of change. Your approval rating moves with every decision. The 2031 election is scored from it.
 
-- goal: Choosing a direction
+- goal: Choosing a shared direction
   measure: drift <= 1
-  why: You need to get everyone involved, because every deadlock wastes a year. 
+  why: You need to get everyone to move in unison. 
   
 - goal: Automation delivers
   measure: indicator pub_ai >= 30
-  why: The new budget already assumes AI carries 30% of public transactions. If it does not, the cuts are yours to announce.
+  why: The new budget already assumes AI carries 30% of public transactions. If it does not, the additional cuts are yours to announce.
 
 ## SAK
 
@@ -135,7 +134,7 @@ Measure grammar (one per goal):
 
 - goal: The AI gains are shared
   measure: flag LEVY in yes
-  why: A levy on automation savings funds retraining. Without it, the machine's profits leave the room.
+  why: A levy on automation savings funds retraining. Without it, common people get nothing from the AI profits.
 
 - goal: The young get in
   measure: indicator youth_u <= 10
@@ -145,11 +144,11 @@ Measure grammar (one per goal):
 
 - goal: Queues under control
   measure: indicator care_gap <= 14
-  why: By 2033, Finland will have 101,000 more people aged 75 or over while the healthcare sector will have 57,000 fewer workers. 
+  why: By 2033, Finland will have 100,000 more people aged 75 or over while the healthcare sector will have 60,000 fewer workers. 
 
 - goal: Social contract on care
   measure: indicator trust >= 55
-  why: Care is not high tech, it's hi-touch. Can you define where the AI can be deployed?
+  why: Care is not high tech, it's hi-touch. Can you identify correctly where the AI can be deployed?
 
 - goal: Services actually automate
   measure: indicator pub_ai >= 30
@@ -187,25 +186,25 @@ Measure grammar (one per goal):
 
 - goal: Best students stay in Finland
   measure: persona EETU >= 4
-  why: If graduates find real work here, your pipeline worked. If they leave, it fed someone else's.
+  why: If graduates don't find real work here, the country does not get the benefits from education investments.
 
-- goal: High-tech hub
+- goal: A role for research
   measure: flag TALENT_PIPE in strong
-  why: A public platform nobody local can build or audit is a rented machine.
+  why: When machines answer most questions, the university must find the ones only research can still own. A country that stops researching can only rent its understanding.
 
-- goal: A stack worth staffing
-  measure: indicator sov_share >= 35
-  why: Below a third of public AI on European machines, your certification work has no object.
+- goal: Universities behind competitiveness
+  measure: index PRO >= 6.5
+  why: Skills are the one input to competitiveness the country makes itself. If prosperity stalls, education gets the bill; if it grows, your pipeline is part of the reason.
 
 ## STARTUP
 
 - goal: The round closes
   measure: index PRO >= 6
-  why: Series C happens in whatever policy climate the table creates. Investors price drift first.
+  why: Your aim is to grow your business sustainably. Series C should happen before the end of 2033.
 
-- goal: A clear stack
+- goal: Euro stack gives competitive advantage
   measure: flag STACK in euro,us
-  why: A country that half-decides makes every company run two stacks and pay for both.
+  why: You want to use the AI local stack, but can you?
 
 - goal: Never the hostage
   measure: drift <= 1
@@ -219,38 +218,38 @@ Measure grammar (one per goal):
 
 ## Seat
 
-quote: Even the investments we win now build factories with no lights on the production floor, because there is no one inside. If growth returns but the jobs do not, what promise can a government still make to Finns?
+quote: Previously, growth lead to jobs, jobs led to wellbeing, and wellbeing led to votes. But now? The investments Finland wins now are factories with no lights on the production floor, because there is no one working inside. If growth returns but the jobs do not, what promise can a government make to Finns?
 
 ## Who you are
-Head of a coalition government mid-term in 2028. You inherited the fiscal vice (debt ~91% of GDP, defence heading to 5%) and a spending framework that already books assumed AI productivity gains in public services. Your coalition is split two ways about AI. The growth wing wants Finland open to everything: American models, foreign data centres, whatever brings investment fastest. The sovereignty wing wants the state to run on machines Europe controls, whatever that costs in capability. Both wings can bring the government down, so every choice you make is also a coalition-management choice.
+Head of a left-leaning coalition government mid-term in 2028, voted in power by the elderly and the public sector workers. You inherited the fiscal vice (debt ~91% of GDP, defence heading to 5%) and a spending framework that already books assumed AI productivity gains in public services. Your coalition is split two ways about AI. The growth wing wants Finland open to everything: American models, foreign data centres, whatever brings investment fastest. The sovereignty wing wants the state to run on machines Europe controls, whatever that costs in capability. Both wings can bring the government down, so every choice you make is also a coalition-management choice.
 
 ## Endogenous levers
-- **Financial leverage:** the budget, the framework, the megaproject statute itself. What you fund exists; what you defer waits a parliament.
+- **Financial leverage:** You control the state budget and policy program. You can push any undesirable initiative in a political limbo.
 - **Political capital:** your approval rating is a spendable resource. You can burn it to force speed, or hoard it and slow the country down; the 2031 election settles the account.
 - **Immediacy:** alone at this table, your choices move the headlines the same week. Nobody else's signature is news by itself.
 
 ## What you cannot control
-- The pace of AI capability, set in San Francisco and Shanghai; it compounds whether Finland deploys or waits.
-- US access policy and EU rules, which can reprice your whole program in a week.
-- The workforce, which shrinks on schedule regardless of any reform.
-- The bond markets' patience with your framework.
-- Your own side: the unions and the counties can act against you.
+- The pace of AI capability is set in San Francisco and Shanghai.
+- US access policy and EU rules, which can reprice your whole AI program in a week.
+- The workforce shrinks regardless of any reform.
+- The bond market is impatient with your framework.
+- Your own side: the trade unions, cities and the Wellbeing counties can act against your interest in short term.
 
 ## Objectives (win conditions)
-1. Survive: no government crisis triggered by an unmanaged legitimacy shock (LEG never below 3.0 on your watch).
-2. Keep the framework: fiscal savings from public AI realized in at least two phases.
-3. History's judgment: by 2033, Finland is cited as a country that *chose*, not drifted (avoid two O3 outcomes).
+1. Survive the next election: no government crisis triggered by an unmanaged legitimacy shock (LEG never below 3.0 on your watch).
+2. Keep the framework: fiscal savings from public AI realized.
+3. History's judgment: by 2033, Finland is cited as a country that *chose a direction*.
 
 ## Standing tensions with other actors
-- **SAK:** you need their consent eventually; every quarter you delay negotiation, their price rises.
-- **HVK:** their resilience invoices land on your framework; cheap insurance until the day it isn't.
-- **TI:** your growth wing's voice; will read any sovereignty move as an investment chill.
+- **SAK:** You are selling freedom from work; they see it as the end of work, and by extension, their importance.
+- **HVK:** They are telling you their budget is the insurance premium, but the cost seems to be rising.
+- **TI:** For some reason, these people keep on thinking sovereignty is bad for business.
 - **COUNTY:** delivers your promised savings, or delivers your legitimacy crisis.
 
 ## Phase roles
-- **P1 (pivotal):** you decide whether the correction is Finland's buying opportunity or Finland's fiscal alibi.
-- **P2 (pivotal):** the 19-day suspension is your crisis; your choice defines what "sovereignty" means in practice.
-- **P3 (pivotal):** the compact, the levy, the freeze; the classic Finnish trilemma lands on your desk.
+- **P1 (pivotal):** the megaproject bill is yours: full speed, negotiated, or outsourced. The framework's savings are booked on your answer.
+- **P2 (pivotal):** the stack is yours to sign: the enforceable European tier, the allied lane, or an auction. What "sovereignty" means in practice is defined at your desk.
+- **P3 (pivotal):** the published savings land on the table months before the election: the bridge, the books, or the ballot.
 
 <!-- ═══════════ FILE: actors/sak.md ═══════════ -->
 
@@ -263,23 +262,23 @@ Head of a coalition government mid-term in 2028. You inherited the fiscal vice (
 quote: What cost a salary in 2024 costs a subscription today. My members now compete with a line item. What is work worth, when thinking is cheaper than coffee?
 
 ## Who you are
-Chair of SAK, 2028, speaking (for game purposes) for the whole employee side. SAK's blue-collar base plus, uneasily, Akava's white-collar professionals whose members are hit first by TR-6. Your December 2025 survey showed blue-collar AI use still minimal; by 2028 your members split three ways: protected insiders (care, trades; shortage sectors), exposed professionals (Akava's juniors), and the young who never got in (persona AINO). Their interests genuinely conflict, and you must aggregate them.
+Chair of SAK, the biggest trade union. Your December 2025 survey showed blue-collar AI use still minimal; but it also revealed union members' view on AI is split three ways: protected insiders (care, trades; shortage sectors), exposed professionals (Akava), and the young who never got in. Their interests genuinely conflict, and you must aggregate them.
 
 ## Endogenous levers
-- **Consent:** labour peace is yours alone to sell. Nobody automates a workforce that refuses.
-- **Stalemate power:** a refusal from you can deadlock the whole country. It is your strongest card, and it works best unplayed.
-- **The ballot:** one credible strike mandate per parliament. Spending it is irreversible; letting it expire is too.
+- **Consent:** labour peace is yours alone to sell. Nobody automates a workforce that refuses it.
+- **Stalemate power:** a refusal from you can deadlock the whole country. It is your strongest card.
+- **The ballot:** one credible strike mandate per parliament. 
 
 ## What you cannot control
-- The technology itself: entry-level and routine work erodes first, whether or not you consent.
+- The technology itself: entry-level and routine white collar work erodes first, whether or not you consent. 
 - The employers' balance sheets and the state's framework arithmetic.
-- Which models the state buys, and from whom; jurisdiction is decided above your table.
-- Your future members' patience: Eetu's cohort organizes with you or against you, and you do not pick which.
+- Which AI models the state buys, and from whom; jurisdiction is decided above your table.
+- Your future members' patience: Young people organize with you or against you, and you do not pick which.
 
 ## Objectives
 1. Transition rights in writing: retraining entitlements, human-override guarantees, gain-sharing; a signed COMPACT=strong.
-2. The levy: automation savings visibly fund osaamistakuu (LEVY=yes), not just shareholder returns and framework savings.
-3. Represent AINO's cohort before someone angrier does: youth_u falling by 2033, and union relevance intact (LEG-linked).
+2. The levy: automation savings visibly fund employer retraining and social security (LEVY=yes).
+3. Represent not only those who work but also those who would want to.
 
 ## Standing tensions
 - **PM:** your natural counterpart and your natural hostage-taker; both of you know a compact signed early is cheaper than one signed after a crisis, and both of you have reasons to wait.
@@ -287,9 +286,9 @@ Chair of SAK, 2028, speaking (for game purposes) for the whole employee side. SA
 - **TI:** the levy fight; they call it an innovation tax, you call it the price of consent.
 
 ## Phase roles
-- **P1 (modifier):** construction & energy members love both grand projects; your posture sets labour-peace terms and can pre-book P3 credit.
-- **P2 (modifier):** the verification-theatre scandal is your moment: escalate (set STRIKE_CARD=live), channel it into demands, or hold fire.
-- **P3 (PIVOTAL):** compact, efficiency state, or freeze; your tag decides as much as the PM's.
+- **P1 (pivotal):** consent or refusal on automating the offices; your tag decides the outcome alongside the PM's and the county's.
+- **P2 (modifier):** you set labour's price for the stack: enforceability, growth, or your own channel to the lab.
+- **P3 (pivotal):** the dividend fight is your moment: settle, strike, or splinter; your tag decides as much as the PM's.
 
 <!-- ═══════════ FILE: actors/county.md ═══════════ -->
 
@@ -326,9 +325,9 @@ You direct Finland's largest wellbeing county and chair the county directors' ne
 - **STARTUP:** you are the customer that could anchor domestic vendors; if procurement law and your risk appetite allow.
 
 ## Phase roles
-- **P1 (modifier):** you aggregate county demand; your commitment (or refusal) gives either grand project its first anchor customer.
-- **P2 (PIVOTAL):** the 19 days hit your hospitals first. Emergency-migrate, hold the line on re-attested frontier, or triage manually and let the country watch.
-- **P3 (PIVOTAL):** the compact's terms are executed, or the efficiency state is attempted, on your payroll.
+- **P1 (pivotal):** the freed minutes are yours to assign, to savings or to the bedside; the program's legitimacy follows your wards.
+- **P2 (pivotal):** care's machines are chosen now: continuity, the frontier, or the lab's trade. An interruption in your systems is measured in lives.
+- **P3 (modifier):** the dividend is delivered, banked, or clawed to care through your service centres.
 
 <!-- ═══════════ FILE: actors/ti.md ═══════════ -->
 
@@ -366,9 +365,9 @@ CEO of Finland's largest business lobby, 2028: Nokia, Kone, Wärtsilä, Metso do
 - **STARTUP:** you speak for them until Nokia-scale interests diverge from theirs; in P2 they will notice.
 
 ## Phase roles
-- **P1 (PIVOTAL):** Kajaani Compact needs your PPAs and contractors; Hamina Model needs your hyperscaler channel. You can feed either, or starve both and demand the state decide first.
-- **P2 (modifier):** your lobbying sets whether re-attestation terms land soft or hard on exporters (PRO effects), and whether industry publicly backs the PM's line.
-- **P3 (modifier):** the levy number. Your tag decides whether the compact is funded, cosmetic, or fought.
+- **P1 (modifier):** industry's position prices the tender: neutrality, a domestic premium, or the export venture.
+- **P2 (modifier):** your members' compute demand decides whether the domestic build has customers or the lane has a lobby.
+- **P3 (pivotal):** the levy lands on your members: negotiate the number, fight the principle, or freeze the capital. Your tag decides the settlement.
 
 <!-- ═══════════ FILE: actors/hvk.md ═══════════ -->
 
@@ -406,9 +405,9 @@ Director of HVK, 2028. Your agency stockpiles fuel, grain and medicine for a cou
 - **COUNTY:** will demand reserve priority for health systems that you may have to ration in a real event.
 
 ## Phase roles
-- **P1 (PIVOTAL):** the reserve is bought now at forty cents on the dollar, or never.
-- **P2 (modifier):** if RESERVE exists you activate it. If not, you get to say so, publicly.
-- **P3 (modifier):** exercises normalize AI resilience into civic routine (LEG+), or you overreach into securitizing everything (LEG−).
+- **P1 (modifier):** your clauses decide what the platform costs in resilience: the premium, the annex, or the shadow state.
+- **P2 (modifier):** the stack decision becomes survivable, or not, through your engineering: the run-alone doctrine, the drills, or the alliance laboratory.
+- **P3 (modifier):** the Gate's lessons become routine, become powers, or become a closed file.
 
 <!-- ═══════════ FILE: actors/aalto.md ═══════════ -->
 
@@ -444,9 +443,9 @@ Rector of Finland's flagship technical university, 2028. Your CS and AI programm
 - **SAK:** suspicious that "lifelong learning" means outsourcing their members' adjustment costs to your MOOCs.
 
 ## Phase roles
-- **P1 (modifier):** your talent-pipeline choice sets flag TALENT_PIPE (strong/weak); quietly decisive for what Finland can actually staff in P2–P3.
-- **P2 (modifier):** your evaluation capacity determines whether the European fallback tier is *certified* good-enough or just asserted.
-- **P3 (modifier):** osaamistakuu is delivered through your infrastructure, or fails in it.
+- **P1 (modifier):** the faculty budget picks who the decade trains: the few who build, the many displaced, or the machine tutors. TALENT_PIPE is set here.
+- **P2 (modifier):** your curriculum points at one stack and the graduates follow; whether the domestic build can be staffed is decided in your lecture halls.
+- **P3 (modifier):** the retraining guarantee runs through your programs, gets certified by them, or lapses inside them.
 
 <!-- ═══════════ FILE: actors/startup.md ═══════════ -->
 
@@ -484,9 +483,9 @@ Founder-CEO of a Turku-based biotech-AI company (drug-response prediction for No
 - **HVK:** their security vetting is a cost to you in P1 and possibly your business model by P3.
 
 ## Phase roles
-- **P1 (modifier):** where you build (LUMI-AI vs. US cloud credits) shifts sov_share and colours both grand projects.
-- **P2 (PIVOTAL):** mid-suspension, you choose: emergency-migrate to the European tier, double down on re-attested US frontier, or split the company. The private economy watches you.
-- **P3 (modifier):** whether you join sovereignty procurement (à la persona Sanna's fork) decides if the compact has an industrial leg.
+- **P1 (modifier):** where you bid colours the platform: the champion consortium, merit subcontracts, or the Turku deal.
+- **P2 (pivotal):** your logo is the argument: anchor the domestic tier, take the lane, or leave loudly. Every founder watching does what you do.
+- **P3 (modifier):** your company is the closing case study: build the bridge, take the exit, or open the stack.
 
 <!-- ═══════════ FILE: phases/phase-1-sampo/briefs.md ═══════════ -->
 
@@ -2762,6 +2761,177 @@ adjustments:
 - **HVK-A:** The exercises persist inside the defence budget: resilience as a military line item, civilian muscle atrophying.
 - **HVK-B:** The securitized audit powers are the efficiency state's sharpest tool; HVK declines to celebrate.
 - **HVK-H:** The gate file stays closed through one more tightening. Then it doesn't.
+
+<!-- ═══════════ FILE: dilemmas.md ═══════════ -->
+
+# Dilemmas — the social contract, between the decisions
+
+Two smaller decisions per seat, in the quiet years (2030, after the stack
+decision; 2032, after the dividend). They do not pick a phase outcome; they
+decide what kind of social contract your corner of Finland writes into the
+machine age. Effects are real but small: indices, approval, data.
+
+Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
+`#### A — "Title"` / `#### B — "Title"` blocks with `- summary:`,
+`- effects:` and `- data:` lines (same grammar as actions.md).
+
+## 2030
+
+### D2030-PM — "The time dividend"
+- context: The productivity numbers are finally real, and the coalition wants to promise some of the machine's time back to the people before the 2031 election. Two drafts sit on your desk, and the framework can carry exactly one.
+#### A — "The four-day week"
+- summary: Pilot a four-day week across the public sector, paid out of automation gains. Structural, irreversible in practice, and the whole labour market recalibrates around the state's example.
+- effects: LEG +0.3, POLL +2
+- data: share +2, books -2
+#### B — "The sixth week"
+- summary: Legislate a sixth week of annual holiday instead. Everyone gets the same visible gift, nothing about the shape of work changes, and the machine keeps the week it freed.
+- effects: POLL +3
+- data: share +1, books -1, trust -1
+
+### D2030-SAK — "Where the hands come from"
+- context: The care shortage is now arithmetic nobody disputes, and the union's weight can tip one of two national answers. The congress demands you pick before autumn.
+#### A — "Build the machines"
+- summary: Back the energy-and-compute megaproject: datacenters, grid, ward robots, machines standing in for the nurses Finland does not have. Construction members get a decade of work, and care becomes something machines are allowed to do.
+- effects: PRO +0.3
+- data: compute_mw +30, care_gap -1, share +1, trust -1
+#### B — "Open the doors"
+- summary: Back an open labour-immigration line for care instead: recruit the nurses abroad, fund the language training, fast-track the licenses. The wards stay human, and your members' wage floor gets tested by the answer.
+- effects: LEG +0.3
+- data: care_gap -2, bedside +2, share -1
+
+### D2030-COUNTY — "Consent at the bedside"
+- context: The ward machines work. The question the law left open is who agrees to them; every deployment so far has run on the quiet assumption that nobody would ask.
+#### A — "Ask first"
+- summary: Require signed consent for AI in every care relationship: the patient, or the family, says yes before the machine enters the room. Slower, messier, and every yes is real.
+- effects: LEG +0.3
+- data: trust +2, bedside +1, care_gap +1
+#### B — "Deploy by default"
+- summary: Make the machine the default and consent an opt-out buried in the intake forms. The rollout keeps its schedule, and the counties find out later what was assumed.
+- effects: PRO +0.3
+- data: pub_ai +2, care_gap -1, trust -2
+
+### D2030-TI — "The gains, published or pocketed"
+- context: Your member companies' AI productivity numbers are now large enough to be political. The federation must advise: show them, or shield them.
+#### A — "Publish and share"
+- summary: Recommend that members publish their automation gains and tie a share to wages in the next bargaining round. Transparency buys labour peace, and invites the taxman to read along.
+- effects: LEG +0.3
+- data: share +2, trust +1, pull -1
+#### B — "The black box"
+- summary: Advise members to book the gains quietly: competitive information, nobody's business. The margins stay home, and the suspicion compounds toward the next levy fight.
+- effects: PRO +0.2
+- data: pull +2, share -1, trust -1
+
+### D2030-HVK — "Whose drill is it"
+- context: The exit drills work, but only professionals run them. The doctrine question is whether preparedness is a service the state performs or a skill the population holds.
+#### A — "Everyone drills"
+- summary: A national AI-outage day every year: offices on paper, wards on checklists, every adult with a role. Loud, mocked abroad, and the country actually knows what to do.
+- effects: RES +0.3, POLL -1
+- data: days +2, trust +2
+#### B — "Quiet competence"
+- summary: Keep the drills professional and invisible: no theatre, no alarm, full readiness on the org chart. The population stays a spectator to its own resilience.
+- effects: RES +0.2
+- data: days +2, trust -1
+
+### D2030-AALTO — "The open exam"
+- context: Half the skills the market wants are now learned outside any institution. The senate asks whether the university certifies knowledge, or enrollment.
+#### A — "Certify anyone"
+- summary: Open the degree examinations to all comers: whoever can pass, passes, machine-taught or self-taught. The credential becomes a measure instead of a membership.
+- effects: LEG +0.3
+- data: ladder +2, trust +1, books -1
+#### B — "The gate stays"
+- summary: Keep certification tied to enrollment and funded seats. The institution's economics survive, and the self-taught stay uncounted.
+- effects: PRO +0.1
+- data: books +1, ladder -1
+
+### D2030-STARTUP — "Options for the replaced"
+- context: Your automation tools have now displaced people at your own customers. The board debates a policy no term sheet has a line for: what does the company owe the work it ends?
+#### A — "Cut them in"
+- summary: Grant options to workers your deployments displace at customer sites, through a pooled fund. Unheard of, legally awkward, and the strongest sales argument the public sector has ever seen.
+- effects: LEG +0.3
+- data: share +2, stay +1, pull -1
+#### B — "The product is the product"
+- summary: Ship the tool and let the customer own the consequences. Standard practice, defensible everywhere, remembered anyway.
+- effects: PRO +0.2
+- data: pull +1
+
+## 2032
+
+### D2032-PM — "The right to a human"
+- context: The election is over and the platform runs the state. The last constitutional question of the decade is on your desk: does a citizen ever have the right to insist that a person, not a machine, decides their case?
+#### A — "A human on request"
+- summary: Write it into law: any citizen can demand a human decision-maker, any time, no reason given. The machine does the work; a person owns it. The queues for humans become the new queues.
+- effects: LEG +0.4
+- data: trust +2, books -2
+#### B — "The machine's word is final"
+- summary: Full automation, with an appeals process inside the same system. Faster for everyone, cheaper for the framework, and the state becomes something you petition, not someone you meet.
+- effects: PRO +0.3
+- data: books +2, pub_ai +2, trust -2
+
+### D2032-SAK — "Members without workplaces"
+- context: A third of the people your movement should speak for now work through platforms, contracts and machine-supervised gigs. The congress votes on what a union is for.
+#### A — "The card follows the person"
+- summary: Open membership to anyone who works, however they work: portable benefits, dues scaled to income, representation without a workplace. The movement grows stranger and younger.
+- effects: LEG +0.3
+- data: share +2, ladder +2, trust +1
+#### B — "The core first"
+- summary: Deepen services for the members you have: the employed, the organized, the dues-paying. Clearer, solvent, and the movement's borders harden around a shrinking country.
+- effects: LEG -0.2
+- data: share +2, ladder -2
+
+### D2032-COUNTY — "The last human visit"
+- context: Home care now runs on sensors, video and one overworked circuit nurse. The service design question left is brutally simple: does every person still get a human at the door?
+#### A — "A face every day"
+- summary: Guarantee a daily human visit in every home-care plan, whatever the machine already measured. Expensive, inefficient, and the reason the whole system exists.
+- effects: LEG +0.3
+- data: bedside +3, books -2
+#### B — "Presence by exception"
+- summary: Video first, sensors always, humans dispatched when the data says so. The coverage is total. So is the loneliness.
+- effects: PRO +0.3
+- data: books +2, care_gap -1, bedside -2, trust -1
+
+### D2032-TI — "Who owns the work-double"
+- context: Every employee in your member firms now trains a machine double simply by doing their job. The contracts are silent about whose asset that is, and the silence is ending in court.
+#### A — "The worker's shadow"
+- summary: Publish a model contract: the employee owns their work-double's data and licenses it to the employer. Radical on paper, cheap in practice, and the lawsuits die before they multiply.
+- effects: LEG +0.3
+- data: share +2, trust +1, pull -1
+#### B — "The company's asset"
+- summary: The telemetry belongs to whoever paid for the workday. Every precedent agrees, and every employee now knows exactly what they are feeding.
+- effects: PRO +0.2
+- data: pull +2, share -1, trust -1
+
+### D2032-HVK — "The scarcity list"
+- context: The next access crisis will ration intelligence the way wars ration fuel. Somewhere in your office is the draft priority list of who gets compute when there is not enough. The question is whether the country sees it now.
+#### A — "Publish the list"
+- summary: Put the rationing order in the public doctrine: hospitals first, then power, then payments, then everything else, by name. Uncomfortable, debated, and legitimate before it is needed.
+- effects: LEG +0.3
+- data: trust +2, days +1
+#### B — "Sealed until needed"
+- summary: Keep the list classified: no panic, no lobbying, no debate, until the day it decides everything and nobody voted on it.
+- effects: RES +0.2
+- data: days +2, trust -2
+
+### D2032-AALTO — "Rooms without machines"
+- context: The first AI-native cohort graduates this spring: fluent with the tools, untested without them. The faculty asks whether thinking unassisted is still a skill the university certifies.
+#### A — "The slow rooms"
+- summary: Every degree keeps machine-free hours: reading, proof, argument, memory, by hand. The graduates are slower on paper and unmistakable in person.
+- effects: LEG +0.2
+- data: ladder +2, trust +1
+#### B — "Fluent in the tools"
+- summary: Certify what the market hires: mastery with the machine, no nostalgia. What atrophies, atrophies; the transcripts stop pretending otherwise.
+- effects: PRO +0.2
+- data: ladder +1, stay +1, trust -1
+
+### D2032-STARTUP — "The biobank's answer"
+- context: Your models now read the national genome data better than anyone in the country. The exclusive license that funded your decade is up for renewal, and the public health system is asking what the data it gave you was for.
+#### A — "Open the results"
+- summary: Give the public health system standing access to the findings at cost: every county clinic reads what your models read. The moat narrows, and the argument for the company's existence becomes unanswerable.
+- effects: LEG +0.3
+- data: trust +2, stay +1, pull -1
+#### B — "Renew the license"
+- summary: Keep the results inside the paying customers' walls. The valuation holds, and the question of what the data was for gets asked annually, louder.
+- effects: PRO +0.3
+- data: pull +2, books +1, trust -1
 
 <!-- ═══════════ FILE: clashes.md ═══════════ -->
 
