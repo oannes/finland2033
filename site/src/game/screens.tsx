@@ -604,14 +604,21 @@ export function DebriefScreen({
   const you = viewerActor
   const yourAction = phase.actions[you].find((x) => x.id === result.choices[you])
   const beats = useMemo(() => {
-    const list: { kind: 'you' | 'narr' | 'other'; actor?: ActorId; actTitle?: string; text: string }[] = []
-    if (yourAction?.said) list.push({ kind: 'you', actor: you, actTitle: yourAction.title, text: yourAction.said })
+    const list: { kind: 'you' | 'narr' | 'other'; actor?: ActorId; note?: string; text: string }[] = []
+    if (yourAction?.said) list.push({ kind: 'you', actor: you, note: `“${yourAction.title}”`, text: yourAction.said })
     if (yourAction?.aftermath) list.push({ kind: 'narr', text: yourAction.aftermath })
+    // first: those your decision treated, answering you
+    for (const a of ACTORS) {
+      if (a === you) continue
+      const line = yourAction?.react?.[a]
+      if (line) list.push({ kind: 'other', actor: a, note: 'answers your call', text: line })
+    }
+    // then: those whose own moves land on your world
     for (const a of ACTORS) {
       if (a === you) continue
       const act = phase.actions[a].find((x) => x.id === result.choices[a])
       const line = act?.to?.[you]
-      if (act && line) list.push({ kind: 'other', actor: a, actTitle: act.title, text: line })
+      if (act && line) list.push({ kind: 'other', actor: a, note: `“${act.title}”`, text: line })
     }
     return list
   }, [phase, result, you, yourAction])
@@ -636,7 +643,7 @@ export function DebriefScreen({
                 <div className="flex-1">
                   <div className="text-[11px] uppercase tracking-[0.15em] text-white/40 mb-1">
                     {b.kind === 'you' ? `You — the ${SHORT_ROLE[b.actor!]}` : `The ${SHORT_ROLE[b.actor!]}`}
-                    {b.actTitle && <span className="normal-case tracking-normal text-white/30"> · “{b.actTitle}”</span>}
+                    {b.note && <span className="normal-case tracking-normal text-white/30"> · {b.note}</span>}
                   </div>
                   <p className="text-[14.5px] text-white/85 leading-relaxed">{b.text}</p>
                 </div>

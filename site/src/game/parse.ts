@@ -132,9 +132,10 @@ export function parseActions(md: string, phase: number): Record<ActorId, Action[
         flagSets: [],
       }
       for (const line of actSec.body.split('\n')) {
-        const toM = line.match(/^-\s*to\s+([A-Z]+):\s*(.*)$/)
-        if (toM && (ACTORS as readonly string[]).includes(toM[1])) {
-          ;(action.to ??= {})[toM[1] as ActorId] = toM[2].trim()
+        const toM = line.match(/^-\s*(to|react)\s+([A-Z]+):\s*(.*)$/)
+        if (toM && (ACTORS as readonly string[]).includes(toM[2])) {
+          const map = toM[1] === 'to' ? (action.to ??= {}) : (action.react ??= {})
+          map[toM[2] as ActorId] = toM[3].trim()
           continue
         }
         const f = line.match(/^-\s*(\w+):\s*(.*)$/)

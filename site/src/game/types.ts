@@ -67,6 +67,8 @@ export interface Action {
   aftermath?: string
   /** debrief dialogue: lines addressed to specific other actors whose deal metrics this action moves */
   to?: Partial<Record<ActorId, string>>
+  /** debrief dialogue: what the affected actor says back to the chooser (mirror of `to`) */
+  react?: Partial<Record<ActorId, string>>
 }
 
 export interface ClashSide {
