@@ -587,8 +587,10 @@ const gapRef = (months: number): string | null =>
         : null
 
 const daysRef = (d: number): string =>
-  d >= 30
-    ? 'A month alone: approaching the standard Finland has always kept for fuel, 90 days.'
+  d >= 60
+    ? 'Two months alone: dependency, managed. The 90-day standard Finland keeps for fuel is within sight.'
+    : d >= 30
+    ? 'A month alone: a real reserve, still a third of the standard Finland keeps for fuel.'
     : d >= 15
       ? 'Longer than any European access interruption so far. The oil reserve standard is still 90 days.'
       : d >= 7
@@ -655,7 +657,7 @@ function GapColumns({ pts }: { pts: { y: number; v: number }[] }) {
 
 /** Days Finland runs alone: a month of squares, filled as far as the reserve lasts. */
 function DaySquares({ days, prev }: { days: number; prev?: number }) {
-  const cells = 30
+  const cells = 60
   return (
     <div className="flex flex-wrap gap-1 my-2">
       {Array.from({ length: cells }, (_, i) => {
@@ -673,7 +675,7 @@ function DaySquares({ days, prev }: { days: number; prev?: number }) {
           />
         )
       })}
-      <span className="text-[10px] text-white/40 self-center ml-1.5">of 30 days</span>
+      <span className="text-[10px] text-white/40 self-center ml-1.5">of 60 days</span>
     </div>
   )
 }

@@ -331,7 +331,7 @@ locked cards show the reason ("not possible: …").
 - summary: Reallocate quietly: reserves, fallback capacity and drills, funded out of the counties' envelope. You do it because the clock is naked, and nobody will vote you the money until the day it is too late to spend. The bedside pays, and is never told.
 - effects: RES +0.6, LEG −0.3
 - data: days +8, bedside -3, books -2, trust -1
-- requires: indicator days <= 15 (only a naked clock justifies raiding care)
+- requires: indicator days <= 20 (only a naked clock justifies raiding care)
 - hook: SILENT
 - said: I reallocated quietly: reserves, fallback capacity and drills, funded out of the counties' envelope. The clock is naked, and nobody votes the money until the day it is too late to spend.
 - aftermath: The bedside pays, and is never told, and you carry that arithmetic into every drill.
@@ -376,7 +376,7 @@ locked cards show the reason ("not possible: …").
 - summary: Publish the resilience doctrine whole, gaps included. You do it because a public that understands the plan is the plan, and the secrecy was protecting the gaps more than the country. The adversary's reading list grows by one.
 - effects: RES +0.2, LEG +0.3
 - data: days +3, trust +2
-- requires: indicator days >= 25 (you can only show your hand when it is strong)
+- requires: indicator days >= 40 (you can only show your hand when it is strong)
 - hook: SILENT
 - said: I published the resilience doctrine whole, gaps included. A public that understands the plan is the plan, and the secrecy was protecting the gaps more than the country.
 - aftermath: The adversary's reading list grows by one, and so does every citizen's.

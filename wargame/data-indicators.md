@@ -20,7 +20,7 @@ Values for 2028–2033 are scenario constructions anchored to the sourced 2026 b
 | `share` | Workers' share | index | 50 | Redesign v2 deal metric — how much of automation's gains reach ordinary people |
 | `bedside` | Time at the bedside | min/day | 40 | Redesign v2 deal metric — minutes of human care per patient day |
 | `pull` | Investment pull | index | 55 | Redesign v2 deal metric — whether capital still lands in Finland |
-| `days` | Days Finland runs alone | days | 7 | Redesign v2 deal metric — how long public systems survive an access cut-off |
+| `days` | Days Finland runs alone | days | 30 | Redesign v2 deal metric — how long public systems keep running if foreign AI access is cut. Starts high while dependency is shallow; falls as services move onto foreign models |
 | `ladder` | A first rung | % | 58 | Redesign v2 deal metric — graduates in matching work within two years |
 | `stay` | Winners that stay | index | 50 | Redesign v2 deal metric — whether exceptional companies remain Finnish |
 
@@ -50,7 +50,7 @@ books: 40
 share: 50
 bedside: 40
 pull: 55
-days: 7
+days: 30
 ladder: 58
 stay: 50
 ```
@@ -87,7 +87,7 @@ books: [70, 58, 50, 44, 40]
 share: [58, 55, 53, 51, 50]
 bedside: [52, 48, 45, 42, 40]
 pull: [60, 58, 57, 56, 55]
-days: [4, 5, 5, 6, 7]
+days: [90, 70, 55, 40, 30]
 ladder: [70, 66, 63, 60, 58]
 stay: [62, 58, 55, 52, 50]
 ```
@@ -106,7 +106,7 @@ stay: [62, 58, 55, 52, 50]
 - share: How much of automation's gains reach ordinary people, as wages, retraining and security. The employment side of the deal.
 - bedside: How many minutes of human care a patient gets in a day. Automation can free these minutes for people, or harvest them as savings.
 - pull: Whether capital still wants to land in Finland. Falls on unpredictability; rises on credible rules.
-- days: How many days Finland's public systems keep running if foreign AI access is cut. The self-sufficiency clock; it decides how hard the next crisis hits.
+- days: How many days Finland's public systems keep running if foreign AI access is cut. High while little depends on AI; every service moved onto foreign models shortens it, every fallback and sovereign system lengthens it. It decides how hard the next crisis hits.
 - ladder: The share of graduates who find work matching their education within two years. The promise made to the young, measured.
 - stay: Whether the exceptional companies stay Finnish — headquarters, hires, taxes. Falls with every exit.
 

@@ -285,14 +285,14 @@ export function resolvePhase(
     }
   }
   applyExogenous(content, dataNode, NODE_YEARS[phase.idx])
-  for (const k of Object.keys(dataNode)) dataNode[k] = Math.round(dataNode[k] * 10) / 10
+  for (const k of Object.keys(dataNode)) dataNode[k] = Math.max(0, Math.round(dataNode[k] * 10) / 10)
 
   // Redesign v2: the next crisis's shape follows the self-sufficiency clock.
   // Days Finland runs alone decides how the Second Gate lands, alongside the
   // legacy SECURE_ARCH rule.
   if (phase.idx === 2 && dataNode.days !== undefined) {
-    if (dataNode.days >= 25 && outcome.cls !== 'O3') flags.CRISIS_LEG = 'managed'
-    else if (dataNode.days < 10) flags.CRISIS_LEG = 'damaged'
+    if (dataNode.days >= 40 && outcome.cls !== 'O3') flags.CRISIS_LEG = 'managed'
+    else if (dataNode.days < 20) flags.CRISIS_LEG = 'damaged'
   }
 
   // 5. Modifier hooks: render exactly the 4 matching (WEBSITE_AGENT rule 5)
@@ -692,7 +692,7 @@ export function applyDilemma(state: GameState, d: Dilemma, key: 'A' | 'B'): Game
   const last = results[results.length - 1]
   if (last) {
     for (const [k, v] of Object.entries(opt.data)) {
-      last.dataNode[k] = Math.round(((last.dataNode[k] ?? 0) + v) * 10) / 10
+      last.dataNode[k] = Math.max(0, Math.round(((last.dataNode[k] ?? 0) + v) * 10) / 10)
     }
   }
   return { ...state, indices, poll, results, dilemmas: { ...(state.dilemmas ?? {}), [d.id]: key } }

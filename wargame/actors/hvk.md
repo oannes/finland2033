@@ -22,7 +22,7 @@ Director of NESA (Huoltovarmuuskeskus). Your agency stockpiles fuel, grain and m
 
 ## Objectives
 1. Security in the architecture before it is bought, not patched in after (SECURE_ARCH=yes).
-2. Finland runs core services 30+ days without frontier access, and proves it in exercises.
+2. Finland runs core services 60+ days without frontier access, and proves it in exercises.
 3. The next crisis is remembered as a drill, not a trauma (CRISIS_LEG=managed).
 
 ## Standing tensions
