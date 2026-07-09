@@ -1,74 +1,109 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
-// Hover-dwell reveal: dialogue lines appear one at a time.
+// Hover-reveal dialogue: the line under the cursor opens immediately; once a
+// line is fully revealed, the next one begins a slow automatic un-blur, so
+// the conversation cascades hands-free (and works untouched on mobile) while
+// the cursor can always run ahead. Content that follows a sequence waits one
+// extra second after the last line (RevealSequence fires onDone late).
 
-/** The next dialogue line renders blurred; resting the pointer on it for 500ms
- * (or a click/tap) reveals it. Lines after the next stay hidden. */
+/** ms for the slow automatic un-blur of the next line */
+const CASCADE_MS = 2600
+/** ms between the last revealed line and onDone (gates whatever follows) */
+const TAIL_MS = 1000
+/** ms before an `instant` item (buttons, interactive stops) appears */
+const INSTANT_MS = 700
+
 export function RevealLine({
   revealed,
   isNext,
+  instant = false,
   onReveal,
   children,
 }: {
   revealed: boolean
   isNext: boolean
+  /** interactive items: no blur, just a short pause then visible */
+  instant?: boolean
   onReveal: () => void
   children: React.ReactNode
 }) {
+  const [easing, setEasing] = useState(false)
   const timer = useRef<number | null>(null)
-  const [dwelling, setDwelling] = useState(false)
-  if (revealed) return <div className="transition-all duration-300">{children}</div>
+
+  useEffect(() => {
+    if (!isNext || revealed) return
+    if (instant) {
+      timer.current = window.setTimeout(onReveal, INSTANT_MS)
+      return () => {
+        if (timer.current) window.clearTimeout(timer.current)
+      }
+    }
+    // begin the slow cascade the moment this line becomes next
+    const raf = requestAnimationFrame(() => requestAnimationFrame(() => setEasing(true)))
+    timer.current = window.setTimeout(onReveal, CASCADE_MS)
+    return () => {
+      cancelAnimationFrame(raf)
+      if (timer.current) window.clearTimeout(timer.current)
+      setEasing(false)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isNext, revealed, instant])
+
+  if (revealed) return <div>{children}</div>
   if (!isNext) return null
-  const start = () => {
-    setDwelling(true)
-    timer.current = window.setTimeout(onReveal, 500)
-  }
-  const stop = () => {
-    setDwelling(false)
-    if (timer.current) window.clearTimeout(timer.current)
-  }
+  if (instant) return null
   return (
     <div
-      onMouseEnter={start}
-      onMouseLeave={stop}
-      onClick={() => {
-        stop()
-        onReveal()
+      onMouseEnter={onReveal}
+      onClick={onReveal}
+      className="cursor-pointer select-none"
+      style={{
+        filter: easing ? 'blur(0px)' : 'blur(3px)',
+        opacity: easing ? 1 : 0.35,
+        transition: `filter ${CASCADE_MS}ms ease-out, opacity ${CASCADE_MS}ms ease-out`,
       }}
-      className={`cursor-pointer select-none transition-all duration-500 ${
-        dwelling ? 'blur-[1.5px] opacity-70' : 'blur-[3px] opacity-40'
-      }`}
     >
       {children}
     </div>
   )
 }
 
-/** Sequence wrapper: reveals items one by one via RevealLine; calls onDone when all shown. */
-export function RevealSequence({
-  items,
-  onDone,
-}: {
-  items: React.ReactNode[]
-  onDone?: () => void
-}) {
+export type RevealItem = React.ReactNode | { node: React.ReactNode; instant: true }
+
+const isInstant = (it: RevealItem): it is { node: React.ReactNode; instant: true } =>
+  typeof it === 'object' && it !== null && 'instant' in (it as object)
+
+/** Sequence wrapper: cascading reveal; onDone fires TAIL_MS after the last line. */
+export function RevealSequence({ items, onDone }: { items: RevealItem[]; onDone?: () => void }) {
   const [shown, setShown] = useState(1)
+  const doneFired = useRef(false)
+  const onDoneRef = useRef(onDone)
+  onDoneRef.current = onDone
+
+  useEffect(() => {
+    if (shown > items.length) {
+      const t = window.setTimeout(() => {
+        if (doneFired.current) return
+        doneFired.current = true
+        onDoneRef.current?.()
+      }, TAIL_MS)
+      return () => window.clearTimeout(t)
+    }
+  }, [shown, items.length])
+
   return (
     <div className="space-y-4">
       {items.map((item, i) => (
         <RevealLine
           key={i}
-          revealed={i < shown - 1 || (i === items.length - 1 && shown > items.length)}
+          revealed={i < shown - 1}
           isNext={i === shown - 1}
-          onReveal={() => {
-            setShown(shown + 1)
-            if (shown >= items.length && onDone) onDone()
-          }}
+          instant={isInstant(item)}
+          onReveal={() => setShown((s) => (i === s - 1 ? s + 1 : s))}
         >
-          {item}
+          {isInstant(item) ? item.node : item}
         </RevealLine>
       ))}
     </div>
   )
 }
-

@@ -13,7 +13,7 @@ import { RevealSequence } from './reveal'
 
 // ---------- voices ----------
 
-const VOICE_COLOR: Record<string, string> = {
+export const VOICE_COLOR: Record<string, string> = {
   RAJA: '#7fb3d5',
   TALKOOT: '#e8c06a',
   NOKIA: '#e87ad0',
@@ -161,7 +161,7 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
 
   // Text flows in full chunks; the pauses are the player's moves:
   // an action button, a dialogue choice, or the hub.
-  const shown: React.ReactNode[] = []
+  const shown: import('./reveal').RevealItem[] = []
   for (let i = 0; i < script.length; i++) {
     const b = script[i]
     if ('hub' in b) {
@@ -173,7 +173,7 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
               : doc['tunnel/hub']?.meta.again ?? 'Whom do you turn to now?'}
           </p>,
         )
-        shown.push(
+        shown.push({ instant: true, node: (
           <div key={i} className="space-y-2 pt-1">
             {spirits
               .filter((s) => !talked.includes(s.key))
@@ -189,23 +189,23 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
                   {s.label}
                 </button>
               ))}
-          </div>,
-        )
+          </div>
+        ) })
         break
       }
       continue
     }
     if ('action' in b) {
       if (!acted[i]) {
-        shown.push(
+        shown.push({ instant: true, node: (
           <button
             key={i}
             onClick={() => setActed((a) => ({ ...a, [i]: true }))}
             className="bg-[#2f9db4] hover:bg-[#23849a] text-white text-sm font-medium px-7 py-3 rounded-full transition-all hover:scale-[1.03] active:scale-95"
           >
             {b.action}
-          </button>,
-        )
+          </button>
+        ) })
         break
       }
       continue
@@ -235,7 +235,7 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
     if ('choice' in b) {
       const pick = picked[i]
       if (pick === undefined) {
-        shown.push(
+        shown.push({ instant: true, node: (
           <div key={i} className="space-y-2 pt-1">
             {b.choice.map((c, ci) => (
               <button
@@ -246,8 +246,8 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
                 {c.label}
               </button>
             ))}
-          </div>,
-        )
+          </div>
+        ) })
         break
       }
       shown.push(
@@ -265,7 +265,10 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
 
   return (
     <div className="rounded-2xl border border-white/10 overflow-hidden">
-      <div className="p-6 sm:p-8 space-y-4 bg-black/40">{shown}</div>
+      <TunnelBackdrop />
+      <div className="p-6 sm:p-8 bg-black/40">
+        <RevealSequence items={shown} />
+      </div>
     </div>
   )
 }
@@ -382,7 +385,6 @@ export function StreetScene({ content, state }: { content: GameContent; state: G
     .replace(/\s{2,}/g, ' ')
 
   const marjaRung = parseInt(es.personaRungs.MARJA.rung.slice(1)) || null
-  const eetuRung = parseInt(es.personaRungs.EETU.rung.slice(1)) || null
   const spoken = (id: string, rung: number | null) =>
     doc[`street/${id}-${rung ?? 3}`]?.lines ?? doc[`street/${id}-3`]?.lines ?? []
   // how the player's own choices moved each life (counterfactual replay)
@@ -410,14 +412,9 @@ export function StreetScene({ content, state }: { content: GameContent; state: G
             <SideFace key="mf" pid="MARJA" rung={marjaRung} tilt="rotate-1" />,
             ...spoken('marja', marjaRung).map((l, i) => <VoiceLine key={`m${i}`} v={l.v ?? 'MARIA'} t={l.t} />),
             ...reaction('marja', 'MARJA').map((l, i) => <VoiceLine key={`mr${i}`} v={l.v ?? 'MARIA'} t={l.t} />),
-            ...(narr('street/eetu-intro') ? [<VoiceLine key="ei" t={narr('street/eetu-intro')!.t} />] : []),
-            <SideFace key="ef" pid="EETU" rung={eetuRung} tilt="-rotate-1" />,
-            ...spoken('eetu', eetuRung).map((l, i) => <VoiceLine key={`e${i}`} v={l.v ?? 'EETU'} t={l.t} />),
-            ...reaction('eetu', 'EETU').map((l, i) => <VoiceLine key={`er${i}`} v={l.v ?? 'EETU'} t={l.t} />),
             ...(doc['street/shivers']?.lines ?? []).map((l, i) => <VoiceLine key={`s${i}`} v={l.v} t={l.t} />),
           ]}
         />
-        <TunnelBackdrop />
         {!walkedIn && streetRead && (
           <div className="flex justify-end">
             <button

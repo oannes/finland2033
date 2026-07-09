@@ -712,7 +712,7 @@ export function InterludeScreen({
         {(allRead || interlude.messages.length === 0) ? (
           <PrimaryButton onClick={onContinue}>On to {toYear} →</PrimaryButton>
         ) : (
-          <span className="text-[12px] text-white/35 py-2">rest your cursor on the next message…</span>
+          <span className="text-[12px] text-white/35 py-2">the thread reveals as you read…</span>
         )}
       </div>
     </div>
@@ -800,8 +800,7 @@ export function DebriefScreen({
     }
     return list
   }, [phase, result, you, yourAction])
-  const [step, setStep] = useState(1)
-  const done = step >= beats.length
+  const [done, setDone] = useState(false)
   return (
     <div className="space-y-6">
       <SectionCard>
@@ -809,8 +808,9 @@ export function DebriefScreen({
           {YEAR_BY_PHASE[phase.idx]} · Around the table
         </p>
         <h2 className="font-playfair italic text-3xl sm:text-4xl text-white mb-6">The decisions, face to face</h2>
-        <div className="space-y-6">
-          {beats.slice(0, step).map((b, i) =>
+        <RevealSequence
+          onDone={() => setDone(true)}
+          items={beats.map((b, i) =>
             b.kind === 'narr' ? (
               <p key={i} className="text-[14px] italic text-white/55 leading-relaxed pl-1 border-l-2 border-white/15 ml-1.5 pl-4">
                 {b.text}
@@ -828,17 +828,12 @@ export function DebriefScreen({
               </div>
             ),
           )}
-        </div>
+        />
         <div className="flex justify-end mt-8">
           {done ? (
             <PrimaryButton onClick={onContinue}>What it adds up to →</PrimaryButton>
           ) : (
-            <button
-              onClick={() => setStep(step + 1)}
-              className="text-sm text-white/60 hover:text-white border border-white/15 hover:border-white/40 rounded-full px-5 py-2 transition-colors"
-            >
-              Continue
-            </button>
+            <span className="text-[12px] text-white/35 py-2">the table answers as you read…</span>
           )}
         </div>
       </SectionCard>

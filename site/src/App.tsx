@@ -5,7 +5,7 @@ import { parsePrologue } from './game/parse'
 import mapPlain from './assets/map-plain.webp'
 import mapNetwork from './assets/map-network.webp'
 import GameApp, { WORKSHOP_ENABLED } from './game/GameApp'
-import { spiritImage } from './game/epilogue'
+import { spiritImage, VOICE_COLOR } from './game/epilogue'
 import { RevealSequence } from './game/reveal'
 import { PERSONA_PORTRAITS, Portrait } from './game/portraits'
 import { loadContent } from './game/content'
@@ -216,19 +216,22 @@ function Em({ text }: { text: string }) {
 
 const SPIRIT_LINE = /^(NOKIA|VELKA|RAJA|TALKOOT|METSÄ)(?:\s*\(([^)]*)\))?:\s*(.+)$/
 
-/** A spirit interjecting in the prologue: round face, name, whispered attribution. */
+/** A spirit interjecting in the prologue, in the epilogue's text-adventure
+ * voice. The attribution ("the ghost of the miracle past") appears only here;
+ * by the time the tunnel comes, the names stand alone. */
 function SpiritAside({ name, tag, text }: { name: string; tag?: string; text: string }) {
   const img = spiritImage(name)
   return (
     <div className="flex items-start gap-3 my-1">
       {img && <img src={img} alt={name} className="w-9 h-9 rounded-full object-cover border border-white/15 shrink-0 mt-0.5" />}
-      <div>
-        <span className="text-[10.5px] uppercase tracking-[0.15em] text-white/40">
+      <p className="text-white/85 text-[15px] leading-relaxed">
+        <span className="font-semibold tracking-[0.08em]" style={{ color: VOICE_COLOR[name] ?? '#fff' }}>
           {name}
-          {tag && <span className="normal-case tracking-normal text-white/30">, {tag}</span>}
         </span>
-        <p className="text-white/85 text-[15px] leading-relaxed font-playfair italic">{text}</p>
-      </div>
+        {tag && <span className="text-white/40 italic">, {tag}</span>}
+        <span className="text-white/40"> — </span>
+        {text}
+      </p>
     </div>
   )
 }
@@ -249,13 +252,18 @@ function PrologueParas({ slug, last = 'mb-4' }: { slug: string; last?: string })
   }
   let pi = -1
   const lastP = blocks.filter((b) => b.kind === 'p').length - 1
+  const [doneExchanges, setDoneExchanges] = useState<Record<number, boolean>>({})
+  let gated = false
   return (
     <>
       {blocks.map((b, i) => {
+        if (gated) return null
         if (b.kind === 'spirits') {
+          if (!doneExchanges[i]) gated = true // what follows waits for the exchange
           return (
             <div key={i} className="my-6 pl-1 border-l-2 border-white/10 ml-1 space-y-1">
               <RevealSequence
+                onDone={() => setDoneExchanges((d) => ({ ...d, [i]: true }))}
                 items={b.lines.map((l, j) => (
                   <SpiritAside key={j} name={l.name} tag={l.tag} text={l.text} />
                 ))}
