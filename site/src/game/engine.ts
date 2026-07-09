@@ -1,4 +1,5 @@
 import type {
+  Dilemma,
   Action,
   ActorId,
   ClashResult,
@@ -661,6 +662,40 @@ export function decisionImpacts(content: GameContent, state: GameState): PlayerI
     }
   }
   return impacts
+}
+
+// ---------- dilemmas (between-years social-contract decisions) ----------
+
+/** The dilemma the player faces after this phase's reveal (2030 after P2, 2032 after P3). */
+export function pendingDilemma(content: GameContent, state: GameState): Dilemma | null {
+  if (!state.playerActor) return null
+  const year = state.phaseIdx === 1 ? 2030 : state.phaseIdx === 2 ? 2032 : 0
+  if (!year) return null
+  return (
+    content.dilemmas.find(
+      (d) => d.actor === state.playerActor && d.year === year && !(state.dilemmas ?? {})[d.id],
+    ) ?? null
+  )
+}
+
+/** Apply a dilemma choice: indices and poll move, data deltas fold into the
+ * latest result node so charts, P3 gates and the endstate read them. */
+export function applyDilemma(state: GameState, d: Dilemma, key: 'A' | 'B'): GameState {
+  const opt = d.options.find((o) => o.key === key)
+  if (!opt) return state
+  const indices = { ...state.indices }
+  for (const e of opt.effects) indices[e.index] = clamp10(indices[e.index] + e.delta)
+  const poll = Math.max(0, Math.min(100, Math.round(state.poll + (opt.pollDelta ?? 0))))
+  const results = state.results.map((r, i) =>
+    i === state.results.length - 1 ? { ...r, dataNode: { ...r.dataNode } } : r,
+  )
+  const last = results[results.length - 1]
+  if (last) {
+    for (const [k, v] of Object.entries(opt.data)) {
+      last.dataNode[k] = Math.round(((last.dataNode[k] ?? 0) + v) * 10) / 10
+    }
+  }
+  return { ...state, indices, poll, results, dilemmas: { ...(state.dilemmas ?? {}), [d.id]: key } }
 }
 
 // ---------- key metrics ----------

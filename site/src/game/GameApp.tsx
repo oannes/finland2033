@@ -3,7 +3,7 @@ import { Check, Copy, Users } from 'lucide-react'
 import type { ActorId, GameContent, GameState } from './types'
 import { ACTORS } from './types'
 import { loadContent } from './content'
-import { composeEndstate, initialState, resolvePhase , metricEnv } from './engine'
+import { applyDilemma, composeEndstate, initialState, pendingDilemma, resolvePhase, metricEnv } from './engine'
 import { simulateAll } from './ai'
 import {
   advanceGame,
@@ -38,6 +38,7 @@ const SEAT_INTROS: Record<ActorId, { role: string; line: string }> = {
 import {
   BriefingScreen,
   DecideScreen,
+  DilemmaScreen,
   EndstateScreen,
   FacilitatorBrief,
   PrimaryButton,
@@ -159,9 +160,18 @@ function SoloGame({
     })
   }
 
+  const advance = (s: typeof state) => {
+    if (s.phaseIdx < 2) setState({ ...s, phaseIdx: s.phaseIdx + 1, stage: 'decide' })
+    else setState({ ...s, stage: 'endstate', endstate: composeEndstate(content, s) })
+  }
+
   const afterReveal = () => {
-    if (state.phaseIdx < 2) setState({ ...state, phaseIdx: state.phaseIdx + 1, stage: 'decide' })
-    else setState({ ...state, stage: 'endstate', endstate: composeEndstate(content, state) })
+    if (pendingDilemma(content, state)) setState({ ...state, stage: 'dilemma' })
+    else advance(state)
+  }
+
+  const afterDilemma = (d: NonNullable<ReturnType<typeof pendingDilemma>>, key: 'A' | 'B') => {
+    advance(applyDilemma(state, d, key))
   }
 
   return (
@@ -178,6 +188,10 @@ function SoloGame({
             {state.stage === 'decide' && state.playerActor && (
               <DecideScreen content={content} state={state} phase={phase} actor={state.playerActor} locked={{}} onLock={lock} />
             )}
+            {state.stage === 'dilemma' && (() => {
+              const d = pendingDilemma(content, state)
+              return d ? <DilemmaScreen dilemma={d} onChoose={(k) => afterDilemma(d, k)} /> : null
+            })()}
             {state.stage === 'reveal' && state.results[state.phaseIdx] && (
               <RevealFlow
                 content={content}

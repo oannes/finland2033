@@ -56,6 +56,7 @@ const FILES = [
   'phases/phase-3-dividend/outcomes/O3.md',
   'phases/phase-3-dividend/outcomes/O4.md',
   'phases/phase-3-dividend/outcomes/O5.md',
+  'dilemmas.md',
   'clashes.md',
   'keymetrics.md',
   'endstates.md',

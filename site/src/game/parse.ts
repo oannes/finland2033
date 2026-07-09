@@ -1,4 +1,6 @@
 import type {
+  Dilemma,
+  DilemmaOption,
   ClashEdge,
   EpilogueDoc,
   KeyMetric,
@@ -179,6 +181,41 @@ export function parseActions(md: string, phase: number): Record<ActorId, Action[
         }
       }
       out[actor].push(action)
+    }
+  }
+  return out
+}
+
+// ---------- dilemmas.md ----------
+
+export function parseDilemmas(md: string): Dilemma[] {
+  const out: Dilemma[] = []
+  for (const yearSec of splitSections(md, 2)) {
+    const year = parseInt(yearSec.heading)
+    if (!year) continue
+    for (const dSec of splitSections('### ' + '\n' + yearSec.body, 3)) {
+      const h = dSec.heading.match(/^(D\d+-[A-Z]+)\s*[—-]\s*"(.+?)"/)
+      if (!h) continue
+      const actor = ACTORS.find((a) => h[1].endsWith('-' + a))
+      if (!actor) continue
+      const context = (dSec.body.match(/^-\s*context:\s*(.+)$/m) || [])[1]?.trim() ?? ''
+      const options: DilemmaOption[] = []
+      for (const oSec of splitSections('#### ' + '\n' + dSec.body, 4)) {
+        const oh = oSec.heading.match(/^([AB])\s*[—-]\s*"(.+?)"/)
+        if (!oh) continue
+        const opt: DilemmaOption = { key: oh[1] as 'A' | 'B', title: oh[2], summary: '', effects: [], data: {} }
+        for (const line of oSec.body.split('\n')) {
+          const f = line.match(/^-\s*(\w+):\s*(.*)$/)
+          if (!f) continue
+          if (f[1] === 'summary') opt.summary = f[2].trim()
+          else if (f[1] === 'effects') {
+            opt.effects = parseIndexDeltas(f[2])
+            opt.pollDelta = parsePollDelta(f[2])
+          } else if (f[1] === 'data') opt.data = parseDataDeltas(f[2])
+        }
+        options.push(opt)
+      }
+      if (options.length === 2) out.push({ id: h[1], actor, year, title: h[2], context, options })
     }
   }
   return out

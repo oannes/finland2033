@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { ChevronDown, ChevronRight, Lock, Users } from 'lucide-react'
 import type {
   Action,
+  Dilemma,
   ActorId,
   GameContent,
   GameState,
@@ -579,6 +580,44 @@ export function RevealScreen({
         ) : (
           <WaitNote />
         )}
+      </div>
+    </div>
+  )
+}
+
+// ---------- Dilemma (between the decisions) ----------
+
+/** A social-contract dilemma in a quiet year: two options, one call, small
+ * real effects. Content from dilemmas.md. */
+export function DilemmaScreen({ dilemma, onChoose }: { dilemma: Dilemma; onChoose: (k: 'A' | 'B') => void }) {
+  const [picked, setPicked] = useState<'A' | 'B' | null>(null)
+  return (
+    <div className="space-y-6">
+      <SectionCard>
+        <p className="text-[11px] uppercase tracking-[0.2em] text-[#e8702a] mb-2">
+          {dilemma.year} · Between the decisions
+        </p>
+        <h2 className="font-playfair italic text-3xl sm:text-4xl text-white mb-3">{dilemma.title}</h2>
+        <p className="text-[15px] text-white/75 leading-relaxed">{dilemma.context}</p>
+      </SectionCard>
+      <div className="grid sm:grid-cols-2 gap-3">
+        {dilemma.options.map((o) => (
+          <button
+            key={o.key}
+            onClick={() => setPicked(o.key)}
+            className={`text-left rounded-2xl border p-5 transition-all ${
+              picked === o.key ? 'border-[#e8702a] bg-[#e8702a]/10' : 'border-white/10 hover:border-white/30'
+            }`}
+          >
+            <div className="font-playfair italic text-xl text-white mb-1.5">{o.title}</div>
+            <p className="text-[13px] text-white/60 leading-relaxed">{o.summary}</p>
+          </button>
+        ))}
+      </div>
+      <div className="flex justify-end">
+        <PrimaryButton disabled={!picked} onClick={() => picked && onChoose(picked)}>
+          Decide
+        </PrimaryButton>
       </div>
     </div>
   )

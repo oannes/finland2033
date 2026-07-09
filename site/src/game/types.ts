@@ -71,6 +71,26 @@ export interface Action {
   react?: Partial<Record<ActorId, string>>
 }
 
+/** A between-years social-contract dilemma (dilemmas.md): two options, small
+ * real effects, one per seat in 2030 and 2032. */
+export interface DilemmaOption {
+  key: 'A' | 'B'
+  title: string
+  summary: string
+  effects: IndexDelta[]
+  pollDelta?: number
+  data: Record<string, number>
+}
+
+export interface Dilemma {
+  id: string
+  actor: ActorId
+  year: number
+  title: string
+  context: string
+  options: DilemmaOption[]
+}
+
 export interface ClashSide {
   /** what this actor pays when they lose the confrontation */
   effects: IndexDelta[]
@@ -306,6 +326,7 @@ export interface GameContent {
   clashes: ClashEdge[]
   /** per-seat headline metrics (keymetrics.md); PM's comes from the election */
   keymetrics: KeyMetric[]
+  dilemmas: Dilemma[]
   /** the 2033 epilogue script (epilogue.md) */
   epilogue: EpilogueDoc
   /** Maria/Eetu 2033 ending lines by rung (personas/endings.md) */
@@ -353,6 +374,7 @@ export interface EndstateResult {
 export type Stage =
   | 'briefing'
   | 'tension'
+  | 'dilemma'
   | 'decide'
   | 'reveal'
   | 'endstate'
@@ -370,6 +392,8 @@ export interface GameState {
   /** government approval, 0–100; the 2031 election is scored from this */
   poll: number
   endstate: EndstateResult | null
+  /** dilemma id → chosen option (solo mode, between-years decisions) */
+  dilemmas?: Record<string, 'A' | 'B'>
 }
 
 export const PIVOTAL_BY_PHASE: Record<number, [ActorId, ActorId, ActorId]> = {
