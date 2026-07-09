@@ -95,7 +95,7 @@ function GdpChart() {
   const line = (vals: number[]) => vals.map((v, i) => `${i === 0 ? 'M' : 'L'}${x(years[i]).toFixed(1)},${y(v).toFixed(1)}`).join(' ')
   return (
     <div className="mt-8 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-      <p className="text-[11px] uppercase tracking-[0.2em] text-[#2f9db4] mb-1">The scoreboard</p>
+      <p className="text-[11px] uppercase tracking-[0.2em] text-[#2f9db4] mb-1">The lost years, measured</p>
       <p className="text-[12px] text-white/50 mb-3 leading-snug">
         GDP per capita, constant 2015 US$ (thousands): Finland and Sweden, 1997–2025.
       </p>
@@ -232,7 +232,7 @@ function SpiritAside({ name, tag, text }: { name: string; tag?: string; text: st
   )
 }
 
-function PrologueParas({ slug, last = 'mb-4', onAllDone }: { slug: string; last?: string; onAllDone?: () => void }) {
+function PrologueParas({ slug, last = 'mb-4', onAllDone, afterFirst }: { slug: string; last?: string; onAllDone?: () => void; afterFirst?: React.ReactNode }) {
   const sec = PROLOGUE[slug]
   if (!sec) return null
   // group consecutive spirit lines into one hover-revealed exchange
@@ -282,7 +282,12 @@ function PrologueParas({ slug, last = 'mb-4', onAllDone }: { slug: string; last?
             <Em text={b.text} />
           </p>
         )
-        return afterSpirits ? <QuickReveal key={i}>{para}</QuickReveal> : <span key={i}>{para}</span>
+        return (
+          <span key={i}>
+            {afterSpirits ? <QuickReveal>{para}</QuickReveal> : para}
+            {i === 0 && afterFirst}
+          </span>
+        )
       })}
     </>
   )
@@ -317,12 +322,12 @@ function Prologue({ mode }: { mode: 'solo' | 'workshop' }) {
               <h2 className="font-playfair italic text-3xl sm:text-4xl leading-tight mb-5">
                 {PROLOGUE['lost-years']?.meta.headline}
               </h2>
-              <PrologueParas slug="lost-years" last="" onAllDone={() => setRestRevealed(true)} />
-              {restRevealed && (
-                <QuickReveal>
-                  <GdpChart />
-                </QuickReveal>
-              )}
+              <PrologueParas
+                slug="lost-years"
+                last=""
+                onAllDone={() => setRestRevealed(true)}
+                afterFirst={<div className="mb-6"><GdpChart /></div>}
+              />
             </div>
 
             {restRevealed && (
