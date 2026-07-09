@@ -734,10 +734,8 @@ export function InterludeScreen({
       )}
 
       <div className="flex justify-end">
-        {(allRead || interlude.messages.length === 0) ? (
+        {(allRead || interlude.messages.length === 0) && (
           <PrimaryButton onClick={onContinue}>On to {toYear} →</PrimaryButton>
-        ) : (
-          <span className="text-[12px] text-white/35 py-2">the thread reveals as you read…</span>
         )}
       </div>
     </div>
