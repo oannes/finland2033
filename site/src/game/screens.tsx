@@ -566,51 +566,6 @@ export function RevealScreen({
         })}
       </div>
 
-      {result.clashes.length > 0 && (
-        <SectionCard>
-          <p className="text-[11px] uppercase tracking-[0.2em] text-white/40 mb-3">The collisions</p>
-          <div className="space-y-3">
-            {result.clashes.map((c, i) => (
-              <div key={i} className="border-l-2 border-[#2f9db4]/40 pl-3">
-                <div className="text-sm text-white/85 font-playfair italic">{c.edge.title}</div>
-                <p className="text-[13px] text-white/60 leading-relaxed mt-0.5">
-                  {c.line} <span className="text-white/35">(the {SHORT_ROLE[c.loser]} pays)</span>
-                </p>
-              </div>
-            ))}
-          </div>
-        </SectionCard>
-      )}
-
-      <SectionCard>
-        <p className="text-[11px] uppercase tracking-[0.2em] text-white/40 mb-3">What the seven decided</p>
-        <div className="grid sm:grid-cols-2 gap-x-6 gap-y-2 mb-5">
-          {ACTORS.map((a) => {
-            const act = phase.actions[a].find((x) => x.id === result.choices[a])
-            return (
-              <div key={a} className="flex items-center gap-2.5 text-[13px] text-white/70">
-                <Portrait slots={ACTOR_PORTRAITS[a]} era={era} name={a} size="xs" />
-                <span>
-                  <span className="font-semibold text-white/85">{a}</span>
-                  {': '}
-                  {act ? `“${act.title}”` : '—'}
-                </span>
-              </div>
-            )
-          })}
-        </div>
-        {result.hooks.length > 0 && (
-          <div className="space-y-2 border-t border-white/10 pt-4">
-            {result.hooks.map((h) => (
-              <div key={h.actionId} className="text-sm text-white/70 leading-relaxed flex gap-2">
-                <span className="font-semibold text-white/90 shrink-0">{h.actor}:</span>
-                <Markdown text={interpolateNumbers(narrativeNote(h.text), numCtx)} className="text-sm" />
-              </div>
-            ))}
-          </div>
-        )}
-      </SectionCard>
-
       <div className="flex justify-end">
         {canAdvance ? (
           <PrimaryButton onClick={onContinue}>
