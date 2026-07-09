@@ -303,9 +303,9 @@ quote: The machines that took the entry-level desks are learning to lift patient
 ## Who you are
 You direct Finland's largest wellbeing county and chair the county directors' network; when you commit, the counties commit. Your county loses care workers every month while its queues grow; by 2033 the sector is short 57,000 people nationally. Every promise the state makes about services is a promise your floors have to keep, and every failure has a name, a ward and a relative with a phone.
 ## Endogenous levers
-- **Execution:** whatever is signed becomes real, or doesn't, on your service floor. Helsinki decides; you deliver, or the decision is a press release.
-- **The dignity dial:** every rollout can be run for throughput or for the person in the queue. You set that dial, and public trust follows it.
-- **The anchor order:** county demand is the largest purchase in the country. What you commit to gets built; what you withhold from stalls.
+- **Execution:** Nothing Helsinki signs is real until your service floors deliver it. You can make any national decision a success or a press release.
+- **The dignity dial:** Every rollout can be run for throughput or for the person in the queue. You set that dial, and public trust follows it.
+- **The anchor order:** County demand is the largest purchase in the country. What you commit to gets built; what you withhold from stalls.
 
 ## What you cannot control
 - The demographic arithmetic: 57,000 fewer workers by 2033, on schedule, reform or no reform.
@@ -314,15 +314,15 @@ You direct Finland's largest wellbeing county and chair the county directors' ne
 - Public trust, which one viral clip from one benefits office can move further than a year of good service.
 
 ## Objectives
-1. Service promise: care queues within statutory limits through 2033 despite −57k workforce (care_gap falling).
-2. Never be the scandal: no county-attributable AI harm event that breaks trust (LEG-linked).
-3. Savings without butchery: realize framework AI savings while keeping LEILA-type staff from resigning en masse.
+1. Keep the service promise: care queues within statutory limits through 2033, with 57,000 fewer workers.
+2. Never be the scandal: no AI harm event in your county that breaks the country's trust.
+3. Savings without butchery: deliver the framework's AI savings without your nurses resigning in waves.
 
 ## Standing tensions
-- **PM:** sets your budget assuming the savings; you deliver them or become the excuse.
-- **SAK:** organizes your staff; your deployment practice is their grievance feed or their showcase.
-- **HVK:** wants your systems on the reserve; you want the reserve free and someone else to pay.
-- **STARTUP:** you are the customer that could anchor domestic vendors; if procurement law and your risk appetite allow.
+- **PM:** Her budget already spends your savings. You deliver them, or you become her excuse.
+- **SAK:** They organize your staff. Every deployment you run is either their showcase or their grievance feed.
+- **HVK:** He wants your systems in his doctrine and his drills. Fine, as long as someone else pays and the wards never stop.
+- **STARTUP:** You would love to anchor a domestic vendor. Procurement law and your own risk appetite keep saying no.
 
 ## Phase roles
 - **P1 (pivotal):** the freed minutes are yours to assign, to savings or to the bedside; the program's legitimacy follows your wards.
@@ -343,9 +343,9 @@ quote: Our member companies now buy their thinking the way they buy electricity:
 CEO of Finland's largest business lobby, 2028: Nokia, Kone, Wärtsilä, Metso down to 4,000 SMEs; plus, by courtesy and friction, the hyperscalers' Finnish country organizations. Your members split exactly like the country: exporters who want frictionless US frontier access, energy-and-infrastructure members who smell a domestic compute boom, and SMEs who mostly want someone to make the compliance table one page. You also carry the employer side of the eventual levy fight.
 
 ## Endogenous levers
-- **The order book:** your members' capital underwrites builds, or waits in dividends. Bankability is yours to grant.
-- **The public verdict:** one press conference sets "industry's position". Governments price it within the week.
-- **Geopolitical weight:** your exporters live on access lanes. Where you lean, Washington or Brussels, that argument gains a constituency, and the securitisers gain an opponent.
+- **The order book:** Your members' capital can underwrite any national build, or wait in dividends. You decide what counts as bankable.
+- **The public verdict:** One press conference sets "industry's position". Governments price it within the week.
+- **Geopolitical weight:** Your exporters live on access lanes. Where you lean, Washington or Brussels, that side gains a constituency.
 
 ## What you cannot control
 - The global capital cycle and the frontier's pace; your members ride both and steer neither.
@@ -354,15 +354,15 @@ CEO of Finland's largest business lobby, 2028: Nokia, Kone, Wärtsilä, Metso do
 - Labour's answer, which is not yours to give.
 
 ## Objectives
-1. PRO ≥ 7 by 2033: Finland gains, not loses, private AI investment across the cycle.
-2. Access preserved: exporting members keep frontier access in every phase (whatever the public sector runs).
-3. Levy contained: no open-ended automation levy; if one comes (P3), it is capped, sunset-claused, and buys genuine labour peace.
+1. Finland gains private AI investment across the cycle, not loses it.
+2. Exporting members keep frontier access in every phase, whatever the public sector runs.
+3. No open-ended automation levy. If one comes, it is capped, sunset-claused, and buys real labour peace.
 
 ## Standing tensions
-- **PM:** your growth wing's champion until sovereignty polls better; you keep receipts.
-- **SAK:** the levy is your red line and their price of consent; you both know a deal exists; at a number neither has said aloud.
-- **HVK:** every vetting requirement is member friction; every attack you didn't prepare for is member catastrophe. You oscillate.
-- **STARTUP:** you speak for them until Nokia-scale interests diverge from theirs; in P2 they will notice.
+- **PM:** You are her growth wing's champion until sovereignty polls better than growth. You keep receipts.
+- **SAK:** The levy is your red line and their price of consent. You both know a deal exists, at a number neither of you has said aloud.
+- **HVK:** Every vetting requirement he writes is member friction, and every attack he prevented is invisible. You oscillate between funding him and fighting him.
+- **STARTUP:** You speak for them, until Nokia-scale interests diverge from theirs. They will notice the moment it happens.
 
 ## Phase roles
 - **P1 (modifier):** industry's position prices the tender: neutrality, a domestic premium, or the export venture.
@@ -383,9 +383,9 @@ quote: The best models are no longer sold, they are allocated, like oil in warti
 Director of HVK, 2028. Your agency stockpiles fuel, grain and medicine for a country that plans for the worst as a civic habit. Since 2026 you have co-authored (with Traficom) guidance on secure AI-agent deployment, and you have been arguing, to polite smiles, that inference capacity now belongs in the same category as diesel. The 2028 correction is your window: hardware is cheap, halls are empty, and TR-7 (11 cut cables) makes your case nightly.
 
 ## Endogenous levers
-- **Requirements power:** security clauses written into a tender before publication bind for a decade. After publication, every fix is a renegotiation.
-- **The securitisation lever:** emergency framing gets you money and powers fast, and spends public trust slowly. The bill arrives after you have left the room.
-- **Doctrine:** your exercises decide whether the next crisis is a drill or a trauma. Resilience built with society's consent outlasts resilience imposed on it.
+- **Requirements power:** Security clauses written into a tender before publication bind for a decade. You can harden any procurement, if you get there before the signing.
+- **The securitisation lever:** Emergency framing gets you money and powers fast, and spends public trust slowly. You can pull it; you cannot un-pull it.
+- **Doctrine:** Your exercises decide whether the next crisis is a drill or a trauma.
 
 ## What you cannot control
 - Whether the gate ever comes, and when; access politics is made in Washington, not Helsinki.
@@ -394,15 +394,15 @@ Director of HVK, 2028. Your agency stockpiles fuel, grain and medicine for a cou
 - The frontier's pace, which makes every fallback tier feel obsolete on delivery.
 
 ## Objectives
-1. RESERVE=full by end of P1; tested for real in P2 (a paper reserve will be found out).
-2. RES ≥ 7 by 2033: Finland runs core services 30+ days without frontier access, demonstrated in exercises.
-3. Doctrine export: "the Finnish model" for compute resilience cited by NATO/EU by endstate (PRO side-benefit).
+1. Security in the architecture before it is bought, not patched in after (SECURE_ARCH=yes).
+2. Finland runs core services 30+ days without frontier access, and proves it in exercises.
+3. The next crisis is remembered as a drill, not a trauma (CRISIS_LEG=managed).
 
 ## Standing tensions
-- **PM:** you are a cost until you are a saviour; your invoices compete with defence's 5%.
-- **TI:** your vetting is their friction; every certificate you require is a week of their members' time.
-- **STARTUP:** views you as the state's way of making small companies carry big-state duties.
-- **COUNTY:** will demand reserve priority for health systems that you may have to ration in a real event.
+- **PM:** To her you are a cost until the day you are a saviour. Your invoices compete with defence's five percent.
+- **TI:** Your vetting is their friction. They will thank you at the first blackout, in private.
+- **STARTUP:** They think you make small companies carry big-state duties. They are right; the state is small and the duties are not.
+- **COUNTY:** She will demand priority for the hospitals. In a real event, you may have to ration her too.
 
 ## Phase roles
 - **P1 (modifier):** your clauses decide what the platform costs in resilience: the premium, the annex, or the shadow state.
@@ -423,9 +423,9 @@ quote: Each model generation now helps design the next. The people closest to it
 Rector of Finland's flagship technical university, 2028. Your CS and AI programmes are oversubscribed; your graduates are simultaneously the most employable and, at entry level, the most automatable people in the country (TR-6). AMD bought Silo AI; your best doctoral students get frontier-lab offers at 5× Finnish salaries. You run FCAI (Finnish Center for AI) jointly with Helsinki and VTT, and your researchers built the open Poro/Viking model lineage that any sovereign stack would depend on.
 
 ## Endogenous levers
-- **The pipeline:** curriculum decided today is the labour market of 2030–33. Nothing you decide lands sooner; nothing lands harder.
-- **Certification authority:** your evaluations turn political claims into tested facts; whoever measures the machine governs the argument about it.
-- **Prestige:** where the university goes, students and funding follow, with a four-year lag either way.
+- **The pipeline:** The curriculum you set today is the labour market of 2030–33. Nothing you decide lands sooner; nothing lands harder.
+- **Certification authority:** Your evaluations turn political claims into tested facts. Whoever measures the machine governs the argument about it.
+- **Prestige:** Where the university goes, students and funding follow, with a four-year lag either way.
 
 ## What you cannot control
 - The talent gradient: the best tools and the best salaries are abroad, and every graduating class knows it.
@@ -433,14 +433,14 @@ Rector of Finland's flagship technical university, 2028. Your CS and AI programm
 - State funding decisions, and the stack the country finally lands on; you train people for it either way.
 
 ## Objectives
-1. Talent balance: TUOMAS persona (talent meter) ends 2033 in Finland; metaphorically: net brain drain ≤ zero.
-2. Relevance: Aalto-built evaluation/verification methods are written into whatever compact or attestation regime wins.
-3. Pipeline honesty: youth_u for your graduates below national youth_u by 2033.
+1. The best graduates stay: Finland's education investment pays back here, not abroad.
+2. Research keeps a role: the university still owns questions the machines cannot close.
+3. Your measurements matter: whatever compact or attestation regime wins, its evaluations are built on your methods.
 
 ## Standing tensions
-- **STARTUP / TI:** they want your graduates now, trained on today's stack; you must guess 2033's stack.
-- **PM:** funds you counter-cyclically or not at all.
-- **SAK:** suspicious that "lifelong learning" means outsourcing their members' adjustment costs to your MOOCs.
+- **STARTUP / TI:** They want your graduates now, trained on today's stack. You have to guess 2033's.
+- **PM:** Education is always the answer in her speeches and rarely in her framework. She funds you counter-cyclically or not at all.
+- **SAK:** They suspect "lifelong learning" means outsourcing their members' adjustment costs to your online courses. They are not entirely wrong.
 
 ## Phase roles
 - **P1 (modifier):** the faculty budget picks who the decade trains: the few who build, the many displaced, or the machine tutors. TALENT_PIPE is set here.
@@ -461,9 +461,9 @@ quote: The price of machine cognition collapses every quarter, everywhere, for e
 Founder-CEO of a Turku-based biotech-AI company (drug-response prediction for Nordic biobank data; 85 staff, Series B, ~40% US investors). You stand in for the whole emerging-tech sector: what you choose, a thousand Finnish deep-tech firms choose with you. Your models fine-tune on frontier APIs; your data is the most GDPR- and sovereignty-sensitive kind that exists (Finnish genomes, Findata-licensed).
 
 ## Endogenous levers
-- **Mobility:** you can build here or leave, and everyone knows it. Your location choice is the sector's forecast.
-- **Jobs:** your hiring plan is measurable; in Eetu's cohort, this year.
-- **Proof:** one working product legitimizes a whole stack. The state can declare; only you can demonstrate.
+- **Mobility:** You can build here or leave, and everyone knows it. Your address is the sector's forecast.
+- **Jobs:** Your hiring plan is measurable, in Eetu's cohort, this year.
+- **Proof:** The state can declare; only you can demonstrate. One working product legitimizes a whole stack.
 
 ## What you cannot control
 - Model capability and API pricing, set by companies a thousand times your size.
@@ -472,15 +472,15 @@ Founder-CEO of a Turku-based biotech-AI company (drug-response prediction for No
 - The genome data's legal status; one regulation away from being your moat or your liability.
 
 ## Objectives
-1. Survive Series C in whichever stack regime wins (PRO-linked).
-2. Keep the biobank moat: never lose Findata licence (one wrong stack choice under sovereignty rules can).
-3. Optionality: avoid any phase ending with your only customer being the Finnish state *and* your only model being one you're not allowed to run.
+1. Grow the company sustainably; Series C closes before the end of 2033.
+2. Keep the biobank moat: never lose the Findata licence.
+3. Keep options open: never end a phase with the Finnish state as your only customer and a forbidden model as your only model.
 
 ## Standing tensions
-- **PM:** wants you as a sovereignty showcase; you want to not be a showcase, you want to be a company.
-- **TI:** speaks for you until your interests diverge from Nokia-scale members' (they will, in P2).
-- **AALTO:** your talent source and your competitor for it.
-- **HVK:** their security vetting is a cost to you in P1 and possibly your business model by P3.
+- **PM:** She wants you as a sovereignty showcase. You want to be a company.
+- **TI:** They speak for you until Nokia-scale interests diverge from yours. In the stack fight, they will.
+- **AALTO:** Your talent source, and your competitor for the same talent.
+- **HVK:** His vetting is a cost to you in 2027, and possibly your business model by 2031.
 
 ## Phase roles
 - **P1 (modifier):** where you bid colours the platform: the champion consortium, merit subcontracts, or the Turku deal.
@@ -580,6 +580,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-PM-A — "Book the savings"
 - tag: A
+- lever: Financial leverage
 - summary: Send the scale-up bill to Parliament unchanged: full budget, binding savings targets, staffing cuts decided by managers. In plain terms, you promise the markets that automation will pay for the state's future, starting now. You do it because the framework is already spent: without these savings, you personally announce cuts worth 1.9% of GDP. The offices your own voters work in take the shock.
 - effects: PRO +1.0, LEG −0.7, POLL −6
 - data: pub_ai +2, books +8, bedside -3, share -3
@@ -592,6 +593,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-PM-B — "Protect the experience"
 - tag: B
+- lever: Political capital
 - summary: Rewrite the bill before sending it: the platform still comes, but slower, with service levels and jobs guaranteed during the transition. You do it because a government elected by public-sector workers cannot automate them by decree and expect to govern afterwards. The price is paid in credibility: the savings arrive late and smaller, and the bond desks see it.
 - effects: LEG +0.7, PRO −0.4, POLL +4
 - data: books -4, bedside +3, share +3
@@ -604,6 +606,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-PM-H — "Rent the state"
 - tag: H
+- lever: Financial leverage
 - summary: Cancel the state's own build and sign a turnkey contract instead: the winning global vendor runs Finland's public platform and takes a share of the savings. You do it because it is the only version where the money is certain and the delivery risk is someone else's. The catch sits in the ownership line: the state's plumbing answers to a foreign board.
 - effects: PRO +0.6, LEG −0.5, POLL −3
 - data: pub_ai +3, books +12, days -8, stay -6, share -4
@@ -621,6 +624,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-SAK-A — "Trade jobs for terms"
 - tag: A
+- lever: Consent
 - summary: Go to the table and sell your consent at the highest price it will ever fetch: accept that desks will close, and demand gain-sharing, retraining rights and a seat on the program board in return. You do it because the automation is coming either way, and terms negotiated now beat terms dictated later. The members who leave pay for the ones who stay.
 - effects: LEG −0.4, POLL +2
 - data: share +5, books +3, ladder +2
@@ -634,6 +638,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-SAK-B — "Defend every desk"
 - tag: B
+- lever: The ballot
 - summary: Refuse. Demand a law forbidding dismissals for the decade, and keep the strike ballot armed on the table. You do it because a union that trades away jobs stops being believed, and being believed is the only asset you truly hold. The program gets slower and smaller, and the young outside the walls keep waiting.
 - effects: LEG +0.5
 - data: share +4, books -4, ladder -2
@@ -647,6 +652,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-SAK-H — "The union becomes the platform"
 - tag: H
+- lever: Consent
 - summary: Do the unheard-of: register a cooperative, buy the tools, and rent your members' machine-assisted work back to the state as a service. You do it because if work is becoming software, then the union should own some software. Nobody else at the table has a category for what you become.
 - effects: LEG −0.2, PRO +0.3, POLL −2
 - data: share +8, ladder +3, trust -2, books +2
@@ -663,6 +669,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-COUNTY-A — "Minutes to savings"
 - tag: A
+- lever: Execution
 - summary: Sign the commitment the ministry wants: as the machine takes over the paperwork, convert the freed hours into smaller staff lists and shorter queues. You do it because you are short 57,000 workers by 2033 and arithmetic is not optional. The visits get shorter, and the people at the bedside notice first.
 - effects: PRO +0.5
 - data: books +5, bedside -6, care_gap -1, trust -2
@@ -673,6 +680,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-COUNTY-B — "Minutes to the bedside"
 - tag: B
+- lever: The dignity dial
 - summary: Sign a different commitment: every hour the machine frees goes back to the patients: longer visits, fuller wards, and the paperwork simply dies. You do it because care is the one service where presence is the product, and a county that forgets that cannot be trusted with machines. The savings the state already booked from you do not come.
 - effects: LEG +0.4
 - data: bedside +7, books -3, trust +2
@@ -683,6 +691,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-COUNTY-H — "Let the lab run care"
 - tag: H
+- lever: The anchor order
 - summary: Take the meeting the others refuse: a frontier AI lab offers to run care services end to end, better and cheaper, on its own systems. You do it because your patients are waiting now and the lab's results are real. What Finland gives up is in the small print: the data, the jobs, and the ability to say no later.
 - effects: PRO +0.7, LEG −0.6, POLL −2
 - data: bedside +5, care_gap -3, days -8, share -5, trust -4, stay -4
@@ -700,6 +709,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-TI-A — "Cheapest capable vendor"
 - tag: A
+- lever: The public verdict
 - summary: Publish industry's position: the state must buy the best deal on earth, no home-team sentiment. You do it because your members pay the taxes behind every romantic procurement, and credible neutrality is what keeps foreign capital treating Finland as a serious place. The Finnish bidders lose their decade.
 - effects: PRO +0.5, POLL −1
 - data: books +4, pull +2, stay -4
@@ -712,6 +722,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-TI-B — "A domestic premium"
 - tag: B
+- lever: The public verdict
 - summary: Publish the opposite: pay more, this once, and buy Finnish, because the state's platform is the reference that builds an export industry. You do it because order books are what your members ultimately need, and a domestic AI sector would feed them for twenty years. Today's taxpayer covers the difference.
 - effects: PRO +0.2
 - data: stay +5, pull +1, books -3
@@ -724,6 +735,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-TI-H — "The state as a product"
 - tag: H
+- lever: The order book
 - summary: Propose the deal nobody has dared write down: a joint venture of state and industry that packages the automated Finnish state and sells it to other countries. You do it because Finland's real export was always institutions, and this is the century's one chance to price them. The state stops being neutral the day it has shareholders.
 - effects: PRO +0.8, LEG −0.4
 - data: pull +6, stay +4, books +2, trust -3, share -3
@@ -739,6 +751,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-AALTO-A — "Spearhead the few"
 - tag: A
+- lever: The pipeline
 - summary: Pour the faculty budget into the top: doctoral schools and elite AI engineering, the few hundred who can build the state's machine. You do it because if Finns do not build it, Finland merely operates it, and a university's deepest duty is capability. The ten thousand displaced clerks become someone else's syllabus.
 - effects: PRO +0.4
 - data: ladder -3, pub_ai +1, stay +2
@@ -750,6 +763,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-AALTO-B — "A floor for the many"
 - tag: B
+- lever: The pipeline
 - summary: Spread the budget wide: retraining for the displaced, AI literacy in every degree, nobody left unable to read the new state. You do it because the university's promise was never only to the brilliant, and a country of bystanders is ungovernable. The elite pipeline thins, and the platform gets built by others.
 - effects: LEG +0.4
 - data: ladder +6, share +2, books -2
@@ -761,6 +775,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-AALTO-H — "AI tutors take the lectures"
 - tag: H
+- lever: Prestige
 - summary: Accept the vendor's standing proposal: machine tutors teach the courses, and the university narrows to setting and examining the standard. You do it because it costs a tenth as much, scales to everyone at once, and, if you are honest, teaches the average course better than the average lecturer. What remains of a university afterwards is your gamble.
 - effects: PRO +0.3, LEG −0.3
 - data: ladder +3, books +3, trust -2, stay -3
@@ -777,6 +792,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-STARTUP-A — "Bid as the champion"
 - tag: A
+- lever: Proof
 - summary: Put your company's name at the front of the Finnish consortium bidding for the state platform. You do it because somebody local has to become big enough to matter, and the state's contract is the only ladder to that size. If the build fails, your name is on the failure, and everyone who backed a champion pays with you.
 - effects: PRO +0.4
 - data: stay +6, days +2, sov_share +2
@@ -789,6 +805,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-STARTUP-B — "Fair market, no favours"
 - tag: B
+- lever: Mobility
 - summary: Stay out of the consortium, take subcontracts on merit, keep scaling your own product abroad. You do it because companies built on political favours die of them later, and your investors did not fund a national monument. The state's plumbing goes to whoever wins, and it will not be Finland.
 - effects: PRO +0.2
 - data: pull +4, stay -4
@@ -799,6 +816,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-STARTUP-H — "The reverse acquihire"
 - tag: H
+- lever: Proof
 - summary: Use the one asset only you hold, credibility with the labs, to broker a wild deal: golden visas and a data-access agreement that moves a frontier lab's team to Turku wholesale. You do it because talent is the only import that compounds, and homegrown scale takes a decade Finland does not have. The price is paid in data and in trust.
 - effects: PRO +0.6, RES −0.3
 - data: stay +5, pub_ai +2, days -3, trust -3, ladder -2
@@ -814,6 +832,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-HVK-A — "Pay the premium"
 - tag: A
+- lever: Requirements power
 - summary: Use your statutory power over the tender: exit clauses, data on Finnish soil, tested fallbacks, in every contract, at fifteen percent extra. You do it because your office exists for the day the access stops, and cheap dependencies are how countries find out what they should have paid. The fifteen percent comes out of services people can see.
 - effects: RES +1.0, PRO −0.3
 - data: days +8, books -4
@@ -825,6 +844,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-HVK-B — "Capacity now"
 - tag: B
+- lever: Requirements power
 - summary: Wave the annex through: let the program buy maximum capability for the money, single foreign supplier and all. You do it because services visibly failing now is also a security risk, and insurance against a maybe is a hard sell in a tight budget. You file your objection where filings go.
 - effects: RES −0.3, PRO +0.3
 - data: books +4, days -2
@@ -836,6 +856,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 
 ### P1-HVK-H — "The analog shadow state"
 - tag: H
+- lever: Doctrine
 - summary: Order the old thing at full scale: a manual fallback administration, paper, people, yearly drills, able to run the country with every machine dark. You do it because everything digital is somebody else's eventually, and your grandparents kept grain in silos for the same reason. It costs like an army and looks like paranoia until the day it does not.
 - effects: RES +1.2, PRO −0.6, POLL −2
 - data: days +15, books -8, pub_ai -2
@@ -1261,6 +1282,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-PM-A — "An enforceable deal"
 - tag: A
+- lever: Political capital
 - summary: Declare that the state's core systems run on the European tier: machines Finland's own courts can reach, whatever happens in Washington. In effect, you accept in public that Finnish services will run about twenty months behind the world's best. You do it because a guarantee you cannot enforce is a hope, and you were not elected to govern on hope. The gap chart runs on every front page with your name under it.
 - effects: RES +0.8, PRO −0.4, POLL −4
 - data: sov_share +8, days +8, books -4
@@ -1271,6 +1293,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-PM-B — "The best machines"
 - tag: B
+- lever: Financial leverage
 - summary: Sign the allied access agreement: the best models in the world, under audit rights, end-use attestations, and a lane that someone else can close. You do it because every service works better this year and the savings math finally closes. What you sign away is quieter: the terms are written, and rewritten, in another capital.
 - effects: PRO +0.8, RES −0.5, POLL +3
 - data: pub_ai +3, books +4, days -6, sov_share -4
@@ -1281,6 +1304,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-PM-H — "Auction every workload"
 - tag: H
+- lever: Financial leverage
 - summary: Refuse to pick a national engine at all: order both stacks to compete for every workload, service by service, best offer wins. You do it because picking winners is how governments get technology wrong, and markets exist for exactly this question. What you get is three systems, two legal regimes, and the org chart as the country's real architecture.
 - effects: PRO +0.3, RES −0.4, LEG −0.4, POLL −3
 - data: books +3, days -4, pull +2, trust -2
@@ -1296,6 +1320,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-COUNTY-A — "Care that can't be cut off"
 - tag: A
+- lever: The anchor order
 - summary: Move the counties' systems onto the European tier: records, eligibility, triage, everything that must never stop. You do it because care is the one service where an interruption is measured in lives, and you will not run Finnish wards on someone else's kill-switch. The price is this year's medicine: the sharper diagnostic models stay out of reach.
 - effects: RES +0.5, PRO −0.3
 - data: sov_share +5, days +5, bedside -1
@@ -1306,6 +1331,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-COUNTY-B — "Best medicine now"
 - tag: B
+- lever: The dignity dial
 - summary: Buy the frontier lane for the wards: earlier diagnoses, better triage, fewer misses, starting this quarter. You do it because the patient in front of you outranks a scenario, and no continuity argument survives a missed cancer. The machines answer to another jurisdiction; you sign anyway.
 - effects: PRO +0.5, RES −0.3
 - data: bedside +4, care_gap -2, days -5
@@ -1316,6 +1342,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-COUNTY-H — "The data dowry"
 - tag: H
+- lever: The anchor order
 - summary: Accept the lab's offer: the counties' anonymized care data, in exchange for its best care tier, free. You do it because no budget you will ever hold can buy what this trade gets for nothing. The country's most sensitive dataset becomes someone's training asset, and there is no clause for taking it back.
 - effects: PRO +0.6, LEG −0.5
 - data: bedside +6, care_gap -2, days -6, share -4, trust -4
@@ -1331,6 +1358,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-STARTUP-A — "Anchor tenant at home"
 - tag: A
+- lever: Proof
 - summary: Move your company's platform to the European tier and announce it: your compute bill becomes the sovereign build's first real revenue. You do it because somebody's logo has to be on the domestic stack before anyone else believes in it, and yours is the one that counts. Your models fall behind the frontier, and your investors say so out loud.
 - effects: RES +0.4, PRO −0.2
 - data: sov_share +4, days +3, stay +5, pull -2
@@ -1343,6 +1371,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-STARTUP-B — "Frontier abroad, HQ here"
 - tag: B
+- lever: Mobility
 - summary: Sign the attestations, take the lane, keep the frontier under your product, and keep the headquarters in Turku. You do it because your competitors run on the best machines on earth and second-best is a going-out-of-business strategy. The sovereign build loses its flagship, and every founder watching does what you did.
 - effects: PRO +0.5
 - data: pull +4, stay -2, days -3
@@ -1355,6 +1384,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-STARTUP-H — "Leave loudly"
 - tag: H
+- lever: Mobility
 - summary: Relocate the company now, and publish the letter saying exactly why: the market too small, the rules too slow, the stack politics unbearable. You do it because your duty is to the company's survival, and if you must go, the country should at least hear the reason. You become the case study everyone cites, for years.
 - effects: PRO −0.5, LEG −0.4, POLL −3
 - data: stay -12, pull -4, ladder -2, books -2
@@ -1372,6 +1402,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-SAK-A — "Counterparties we can sue"
 - tag: A
+- lever: Consent
 - summary: Take labour's position public: no job guarantee counts unless a European court can enforce it, so the state must run on machines within reach of European law. You do it because every right your members hold is paper if the counterparty is beyond the law that wrote it. The capability camp calls you the brake; you have been called worse.
 - effects: LEG +0.4
 - data: share +4, days +2
@@ -1382,6 +1413,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-SAK-B — "A bigger pie to share"
 - tag: B
+- lever: Consent
 - summary: Accept the lane, on one condition: deployment and jobs keep growing. You do it because your members' wages are paid out of productivity, not principles, and a richer machine leaves more on the table to bargain over. What cannot be sued can still be struck against. You hope.
 - effects: PRO +0.3
 - data: share +2, books +2, days -2
@@ -1392,6 +1424,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-SAK-H — "A treaty with the lab"
 - tag: H
+- lever: Stalemate power
 - summary: Open your own channel and negotiate labour's terms directly with the frontier lab: training funds, deployment rules, member protections. A union agreement with an AI company, state not invited. You do it because the state is slow and the lab is where the power actually moved. The national bargaining table learns about it from the press.
 - effects: LEG −0.5, PRO +0.2
 - data: share +7, trust -3, days -2
@@ -1405,6 +1438,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-TI-A — "Anchor the domestic build"
 - tag: A
+- lever: The order book
 - summary: Commit your members as the European build's first industrial customers: compute demand, long contracts, capital for the halls. You do it because autonomy is infrastructure, and infrastructure is the one thing industry knows how to will into existence. Your members pay above market for years and expect to be remembered for it.
 - effects: RES +0.4, PRO −0.2
 - data: days +4, compute_mw +40, pull -2
@@ -1415,6 +1449,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-TI-B — "Competitiveness first"
 - tag: B
+- lever: Geopolitical weight
 - summary: Advise your members to buy the best tools on earth wherever they run, and let the sovereign build find other customers. You do it because your exporters compete against firms that owe nothing to anyone's stack, and sentiment is not a line item. Industry's contribution stays what it always was: taxes, jobs, and staying alive.
 - effects: PRO +0.4
 - data: pull +4, days -2
@@ -1425,6 +1460,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-TI-H — "The compute embassy"
 - tag: H
+- lever: Geopolitical weight
 - summary: Organize the consortium nobody expected: your biggest members build their own AI hall inside US jurisdiction: a private, guaranteed lane beyond both Helsinki's and Brussels' reach. You do it because access is existential and this secures it permanently, treaty or no treaty. Finland's leverage over its own industry goes with it.
 - effects: PRO +0.5, RES −0.5
 - data: pull +6, days -6, stay -4, compute_mw -20
@@ -1440,6 +1476,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-AALTO-A — "Train for what we run"
 - tag: A
+- lever: The pipeline
 - summary: Point the curriculum at the European stack, the machines Finland's state and hospitals will actually operate. You do it because a graduate who is needed here stays here, and the sovereign build fails without hands. Your best students grumble that you train them for the second-best machine, and some leave to prove the point.
 - effects: RES +0.3
 - data: ladder +4, sov_share +2, stay +2
@@ -1451,6 +1488,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-AALTO-B — "Train at the frontier"
 - tag: B
+- lever: The pipeline
 - summary: Put the students on the best models on earth, through joint labs on the lane. You do it because a university's job is the frontier, wherever it is, and second-rate tools teach second-rate instincts. What you produce is world-class and world-portable, and the world has the address of neither.
 - effects: PRO +0.4
 - data: ladder +2, stay -3, pull +2
@@ -1462,6 +1500,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-AALTO-H — "Sell the pipeline"
 - tag: H
+- lever: The pipeline
 - summary: Sign the lab's offer: it funds the programs, sets half the syllabus, and takes first pick of the graduates, with return clauses after five years abroad. You do it because the money is real, the training genuinely is the best, and the clauses might even hold. The university becomes a supplier with a crest.
 - effects: PRO +0.4, LEG −0.4
 - data: books +3, ladder +2, stay -4, trust -2
@@ -1478,6 +1517,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-HVK-A — "Run-alone doctrine"
 - tag: A
+- lever: Requirements power
 - summary: Invoke the mandate: critical state functions may run only on infrastructure Finland can inspect and operate unassisted. You do it because your office answers one question, can the country function alone, and every month on the lane makes the answer worse. Every ministry whose tools you just downgraded files a complaint.
 - effects: RES +0.8, PRO −0.3
 - data: days +8, books -3
@@ -1488,6 +1528,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-HVK-B — "Dependence with drills"
 - tag: B
+- lever: Doctrine
 - summary: Accept the lane, but engineer it survivable: quarterly exit drills, escrowed model weights, a tested domestic fallback tier. You do it because dependence denied is dependence unmanaged, and your job is not purity, it is survival. Both camps distrust you for a week and quote you for years.
 - effects: RES +0.4, PRO +0.2
 - data: days +4
@@ -1499,6 +1540,7 @@ Pivotal actors (PM, COUNTY, STARTUP): tags feed `combos.md`. Modifier actors: ef
 
 ### P2-HVK-H — "Rent out our resilience"
 - tag: H
+- lever: Doctrine
 - summary: Offer Finland to the alliance as its civil-resilience laboratory: everyone's drills run here, everyone's funding follows, and the obligations run both ways. You do it because resilience is the one export Finland holds in surplus, and pooled sovereignty is still sovereignty, with better financing. 'Alone' stops being the operative word of your doctrine.
 - effects: RES +0.6, LEG −0.3
 - data: days +8, books +3, trust -2, sov_share -3
@@ -1954,6 +1996,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-PM-A — "Pay the bridge"
 - tag: A
+- lever: Financial leverage
 - summary: Stand at the podium with the Treasury's published savings and assign them: retraining people can sue for, care reinvestment, a permanent reform unit. You do it because the people who paid for that number can read it too, and the election is months away. The balance sheet waits another parliament.
 - effects: LEG +0.6, POLL +2
 - data: share +6, ladder +4, bedside +2, books -8
@@ -1969,6 +2012,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-PM-A2 — "The half-bridge"
 - tag: A
+- lever: Financial leverage
 - summary: Fund the retraining guarantee now; defer the care reinvestment to 'when conditions allow'. You do it because a half answer you can afford beats a full answer you cannot, and the placard asked about jobs first. Everyone sees which half was left out.
 - effects: LEG +0.3, POLL +1
 - data: share +3, ladder +2, books -4
@@ -1982,6 +2026,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-PM-B — "The books first"
 - tag: B
+- lever: Financial leverage
 - summary: Assign the savings where the framework always said they would go: debt, defence, growth relief. You do it because you promised arithmetic, and a state that keeps its word to the markets keeps its freedom of action. A generation reads exactly what it was worth to you.
 - effects: PRO +0.6, POLL −3
 - data: books +8, share -4, trust -2
@@ -1992,6 +2037,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-PM-B2 — "Emergency consolidation"
 - tag: B
+- lever: Financial leverage
 - summary: Declare the framework broken and cut across the board, with the savings as anaesthetic. You do it because out of room is out of room, and the alternative is drifting into a debt spiral with your signature on it. Everyone pays except the deficit.
 - effects: PRO +0.8, LEG −0.7, POLL −5
 - data: books +12, bedside -4, ladder -4, share -4, trust -4
@@ -2008,6 +2054,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-PM-H — "Run on the question"
 - tag: H
+- lever: Immediacy
 - summary: Refuse to allocate anything; make the election the referendum on the money. You do it because a mandate this size deserves a vote, and because, privately, every concrete allocation loses more votes than the open question does. The question campaigns harder than any answer would.
 - effects: LEG −0.3, POLL −2
 - data: trust -2
@@ -2016,6 +2063,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-PM-H2 — "The citizens' assembly"
 - tag: H
+- lever: Political capital
 - summary: Hand the allocation to a citizens' assembly: randomly drawn, professionally staffed, binding mandate. You do it because this money will poison whichever institution touches it, and ordinary people deciding is the one outcome nobody can call rigged. Every institution at the table loses its seat at that one.
 - effects: LEG +0.5, POLL −1
 - data: trust +4, books -2
@@ -2028,6 +2076,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-SAK-A — "Sign, with teeth"
 - tag: A
+- lever: Consent
 - summary: Sign the settlement and retire the strike threat: retraining rights and gain-sharing written into law, enforceable and funded. You do it because this moment is what the weapon was for, and a weapon unspent at the right moment rusts into a posture. The threat that won it is gone the day you sign.
 - effects: LEG +0.5
 - data: share +6, ladder +3
@@ -2039,6 +2088,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-SAK-A2 — "Backdate the rights"
 - tag: A
+- lever: Consent
 - summary: Sign, and demand it retroactive: compensation for the cohort that was automated before the rules existed. You do it because the people already displaced are your members too, and justice with a start date is an insult. The employers and the framework pay twice.
 - effects: LEG +0.3, PRO −0.3
 - data: share +8, books -5, pull -2
@@ -2053,6 +2103,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-SAK-B — "The general strike"
 - tag: B
+- lever: The ballot
 - summary: Call the 72-hour public-sector stoppage, weeks before the vote. You do it because the ballot mandate expires with this parliament, and a threat never used is never believed again. The whole economy holds its breath, and someone loses an election over it.
 - effects: LEG −0.6, PRO −0.6, POLL −4
 - data: share +7, books -6, pull -4, trust -2
@@ -2066,6 +2117,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-SAK-B2 — "Work-to-rule winter"
 - tag: B
+- lever: Stalemate power
 - summary: Order the quiet version: every rule followed to the letter, every flexibility withdrawn, until the dividend moves. You do it because it costs your members nothing visible and grinds the machine louder every week. The services, and the people queuing in them, carry it.
 - effects: LEG −0.3, PRO −0.3
 - data: share +4, books -3, trust -1
@@ -2078,6 +2130,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-SAK-H — "Sector by sector"
 - tag: H
+- lever: Consent
 - summary: Set no national line; let each union cut its own deal. You do it because your members' situations genuinely differ, and a confederation that forces one answer onto all of them breaks. The weakest sectors take the leftovers, and the moment for a national template passes.
 - effects: LEG −0.2
 - data: share +2, trust -1
@@ -2086,6 +2139,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-SAK-H2 — "Save our own"
 - tag: H
+- lever: Consent
 - summary: Negotiate hard for those inside the walls, and go silent about everyone outside them. You do it because dues-payers come first, and that is not cynicism. It is the contract. The young and the unorganized learn what they are to the movement.
 - effects: LEG −0.4
 - data: share +5, ladder -4, trust -3
@@ -2099,6 +2153,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-TI-A — "A number we can live with"
 - tag: A
+- lever: The public verdict
 - summary: Negotiate the levy instead of fighting it: capped, sunset-claused, earmarked, in exchange for signed labour peace. You do it because a price with a ceiling is just a cost, and costs can be planned; open conflict cannot. Your hardliners call it appeasement with an invoice.
 - effects: PRO +0.3, LEG +0.3
 - data: share +3, pull +2, books +2
@@ -2111,6 +2166,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-TI-A2 — "Buy the peace privately"
 - tag: A
+- lever: The order book
 - summary: Pre-empt the state: industry funds the retraining guarantee itself, brands it, and claims the credit. You do it because whoever pays writes the rules, and a voluntary payment kills the precedent a levy would set. The public's grip on the machine's gains slips quietly.
 - effects: PRO +0.4
 - data: share +3, ladder +3, stay +2, books +1
@@ -2125,6 +2181,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-TI-B — "Fight the levy"
 - tag: B
+- lever: The public verdict
 - summary: Campaign against any levy, full-page and by name. You do it because the principle is the entire fight: this year automation, next year whatever else works. Win, and labour is angrier; lose, and the levy returns without a cap.
 - effects: PRO +0.3, LEG −0.3, POLL −2
 - data: pull +3, share -4, trust -2
@@ -2135,6 +2192,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-TI-B2 — "The capital strike"
 - tag: B
+- lever: The order book
 - summary: Coordinate the freeze: investment postponed across the sector until the levy dies. You do it because when persuasion fails, capital has exactly one sentence, and sometimes it must be said aloud. Everything that needs investment stalls with you, and the country remembers who said it.
 - effects: PRO −0.4, LEG −0.5, POLL −3
 - data: pull -6, books -4, share -3, stay -2
@@ -2149,6 +2207,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-TI-H — "No position"
 - tag: H
+- lever: The public verdict
 - summary: Keep the association out of it; let politics allocate. You do it because your members disagree among themselves, and a split federation speaks for nobody. Optionality kept, relevance spent.
 - effects: PRO +0.1
 - data: pull +1
@@ -2157,6 +2216,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-TI-H2 — "Split the bill to SMEs"
 - tag: H
+- lever: The public verdict
 - summary: Accept the levy in public, and lobby the thresholds in private so it lands on firms too small to lobby back. You do it because your members are the big ones, and thresholds are the quietest weapon in tax politics. The ecosystem underneath them pays.
 - effects: PRO +0.2, LEG −0.3
 - data: pull +3, stay -3, share -2, trust -2
@@ -2170,6 +2230,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-COUNTY-A — "The execution partner"
 - tag: A
+- lever: Execution
 - summary: Co-sign the dividend and take charge of delivering it: retraining desks and care reinvestment through every service centre you run. You do it because whoever operates the bridge decides what it is in practice, and operating things is what counties are for.
 - effects: LEG +0.4
 - data: bedside +4, share +2, books -2
@@ -2182,6 +2243,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-COUNTY-A2 — "Claw the dividend to care"
 - tag: A
+- lever: Execution
 - summary: File the counties' claim first and take your share off the top, straight into the wards. You do it because these savings were carved out of care's hide, and a director who watches that money become tax relief should resign. The national bridge is shorter for it.
 - effects: LEG +0.2, PRO −0.2, POLL −1
 - data: bedside +7, books -6
@@ -2194,6 +2256,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-COUNTY-B — "Savings first"
 - tag: B
+- lever: The anchor order
 - summary: Bank the counties' share against next winter. You do it because you have seen enough winters to know another is always coming, and banked money is the only promise that keeps itself.
 - effects: PRO +0.3
 - data: books +4, bedside -2
@@ -2204,6 +2267,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-COUNTY-B2 — "Close wards to save the rest"
 - tag: B
+- lever: The dignity dial
 - summary: Order the triage nobody campaigns on: close the thinnest wards and concentrate staff where care still works. You do it because spreading too little everywhere is how everything fails at once, and somebody has to choose. The closed towns remember longer than the saved ones.
 - effects: PRO +0.4, LEG −0.5, POLL −2
 - data: care_gap -3, bedside +2, trust -4
@@ -2214,6 +2278,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-COUNTY-H — "No structural allocation"
 - tag: H
+- lever: Execution
 - summary: Make no structural claim; let the money seep into the deficits. You do it because every earmark is a fight, and the deficits are real. The queues absorb the difference, as always.
 - effects: LEG −0.2
 - data: bedside -1
@@ -2222,6 +2287,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-COUNTY-H2 — "Sell the care model abroad"
 - tag: H
+- lever: Execution
 - summary: License the county's automation playbook to the Dutch and Japanese hospital systems now piloting ward robots. You do it because the counties finally built something the world wants, and the fees fund care no budget would. The buyers' recruiters arrive attached to the contract.
 - effects: PRO +0.4
 - data: pull +3, books +2, stay +2, bedside -2
@@ -2236,6 +2302,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-HVK-A — "Normalize the exercises"
 - tag: A
+- lever: Doctrine
 - summary: Move the Gate's drills into the base budget: annual, boring, permanent. You do it because preparedness dies of excitement and survives as routine nobody debates. The line item is small; defending it every single year is the actual work.
 - effects: RES +0.4
 - data: days +5, books -2
@@ -2246,6 +2313,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-HVK-A2 — "Raid care for stockpiles"
 - tag: A
+- lever: The securitisation lever
 - summary: Reallocate quietly: reserves, fallback capacity and drills, funded out of the counties' envelope. You do it because the clock is naked, and nobody will vote you the money until the day it is too late to spend. The bedside pays, and is never told.
 - effects: RES +0.6, LEG −0.3
 - data: days +8, bedside -3, books -2, trust -1
@@ -2258,6 +2326,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-HVK-B — "Securitize the audits"
 - tag: B
+- lever: The securitisation lever
 - summary: Keep the emergency framework running: continued powers, classified audits, speed. You do it because the window is open now, and the next crisis will not wait for a committee. The trust bill arrives after you have left the room.
 - effects: RES +0.6, LEG −0.4
 - data: days +4, trust -3
@@ -2268,6 +2337,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-HVK-B2 — "Declare victory, stand down"
 - tag: B
+- lever: Doctrine
 - summary: Report the Gate as passed, hand back the emergency money, stand the units down. You do it because an agency that keeps its wolf-cries honest is an agency that gets believed next time, and being believed is your entire capital. The next gate reopens the file at retail prices.
 - effects: PRO +0.3, RES −0.4
 - data: books +3, days -4
@@ -2279,6 +2349,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-HVK-H — "Close the file"
 - tag: H
+- lever: Doctrine
 - summary: Close the file; the Gate passed. You do it because even preparedness has to end somewhere, and the office has other risks. The next one reopens it.
 - effects: RES −0.2
 - data: days -2
@@ -2287,6 +2358,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-HVK-H2 — "Publish the doctrine"
 - tag: H
+- lever: Doctrine
 - summary: Publish the resilience doctrine whole, gaps included. You do it because a public that understands the plan is the plan, and the secrecy was protecting the gaps more than the country. The adversary's reading list grows by one.
 - effects: RES +0.2, LEG +0.3
 - data: days +3, trust +2
@@ -2299,6 +2371,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-AALTO-A — "Certify the guarantee"
 - tag: A
+- lever: Certification authority
 - summary: Build the public evaluation regime for the retraining guarantee: what it teaches, whether it lands people in real work, published yearly. You do it because promises to the displaced have been made before, and the university's real power is making promises measurable.
 - effects: LEG +0.4
 - data: ladder +4, share +2
@@ -2309,6 +2382,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-AALTO-A2 — "Repair the cohort"
 - tag: A
+- lever: The pipeline
 - summary: Aim the dividend at Eetu's generation by name: bridge programs and first-job guarantees, seven years late. You do it because the manifesto is right, the promise broke on your watch too, and repair is still possible while they are under forty. The next intake waits its turn.
 - effects: LEG +0.5
 - data: ladder +6, youth_u -0.8, books -4
@@ -2321,6 +2395,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-AALTO-B — "Efficiency analytics"
 - tag: B
+- lever: Certification authority
 - summary: Sell the state what your researchers are genuinely best at: analytics showing where the machine can still cut. You do it because the work is rigorous, the funding is real, and if the cuts are coming anyway they should at least be competent. Your name goes on them.
 - effects: PRO +0.4
 - data: books +4, ladder -2, trust -2
@@ -2331,6 +2406,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-AALTO-B2 — "Import the talent instead"
 - tag: B
+- lever: The pipeline
 - summary: Stop trying to repair the domestic pipeline; recruit the missing skills from abroad at market price. You do it because the platform needs staff this year, not in a curriculum cycle, and the world is full of trained people. The promise to the local young lapses without a press release.
 - effects: PRO +0.3, LEG −0.3
 - data: stay +2, pub_ai +1, ladder -4, trust -1
@@ -2343,6 +2419,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-AALTO-H — "A working paper on both"
 - tag: H
+- lever: Prestige
 - summary: Publish a careful analysis of both paths and endorse neither. You do it because the university's authority rests on not being a lobby, and this fight will burn whoever touches it. Useful, quoted by everyone, and beside the point.
 - effects: LEG +0.1
 - data: ladder +1
@@ -2351,6 +2428,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-AALTO-H2 — "Free continuous learning for all"
 - tag: H
+- lever: The pipeline
 - summary: Propose the radical universal: free, machine-tutored continuous learning for every adult, funded off the top of the dividend, forever. You do it because this century will retrain everyone five times, and only a universal system survives that arithmetic, and because someone at this table should still think in generations.
 - effects: LEG +0.5, PRO −0.3
 - data: ladder +7, share +3, books -7
@@ -2367,6 +2445,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-STARTUP-A — "Bid the bridge platform"
 - tag: A
+- lever: Proof
 - summary: Bid to build the retraining platform and the reform tooling, and hire juniors to build it. You do it because the state just became a customer with knowable rules and real money, and building the bridge is better business than crossing it alone.
 - effects: PRO +0.3
 - data: stay +3, ladder +2, share +2
@@ -2379,6 +2458,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-STARTUP-A2 — "The pledge"
 - tag: A
+- lever: Jobs
 - summary: Offer the bargain in public: one hundred local hires and the retraining tools at cost, in exchange for exemption from the levy. You do it because you would rather buy your standing with jobs than with taxes, and the optics are unbeatable. What you spent is the levy's fairness.
 - effects: PRO +0.3, LEG +0.2
 - data: stay +5, ladder +3, share +2, pull -1
@@ -2393,6 +2473,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-STARTUP-B — "Take the exit"
 - tag: B
+- lever: Mobility
 - summary: Accept the acquisition at the top of the market. You do it because this number may never print again, and your first duty, the one that is in writing, is to the shareholders who believed first. The next hundred hires happen in someone else's city.
 - effects: PRO +0.2
 - data: stay -10, pull +2, books +1
@@ -2406,6 +2487,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-STARTUP-B2 — "Move the HQ quietly"
 - tag: B
+- lever: Mobility
 - summary: Re-domicile without a press release: a Dublin address, a skeleton office in Turku. You do it because the taxes are real, the levy is coming, and quiet exits keep the customers that loud ones lose. Everyone who cited you as proof the country works finds out eventually.
 - effects: PRO −0.2, LEG −0.2
 - data: stay -6, pull -2, trust -1
@@ -2418,6 +2500,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-STARTUP-H — "Ship product, skip politics"
 - tag: H
+- lever: Proof
 - summary: Decline every panel and just ship. You do it because the company is the argument, and every hour at a table is an hour off the roadmap. The defensible default, again.
 - effects: PRO +0.1
 - data: stay +1
@@ -2426,6 +2509,7 @@ locked cards show the reason ("not possible: …").
 
 ### P3-STARTUP-H2 — "Open-source the stack"
 - tag: H
+- lever: Proof
 - summary: Open the company's platform layer to the public sector: free, forever, source and weights included. You do it because infrastructure this important should not have a single owner, including you, and because the gift buys a standing that money cannot. Your investors get a lecture on externalities.
 - effects: RES +0.3, PRO −0.2
 - data: sov_share +3, days +2, stay +2, pull -2
@@ -2780,10 +2864,12 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 ### D2030-PM — "The time dividend"
 - context: The productivity numbers are finally real, and the coalition wants to promise some of the machine's time back to the people before the 2031 election. Two drafts sit on your desk, and the framework can carry exactly one.
 #### A — "The four-day week"
+- lever: Financial leverage
 - summary: Pilot a four-day week across the public sector, paid out of automation gains. Structural, irreversible in practice, and the whole labour market recalibrates around the state's example.
 - effects: LEG +0.3, POLL +2
 - data: share +2, books -2
 #### B — "The sixth week"
+- lever: Political capital
 - summary: Legislate a sixth week of annual holiday instead. Everyone gets the same visible gift, nothing about the shape of work changes, and the machine keeps the week it freed.
 - effects: POLL +3
 - data: share +1, books -1, trust -1
@@ -2791,10 +2877,12 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 ### D2030-SAK — "Where the hands come from"
 - context: The care shortage is now arithmetic nobody disputes, and the union's weight can tip one of two national answers. The congress demands you pick before autumn.
 #### A — "Build the machines"
+- lever: Consent
 - summary: Back the energy-and-compute megaproject: datacenters, grid, ward robots, machines standing in for the nurses Finland does not have. Construction members get a decade of work, and care becomes something machines are allowed to do.
 - effects: PRO +0.3
 - data: compute_mw +30, care_gap -1, share +1, trust -1
 #### B — "Open the doors"
+- lever: Consent
 - summary: Back an open labour-immigration line for care instead: recruit the nurses abroad, fund the language training, fast-track the licenses. The wards stay human, and your members' wage floor gets tested by the answer.
 - effects: LEG +0.3
 - data: care_gap -2, bedside +2, share -1
@@ -2802,10 +2890,12 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 ### D2030-COUNTY — "Consent at the bedside"
 - context: The ward machines work. The question the law left open is who agrees to them; every deployment so far has run on the quiet assumption that nobody would ask.
 #### A — "Ask first"
+- lever: The dignity dial
 - summary: Require signed consent for AI in every care relationship: the patient, or the family, says yes before the machine enters the room. Slower, messier, and every yes is real.
 - effects: LEG +0.3
 - data: trust +2, bedside +1, care_gap +1
 #### B — "Deploy by default"
+- lever: Execution
 - summary: Make the machine the default and consent an opt-out buried in the intake forms. The rollout keeps its schedule, and the counties find out later what was assumed.
 - effects: PRO +0.3
 - data: pub_ai +2, care_gap -1, trust -2
@@ -2813,10 +2903,12 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 ### D2030-TI — "The gains, published or pocketed"
 - context: Your member companies' AI productivity numbers are now large enough to be political. The federation must advise: show them, or shield them.
 #### A — "Publish and share"
+- lever: The public verdict
 - summary: Recommend that members publish their automation gains and tie a share to wages in the next bargaining round. Transparency buys labour peace, and invites the taxman to read along.
 - effects: LEG +0.3
 - data: share +2, trust +1, pull -1
 #### B — "The black box"
+- lever: The order book
 - summary: Advise members to book the gains quietly: competitive information, nobody's business. The margins stay home, and the suspicion compounds toward the next levy fight.
 - effects: PRO +0.2
 - data: pull +2, share -1, trust -1
@@ -2824,10 +2916,12 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 ### D2030-HVK — "Whose drill is it"
 - context: The exit drills work, but only professionals run them. The doctrine question is whether preparedness is a service the state performs or a skill the population holds.
 #### A — "Everyone drills"
+- lever: Doctrine
 - summary: A national AI-outage day every year: offices on paper, wards on checklists, every adult with a role. Loud, mocked abroad, and the country actually knows what to do.
 - effects: RES +0.3, POLL -1
 - data: days +2, trust +2
 #### B — "Quiet competence"
+- lever: Doctrine
 - summary: Keep the drills professional and invisible: no theatre, no alarm, full readiness on the org chart. The population stays a spectator to its own resilience.
 - effects: RES +0.2
 - data: days +2, trust -1
@@ -2835,10 +2929,12 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 ### D2030-AALTO — "The open exam"
 - context: Half the skills the market wants are now learned outside any institution. The senate asks whether the university certifies knowledge, or enrollment.
 #### A — "Certify anyone"
+- lever: Certification authority
 - summary: Open the degree examinations to all comers: whoever can pass, passes, machine-taught or self-taught. The credential becomes a measure instead of a membership.
 - effects: LEG +0.3
 - data: ladder +2, trust +1, books -1
 #### B — "The gate stays"
+- lever: Certification authority
 - summary: Keep certification tied to enrollment and funded seats. The institution's economics survive, and the self-taught stay uncounted.
 - effects: PRO +0.1
 - data: books +1, ladder -1
@@ -2846,10 +2942,12 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 ### D2030-STARTUP — "Options for the replaced"
 - context: Your automation tools have now displaced people at your own customers. The board debates a policy no term sheet has a line for: what does the company owe the work it ends?
 #### A — "Cut them in"
+- lever: Jobs
 - summary: Grant options to workers your deployments displace at customer sites, through a pooled fund. Unheard of, legally awkward, and the strongest sales argument the public sector has ever seen.
 - effects: LEG +0.3
 - data: share +2, stay +1, pull -1
 #### B — "The product is the product"
+- lever: Proof
 - summary: Ship the tool and let the customer own the consequences. Standard practice, defensible everywhere, remembered anyway.
 - effects: PRO +0.2
 - data: pull +1
@@ -2859,10 +2957,12 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 ### D2032-PM — "The right to a human"
 - context: The election is over and the platform runs the state. The last constitutional question of the decade is on your desk: does a citizen ever have the right to insist that a person, not a machine, decides their case?
 #### A — "A human on request"
+- lever: Political capital
 - summary: Write it into law: any citizen can demand a human decision-maker, any time, no reason given. The machine does the work; a person owns it. The queues for humans become the new queues.
 - effects: LEG +0.4
 - data: trust +2, books -2
 #### B — "The machine's word is final"
+- lever: Financial leverage
 - summary: Full automation, with an appeals process inside the same system. Faster for everyone, cheaper for the framework, and the state becomes something you petition, not someone you meet.
 - effects: PRO +0.3
 - data: books +2, pub_ai +2, trust -2
@@ -2870,10 +2970,12 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 ### D2032-SAK — "Members without workplaces"
 - context: A third of the people your movement should speak for now work through platforms, contracts and machine-supervised gigs. The congress votes on what a union is for.
 #### A — "The card follows the person"
+- lever: Consent
 - summary: Open membership to anyone who works, however they work: portable benefits, dues scaled to income, representation without a workplace. The movement grows stranger and younger.
 - effects: LEG +0.3
 - data: share +2, ladder +2, trust +1
 #### B — "The core first"
+- lever: Stalemate power
 - summary: Deepen services for the members you have: the employed, the organized, the dues-paying. Clearer, solvent, and the movement's borders harden around a shrinking country.
 - effects: LEG -0.2
 - data: share +2, ladder -2
@@ -2881,10 +2983,12 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 ### D2032-COUNTY — "The last human visit"
 - context: Home care now runs on sensors, video and one overworked circuit nurse. The service design question left is brutally simple: does every person still get a human at the door?
 #### A — "A face every day"
+- lever: The dignity dial
 - summary: Guarantee a daily human visit in every home-care plan, whatever the machine already measured. Expensive, inefficient, and the reason the whole system exists.
 - effects: LEG +0.3
 - data: bedside +3, books -2
 #### B — "Presence by exception"
+- lever: Execution
 - summary: Video first, sensors always, humans dispatched when the data says so. The coverage is total. So is the loneliness.
 - effects: PRO +0.3
 - data: books +2, care_gap -1, bedside -2, trust -1
@@ -2892,10 +2996,12 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 ### D2032-TI — "Who owns the work-double"
 - context: Every employee in your member firms now trains a machine double simply by doing their job. The contracts are silent about whose asset that is, and the silence is ending in court.
 #### A — "The worker's shadow"
+- lever: The public verdict
 - summary: Publish a model contract: the employee owns their work-double's data and licenses it to the employer. Radical on paper, cheap in practice, and the lawsuits die before they multiply.
 - effects: LEG +0.3
 - data: share +2, trust +1, pull -1
 #### B — "The company's asset"
+- lever: The order book
 - summary: The telemetry belongs to whoever paid for the workday. Every precedent agrees, and every employee now knows exactly what they are feeding.
 - effects: PRO +0.2
 - data: pull +2, share -1, trust -1
@@ -2903,10 +3009,12 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 ### D2032-HVK — "The scarcity list"
 - context: The next access crisis will ration intelligence the way wars ration fuel. Somewhere in your office is the draft priority list of who gets compute when there is not enough. The question is whether the country sees it now.
 #### A — "Publish the list"
+- lever: Doctrine
 - summary: Put the rationing order in the public doctrine: hospitals first, then power, then payments, then everything else, by name. Uncomfortable, debated, and legitimate before it is needed.
 - effects: LEG +0.3
 - data: trust +2, days +1
 #### B — "Sealed until needed"
+- lever: The securitisation lever
 - summary: Keep the list classified: no panic, no lobbying, no debate, until the day it decides everything and nobody voted on it.
 - effects: RES +0.2
 - data: days +2, trust -2
@@ -2914,10 +3022,12 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 ### D2032-AALTO — "Rooms without machines"
 - context: The first AI-native cohort graduates this spring: fluent with the tools, untested without them. The faculty asks whether thinking unassisted is still a skill the university certifies.
 #### A — "The slow rooms"
+- lever: The pipeline
 - summary: Every degree keeps machine-free hours: reading, proof, argument, memory, by hand. The graduates are slower on paper and unmistakable in person.
 - effects: LEG +0.2
 - data: ladder +2, trust +1
 #### B — "Fluent in the tools"
+- lever: The pipeline
 - summary: Certify what the market hires: mastery with the machine, no nostalgia. What atrophies, atrophies; the transcripts stop pretending otherwise.
 - effects: PRO +0.2
 - data: ladder +1, stay +1, trust -1
@@ -2925,10 +3035,12 @@ Grammar: `### D<year>-<ACTOR> — "Title"`, one `- context:` line, then
 ### D2032-STARTUP — "The biobank's answer"
 - context: Your models now read the national genome data better than anyone in the country. The exclusive license that funded your decade is up for renewal, and the public health system is asking what the data it gave you was for.
 #### A — "Open the results"
+- lever: Proof
 - summary: Give the public health system standing access to the findings at cost: every county clinic reads what your models read. The moat narrows, and the argument for the company's existence becomes unanswerable.
 - effects: LEG +0.3
 - data: trust +2, stay +1, pull -1
 #### B — "Renew the license"
+- lever: Mobility
 - summary: Keep the results inside the paying customers' walls. The valuation holds, and the question of what the data was for gets asked annually, louder.
 - effects: PRO +0.3
 - data: pull +2, books +1, trust -1

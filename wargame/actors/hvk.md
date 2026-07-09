@@ -10,9 +10,9 @@ quote: The best models are no longer sold, they are allocated, like oil in warti
 Director of HVK, 2028. Your agency stockpiles fuel, grain and medicine for a country that plans for the worst as a civic habit. Since 2026 you have co-authored (with Traficom) guidance on secure AI-agent deployment, and you have been arguing, to polite smiles, that inference capacity now belongs in the same category as diesel. The 2028 correction is your window: hardware is cheap, halls are empty, and TR-7 (11 cut cables) makes your case nightly.
 
 ## Endogenous levers
-- **Requirements power:** security clauses written into a tender before publication bind for a decade. After publication, every fix is a renegotiation.
-- **The securitisation lever:** emergency framing gets you money and powers fast, and spends public trust slowly. The bill arrives after you have left the room.
-- **Doctrine:** your exercises decide whether the next crisis is a drill or a trauma. Resilience built with society's consent outlasts resilience imposed on it.
+- **Requirements power:** Security clauses written into a tender before publication bind for a decade. You can harden any procurement, if you get there before the signing.
+- **The securitisation lever:** Emergency framing gets you money and powers fast, and spends public trust slowly. You can pull it; you cannot un-pull it.
+- **Doctrine:** Your exercises decide whether the next crisis is a drill or a trauma.
 
 ## What you cannot control
 - Whether the gate ever comes, and when; access politics is made in Washington, not Helsinki.
@@ -21,15 +21,15 @@ Director of HVK, 2028. Your agency stockpiles fuel, grain and medicine for a cou
 - The frontier's pace, which makes every fallback tier feel obsolete on delivery.
 
 ## Objectives
-1. RESERVE=full by end of P1; tested for real in P2 (a paper reserve will be found out).
-2. RES ≥ 7 by 2033: Finland runs core services 30+ days without frontier access, demonstrated in exercises.
-3. Doctrine export: "the Finnish model" for compute resilience cited by NATO/EU by endstate (PRO side-benefit).
+1. Security in the architecture before it is bought, not patched in after (SECURE_ARCH=yes).
+2. Finland runs core services 30+ days without frontier access, and proves it in exercises.
+3. The next crisis is remembered as a drill, not a trauma (CRISIS_LEG=managed).
 
 ## Standing tensions
-- **PM:** you are a cost until you are a saviour; your invoices compete with defence's 5%.
-- **TI:** your vetting is their friction; every certificate you require is a week of their members' time.
-- **STARTUP:** views you as the state's way of making small companies carry big-state duties.
-- **COUNTY:** will demand reserve priority for health systems that you may have to ration in a real event.
+- **PM:** To her you are a cost until the day you are a saviour. Your invoices compete with defence's five percent.
+- **TI:** Your vetting is their friction. They will thank you at the first blackout, in private.
+- **STARTUP:** They think you make small companies carry big-state duties. They are right; the state is small and the duties are not.
+- **COUNTY:** She will demand priority for the hospitals. In a real event, you may have to ration her too.
 
 ## Phase roles
 - **P1 (modifier):** your clauses decide what the platform costs in resilience: the premium, the annex, or the shadow state.

@@ -10,9 +10,9 @@ quote: Each model generation now helps design the next. The people closest to it
 Rector of Finland's flagship technical university, 2028. Your CS and AI programmes are oversubscribed; your graduates are simultaneously the most employable and, at entry level, the most automatable people in the country (TR-6). AMD bought Silo AI; your best doctoral students get frontier-lab offers at 5× Finnish salaries. You run FCAI (Finnish Center for AI) jointly with Helsinki and VTT, and your researchers built the open Poro/Viking model lineage that any sovereign stack would depend on.
 
 ## Endogenous levers
-- **The pipeline:** curriculum decided today is the labour market of 2030–33. Nothing you decide lands sooner; nothing lands harder.
-- **Certification authority:** your evaluations turn political claims into tested facts; whoever measures the machine governs the argument about it.
-- **Prestige:** where the university goes, students and funding follow, with a four-year lag either way.
+- **The pipeline:** The curriculum you set today is the labour market of 2030–33. Nothing you decide lands sooner; nothing lands harder.
+- **Certification authority:** Your evaluations turn political claims into tested facts. Whoever measures the machine governs the argument about it.
+- **Prestige:** Where the university goes, students and funding follow, with a four-year lag either way.
 
 ## What you cannot control
 - The talent gradient: the best tools and the best salaries are abroad, and every graduating class knows it.
@@ -20,14 +20,14 @@ Rector of Finland's flagship technical university, 2028. Your CS and AI programm
 - State funding decisions, and the stack the country finally lands on; you train people for it either way.
 
 ## Objectives
-1. Talent balance: TUOMAS persona (talent meter) ends 2033 in Finland; metaphorically: net brain drain ≤ zero.
-2. Relevance: Aalto-built evaluation/verification methods are written into whatever compact or attestation regime wins.
-3. Pipeline honesty: youth_u for your graduates below national youth_u by 2033.
+1. The best graduates stay: Finland's education investment pays back here, not abroad.
+2. Research keeps a role: the university still owns questions the machines cannot close.
+3. Your measurements matter: whatever compact or attestation regime wins, its evaluations are built on your methods.
 
 ## Standing tensions
-- **STARTUP / TI:** they want your graduates now, trained on today's stack; you must guess 2033's stack.
-- **PM:** funds you counter-cyclically or not at all.
-- **SAK:** suspicious that "lifelong learning" means outsourcing their members' adjustment costs to your MOOCs.
+- **STARTUP / TI:** They want your graduates now, trained on today's stack. You have to guess 2033's.
+- **PM:** Education is always the answer in her speeches and rarely in her framework. She funds you counter-cyclically or not at all.
+- **SAK:** They suspect "lifelong learning" means outsourcing their members' adjustment costs to your online courses. They are not entirely wrong.
 
 ## Phase roles
 - **P1 (modifier):** the faculty budget picks who the decade trains: the few who build, the many displaced, or the machine tutors. TALENT_PIPE is set here.

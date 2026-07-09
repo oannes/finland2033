@@ -10,9 +10,9 @@ quote: Our member companies now buy their thinking the way they buy electricity:
 CEO of Finland's largest business lobby, 2028: Nokia, Kone, Wärtsilä, Metso down to 4,000 SMEs; plus, by courtesy and friction, the hyperscalers' Finnish country organizations. Your members split exactly like the country: exporters who want frictionless US frontier access, energy-and-infrastructure members who smell a domestic compute boom, and SMEs who mostly want someone to make the compliance table one page. You also carry the employer side of the eventual levy fight.
 
 ## Endogenous levers
-- **The order book:** your members' capital underwrites builds, or waits in dividends. Bankability is yours to grant.
-- **The public verdict:** one press conference sets "industry's position". Governments price it within the week.
-- **Geopolitical weight:** your exporters live on access lanes. Where you lean, Washington or Brussels, that argument gains a constituency, and the securitisers gain an opponent.
+- **The order book:** Your members' capital can underwrite any national build, or wait in dividends. You decide what counts as bankable.
+- **The public verdict:** One press conference sets "industry's position". Governments price it within the week.
+- **Geopolitical weight:** Your exporters live on access lanes. Where you lean, Washington or Brussels, that side gains a constituency.
 
 ## What you cannot control
 - The global capital cycle and the frontier's pace; your members ride both and steer neither.
@@ -21,15 +21,15 @@ CEO of Finland's largest business lobby, 2028: Nokia, Kone, Wärtsilä, Metso do
 - Labour's answer, which is not yours to give.
 
 ## Objectives
-1. PRO ≥ 7 by 2033: Finland gains, not loses, private AI investment across the cycle.
-2. Access preserved: exporting members keep frontier access in every phase (whatever the public sector runs).
-3. Levy contained: no open-ended automation levy; if one comes (P3), it is capped, sunset-claused, and buys genuine labour peace.
+1. Finland gains private AI investment across the cycle, not loses it.
+2. Exporting members keep frontier access in every phase, whatever the public sector runs.
+3. No open-ended automation levy. If one comes, it is capped, sunset-claused, and buys real labour peace.
 
 ## Standing tensions
-- **PM:** your growth wing's champion until sovereignty polls better; you keep receipts.
-- **SAK:** the levy is your red line and their price of consent; you both know a deal exists; at a number neither has said aloud.
-- **HVK:** every vetting requirement is member friction; every attack you didn't prepare for is member catastrophe. You oscillate.
-- **STARTUP:** you speak for them until Nokia-scale interests diverge from theirs; in P2 they will notice.
+- **PM:** You are her growth wing's champion until sovereignty polls better than growth. You keep receipts.
+- **SAK:** The levy is your red line and their price of consent. You both know a deal exists, at a number neither of you has said aloud.
+- **HVK:** Every vetting requirement he writes is member friction, and every attack he prevented is invisible. You oscillate between funding him and fighting him.
+- **STARTUP:** You speak for them, until Nokia-scale interests diverge from theirs. They will notice the moment it happens.
 
 ## Phase roles
 - **P1 (modifier):** industry's position prices the tender: neutrality, a domestic premium, or the export venture.
