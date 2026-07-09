@@ -487,8 +487,8 @@ function Landing() {
         </div>
 
         <div
-          className="hidden sm:block absolute bottom-14 left-10 md:left-14 max-w-[260px] z-50 hero-anim hero-fade"
-          style={{ animationDelay: '0.7s' }}
+          className="hidden sm:block absolute bottom-14 left-5 md:left-8 max-w-[230px] z-50 hero-anim hero-fade"
+          style={{ animationDelay: '0.7s', textShadow: '0 1px 8px rgba(2,9,20,0.9)' }}
         >
           <p className="text-sm text-white/80 leading-relaxed mb-3">
             The future of AI will largely be built beyond Finland's borders. But Finland's place in that future
@@ -513,7 +513,7 @@ function Landing() {
               href="#/prologue/solo"
               className="bg-[#2f9db4] hover:bg-[#23849a] text-white text-sm font-medium px-7 py-3 rounded-full transition-all hover:scale-[1.03] active:scale-95 hover:shadow-lg hover:shadow-[#2f9db4]/30"
             >
-              I'm in for the decade
+              Let's go.
             </a>
           </div>
         </div>
