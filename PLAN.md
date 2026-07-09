@@ -189,7 +189,14 @@ button; the spirits (tunnel) open whole debate chunks at once. Unify:
 - Files: reveal.tsx (state refinement), screens.tsx DebriefScreen,
   epilogue.tsx TunnelScene + TunnelBackdrop placement.
 
-## 11. The clock view gets a visual; the charts move there
+## 11. The clock view gets a visual; the charts move there — PARTIALLY IMPLEMENTED
+
+Done: the sidebar sparkline stack moved into the interlude ('Finland's
+numbers, 2018 → 2033', own metric first with the badge); sidebar keeps goals,
+lives and approval; lever chips removed from decision and dilemma cards (the
+levers stay in the briefs and in MASTER). Still open: the drawn exogenous
+visual in the drumbeat box, and the spirits delivering the per-seat goal
+scorecard at the endstate.
 
 The interlude ("clock") view should carry a visualization, not just three
 numbers — and it becomes the home of the data graphs:

@@ -16,6 +16,7 @@ import Markdown from './Markdown'
 import { ACTOR_PORTRAITS, eraForPhase, moodFor, MoodFace, PERSONA_NAMES, PERSONA_PORTRAITS, Portrait } from './portraits'
 import { StreetScene } from './epilogue'
 import { RevealSequence } from './reveal'
+import { computeGhosts, OWN_METRIC, Sparkline } from './Sidebar'
 
 const YEAR_BY_PHASE: Record<number, string> = { 1: '2027–28', 2: '2029', 3: '2031' }
 
@@ -421,11 +422,6 @@ function ActionCard({ action, selected, onSelect }: { action: Action; selected: 
       }`}
     >
       <div className="font-playfair italic text-lg text-white mb-1">{action.title}</div>
-      {action.lever && (
-        <div className="text-[10.5px] uppercase tracking-[0.15em] text-[#2f9db4]/80 mb-1.5">
-          your lever · {action.lever}
-        </div>
-      )}
       <p className="text-[13px] text-white/65 leading-relaxed">{action.summary}</p>
     </button>
   )
@@ -682,6 +678,35 @@ export function InterludeScreen({
         </div>
       </SectionCard>
 
+      <SectionCard>
+        <p className="text-[11px] uppercase tracking-[0.2em] text-white/40 mb-3">Finland's numbers, 2018 → 2033</p>
+        <p className="text-[12px] text-white/40 mb-4">Your path in colour; the grey dots are the roads not taken.</p>
+        {(() => {
+          const ghosts = computeGhosts(content, state)
+          const mine = state.playerActor ? OWN_METRIC[state.playerActor] : null
+          return (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
+              {content.indicators
+                .filter((ind) => content.chartIds.includes(ind.id))
+                .sort((a, b) => (b.id === mine ? 1 : 0) - (a.id === mine ? 1 : 0))
+                .map((ind) => (
+                  <Sparkline
+                    key={ind.id}
+                    content={content}
+                    state={state}
+                    ghosts={ghosts}
+                    indicatorId={ind.id}
+                    label={ind.id.replace('_', ' ')}
+                    unit={ind.unit}
+                    plain={ind.plain}
+                    own={mine === ind.id}
+                  />
+                ))}
+            </div>
+          )
+        })()}
+      </SectionCard>
+
       {interlude.messages.length > 0 && (
         <SectionCard>
           <p className="text-[11px] uppercase tracking-[0.2em] text-white/40 mb-4">Meanwhile, in the family group chat</p>
@@ -743,12 +768,7 @@ export function DilemmaScreen({ dilemma, onChoose }: { dilemma: Dilemma; onChoos
               picked === o.key ? 'border-[#2f9db4] bg-[#2f9db4]/10' : 'border-white/10 hover:border-white/30'
             }`}
           >
-            <div className="font-playfair italic text-xl text-white mb-1">{o.title}</div>
-            {o.lever && (
-              <div className="text-[10.5px] uppercase tracking-[0.15em] text-[#2f9db4]/80 mb-1.5">
-                your lever · {o.lever}
-              </div>
-            )}
+            <div className="font-playfair italic text-xl text-white mb-1.5">{o.title}</div>
             <p className="text-[13px] text-white/60 leading-relaxed">{o.summary}</p>
           </button>
         ))}

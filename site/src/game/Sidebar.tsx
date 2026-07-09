@@ -195,7 +195,7 @@ function firstSentences(text: string, n: number): string {
   return text.split(/(?<=\.)\s+/).slice(0, n).join(' ')
 }
 
-function Sparkline({
+export function Sparkline({
   content,
   state,
   ghosts,
@@ -357,7 +357,6 @@ export default function Sidebar(props: SidebarProps) {
 }
 
 function SidebarBody({ content, state, viewerActor }: SidebarProps) {
-  const ghosts = computeGhosts(content, state)
   const lastResult = state.results[state.results.length - 1]
 
   return (
@@ -414,29 +413,6 @@ function SidebarBody({ content, state, viewerActor }: SidebarProps) {
         </div>
       </Section>
 
-      <Section title="The numbers, 2018 → 2033">
-        <div className="grid grid-cols-1 gap-2">
-          {content.indicators
-            .filter((ind) => content.chartIds.includes(ind.id))
-            .sort((a, b) => {
-              const mine = viewerActor ? OWN_METRIC[viewerActor] : null
-              return (b.id === mine ? 1 : 0) - (a.id === mine ? 1 : 0)
-            })
-            .map((ind) => (
-              <Sparkline
-                key={ind.id}
-                content={content}
-                state={state}
-                ghosts={ghosts}
-                indicatorId={ind.id}
-                label={ind.id.replace('_', ' ')}
-                unit={ind.unit}
-                plain={ind.plain}
-                own={viewerActor ? OWN_METRIC[viewerActor] === ind.id : false}
-              />
-            ))}
-        </div>
-      </Section>
 
     </div>
   )
