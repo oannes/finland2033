@@ -11,7 +11,7 @@ import type {
   PhaseResult,
 } from './types'
 import { ACTORS } from './types'
-import { actorMenu, evaluateGoals, injectRelevant, interpolateNumbers, matchingVariants, narrativeNote, decisionImpacts, keyMetricFor, gateReason, metricEnv } from './engine'
+import { actorMenu, evaluateGoals, interpolateNumbers, matchingVariants, narrativeNote, decisionImpacts, keyMetricFor, gateReason, metricEnv } from './engine'
 import Markdown from './Markdown'
 import { ACTOR_PORTRAITS, eraForPhase, moodFor, MoodFace, PERSONA_NAMES, PERSONA_PORTRAITS, Portrait } from './portraits'
 import { StreetScene } from './epilogue'
@@ -316,22 +316,6 @@ export function DecideScreen({
         <SectionCard>
           <p className="text-[11px] uppercase tracking-[0.2em] text-white/40 mb-3">Your brief</p>
           <Markdown text={deskBrief} />
-        </SectionCard>
-      )}
-
-      {phase.tension.injects.some((_, i) => injectRelevant(content, phase.idx, i, actor)) && (
-        <SectionCard>
-          <p className="text-[11px] uppercase tracking-[0.2em] text-white/40 mb-3">What lands on your desk</p>
-          <div className="space-y-3">
-            {phase.tension.injects.map((inj, i) =>
-              injectRelevant(content, phase.idx, i, actor) ? (
-                <div key={i} className="border-l-2 border-white/15 pl-4 py-0.5">
-                  <span className="text-xs font-semibold text-white/50">{inj.label}</span>
-                  <Markdown text={inj.text} className="text-sm" />
-                </div>
-              ) : null,
-            )}
-          </div>
         </SectionCard>
       )}
 
@@ -731,45 +715,15 @@ export function InterludeScreen({
   const costRefLine = costRef(costTo)
   const gapRefLine = gapRef(gapTo)
 
+  const plainOf = (id: string) => content.indicators.find((i) => i.id === id)?.plain
+
   return (
     <div className="space-y-6">
       <SectionCard>
         <p className="text-[11px] uppercase tracking-[0.2em] text-[#2f9db4] mb-2">
           {fromYear} → {toYear}
         </p>
-        <h2 className="font-playfair italic text-3xl sm:text-4xl text-white mb-5">{interlude.passes}</h2>
-        {/* the drumbeat: same box every time, worsening */}
-        <div className="rounded-xl border border-white/15 bg-white/[0.03] p-5 space-y-6">
-          <p className="text-[11px] uppercase tracking-[0.2em] text-white/40">The world, while Finland decided</p>
-
-          <div>
-            <p className="text-[15px] text-white/85">
-              The price of machine cognition fell <span className="text-[#2f9db4] font-semibold">{costFall}%</span>.
-            </p>
-            {content.history && <PriceDots pts={worldSeries('intel_cost')} />}
-            {costRefLine && <p className="text-[12.5px] text-white/45 leading-snug">{costRefLine}</p>}
-          </div>
-
-          <div>
-            <p className="text-[15px] text-white/85">
-              The capability gap grew to <span className="text-[#2f9db4] font-semibold">{gapTo} months</span>
-              <span className="text-white/45"> (+{Math.round((gapTo - gapFrom) * 10) / 10})</span>. No Finnish decision moves this line.
-            </p>
-            {content.history && <GapColumns pts={worldSeries('cap_gap')} />}
-            {gapRefLine && <p className="text-[12.5px] text-white/45 leading-snug">{gapRefLine}</p>}
-          </div>
-
-          {latest.days !== undefined && (
-            <div>
-              <p className="text-[15px] text-white/85">
-                If the access stopped tomorrow, Finland would run alone for{' '}
-                <span className="text-[#2f9db4] font-semibold">{latest.days} days</span>.
-              </p>
-              <DaySquares days={Math.round(latest.days)} prev={prevData.days !== undefined ? Math.round(prevData.days) : undefined} />
-              <p className="text-[12.5px] text-white/45 leading-snug">{daysRef(latest.days)}</p>
-            </div>
-          )}
-        </div>
+        <h2 className="font-playfair italic text-3xl sm:text-4xl text-white">{interlude.passes}</h2>
       </SectionCard>
 
       {interlude.messages.length > 0 && (
@@ -800,6 +754,43 @@ export function InterludeScreen({
 
       {(allRead || interlude.messages.length === 0) && (
         <QuickReveal className="space-y-6">
+          <SectionCard>
+            <div className="rounded-xl border border-white/15 bg-white/[0.03] p-5 space-y-7">
+              <p className="text-[11px] uppercase tracking-[0.2em] text-white/40">The world, while Finland decided</p>
+
+              <div>
+                <p className="text-[15px] text-white/85">
+                  The price of machine cognition fell <span className="text-[#2f9db4] font-semibold">{costFall}%</span>.
+                </p>
+                {content.history && <PriceDots pts={worldSeries('intel_cost')} />}
+                {plainOf('intel_cost') && <p className="text-[12.5px] text-white/50 leading-snug">{plainOf('intel_cost')}</p>}
+                {costRefLine && <p className="text-[12.5px] text-white/70 italic leading-snug mt-1.5">{costRefLine}</p>}
+              </div>
+
+              <div>
+                <p className="text-[15px] text-white/85">
+                  The capability gap grew to <span className="text-[#2f9db4] font-semibold">{gapTo} months</span>
+                  <span className="text-white/45"> (+{Math.round((gapTo - gapFrom) * 10) / 10})</span>.
+                </p>
+                {content.history && <GapColumns pts={worldSeries('cap_gap')} />}
+                {plainOf('cap_gap') && <p className="text-[12.5px] text-white/50 leading-snug">{plainOf('cap_gap')}</p>}
+                {gapRefLine && <p className="text-[12.5px] text-white/70 italic leading-snug mt-1.5">{gapRefLine}</p>}
+              </div>
+
+              {latest.days !== undefined && (
+                <div>
+                  <p className="text-[15px] text-white/85">
+                    If Finland's access to foreign AI models and compute stopped tomorrow, the country would run alone for{' '}
+                    <span className="text-[#2f9db4] font-semibold">{latest.days} days</span>.
+                  </p>
+                  <DaySquares days={Math.round(latest.days)} prev={prevData.days !== undefined ? Math.round(prevData.days) : undefined} />
+                  {plainOf('days') && <p className="text-[12.5px] text-white/50 leading-snug">{plainOf('days')}</p>}
+                  <p className="text-[12.5px] text-white/70 italic leading-snug mt-1.5">{daysRef(latest.days)}</p>
+                </div>
+              )}
+            </div>
+          </SectionCard>
+
           <SectionCard>
             <p className="text-[11px] uppercase tracking-[0.2em] text-white/40 mb-3">Finland's numbers, 2018 → 2033</p>
             <p className="text-[12px] text-white/40 mb-4">Your path in colour; the grey dots are the roads not taken.</p>
