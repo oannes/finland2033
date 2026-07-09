@@ -455,7 +455,7 @@ Rector of Finland's flagship technical university. Your CS and AI programmes are
 
 <!-- ═══════════ FILE: actors/startup.md ═══════════ -->
 
-# STARTUP — CEO, Veriseq Oy (quantum-biotech-AI, Turku)
+# STARTUP — CEO, Urwind Ab (quantum-biotech-AI, Turku)
 
 **ID:** `STARTUP` · **Pivotal in:** P2 (your migration decision is the private economy's signal)
 

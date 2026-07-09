@@ -152,7 +152,7 @@ consequences personal.
 
 The anchor case: the wellbeing county director's weird decision is to take a
 real risk and **buy a whole preventive care system from the quantum-biotech
-company** (Veriseq's drug-assisted preventive care, per the P1 brief). For the
+company** (Urwind's drug-assisted preventive care, per the P1 brief). For the
 startup this means they "make it" very easily: a large stay/pull boost, their
 Series C goal effectively secured, and debrief/react lines that say so. This
 replaces or reshapes the county's current lab-flavoured weird option in P2

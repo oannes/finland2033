@@ -3,7 +3,7 @@
 **ID:** `TUOMAS` · **Pinned indicator:** `sov_share` (+ PRO index) · **Never played.**
 
 ## Baseline (2026)
-Tuomas Rantala, 29, Espoo. Aalto ML doctorate (evaluation methods for medical models), now at Veriseq (STARTUP's company). Girlfriend in Helsinki, standing offer from a US frontier lab at 5.5× his salary, renewed every six months like a subscription he hasn't cancelled.
+Tuomas Rantala, 29, Espoo. Aalto ML doctorate (evaluation methods for medical models), now at Urwind (STARTUP's company). Girlfriend in Helsinki, standing offer from a US frontier lab at 5.5× his salary, renewed every six months like a subscription he hasn't cancelled.
 
 ## What he measures
 Whether Finland gives its best technical people a mission worth staying for. He stands for the ~3,000 people whose individual relocation decisions decide whether any sovereign stack is staffable. (The Silo AI → AMD precedent is his sector's founding myth: the exit *is* the expected ending, unless someone writes a better one.)
