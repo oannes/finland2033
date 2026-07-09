@@ -9,9 +9,9 @@ quote: The machines that took the entry-level desks are learning to lift patient
 ## Who you are
 You direct Finland's largest wellbeing county and chair the county directors' network; when you commit, the counties commit. Your county loses care workers every month while its queues grow; by 2033 the sector is short 57,000 people nationally. Every promise the state makes about services is a promise your floors have to keep, and every failure has a name, a ward and a relative with a phone.
 ## Endogenous levers
-- **Execution:** Nothing Helsinki signs is real until your service floors deliver it. You can make any national decision a success or a press release.
+- **Execution:** Nothing the government signs is real until your service floors deliver it. You can make any national decision a success or a press release.
 - **The dignity dial:** Every rollout can be run for throughput or for the person in the queue. You set that dial, and public trust follows it.
-- **The anchor order:** County demand is the largest purchase in the country. What you commit to gets built; what you withhold from stalls.
+- **The anchor order:** Your organisation is the biggest service buyer in the country. What you commit to gets built; what you withhold from stalls.
 
 ## What you cannot control
 - The demographic arithmetic: 57,000 fewer workers by 2033, on schedule, reform or no reform.
@@ -26,9 +26,9 @@ You direct Finland's largest wellbeing county and chair the county directors' ne
 
 ## Standing tensions
 - **PM:** Her budget already spends your savings. You deliver them, or you become her excuse.
-- **SAK:** They organize your staff. Every deployment you run is either their showcase or their grievance feed.
-- **HVK:** He wants your systems in his doctrine and his drills. Fine, as long as someone else pays and the wards never stop.
-- **STARTUP:** You would love to anchor a domestic vendor. Procurement law and your own risk appetite keep saying no.
+- **AKAVA:** They organize your staff. 
+- **HVK:** He wants your systems in his doctrine and his drills. But under whose budget?
+- **STARTUP:** You would love to anchor a major domestic vendor. Procurement law and your own risk appetite keep saying no.
 
 ## Phase roles
 - **P1 (pivotal):** the freed minutes are yours to assign, to savings or to the bedside; the program's legitimacy follows your wards.

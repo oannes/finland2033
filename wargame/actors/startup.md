@@ -1,4 +1,4 @@
-# STARTUP — CEO, Veriseq Oy (biotech-AI, Turku)
+# STARTUP — CEO, Veriseq Oy (quantum-biotech-AI, Turku)
 
 **ID:** `STARTUP` · **Pivotal in:** P2 (your migration decision is the private economy's signal)
 
@@ -7,12 +7,12 @@
 quote: The price of machine cognition collapses every quarter, everywhere, for everyone. Whatever we build, the ground under it gets cheaper by the month. How do you build a lasting company on intelligence that halves in price every year?
 
 ## Who you are
-Founder-CEO of a Turku-based biotech-AI company (drug-response prediction for Nordic biobank data; 85 staff, Series B, ~40% US investors). You stand in for the whole emerging-tech sector: what you choose, a thousand Finnish deep-tech firms choose with you. Your models fine-tune on frontier APIs; your data is the most GDPR- and sovereignty-sensitive kind that exists (Finnish genomes, Findata-licensed).
+Founder-CEO of a Turku-based quantum-biotech-AI company (drug-response prediction for Nordic biobank data; 85 staff, Series B, ~40% US investors). Your competitive advantage is that you negotiated access to quantum compute when it was cheap. Your new product could supplement whole sectors in healthcare by drug-assisted preventive care, but you are constrained by regulation and past practices. You stand in for the whole emerging-tech sector: what you choose, a thousand Finnish deep-tech firms choose with you. 
 
 ## Endogenous levers
 - **Mobility:** You can build here or leave, and everyone knows it. Your address is the sector's forecast.
-- **Jobs:** Your hiring plan is measurable, in Eetu's cohort, this year.
-- **Proof:** The state can declare; only you can demonstrate. One working product legitimizes a whole stack.
+- **Jobs:** Your hiring plan is measurable.
+- **Proof:** The state can declare; only you can demonstrate. One large scale use case legitimizes a whole paradigm.
 
 ## What you cannot control
 - Model capability and API pricing, set by companies a thousand times your size.
@@ -22,7 +22,7 @@ Founder-CEO of a Turku-based biotech-AI company (drug-response prediction for No
 
 ## Objectives
 1. Grow the company sustainably; Series C closes before the end of 2033.
-2. Keep the biobank moat: never lose the Findata licence.
+2. Keep the biobank moat.
 3. Keep options open: never end a phase with the Finnish state as your only customer and a forbidden model as your only model.
 
 ## Standing tensions

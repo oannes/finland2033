@@ -28,17 +28,18 @@ export const WORKSHOP_ENABLED = import.meta.env.BASE_URL === '/'
 
 const SEAT_INTROS: Record<ActorId, { role: string; line: string }> = {
   PM: { role: 'Prime Minister', line: 'Money and political capital. You can spend one to buy the other.' },
-  SAK: { role: 'Union confederation chair', line: 'Consent or stalemate. Nobody automates a workforce that refuses.' },
+  AKAVA: { role: 'Akava confederation chair', line: 'Consent or stalemate. Nobody automates a workforce that refuses.' },
   COUNTY: { role: 'Wellbeing county director', line: 'Dignity or efficiency on the service floor. Trust follows your choice.' },
   TI: { role: 'Industry federation head', line: 'The export industries’ voice. Geopolitics decides which side you are on.' },
   AALTO: { role: 'University rector', line: 'Education. Nothing you decide lands before 2030; nothing matters more by 2033.' },
-  STARTUP: { role: 'Biotech founder', line: 'Emerging industry. You can create the jobs here, or take them abroad.' },
+  STARTUP: { role: 'Quantum-biotech founder', line: 'Emerging industry. You can create the jobs here, or take them abroad.' },
   HVK: { role: 'Security-of-supply chief', line: 'Quick security or patient resilience. The bills arrive years apart.' },
 }
 import {
   BriefingScreen,
   DecideScreen,
   DilemmaScreen,
+  InterludeScreen,
   EndstateScreen,
   FacilitatorBrief,
   PrimaryButton,
@@ -165,7 +166,15 @@ function SoloGame({
     else setState({ ...s, stage: 'endstate', endstate: composeEndstate(content, s) })
   }
 
+  const interlude = content.interludes.find((i) => i.idx === state.phaseIdx + 1) ?? null
+
   const afterReveal = () => {
+    if (interlude) setState({ ...state, stage: 'interlude' })
+    else if (pendingDilemma(content, state)) setState({ ...state, stage: 'dilemma' })
+    else advance(state)
+  }
+
+  const afterInterlude = () => {
     if (pendingDilemma(content, state)) setState({ ...state, stage: 'dilemma' })
     else advance(state)
   }
@@ -187,6 +196,9 @@ function SoloGame({
             )}
             {state.stage === 'decide' && state.playerActor && (
               <DecideScreen content={content} state={state} phase={phase} actor={state.playerActor} locked={{}} onLock={lock} />
+            )}
+            {state.stage === 'interlude' && interlude && (
+              <InterludeScreen content={content} state={state} interlude={interlude} onContinue={afterInterlude} />
             )}
             {state.stage === 'dilemma' && (() => {
               const d = pendingDilemma(content, state)

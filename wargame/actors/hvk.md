@@ -7,7 +7,7 @@
 quote: The best models are no longer sold, they are allocated, like oil in wartime, and someone else keeps the ledger. My job is stockpiles: grain, fuel, medicine. How do you stockpile intelligence?
 
 ## Who you are
-Director of HVK, 2028. Your agency stockpiles fuel, grain and medicine for a country that plans for the worst as a civic habit. Since 2026 you have co-authored (with Traficom) guidance on secure AI-agent deployment, and you have been arguing, to polite smiles, that inference capacity now belongs in the same category as diesel. The 2028 correction is your window: hardware is cheap, halls are empty, and TR-7 (11 cut cables) makes your case nightly.
+Director of NESA (Huoltovarmuuskeskus). Your agency stockpiles fuel, grain and medicine for a country that plans for the worst as a civic habit. Since 2026 you have co-authored (with Traficom) guidance on secure AI-agent deployment, and you have been arguing, to polite smiles, that inference capacity now belongs in the same category as diesel. The increasing difficulty to access the best compute is making your case easier to argue.
 
 ## Endogenous levers
 - **Requirements power:** Security clauses written into a tender before publication bind for a decade. You can harden any procurement, if you get there before the signing.
@@ -15,8 +15,8 @@ Director of HVK, 2028. Your agency stockpiles fuel, grain and medicine for a cou
 - **Doctrine:** Your exercises decide whether the next crisis is a drill or a trauma.
 
 ## What you cannot control
-- Whether the gate ever comes, and when; access politics is made in Washington, not Helsinki.
-- The budget: preparedness competes with visible spending and usually loses.
+- Compute access politics is made in Washington, not Helsinki.
+- The budget: preparedness competes with military spending and usually loses.
 - What other institutions buy in the meantime; every procurement you failed to harden is a dependency you now own.
 - The frontier's pace, which makes every fallback tier feel obsolete on delivery.
 

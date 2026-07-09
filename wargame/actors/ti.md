@@ -26,8 +26,7 @@ CEO of Finland's largest business lobby, 2028: Nokia, Kone, Wärtsilä, Metso do
 3. No open-ended automation levy. If one comes, it is capped, sunset-claused, and buys real labour peace.
 
 ## Standing tensions
-- **PM:** You are her growth wing's champion until sovereignty polls better than growth. You keep receipts.
-- **SAK:** The levy is your red line and their price of consent. You both know a deal exists, at a number neither of you has said aloud.
+- **AKAVA:** The discussion about sharing AI benefits is your red line and their price of consent. 
 - **HVK:** Every vetting requirement he writes is member friction, and every attack he prevented is invisible. You oscillate between funding him and fighting him.
 - **STARTUP:** You speak for them, until Nokia-scale interests diverge from theirs. They will notice the moment it happens.
 

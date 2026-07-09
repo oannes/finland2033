@@ -1,21 +1,21 @@
 # Phase 1 — Action menus
 
-Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effects + hooks apply to whichever outcome fires. `POLL ±n` moves government approval — the 2031 election is scored from it. Redesign v2: every menu is pole A / pole B / radical (tag H); summaries name the trade and who pays. Deal metrics: books, share, bedside, pull, days, ladder, stay.
+Pivotal actors (PM, AKAVA, COUNTY): tags feed `combos.md`. Modifier actors: effects + hooks apply to whichever outcome fires. `POLL ±n` moves government approval — the 2031 election is scored from it. Redesign v2: every menu is pole A / pole B / radical (tag H); summaries name the trade and who pays. Deal metrics: books, share, bedside, pull, days, ladder, stay.
 
 ## PM (pivotal)
 
 ### P1-PM-A — "Book the savings"
 - tag: A
 - lever: Financial leverage
-- summary: Send the scale-up bill to Parliament unchanged: full budget, binding savings targets, staffing cuts decided by managers. In plain terms, you promise the markets that automation will pay for the state's future, starting now. You do it because the framework is already spent: without these savings, you personally announce cuts worth 1.9% of GDP. The offices your own voters work in take the shock.
+- summary: Send the KAISA scale-up bill to Parliament unchanged: full budget, binding savings targets, staffing cuts decided by managers. In plain terms, you promise the markets that automation will pay for the state's future, starting now. You do it because the framework is already spent: without these savings, you personally announce cuts worth 1.9% of GDP. The offices your own voters work in take the shock.
 - effects: PRO +1.0, LEG −0.7, POLL −6
 - data: pub_ai +2, books +8, bedside -3, share -3
 - said: I sent the bill to Parliament unchanged: full budget, binding savings, staffing decided by managers. Without that number the framework fails, and I was elected to keep the state solvent, not comfortable.
 - aftermath: The savings are booked before they exist. From this week, every ministry manages toward a number your own voters will feel first.
 - to COUNTY: I signed your counties up for savings targets with the force of law. The freed minutes belong to the Treasury now; plan your wards around it.
-- to SAK: The bill sets staffing by management decision, not negotiation. Your members' desks are in the schedule, and the schedule is public.
+- to AKAVA: The bill sets staffing by management decision, not negotiation. Your members' desks are in the schedule, and the schedule is public.
 - react COUNTY: Your bill converts every hour the machine frees in my wards into a Treasury number. I will deliver it, because I have no choice, and I will publish what it does to the visits.
-- react SAK: You put my members' desks in a schedule decided by managers. You will get your savings, and you will meet the ballot that pays for them.
+- react AKAVA: You put my members' desks in a schedule decided by managers. You will get your savings, and you will meet the ballot that pays for them.
 
 ### P1-PM-B — "Protect the experience"
 - tag: B
@@ -26,14 +26,14 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - said: I rewrote the bill: the platform still comes, slower, with service levels and jobs guaranteed through the transition. A government elected by public workers cannot automate them by decree and expect to govern afterwards.
 - aftermath: The bond desks reprice your framework by Friday. The savings arrive late and smaller, and every later promise is measured against that.
 - to COUNTY: Your wards keep their staff through the transition; I bought you that time with the framework's credibility. Use it, because I cannot buy it twice.
-- to SAK: The guarantee your members wanted is in the bill, with my signature under it. I paid for it in market credibility, and I intend to collect in cooperation.
+- to AKAVA: The guarantee your members wanted is in the bill, with my signature under it. I paid for it in market credibility, and I intend to collect in cooperation.
 - react COUNTY: You bought my wards time with your own credibility, and I know what that cost you. The counties will not waste the transition; hold me to that.
-- react SAK: You wrote the guarantee into the bill before we had to strike for it. My members noticed. Consent is easier to sell when it was not taken first.
+- react AKAVA: You wrote the guarantee into the bill before we had to strike for it. My members noticed. Consent is easier to sell when it was not taken first.
 
 ### P1-PM-H — "Rent the state"
 - tag: H
 - lever: Financial leverage
-- summary: Cancel the state's own build and sign a turnkey contract instead: the winning global vendor runs Finland's public platform and takes a share of the savings. You do it because it is the only version where the money is certain and the delivery risk is someone else's. The catch sits in the ownership line: the state's plumbing answers to a foreign board.
+- summary: Call back the lab you turned down at lunch and sign the turnkey deal: the frontier lab runs Finland's public services as its optimisation playground, pays the displaced workers' salaries, and its AI decides how services run, and for whom. You do it because it is the only version where the money is certain and the delivery risk is someone else's. The catch is the clause you swallowed: the state's plumbing answers to a foreign board, and 'Finland is not for sale' becomes a quote with a date on it.
 - effects: PRO +0.6, LEG −0.5, POLL −3
 - data: pub_ai +3, books +12, days -8, stay -6, share -4
 - hook: SILENT
@@ -41,14 +41,14 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - aftermath: The state's plumbing now answers to a foreign board. What you gained in certainty, you owe in access.
 - to HVK: I know what the contract does to your fallback numbers. It was the price of certainty, and I decided certainty was worth more. File the objection; I will read it.
 - to STARTUP: There was no Finnish consortium capable of this at this price, so I stopped pretending there was. Your market is now what the vendor subcontracts.
-- to SAK: The vendor's service terms replace the negotiation you were preparing for. There is no table where that contract gets reopened.
+- to AKAVA: The vendor's service terms replace the negotiation you were preparing for. There is no table where that contract gets reopened.
 - react HVK: You signed the state's plumbing over to a foreign board for a certain number. My objection is statutory and filed, and the fallback budget I now need is itemized inside it.
 - react STARTUP: The turnkey contract closes the only market a Finnish platform company could have grown in. We will subcontract for the vendor, and our best people will interview with them.
-- react SAK: Your vendor's terms replace the negotiation we prepared for. A counterparty in another jurisdiction is not a counterparty; my members understand that faster than parliaments do.
+- react AKAVA: Your vendor's terms replace the negotiation we prepared for. A counterparty in another jurisdiction is not a counterparty; my members understand that faster than parliaments do.
 
-## SAK (pivotal)
+## AKAVA (pivotal)
 
-### P1-SAK-A — "Trade jobs for terms"
+### P1-AKAVA-A — "Trade jobs for terms"
 - tag: A
 - lever: Consent
 - summary: Go to the table and sell your consent at the highest price it will ever fetch: accept that desks will close, and demand gain-sharing, retraining rights and a seat on the program board in return. You do it because the automation is coming either way, and terms negotiated now beat terms dictated later. The members who leave pay for the ones who stay.
@@ -62,7 +62,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - react PM: You sold consent at a price the framework can pay, and I will defend the gain-sharing line because it bought the whole schedule. This is what the table is for.
 - react AALTO: Your retraining rights point at my university. I will build the courses; come to the funding fight with me, because rights without seats are just a queue.
 
-### P1-SAK-B — "Defend every desk"
+### P1-AKAVA-B — "Defend every desk"
 - tag: B
 - lever: The ballot
 - summary: Refuse. Demand a law forbidding dismissals for the decade, and keep the strike ballot armed on the table. You do it because a union that trades away jobs stops being believed, and being believed is the only asset you truly hold. The program gets slower and smaller, and the young outside the walls keep waiting.
@@ -76,7 +76,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - react PM: Your refusal freezes the staffing line of every ministry plan I have. I can govern around a strike ballot for a year, not for four. One of us converts first.
 - react AALTO: You defended the desks my graduates were queuing for. I understand your members' math; understand mine: the young you locked out are this decade's syllabus, and nobody funded it.
 
-### P1-SAK-H — "The union becomes the platform"
+### P1-AKAVA-H — "The union becomes the platform"
 - tag: H
 - lever: Consent
 - summary: Do the unheard-of: register a cooperative, buy the tools, and rent your members' machine-assisted work back to the state as a service. You do it because if work is becoming software, then the union should own some software. Nobody else at the table has a category for what you become.
@@ -96,7 +96,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 ### P1-COUNTY-A — "Minutes to savings"
 - tag: A
 - lever: Execution
-- summary: Sign the commitment the ministry wants: as the machine takes over the paperwork, convert the freed hours into smaller staff lists and shorter queues. You do it because you are short 57,000 workers by 2033 and arithmetic is not optional. The visits get shorter, and the people at the bedside notice first.
+- summary: Sign the KAISA commitment the ministry wants: as the machine takes over the paperwork, convert the freed hours into smaller staff lists and shorter queues. You do it because you are short 57,000 workers by 2033 and arithmetic is not optional. The visits get shorter, and the people at the bedside notice first.
 - effects: PRO +0.5
 - data: books +5, bedside -6, care_gap -1, trust -2
 - said: I signed the ministry's commitment: the machine takes the paperwork, and the freed hours become smaller staff lists and shorter queues. I am short 57,000 workers by 2033. Arithmetic is not optional.
@@ -125,10 +125,10 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - said: I took the meeting the rest of you refused. The lab runs care end to end, better and cheaper, on its own systems, starting with the pilots. My patients are waiting now, and the lab's results are real.
 - aftermath: The data, the jobs and the right to say no later leave in the same contract. The queues shorten while it is being signed.
 - to HVK: Care now runs on systems no Finnish authority can inspect or restart. I know exactly what that does to your continuity math. My queues outvoted it.
-- to SAK: The lab brings its own staffing model. The care agreements your members hold end at the pilot's border; I chose the patients over the payroll.
+- to AKAVA: The lab brings its own staffing model. The care agreements your members hold end at the pilot's border; I chose the patients over the payroll.
 - to STARTUP: The care market you were building toward is now the lab's reference site. Whatever you sell to the counties, you sell through them.
 - react HVK: You moved care onto systems no Finnish authority can inspect or restart. I have redrawn the continuity map with your counties outside it, and that sentence cost the country more than it cost me.
-- react SAK: Your pilot's border is where my members' contracts end. They are also your nurses; remember that when the lab sends its org chart.
+- react AKAVA: Your pilot's border is where my members' contracts end. They are also your nurses; remember that when the lab sends its org chart.
 - react STARTUP: Your reference site now belongs to the lab, and every county sale I make routes through their stack. You solved your queues with my market.
 
 ## TI (modifier)
@@ -169,9 +169,9 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - said: I proposed the joint venture: package the automated Finnish state and sell it to other countries. Finland's real export was always institutions, and this is the century's one chance to price them.
 - aftermath: The state stops being neutral the day it has shareholders, and everyone negotiating with it starts pricing that in.
 - to PM: I put a revenue line where your cost line was: the automated state, exported. You give up the state's neutrality; you gain a product with your flag on it.
-- to SAK: When the state becomes a product, its workers become the product's cost base. Your bargaining table just acquired shareholders; I would arm accordingly.
+- to AKAVA: When the state becomes a product, its workers become the product's cost base. Your bargaining table just acquired shareholders; I would arm accordingly.
 - react PM: You proposed giving the state shareholders. I understand the revenue line, and I also know what the state sells that your venture cannot price: being nobody's product.
-- react SAK: A state with shareholders bargains like an employer everywhere at once. My members work for it, and your proposal turned every negotiation into a board matter. We arm accordingly.
+- react AKAVA: A state with shareholders bargains like an employer everywhere at once. My members work for it, and your proposal turned every negotiation into a board matter. We arm accordingly.
 
 ## AALTO (modifier)
 
@@ -196,8 +196,8 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 - flags: TALENT_PIPE=weak; RETRAIN=broad
 - said: I spread the budget wide: retraining for the displaced, AI literacy in every degree, nobody left unable to read the new state. The university's promise was never only to the brilliant, and a country of bystanders is ungovernable.
 - aftermath: The elite pipeline thins, and the state's machine gets built by people trained somewhere else.
-- to SAK: Your retraining clauses have a university behind them now: real courses, real capacity, this autumn. Send me the displaced before they stop believing in doors.
-- react SAK: You put a university behind my retraining clauses before I had to ask. The displaced will come. Make the courses land in real work, because my credibility signed alongside yours.
+- to AKAVA: Your retraining clauses have a university behind them now: real courses, real capacity, this autumn. Send me the displaced before they stop believing in doors.
+- react AKAVA: You put a university behind my retraining clauses before I had to ask. The displaced will come. Make the courses land in real work, because my credibility signed alongside yours.
 
 ### P1-AALTO-H — "AI tutors take the lectures"
 - tag: H
@@ -243,7 +243,7 @@ Pivotal actors (PM, SAK, COUNTY): tags feed `combos.md`. Modifier actors: effect
 ### P1-STARTUP-H — "The reverse acquihire"
 - tag: H
 - lever: Proof
-- summary: Use the one asset only you hold, credibility with the labs, to broker a wild deal: golden visas and a data-access agreement that moves a frontier lab's team to Turku wholesale. You do it because talent is the only import that compounds, and homegrown scale takes a decade Finland does not have. The price is paid in data and in trust.
+- summary: Play the cards only you hold, cheap quantum compute and credibility with the labs, to broker a wild deal: golden visas and a data-access agreement that move a frontier lab's team to Turku wholesale. You do it because talent is the only import that compounds, and homegrown scale takes a decade Finland does not have. The price is paid in data and in trust.
 - effects: PRO +0.6, RES −0.3
 - data: stay +5, pub_ai +2, days -3, trust -3, ladder -2
 - hook: SILENT
