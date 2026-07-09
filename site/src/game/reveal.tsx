@@ -76,15 +76,16 @@ const isInstant = (it: RevealItem): it is { node: React.ReactNode; instant: true
 /** Sequence wrapper: cascading reveal; onDone fires TAIL_MS after the last line. */
 export function RevealSequence({ items, onDone }: { items: RevealItem[]; onDone?: () => void }) {
   const [shown, setShown] = useState(1)
-  const doneFired = useRef(false)
+  // fires once per completed length — a growing list (the tunnel) re-arms it
+  const firedAtLen = useRef(0)
   const onDoneRef = useRef(onDone)
   onDoneRef.current = onDone
 
   useEffect(() => {
     if (shown > items.length) {
       const t = window.setTimeout(() => {
-        if (doneFired.current) return
-        doneFired.current = true
+        if (firedAtLen.current === items.length) return
+        firedAtLen.current = items.length
         onDoneRef.current?.()
       }, TAIL_MS)
       return () => window.clearTimeout(t)

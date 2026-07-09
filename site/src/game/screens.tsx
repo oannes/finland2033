@@ -974,6 +974,7 @@ export function EndstateScreen({
   state: GameState
   onRestart?: () => void
 }) {
+  const [epilogueOver, setEpilogueOver] = useState(false)
   const es = state.endstate!
   const esCtx = { data: es.dataNode, poll: es.poll }
   const impacts = useMemo(() => decisionImpacts(content, state), [content, state])
@@ -995,10 +996,10 @@ export function EndstateScreen({
         </SectionCard>
       )}
 
-      {state.playerActor && <StreetScene content={content} state={state} />}
+      {state.playerActor && <StreetScene content={content} state={state} onTunnelDone={() => setEpilogueOver(true)} />}
 
-      
-
+      {(epilogueOver || !state.playerActor) && (
+      <QuickReveal className="space-y-6">
       <SectionCard>
         <Collapsible title="What happened to the others">
           <div className="pt-2">
@@ -1075,6 +1076,8 @@ export function EndstateScreen({
         </a>
         {onRestart && <PrimaryButton onClick={onRestart}>Play a different Finland →</PrimaryButton>}
       </div>
+      </QuickReveal>
+      )}
     </div>
   )
 }

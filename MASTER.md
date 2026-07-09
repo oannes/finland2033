@@ -3635,7 +3635,7 @@ NOKIA: It does not fit in a pocket and it will never be envied at a dinner party
 NOKIA: No. There is no new me. There are eleven small maybes and one large refusal to choose among them.
 NOKIA: You know what dying taught me? Nothing dies of losing. Things die of winning at the wrong thing — or of never placing the bet. There were a dozen other product lines on my table in 2007. Any one of them could have carried the town. Winning was never the scarce material. Wanting one thing, together, long enough — that is the scarce material.
 > The cow reaches for the glass again.
-NOKIA: (quietly) Maamme köyhä on… mutta ei sen tarvitse jäädä.
+NOKIA: (quietly) Maamme köyhä on… ja siksi jää.
 
 ## velka/open
 > The pig opens a book that was not there a moment ago. The reading begins.

@@ -144,7 +144,7 @@ function talkFor(doc: EpilogueDoc, key: string, ctx: EpilogueCtx): Beat[] {
 
 // ---------- the tunnel scene ----------
 
-function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
+function TunnelScene({ doc, ctx, onDone }: { doc: EpilogueDoc; ctx: EpilogueCtx; onDone?: () => void }) {
   const [script, setScript] = useState<Beat[]>(() => [...beatsOf(doc, 'tunnel/intro', ctx), { hub: true }])
   const [picked, setPicked] = useState<Record<number, number>>({}) // choice beat index → option index
   const [acted, setActed] = useState<Record<number, boolean>>({}) // action beat index → clicked
@@ -162,6 +162,7 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
   // Text flows in full chunks; the pauses are the player's moves:
   // an action button, a dialogue choice, or the hub.
   const shown: import('./reveal').RevealItem[] = []
+  let blocked = false // set when the loop stops at a player move; false only at the true end
   for (let i = 0; i < script.length; i++) {
     const b = script[i]
     if ('hub' in b) {
@@ -191,6 +192,7 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
               ))}
           </div>
         ) })
+        blocked = true
         break
       }
       continue
@@ -206,6 +208,7 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
             {b.action}
           </button>
         ) })
+        blocked = true
         break
       }
       continue
@@ -248,6 +251,7 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
             ))}
           </div>
         ) })
+        blocked = true
         break
       }
       shown.push(
@@ -267,7 +271,7 @@ function TunnelScene({ doc, ctx }: { doc: EpilogueDoc; ctx: EpilogueCtx }) {
     <div className="rounded-2xl border border-white/10 overflow-hidden">
       <TunnelBackdrop />
       <div className="p-6 sm:p-8 bg-black/40">
-        <RevealSequence items={shown} />
+        <RevealSequence items={shown} onDone={() => { if (!blocked) onDone?.() }} />
       </div>
     </div>
   )
@@ -344,7 +348,7 @@ function SideFace({ pid, rung, tilt }: { pid: 'MARJA' | 'EETU'; rung: number | n
   return <Portrait slots={PERSONA_PORTRAITS[pid]} era="2033" name={pid} size="sm" className={tilt} />
 }
 
-export function StreetScene({ content, state }: { content: GameContent; state: GameState }) {
+export function StreetScene({ content, state, onTunnelDone }: { content: GameContent; state: GameState; onTunnelDone?: () => void }) {
   const [walkedIn, setWalkedIn] = useState(false)
   const [streetRead, setStreetRead] = useState(false)
   const actor = state.playerActor
@@ -427,7 +431,7 @@ export function StreetScene({ content, state }: { content: GameContent; state: G
         )}
       </div>
 
-      {walkedIn && <TunnelScene doc={doc} ctx={ctx} />}
+      {walkedIn && <TunnelScene doc={doc} ctx={ctx} onDone={onTunnelDone} />}
     </div>
   )
 }
