@@ -264,6 +264,48 @@ years idle." / NOKIA: "No one calls a treadmill idle either."
   spirit lines in any prologue section render this way, so more asides can be
   added by editing MASTER alone.
 
+## 15. Learnings from ai-2040.com (Plan A) — candidates, not yet scheduled
+
+AI Futures Project's July 2026 follow-up to AI 2027. Its core inversion: a
+*recommendation*, not a prediction ("scenario scrutiny": a policy proposal you
+cannot write a plausible detailed scenario for is a proposal that fails).
+Techniques worth taking, roughly ordered by value-for-us:
+
+1. **URL-persistent playthroughs.** Their branch choice lives in the URL
+   (`?choices=plan-a-root`), so any path is deep-linkable. Ours: encode seat +
+   seed + decisions in the endstate URL so a finished decade is shareable and
+   replayable ("this is the Finland I made"). The engine is already
+   deterministic; this is serialization + a route.
+2. **Authors' verdicts on the paths.** They grade their own branches in signed
+   blockquotes ("We think Plan D is atrocious..."). Ours: after the endstate,
+   an authorial verdict on the path the player took, in the About voice, kept
+   strictly separate from the fiction. Could live in endstates.md as a
+   `verdict:` field per archetype.
+3. **"Plan A for Finland".** Their whole site is the normative move our
+   afterword gestures at. A page that says what we would actually choose, as
+   one named path through our own game (seat by seat), and why. The game stays
+   neutral; the authors do not.
+4. **Same decade, other desks.** Their three parallel retellings of one
+   timeline (policy / citizen / insider) map to our seats: offer "replay this
+   exact decade from another seat" (same seed, same co-player choices where
+   consistent) after the endstate.
+5. **Collapsed what-almost-happened branches.** Inline mini-detours in the
+   happy path ("China attempts a covert project", collapsed, with its own
+   mini-timeline). Ours: one-line "the road not taken" expandables in the
+   reveal, generated from the outcome that would have fired on the player's
+   second-choice action.
+6. **Empirical updates per assumption.** Their assumptions page tiers claims
+   by confidence and says what they would change if wrong. Ours: extend
+   sources.md with a short "what would change this scenario" list (three to
+   five falsifiers).
+7. **Hand a fork to another site.** Plans C/D link to AI 2027's Race ending
+   instead of rewriting the catastrophe. Ours: the darkest endstates could
+   close with "for the global version of this ending, read AI 2027 / Europe
+   2031" — positions us in the genre and saves writing.
+8. **Time-dilation set piece.** Their "five centuries in five years"
+   expandable (England 1520-2020 at 100x) conveys AI-time against lived time.
+   A Finnish version could sit in one interlude.
+
 ## Sequencing
 
 1. Seam line (#1) — minutes, ship immediately.
