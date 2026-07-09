@@ -15,7 +15,7 @@ import { actorMenu, evaluateGoals, injectRelevant, interpolateNumbers, matchingV
 import Markdown from './Markdown'
 import { ACTOR_PORTRAITS, eraForPhase, moodFor, MoodFace, PERSONA_NAMES, PERSONA_PORTRAITS, Portrait } from './portraits'
 import { StreetScene } from './epilogue'
-import { RevealSequence } from './reveal'
+import { QuickReveal, RevealSequence } from './reveal'
 import { computeGhosts, OWN_METRIC, Sparkline } from './Sidebar'
 
 const YEAR_BY_PHASE: Record<number, string> = { 1: '2027–28', 2: '2029', 3: '2031' }
@@ -581,6 +581,119 @@ export function RevealScreen({
 
 // ---------- Interlude (time passes, the world moves, the cousins text) ----------
 
+/** Reference lines: what the world numbers mean, shown once the limit is crossed. */
+const costRef = (idx: number): string | null =>
+  idx <= 2
+    ? 'At 2: effectively free. What still costs money is electricity, and permission.'
+    : idx <= 6
+      ? 'At 6: cognition is no longer procured. It is assumed, like light.'
+      : idx <= 18
+        ? 'At 18: analysis a ministry once bought as a consulting project now runs continuously, for less than the meetings about it.'
+        : idx <= 35
+          ? 'The bundle of knowledge work that cost 100 in 2026 costs 35. A staffing decision made two years ago is already three times too expensive.'
+          : null
+
+const gapRef = (months: number): string | null =>
+  months >= 28
+    ? 'Twenty-eight months is longer than a budget cycle. Planning against the frontier is guesswork now.'
+    : months >= 20
+      ? 'Twenty months is two model generations. The tools feel current; the capabilities are not.'
+      : months >= 12
+        ? 'Twelve months is a full model generation. Finland\u2019s tier runs what the frontier has already retired.'
+        : null
+
+const daysRef = (d: number): string =>
+  d >= 30
+    ? 'A month alone: approaching the standard Finland has always kept for fuel, 90 days.'
+    : d >= 15
+      ? 'Longer than any European access interruption so far. The oil reserve standard is still 90 days.'
+      : d >= 7
+        ? 'The 2019 postal strike lasted 17 days. An access cut would outlast every workaround the state has.'
+        : 'Less than a week. Finland keeps 90 days of oil in reserve; its intelligence reserve would not last a school holiday.'
+
+const TEAL = '#2f9db4'
+const exoVizYears = [2028, 2029, 2031, 2033]
+
+/** The price of cognition: one dot per year, area shrinking with the price (log scale). */
+function PriceDots({ pts }: { pts: { y: number; v: number }[] }) {
+  const W = 440
+  const H = 76
+  const lo = Math.log10(2)
+  const hi = Math.log10(Math.max(...pts.map((p) => p.v), 100))
+  const r = (v: number) => 3 + ((Math.log10(Math.max(v, 2)) - lo) / (hi - lo)) * 22
+  const x = (i: number) => 30 + (i / (pts.length - 1)) * (W - 60)
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto block my-1">
+      {pts.map((p, i) => (
+        <g key={p.y}>
+          <circle cx={x(i)} cy={34} r={r(p.v)} fill={i === pts.length - 1 ? TEAL : 'rgba(255,255,255,0.22)'} />
+          <text x={x(i)} y={H - 4} fontSize={9} fill="rgba(255,255,255,0.4)" textAnchor="middle">
+            {String(p.y).slice(2)}
+          </text>
+        </g>
+      ))}
+    </svg>
+  )
+}
+
+/** The capability gap: a column per year, height in months. */
+function GapColumns({ pts }: { pts: { y: number; v: number }[] }) {
+  const W = 440
+  const H = 84
+  const max = Math.max(...pts.map((p) => p.v), 34)
+  const x = (i: number) => 30 + (i / (pts.length - 1)) * (W - 60)
+  const h = (v: number) => (v / max) * (H - 32)
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto block my-1">
+      {pts.map((p, i) => (
+        <g key={p.y}>
+          <rect
+            x={x(i) - 8}
+            y={H - 18 - h(p.v)}
+            width={16}
+            height={Math.max(h(p.v), 1)}
+            fill={i === pts.length - 1 ? TEAL : 'rgba(255,255,255,0.22)'}
+            rx={2}
+          />
+          {p.v > 0 && (
+            <text x={x(i)} y={H - 22 - h(p.v)} fontSize={9} fill="rgba(255,255,255,0.5)" textAnchor="middle">
+              {p.v}
+            </text>
+          )}
+          <text x={x(i)} y={H - 4} fontSize={9} fill="rgba(255,255,255,0.4)" textAnchor="middle">
+            {String(p.y).slice(2)}
+          </text>
+        </g>
+      ))}
+    </svg>
+  )
+}
+
+/** Days Finland runs alone: a month of squares, filled as far as the reserve lasts. */
+function DaySquares({ days, prev }: { days: number; prev?: number }) {
+  const cells = 30
+  return (
+    <div className="flex flex-wrap gap-1 my-2">
+      {Array.from({ length: cells }, (_, i) => {
+        const filled = i < Math.min(days, cells)
+        const wasFilled = prev !== undefined && i < Math.min(prev, cells)
+        return (
+          <span
+            key={i}
+            title={`day ${i + 1}`}
+            className="w-3 h-3 rounded-[2px]"
+            style={{
+              background: filled ? TEAL : 'rgba(255,255,255,0.06)',
+              outline: !filled && wasFilled ? '1px solid rgba(255,80,80,0.5)' : '1px solid rgba(255,255,255,0.12)',
+            }}
+          />
+        )
+      })}
+      <span className="text-[10px] text-white/40 self-center ml-1.5">of 30 days</span>
+    </div>
+  )
+}
+
 export function InterludeScreen({
   content,
   state,
@@ -601,11 +714,23 @@ export function InterludeScreen({
   const gapFrom = exoAt('cap_gap', fromYear)
   const gapTo = exoAt('cap_gap', toYear)
   const latest = state.results[state.results.length - 1]?.dataNode ?? content.baseline
+  const prevData = state.results[state.results.length - 2]?.dataNode ?? content.baseline
   const [allRead, setAllRead] = useState(false)
   const era = eraForPhase(state.phaseIdx + 1)
   const lastResult = state.results[state.results.length - 1]
   const moodOf = (pid: 'MARJA' | 'EETU') =>
     lastResult ? moodFor(personaRungNum(lastResult, pid), 0) : 'frustrated'
+
+  // world series: recorded history, then the exogenous schedule up to this interlude's year
+  const histYears = content.history?.years ?? []
+  const worldSeries = (id: string) => [
+    ...histYears.map((y, i) => ({ y, v: content.history!.series[id]?.[i] ?? 0 })),
+    ...exoVizYears.filter((y) => y <= toYear).map((y) => ({ y, v: content.exogenous[id]?.[y] ?? 0 })),
+  ]
+
+  const costRefLine = costRef(costTo)
+  const gapRefLine = gapRef(gapTo)
+
   return (
     <div className="space-y-6">
       <SectionCard>
@@ -614,52 +739,37 @@ export function InterludeScreen({
         </p>
         <h2 className="font-playfair italic text-3xl sm:text-4xl text-white mb-5">{interlude.passes}</h2>
         {/* the drumbeat: same box every time, worsening */}
-        <div className="rounded-xl border border-white/15 bg-white/[0.03] p-5 space-y-2.5">
+        <div className="rounded-xl border border-white/15 bg-white/[0.03] p-5 space-y-6">
           <p className="text-[11px] uppercase tracking-[0.2em] text-white/40">The world, while Finland decided</p>
-          <p className="text-[15px] text-white/85">
-            The price of machine cognition fell <span className="text-[#2f9db4] font-semibold">{costFall}%</span>.
-          </p>
-          <p className="text-[15px] text-white/85">
-            The capability gap grew to{' '}
-            <span className="text-[#2f9db4] font-semibold">{gapTo} months</span>
-            <span className="text-white/45"> (+{Math.round((gapTo - gapFrom) * 10) / 10})</span>. No Finnish decision moves this line.
-          </p>
-          {latest.days !== undefined && (
+
+          <div>
             <p className="text-[15px] text-white/85">
-              If the access stopped tomorrow, Finland would run alone for{' '}
-              <span className="text-[#2f9db4] font-semibold">{latest.days} days</span>.
+              The price of machine cognition fell <span className="text-[#2f9db4] font-semibold">{costFall}%</span>.
             </p>
+            {content.history && <PriceDots pts={worldSeries('intel_cost')} />}
+            {costRefLine && <p className="text-[12.5px] text-white/45 leading-snug">{costRefLine}</p>}
+          </div>
+
+          <div>
+            <p className="text-[15px] text-white/85">
+              The capability gap grew to <span className="text-[#2f9db4] font-semibold">{gapTo} months</span>
+              <span className="text-white/45"> (+{Math.round((gapTo - gapFrom) * 10) / 10})</span>. No Finnish decision moves this line.
+            </p>
+            {content.history && <GapColumns pts={worldSeries('cap_gap')} />}
+            {gapRefLine && <p className="text-[12.5px] text-white/45 leading-snug">{gapRefLine}</p>}
+          </div>
+
+          {latest.days !== undefined && (
+            <div>
+              <p className="text-[15px] text-white/85">
+                If the access stopped tomorrow, Finland would run alone for{' '}
+                <span className="text-[#2f9db4] font-semibold">{latest.days} days</span>.
+              </p>
+              <DaySquares days={Math.round(latest.days)} prev={prevData.days !== undefined ? Math.round(prevData.days) : undefined} />
+              <p className="text-[12.5px] text-white/45 leading-snug">{daysRef(latest.days)}</p>
+            </div>
           )}
         </div>
-      </SectionCard>
-
-      <SectionCard>
-        <p className="text-[11px] uppercase tracking-[0.2em] text-white/40 mb-3">Finland's numbers, 2018 → 2033</p>
-        <p className="text-[12px] text-white/40 mb-4">Your path in colour; the grey dots are the roads not taken.</p>
-        {(() => {
-          const ghosts = computeGhosts(content, state)
-          const mine = state.playerActor ? OWN_METRIC[state.playerActor] : null
-          return (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
-              {content.indicators
-                .filter((ind) => content.chartIds.includes(ind.id))
-                .sort((a, b) => (b.id === mine ? 1 : 0) - (a.id === mine ? 1 : 0))
-                .map((ind) => (
-                  <Sparkline
-                    key={ind.id}
-                    content={content}
-                    state={state}
-                    ghosts={ghosts}
-                    indicatorId={ind.id}
-                    label={ind.id.replace('_', ' ')}
-                    unit={ind.unit}
-                    plain={ind.plain}
-                    own={mine === ind.id}
-                  />
-                ))}
-            </div>
-          )
-        })()}
       </SectionCard>
 
       {interlude.messages.length > 0 && (
@@ -688,11 +798,42 @@ export function InterludeScreen({
         </SectionCard>
       )}
 
-      <div className="flex justify-end">
-        {(allRead || interlude.messages.length === 0) && (
-          <PrimaryButton onClick={onContinue}>On to {toYear} →</PrimaryButton>
-        )}
-      </div>
+      {(allRead || interlude.messages.length === 0) && (
+        <QuickReveal className="space-y-6">
+          <SectionCard>
+            <p className="text-[11px] uppercase tracking-[0.2em] text-white/40 mb-3">Finland's numbers, 2018 → 2033</p>
+            <p className="text-[12px] text-white/40 mb-4">Your path in colour; the grey dots are the roads not taken.</p>
+            {(() => {
+              const ghosts = computeGhosts(content, state)
+              const mine = state.playerActor ? OWN_METRIC[state.playerActor] : null
+              return (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
+                  {content.indicators
+                    .filter((ind) => content.chartIds.includes(ind.id))
+                    .sort((a, b) => (b.id === mine ? 1 : 0) - (a.id === mine ? 1 : 0))
+                    .map((ind) => (
+                      <Sparkline
+                        key={ind.id}
+                        content={content}
+                        state={state}
+                        ghosts={ghosts}
+                        indicatorId={ind.id}
+                        label={ind.id.replace('_', ' ')}
+                        unit={ind.unit}
+                        plain={ind.plain}
+                        own={mine === ind.id}
+                      />
+                    ))}
+                </div>
+              )
+            })()}
+          </SectionCard>
+
+          <div className="flex justify-end">
+            <PrimaryButton onClick={onContinue}>On to {toYear} →</PrimaryButton>
+          </div>
+        </QuickReveal>
+      )}
     </div>
   )
 }
