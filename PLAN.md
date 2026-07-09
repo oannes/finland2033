@@ -166,6 +166,71 @@ and the to/react lines carry the relationship.
 
 - Files: dilemmas.md / phase actions.md + debrief lines. No engine change.
 
+## 10. One dialogue method everywhere: hover-to-open
+
+Every place where people talk uses the same reveal mechanic (the hover-dwell
+from #8). Currently three different structures coexist: the interlude SMS and
+the street scene reveal line by line; the debrief table paces with a Continue
+button; the spirits (tunnel) open whole debate chunks at once. Unify:
+
+- **Debrief table** switches from the Continue button to line-by-line
+  hover-reveal (drop the earlier "professional register needs clicks" call —
+  consistency wins).
+- **Spirits/tunnel**: each speech line reveals like the rest; hubs, choices
+  and action buttons stay as clicks (they are decisions, not reading).
+- **Refine the mechanic itself**: the sentence the mouse is resting on should
+  be clearly marked (e.g. full opacity + subtle underline/glow while dwelling)
+  and the NEXT sentence blurred — so the eye always knows what is being read
+  and what is being withheld. Today the dwell target and the blur are the same
+  line; split the states: current = highlighted, next = blurred.
+- **Mummotunneli image**: the tunnel backdrop stays hidden until the spirits
+  actually speak (today it renders before the player walks in). Reveal the
+  image at the moment the first spirit line opens.
+- Files: reveal.tsx (state refinement), screens.tsx DebriefScreen,
+  epilogue.tsx TunnelScene + TunnelBackdrop placement.
+
+## 11. The clock view gets a visual; the charts move there
+
+The interlude ("clock") view should carry a visualization, not just three
+numbers — and it becomes the home of the data graphs:
+
+- Add a visual to the drumbeat box: the exogenous curves drawn small (falling
+  cognition price, widening capability gap), the played years marked. One
+  glance = the tide.
+- **Move the sidebar sparkline charts into the interlude views** and omit the
+  chart section from other screens, keeping the play screens clean. The
+  interlude becomes "the numbers moment" of each round: world clock on top,
+  Finland's forked indicator charts below (ghost dots and all).
+- Sidebar keeps: goals, the two lives, government approval. Loses: the
+  "numbers 2018→2033" chart stack.
+- **The endstate ("Finland 2033") view must clearly communicate how the goals
+  went for each participant** — and the right voice for it is the spirits:
+  weave each seat's goal outcomes into the tunnel discussions (the spirits
+  already speak in judgments; give them the actual scorecard, per seat, so
+  the player hears "who got what they wanted" as dialogue, not as a table).
+- Files: InterludeScreen (charts + exo visual), Sidebar.tsx (remove charts),
+  epilogue.md + epilogue.tsx (spirit lines conditioned on per-actor goal
+  results), possibly a compact goals-scorecard element on the endstate screen
+  as a fallback for skimmers.
+
+## 12. Numbers carry their real-world reference
+
+Most numbers shown to the player should anchor to actual data: "Youth
+unemployment reads 14.5% in 2033 (8.9% in 2024)." The reference year is real,
+sourced (sources.md), and fixed; the scenario number is the play result.
+
+- Mechanism: the historical series in data-indicators.md already holds 2024
+  values — extend number interpolation so `{youth_u}` can render with its
+  reference (e.g. a `{youth_u|ref}` token or automatic "(x% in 2024)" suffix
+  in keymetrics/endstate/reveal templates).
+- Author pass: keymetrics.md, endstates.md, outcome narratives, the drumbeat
+  box — anywhere a scenario number appears without context.
+- Rule: reference values must match sources.md; if a series has no real 2024
+  anchor, do not invent one.
+- Files: parse/engine interpolation + content templates. No new data needed
+  for youth_u, care_gap, trust, compute_mw, books/share/etc. (history block
+  exists); check each chart id.
+
 ## Sequencing
 
 1. Seam line (#1) — minutes, ship immediately.
