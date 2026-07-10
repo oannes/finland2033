@@ -1,4 +1,4 @@
-# AI in Finland 2033 — Pullonkaula War Game
+# AI in Finland 2033 — War Game
 
 Content repository for the decision-making war game played with Finnish key decision-makers.
 Every file is a content unit the game software/website renders directly. IDs are stable; do not rename without updating cross-references.
